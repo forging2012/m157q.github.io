@@ -2,6 +2,7 @@
 output/
 cache/
 *.pid
+themes/
 
 #swap
 *.swp
