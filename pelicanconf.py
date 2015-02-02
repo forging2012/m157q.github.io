@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 # Basic settings
 AUTHOR = u'm157q'
 SITENAME = u'Just for noting'
-SITESUBTITLE = u'note everything worth noting for me'
 SITEURL = u'https://m157q.github.io'
 PATH = 'content'
 TIMEZONE = 'Asia/Taipei'
@@ -14,7 +13,8 @@ DEFAULT_PAGINATION = 10
 DISQUS_SITENAME = "m157q-logdown"
 GOOGLE_ANALYTICS = "UA-45367183-1"
 TWITTER_USERNAME = u'M157q'
-THEME = 'themes/gum'
+THEME = 'themes/plumage'
+#THEME = 'themes/gum'
 USE_FOLDER_AS_CATEGORY = False
 
 
@@ -25,9 +25,10 @@ PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
 STATIC_PATHS = ['images']
 MENUITEMS = [
-    ('tags', 'tags'),
-    ('categories', 'categories'),
-    ('archives', 'archives'),
+    #('home', '/index'),
+    ('tags', '/tags'),
+    ('categories', '/categories'),
+    ('archives', '/archives'),
     #('search', 'search'),
     #('authors', 'authors'),
     #('about', 'about'),
