@@ -14,7 +14,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 DISQUS_SITENAME = "m157q-logdown"
 GOOGLE_ANALYTICS = "UA-45367183-1"
-GITHUB_URL = 'https://github.com/M157q'
+GITHUB_URL = 'https://github.com/M157q/m157q.github.io'
 TWITTER_USERNAME = u'M157q'
 
 
