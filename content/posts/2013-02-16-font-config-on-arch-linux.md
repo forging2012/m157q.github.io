@@ -16,11 +16,11 @@ Summary: How to config your font on Arch Linux
 
 <!--more-->
   
->在 `~/.config/awesome/rc.lua` 中
-加入 `awesome.font = "LiHei Pro 12"`  
-  
->和 `~/.config/awesome/themes/default/theme.lua` 中
-加入 `theme.font = "LiHei Pro 10"`  
+>`~/.config/awesome/rc.lua`  
+>加入 `awesome.font = "LiHei Pro 12"`  
+
+>`~/.config/awesome/themes/default/theme.lua` 中  
+>加入 `theme.font = "LiHei Pro 10"`  
   
 除了這兩個之外 其他以 gtk 開啟的程式預設字型真的很醜= ="  
 找了好多篇文章 最後發現應該加上 `~/.fonts.conf` 就行了  
