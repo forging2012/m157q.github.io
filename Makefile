@@ -32,10 +32,12 @@ ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
 endif
 
+# For quick create/edit
 PAGESDIR=$(INPUTDIR)/pages
 DATE := $(shell date +'%Y-%m-%d %H:%M:%S')
 SLUG := $(shell echo '${NAME}' | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
 EXT ?= md
+AUTHOR=m157q
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '
@@ -114,12 +116,16 @@ github: publish
 
 newpost:
 ifdef NAME
-	echo "Title: $(NAME)" >  $(INPUTDIR)/$(SLUG).$(EXT)
+	echo "Title: $(NAME)" > $(INPUTDIR)/$(SLUG).$(EXT)
 	echo "Slug: $(SLUG)" >> $(INPUTDIR)/$(SLUG).$(EXT)
 	echo "Date: $(DATE)" >> $(INPUTDIR)/$(SLUG).$(EXT)
-	echo ""              >> $(INPUTDIR)/$(SLUG).$(EXT)
-	echo ""              >> $(INPUTDIR)/$(SLUG).$(EXT)
-	${EDITOR} ${INPUTDIR}/${SLUG}.${EXT} &
+	echo "Authors: $(AUTHOR)" >> $(INPUTDIR)/$(SLUG).$(EXT)
+	echo "Category: "    >> $(INPUTDIR)/$(SLUG).$(EXT)
+	echo "Tags: "        >> $(INPUTDIR)/$(SLUG).$(EXT)
+	echo "Summary: "     >> $(INPUTDIR)/$(SLUG).$(EXT)
+	echo "Status: draft" >> $(INPUTDIR)/$(SLUG).$(EXT)
+	echo ""     >> $(INPUTDIR)/$(SLUG).$(EXT)
+	${EDITOR} ${INPUTDIR}/${SLUG}.${EXT}
 else
 	@echo 'Variable NAME is not defined.'
 	@echo 'Do make newpost NAME='"'"'Post Name'"'"
@@ -127,7 +133,8 @@ endif
 
 editpost:
 ifdef NAME
-	${EDITOR} ${INPUTDIR}/${SLUG}.${EXT} &
+	echo "Modified: $(DATE)" >> $(INPUTDIR)/$(SLUG).$(EXT)
+	${EDITOR} ${INPUTDIR}/${SLUG}.${EXT}
 else
 	@echo 'Variable NAME is not defined.'
 	@echo 'Do make editpost NAME='"'"'Post Name'"'"
@@ -147,6 +154,7 @@ endif
 
 editpage:
 ifdef NAME
+	echo "Modified: $(DATE)" >> $(PAGESDIR)/$(SLUG).$(EXT)
 	${EDITOR} ${PAGESDIR}/${SLUG}.$(EXT)
 else
 	@echo 'Variable NAME is not defined.'
