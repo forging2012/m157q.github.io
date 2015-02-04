@@ -15,7 +15,8 @@ Summary: Brief introduction to MC-SQLR Amplification Attack
 
 ---
 
-**原文**
+**原文**  
+  
 [Default Deny: MC-SQLR Amplification: MS SQL Server Resolution Service enables reflected DDoS with 440x amplification](http://kurtaubuchon.blogspot.tw/2015/01/mc-sqlr-amplification-ms-sql-server.html)
 
 ---
