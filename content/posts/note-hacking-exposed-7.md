@@ -4,6 +4,7 @@ Author: m157q
 Category: Note
 Tags: Hacking
 Slug: note-hacking-exposed-7
+Status: draft
 
 + google search `allinurl:tsweb/default` for searching Windows RDP vulnerable.  
 + GHDB  

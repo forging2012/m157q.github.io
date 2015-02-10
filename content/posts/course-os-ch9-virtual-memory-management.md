@@ -4,6 +4,7 @@ Author: m157q
 Category: Course
 Tags: Operating-System, Virtual-Memory
 Slug: course-os-ch9-virtual-memory-management
+Status: draft
 
 ## NCTUCS 2013-Fall Introduction to Operating System Hank Wu  
 + To describe the benefits of a virtual memory system  

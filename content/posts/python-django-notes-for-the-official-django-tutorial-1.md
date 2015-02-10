@@ -4,6 +4,7 @@ Author: m157q
 Category: Python
 Tags: Python, django
 Slug: python-django-notes-for-the-official-django-tutorial-1
+Status: draft
 
 ref: [https://docs.djangoproject.com/en/1.5/intro/tutorial01/][1]    
     

@@ -4,6 +4,7 @@ Author: m157q
 Category: Misc
 Tags: 
 Slug: misc-chu-tan-arduino
+Status: draft
 
 ## References  
 + [Arduino 簡介](http://yehnan.blogspot.tw/2012/02/arduino.html)  

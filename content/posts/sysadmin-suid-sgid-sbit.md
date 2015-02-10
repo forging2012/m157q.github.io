@@ -4,8 +4,7 @@ Author: m157q
 Category: Sysadmin
 Tags: 
 Slug: sysadmin-suid-sgid-sbit
-
-  
+Status: draft
   
 SUID (Set UID) (chmod 4xxx)    
       

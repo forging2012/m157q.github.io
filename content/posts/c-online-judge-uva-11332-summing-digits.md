@@ -4,6 +4,7 @@ Author: m157q
 Category: C
 Tags: 
 Slug: c-online-judge-uva-11332-summing-digits
+Status: draft
 
 [http://uva.onlinejudge.org/external/113/11332.html][1]    
     

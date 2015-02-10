@@ -4,6 +4,7 @@ Author: m157q
 Category: Misc
 Tags: 
 Slug: misc-grab-the-title-of-the-webpage-by-using-mechanize-in-python
+Status: draft
 
 # References  
 + [Scraping with Mechanize and BeautifulSoup | A geek with a hat](http://swizec.com/blog/scraping-with-mechanize-and-beautifulsoup/swizec/5039)  

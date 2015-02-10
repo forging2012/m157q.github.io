@@ -4,6 +4,7 @@ Author: m157q
 Category: Vim
 Tags: Vim, Tips
 Slug: vim-some-useful-vim-tips
+Status: draft
 
 1. `:<visual>!<shell_command>`  
     + `:%!sort|uniq`  

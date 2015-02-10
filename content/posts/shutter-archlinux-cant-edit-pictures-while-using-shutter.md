@@ -4,6 +4,7 @@ Author: m157q
 Category: Shutter
 Tags: 
 Slug: shutter-archlinux-cant-edit-pictures-while-using-shutter
+Status: draft
 
   
   

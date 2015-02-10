@@ -4,6 +4,7 @@ Author: m157q
 Category: Hack
 Tags: 
 Slug: hack-ctf-list
+Status: draft
 
 [CTF TIME](https://ctftime.org/)  
   

@@ -4,6 +4,7 @@ Author: m157q
 Category: Misc
 Tags: ComputerScience
 Slug: misc-computer-science-from-the-bottom-up
+Status: draft
 
 [Computer Science from the Bottom Up](http://www.bottomupcs.com/)  
 [ianw/bottomupcs · GitHub](https://github.com/ianw/bottomupcs)  

@@ -4,6 +4,7 @@ Author: m157q
 Category: Infosec
 Tags: CTF
 Slug: infosec-replay-payload-from-other-teams-in-attackdefense-ctf
+Status: draft
 
 - [Get tcp and udp payloads with TSHARK - Wireshark Q&A](https://ask.wireshark.org/questions/23827/get-tcp-and-udp-payloads-with-tshark)  
 - [Decapsulation of data - Wireshark Q&A](https://ask.wireshark.org/questions/14078/decapsulation-of-data)  

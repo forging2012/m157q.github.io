@@ -4,4 +4,5 @@ Author: m157q
 Category: Note
 Tags: 
 Slug: note-win7-sysprep
+Status: draft
 

@@ -4,4 +4,5 @@ Author: m157q
 Category: Course
 Tags: course, NetSec
 Slug: course-network-security-final-exam
+Status: draft
 

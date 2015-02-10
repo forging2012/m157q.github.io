@@ -4,6 +4,7 @@ Author: m157q
 Category: Misc
 Tags: 
 Slug: misc-freenode-chanserv-commands
+Status: draft
 
 # References  
   

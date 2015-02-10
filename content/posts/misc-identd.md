@@ -4,6 +4,7 @@ Author: m157q
 Category: Misc
 Tags: IRC, identd
 Slug: misc-identd
+Status: draft
 
 [RFC 1413 - Identification Protocol](http://tools.ietf.org/html/rfc1413)  
 [What is Identd? « GeekShed IRC](http://www.geekshed.net/2011/06/what-is-identd/)  
