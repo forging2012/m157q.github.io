@@ -3,6 +3,7 @@ output/
 cache/
 *.pid
 themes/
+pelican-plugins/
 
 #swap
 *.swp
