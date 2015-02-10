@@ -71,7 +71,7 @@ RELATIVE_URLS = True
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap']
+PLUGINS = ['sitemap', 'related_posts']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
@@ -85,3 +85,4 @@ SITEMAP = {
         'pages': 'yearly'
     }
 }
+RELATED_POSTS_MAX = 5
