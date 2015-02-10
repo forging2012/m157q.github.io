@@ -111,8 +111,13 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+ifdef MSG
+	ghp-import -m "$(MSG)" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
+else
+	@echo 'Variable MSG is not defined.'
+	@echo 'Do make github MSG='"'"'GitHub commit message'"'"
+endif
 
 newpost:
 ifdef NAME
