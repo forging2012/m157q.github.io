@@ -2,9 +2,15 @@
 output/
 cache/
 *.pid
+
 themes/*
 !themes/plumage/
-pelican-plugins/
+
+plugins/*
+!plugins/sitemap
+!plugins/related_posts
+!plugins/share_post
+
 
 #swap
 *.swp
