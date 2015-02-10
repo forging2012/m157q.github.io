@@ -1,7 +1,7 @@
 Title: pip install lxml fail on MacOS
 Slug: pip-install-lxml-fail-on-macos
 Date: 2015-02-04 15:39:08
-Authors: m157q
+Author: m157q
 Category: Python
 Tags: Python pip lxml Mac
 Summary: A brief solution to solve this problem
