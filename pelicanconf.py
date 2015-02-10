@@ -68,3 +68,20 @@ SOCIAL = (
 # Debug
 LOAD_CONTENT_CACHE = False
 RELATIVE_URLS = True
+
+# Plugins
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['sitemap']
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 1.0,
+        'indexes': 0.7,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'weekly',
+        'pages': 'yearly'
+    }
+}
