@@ -70,7 +70,7 @@ LOAD_CONTENT_CACHE = False
 RELATIVE_URLS = True
 
 # Plugins
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['sitemap']
 SITEMAP = {
     'format': 'xml',
