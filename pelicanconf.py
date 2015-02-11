@@ -14,6 +14,7 @@ TWITTER_USERNAME = u'M157q'
 THEME = 'themes/plumage'
 #THEME = 'themes/gum'
 USE_FOLDER_AS_CATEGORY = False
+SUMMARY_MAX_LENGTH = 20
 
 
 # URLs and Paths
