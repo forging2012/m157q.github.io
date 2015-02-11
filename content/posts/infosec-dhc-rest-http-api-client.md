@@ -1,13 +1,12 @@
 Title: [InfoSec] DHC - REST/HTTP API Client
 Date: 2015-01-21 22:36
+Modified: 2015-02-11 18:27
 Author: m157q
 Category: Infosec
 Tags: chrome, CTF, DHC, Hacktool, InfoSec
-Slug: infosec-dhc-resthttp-api-client
-
-上週末打 CTCTF 才知道然後拿來用的 Chrome Extension  
+Slug: infosec-dhc-rest-http-api-client
+Summary: 上週末打 CTCTF 才知道然後拿來用的 Chrome Extension  
   
-<!--more-->  
   
 [DHC - REST/HTTP API Client - Chrome Web Store](https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm?hl=en)  
   

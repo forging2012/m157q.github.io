@@ -80,7 +80,7 @@ Pin: true
 ## Misc.  
   
 - Finish the rest parts of the college graduation term project  
-- #iToolMan Hoodie  
+- \#iToolMan Hoodie  
 - Graduate from NCTU  
 - Study about whole compiler things, get familiar with it and make myself like it.  
 - At least give 1 talk in conference  
@@ -89,9 +89,8 @@ Pin: true
 - At least contribute to 1 open source project  
 - Get an intern job in some nice CS company  
 - Write new blog post when learned something new  
-    - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](http://m157q.logdown.com/posts/2015/01/22/infosec-dhc-rest-http-api-client)  
-    - [[InfoSec] KSSD 2013 « Just for noting](http://m157q.logdown.com/posts/2015/01/22/infosec-kssd-2013)  
-    - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](http://m157q.logdown.com/posts/2015/01/22/infosec-mc-sqlr-amplification-attack)  
+    - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](/posts/2015/01/21/infosec-dhc-rest-http-api-client)  
+    - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](/posts/2015/01/22/infosec-mc-sqlr-amplification-attack)  
   
   
   

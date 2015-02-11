@@ -1,9 +1,10 @@
 Title: [InfoSec] MC-SQLR 放大攻擊
 Date: 2015-01-22 15:20
+Modified: 2015-02-11 18:25
 Author: m157q
 Category: Infosec
-Tags: DDoS, InfoSec, MC-SQLR, Amplification
-Slug: infosec-mc-sqlr-fang-da-gong-ji
+Tags: DDoS, InfoSec, MC-SQLR, Amplification Attack
+Slug: infosec-mc-sqlr-amplification-attack
 
 在 Twitter 上看到  
   
