@@ -89,8 +89,8 @@ Pin: true
 - At least contribute to 1 open source project  
 - Get an intern job in some nice CS company  
 - Write new blog post when learned something new  
-    - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](/posts/2015/01/21/infosec-dhc-rest-http-api-client)  
-    - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](/posts/2015/01/22/infosec-mc-sqlr-amplification-attack)  
+    - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](/posts/2015/01/21/infosec-dhc-rest-http-api-client/)  
+    - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](/posts/2015/01/22/infosec-mc-sqlr-amplification-attack/)  
   
   
   
