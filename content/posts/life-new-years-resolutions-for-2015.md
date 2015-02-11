@@ -4,6 +4,7 @@ Author: m157q
 Category: Life
 Tags: Life, NewYear'sResolutions
 Slug: life-new-years-resolutions-for-2015
+Pin: true
 
 新年新希望  
 雖然一月快過完了  

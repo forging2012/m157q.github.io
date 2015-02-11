@@ -10,6 +10,7 @@ plugins/*
 !plugins/sitemap
 !plugins/related_posts
 !plugins/share_post
+!plugins/pin_to_top
 
 
 #swap

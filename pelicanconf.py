@@ -86,7 +86,7 @@ RELATIVE_URLS = True
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap', 'related_posts', 'share_post']
+PLUGINS = ['sitemap', 'related_posts', 'share_post', 'pin_to_top']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
