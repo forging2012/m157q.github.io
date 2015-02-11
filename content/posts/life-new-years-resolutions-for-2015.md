@@ -5,8 +5,8 @@ Category: Life
 Tags: Life, NewYear'sResolutions
 Slug: life-new-years-resolutions-for-2015
 Pin: true
+Summary: 新年新希望  
 
-新年新希望  
 雖然一月快過完了  
 但應該還不算太晚  
 希望可以努力達成下列目標  
