@@ -1,9 +1,9 @@
-Title: [C++] [Online Judge] UVa 11332 Summing Digits
+Title: [Cpp] [Online Judge] UVa 11332 Summing Digits
 Date: 2013-04-29 20:48
 Author: m157q
-Category: C
-Tags: 
-Slug: c-online-judge-uva-11332-summing-digits
+Category: Cpp
+Tags: Cpp 
+Slug: cpp-online-judge-uva-11332-summing-digits
 Status: draft
 
 [http://uva.onlinejudge.org/external/113/11332.html][1]    

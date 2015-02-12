@@ -1,9 +1,9 @@
-Title: [C++] [Online Judge] UVa 10579 Fibonacci Numbers
+Title: [Cpp] [Online Judge] UVa 10579 Fibonacci Numbers
 Date: 2013-04-29 19:57
 Author: m157q
-Category: C
-Tags: c++, Online-Judge, Big-Number
-Slug: c-online-judge-uva-10579-fibonacci-numbers
+Category: Cpp
+Tags: Cpp, Online-Judge, Big-Number
+Slug: cpp-online-judge-uva-10579-fibonacci-numbers
 
 2013/04/29 基礎程式檢定考題之一    
 (共7題 我寫了三題 只對一題Orz 後來花時間把沒寫完的兩題寫完 這是其中一題)    

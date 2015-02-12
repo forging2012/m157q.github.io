@@ -1,9 +1,9 @@
-Title: [C++] [Online Judge] UVa 737 Gleaming the Cubes
+Title: [Cpp] [Online Judge] UVa 737 Gleaming the Cubes
 Date: 2013-04-29 20:16
 Author: m157q
-Category: C
-Tags: c++, Online-Judge, abs
-Slug: c-online-judge-uva-737-gleaming-the-cubes
+Category: Cpp
+Tags: Cpp, Online-Judge, abs
+Slug: cpp-online-judge-uva-737-gleaming-the-cubes
 
 2013/04/29 基礎程式檢定考題之一    
 (共7題 我寫了三題 只對一題Orz 後來花時間把沒寫完的兩題寫完 這是其中一題)    
