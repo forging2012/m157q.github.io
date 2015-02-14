@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 # Basic settings
 AUTHOR = u'm157q'
 SITENAME = u'Just for noting'
-SITEURL = u'https://m157q.github.io'
 PATH = 'content'
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_LANG = u'en'
