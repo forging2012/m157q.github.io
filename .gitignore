@@ -2,6 +2,7 @@
 output/
 cache/
 *.pid
+.DS_Store
 
 themes/*
 !themes/plumage/
