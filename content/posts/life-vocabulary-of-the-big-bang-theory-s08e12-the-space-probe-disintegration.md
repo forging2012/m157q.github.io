@@ -1,9 +1,9 @@
-Title: [Life] Vocabularies of The Big Bang Theory S08E12 - The Space Probe Disintegration
+Title: [Life] Vocabulary of The Big Bang Theory S08E12 - The Space Probe Disintegration
 Date: 2015-01-14 16:55
 Author: m157q
 Category: Life
-Tags: TheBigBangTheory, Vocabulary, LearnEnglish
-Slug: life-vocabularies-of-the-big-bang-theory-s08e12-the-space-probe-disintegration
+Tags: The Big Bang Theory, Vocabulary, Learn English, TV Series, Geek
+Slug: life-vocabulary-of-the-big-bang-theory-s08e12-the-space-probe-disintegration
 
 <!--more-->  
   

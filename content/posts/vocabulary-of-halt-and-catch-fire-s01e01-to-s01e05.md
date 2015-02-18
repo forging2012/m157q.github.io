@@ -1,10 +1,11 @@
-Title: Vocabularies in Halt and Catch Fire S01E01 to S01E05
-Slug: vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05
+Title: Vocabulary of Halt and Catch Fire S01E01 to S01E05
+Slug: vocabulary-of-halt-and-catch-fire-s01e01-to-s01e05
 Date: 2015-02-17 17:42:30
 Authors: m157q
 Category: Life
-Tags: Halt and Catch Fire, TV Series, Geek, Vocabularies
+Tags: Halt and Catch Fire, TV Series, Geek, Vocabulary, Learn English
 Summary: Halt and Catch Fire 是個很適合資工阿宅觀看的影集，台灣譯為《電腦狂人》。
+Modified: 2015-02-18 11:27:00
 
 看到 Pellaeon 在 FB 上說 WIRED 推薦觀看，  
 稍微看了一下簡介也覺得蠻適合資工阿宅的，  
