@@ -97,6 +97,6 @@ for(i=90;i>40;)document.write('<font color=#'+i+i+i--+' size=7>&#9632;')
 for(i=60;--i>9;)document.write('<font color='+i+i+i+' size=7>&#9632;')
 ```
 
-一大堆... 剩下懶得看了XDD
-
-是說原來這種比誰寫的 code 短的比賽方式叫 Code Golf 呀
+一大堆... 剩下懶得看了XDD   
+好多沒看過的語言啊...   
+是說原來這種比誰寫的 code 短的比賽方式叫 Code Golf 呀   
