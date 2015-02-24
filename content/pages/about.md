@@ -11,9 +11,7 @@ I have been Teaching Assistant for the Computer Center of Department of Computer
 
 I have experience on FreeBSD and Linux system administration, C programming, Python programming, PHP programming and Website maintenance. I gave a speech “How I learned skills for website construction in 18 months” on Student Information Technology Conference at Academia Sinica, Taipei, Taiwan, in March, 2014 for sharing the experience about website maintenance and co-working with other teams since I joined Open House in National Chiao Tung University, which is an association consists of about 40 students helping all students in the campus finding their jobs.  
     
-I am also a Python lover who learned Python programming in my extracurricular time and joined the Web Team to help website construction as a staff of Python APAC Conference 2014.  
-    
-I am interested in Computer Security. I usually follow some security related news and participate some CTFs in my spare time.
+A Python, Arch Linux, Security and Open Source lover.
     
 # Experience
     
