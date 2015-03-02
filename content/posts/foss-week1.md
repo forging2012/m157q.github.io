@@ -5,6 +5,7 @@ Authors: m157q
 Category: Course
 Tags: Course, FOSS, Note
 Summary: A note for 2015 FOSS course in NCTU, Hsinchu, Taiwan
+Modified: 2015-03-02 23:07:39
 
 + Android Bionic
     + <https://github.com/android/platform_bionic>
@@ -69,9 +70,16 @@ Summary: A note for 2015 FOSS course in NCTU, Hsinchu, Taiwan
     + RMS 是非常純的自由教義派，可以為了 Open Source BIOS 去用[龍芯](http://zh.wikipedia.org/zh-tw/%E9%BE%99%E8%8A%AF)    
     + Linus 則是實用主義派，可以為了實用而向沒有 Open Source 妥協，這是 RMS 完全沒辦法接受的。
     
-GNU 早期最知名的軟體就是 Emacs  
-    
-MicroSoft NBC 在 Linux 被大量採用的年代很多頭條都是跟 Linux 有關的，形成一股趣味的對比。ex: VA Linux
-紅到連賣大同電鍋的大同公司當年都搞了一套叫做 MITUX 的 UNIX 系統。  
-    
-GNU Mach 影響了 OS X 10.x 和 Windows NT
++ GNU 早期最知名的軟體就是 Emacs  
++ MicroSoft NBC 在 Linux 被大量採用的年代很多頭條都是跟 Linux 有關的，形成一股趣味的對比。ex: VA Linux    
+    + 當年 UNIX 紅到幾乎只要沾上邊就能賺錢，連賣大同電鍋的大同公司當年都搞了一套叫做 MITUX 的 UNIX 系統。  
+        + [SCO、IBM與Intel將合作開發IA-64架構的UNIX作業系統 | iThome](http://www.ithome.com.tw/node/5632)
++ microkernel 的 CMU Mach 影響了 MacOS X 10.0 (Darwin) 和 Windows NT，雖然因為 microkernel 效能太差而沒有採用，但還是取其 flexible 的優點併入 monolithic kernel 形成了結合兩者優點的 hybrid kernel
+    + [Mach (kernel) - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Mach_(kernel))
+    + [Microkernel - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Microkernel)
+    + [Hybrid kernel - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Hybrid_kernel)
+    + [Monolithic kernel - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Monolithic_kernel)
+    + [Darwin (operating system) - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Darwin_%28operating_system%29#Kernel) 
+        + Darwin is built around XNU, a hybrid kernel that combines the Mach 3 microkernel, ...
+    + 關於 microkernel 的發展及介紹可以參考 jserv 的 slides [Microkernel Evolution](http://www.slideshare.net/jserv/microkernel-evolution)
+
