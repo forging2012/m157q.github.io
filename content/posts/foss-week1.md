@@ -14,9 +14,10 @@ Modified: 2015-03-02 23:07:39
 ---
 
 ### How A Compiler Works
-
-<http://www.slideshare.net/jserv/how-a-compiler-works-gnu-toolchain>
-
+    
+#### 課程連結：[20150302 - From Source to Binary: GNU Toolchain 是如何運作？ - 自由開源軟體與專案協作](https://sites.google.com/site/fossapc/list-of-lectures/fromsourcetobinarygnutoolchainshiruheyunzuo)
+#### 投影片連結：[How A Compiler Works: GNU Toolchain](http://www.slideshare.net/jserv/how-a-compiler-works-gnu-toolchain)
+    
 + 1985 Richard Stallman GUN FSF
 + 屠龍書 - Syntax Directed Translator (SDT)
 + Embedded System - Toolchain 太新或太舊都不行
@@ -56,13 +57,15 @@ Modified: 2015-03-02 23:07:39
     + Steve Jobs
     + NeXT
     + GCC 2.7
-
+    
 在 Open Source 圈中，誠信是很重要的，千萬別幹抄襲這種事。
-
+    
 ---
-
+    
 ### Revolution OS
-
+        
+#### 課程連結：[20150302 - 《Revolution OS》影片背景知識補充 - 自由開源軟體與專案協作](https://sites.google.com/site/fossapc/list-of-lectures/revolutionosyingpianbeijingzhishibuchong)
+    
 + [從 Revolution OS 看作業系統生態變化 - fossapc.hackpad.com](https://fossapc.hackpad.com/-Revolution-OS--RrJpYEByzmr)
 + [Revolution OS - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Revolution_OS)
 + [Revolution OS - YouTube](https://www.youtube.com/watch?v=jw8K460vx1c)
