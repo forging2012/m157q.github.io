@@ -1,6 +1,6 @@
 Title: FOSS week1
 Slug: foss-week1
-Date: 2015-03-02 12:57:15
+Date: 2015-03-03 03:57:15
 Authors: m157q
 Category: Course
 Tags: Course, FOSS, Note
@@ -77,6 +77,7 @@ Modified: 2015-03-02 23:07:39
 + MicroSoft NBC 在 Linux 被大量採用的年代很多頭條都是跟 Linux 有關的，形成一股趣味的對比。ex: VA Linux    
     + 當年 UNIX 紅到幾乎只要沾上邊就能賺錢，連賣大同電鍋的大同公司當年都搞了一套叫做 MITUX 的 UNIX 系統。  
         + [SCO、IBM與Intel將合作開發IA-64架構的UNIX作業系統 | iThome](http://www.ithome.com.tw/node/5632)
+        + [MITUX - MITUX系統漫談 # csj@pc2.hinet.net](http://bob.gddfpaper.com/COMPUTER/OS/UNIX/A18.htm)
 + microkernel 的 CMU Mach 影響了 MacOS X 10.0 (Darwin) 和 Windows NT，雖然因為 microkernel 效能太差而沒有採用，但還是取其 flexible 的優點併入 monolithic kernel 形成了結合兩者優點的 hybrid kernel
     + [Mach (kernel) - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Mach_(kernel))
     + [Microkernel - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Microkernel)
