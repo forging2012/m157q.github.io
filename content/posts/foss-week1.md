@@ -18,7 +18,7 @@ Modified: 2015-03-03 03:57:39
 #### 課程連結：[20150302 - From Source to Binary: GNU Toolchain 是如何運作？ - 自由開源軟體與專案協作](https://sites.google.com/site/fossapc/list-of-lectures/fromsourcetobinarygnutoolchainshiruheyunzuo)
 #### 投影片連結：[How A Compiler Works: GNU Toolchain](http://www.slideshare.net/jserv/how-a-compiler-works-gnu-toolchain)
     
-+ 1985 Richard Stallman GUN FSF
++ 1985 - Richard Stallman - GNU FSF (GNU Free Software Foundation)
 + 屠龍書 - Syntax Directed Translator (SDT)
 + Embedded System - Toolchain 太新或太舊都不行
 + 第一版 gcc 是 RMS 寫的，之後的版本漸漸偏離 RMS 的初衷 
