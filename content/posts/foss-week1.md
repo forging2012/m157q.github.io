@@ -87,3 +87,12 @@ Modified: 2015-03-02 23:07:39
         + Darwin is built around XNU, a hybrid kernel that combines the Mach 3 microkernel, ...
     + 關於 microkernel 的發展及介紹可以參考 jserv 的 slides [Microkernel Evolution](http://www.slideshare.net/jserv/microkernel-evolution)
 
+---
+
+### Misc.
+
++ [history - Why is the Unix linker called "ld" - Programmers Stack Exchange](http://programmers.stackexchange.com/questions/226573/why-is-the-unix-linker-called-ld)
+    + Linkers in Linux were originally called loaders.
+
+> Linking the Object code File      
+> ...Linux comes with its own linker, called ld. (The name is actually short for "load", and "loader" was what linkers were originally called, in the First Age of Unix, back in the 1970s.)
