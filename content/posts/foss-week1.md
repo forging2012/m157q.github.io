@@ -1,11 +1,11 @@
 Title: FOSS week1
 Slug: foss-week1
-Date: 2015-03-03 03:57:15
+Date: 2015-03-02 12:57:15
 Authors: m157q
 Category: Course
 Tags: Course, FOSS, Note
 Summary: A note for 2015 FOSS course in NCTU, Hsinchu, Taiwan
-Modified: 2015-03-02 23:07:39
+Modified: 2015-03-03 03:57:39
 
 + Android Bionic
     + <https://github.com/android/platform_bionic>
