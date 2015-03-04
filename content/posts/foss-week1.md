@@ -7,6 +7,11 @@ Tags: Course, FOSS
 Summary: A note for 2015 FOSS course in NCTU, Hsinchu, Taiwan
 Modified: 2015-03-04 12:57:39
 
+配合課程使用 Hackpad  
+後續更新請看 [2015 FOSS Week #1 Note - fossapc.hackpad.com](https://fossapc.hackpad.com/2015-FOSS-Week-1-Note-JHXVNsJzbeX)
+
+---
+
 + Android Bionic
     + <https://github.com/android/platform_bionic>
     + <http://en.wikipedia.org/wiki/Bionic_(software)>
