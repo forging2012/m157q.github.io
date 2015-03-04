@@ -5,7 +5,7 @@ Authors: m157q
 Category: Course
 Tags: Course, FOSS
 Summary: A note for 2015 FOSS course in NCTU, Hsinchu, Taiwan
-Modified: 2015-03-03 03:57:39
+Modified: 2015-03-04 12:57:39
 
 + Android Bionic
     + <https://github.com/android/platform_bionic>
@@ -21,6 +21,7 @@ Modified: 2015-03-03 03:57:39
 + 1985 - Richard Stallman - GNU FSF (GNU Free Software Foundation)
 + 屠龍書 - Syntax Directed Translator (SDT)
 + Embedded System - Toolchain 太新或太舊都不行
+> 在嵌入式系統中，Toolchain 的版本匹配度影響到個別軟體元件的正確性，如 kernel, libc, graphics framework 等等，而且通常開發者會從個別套件的原始碼一路編譯並建立 system/firmware image，就會遇到各式編譯錯誤、來自個別工具產生的潛在錯誤，或者需要 workaround 的狀況。於是，開發過程就會限定某個版本的 toolchain
 + 第一版 gcc 是 RMS 寫的，之後的版本漸漸偏離 RMS 的初衷 
 + Dead Code Elimination
 + Code Motion, Loop invariant, Pointer Aliasing 
@@ -44,7 +45,8 @@ Modified: 2015-03-03 03:57:39
     + UIUC Vikram Adve, Chris Lattner in 2000
     + 高度模組化
     + LLVM bitcode (IR)
-    + LLVM 一開始是用 GCC 的 Front-end (GPLv2)，但後來 RMS 在 gcc43 時將授權改為 GPLv3 來反對 LLVM 這種偷幹 Front-end 的方式，導致後來 Apple 發展自己的 Front-end Clang
+    + LLVM 一開始是用 GCC 的 Front-end (GPLv2) 結合自己的 Back-end 成為 llvm-gcc，但 RMS 對 LLVM 這種行為感到非常不滿，並在 gcc43 時將授權改為 GPLv3 來反對 LLVM 這種偷幹 Front-end 的方式，導致後來 Apple 發展自己的 Front-end Clang
+> LLVM 的授權是 BSD License，沒有一定要 GPL 形式的強制釋出原始碼條款，但 llvm-gcc 實際上是一種「掏空」GPL 授權的 gcc 的方式，也就是讓 BSD 授權的部份在整個編譯器系統中越來越多，這是 Richard Stallman 不滿之處，他認為 GPL 在這樣的狀況下，不再保證 GPL 的效力。
     + Clang 採模組化設計 (Clang C API)
         + 可 export AST
         + 改善錯誤訊息
