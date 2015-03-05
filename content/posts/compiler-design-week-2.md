@@ -5,6 +5,7 @@ Authors: m157q
 Category: Course 
 Tags: Course, Compiler 
 Summary: Note for Compiler Design Course in NTHU - week 2
+Modified: 2015/03/05 15:38:00
 
 ## 2015/03/03
 
@@ -114,5 +115,36 @@ Summary: Note for Compiler Design Course in NTHU - week 2
 + G = (V, T, P, S)
     + V - A set of non-terminals
     + T - A set of Terminals
-    + P - A set of productions
-    + S - Start symbol
+    + P - A set of Production Rules
+    + S - Starting Symbol
+
+---
+
+## 2015/03/05
+
+### Terminology
++ Alphabet
++ String
++ Language
+    + L, L(G)
++ Grammar
+    + G
+
+### Derivation Tree
++ [Parse tree - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Parse_tree)
++ **Not to be confused with Abstract syntax tree.**
++ 分類
+    + 直
+    + 橫
++ write grammar for balanced expression with '{' and '}'
+    + balanced: 左右括號數目要相同
++ write grammr for Palindrome (迴文) 
+
+### Ambiguous Grammar
++ [Ambiguous grammar - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Ambiguous_grammar)
+
+### Un-Ambiguous Grammar
++ add **Precedence** into Ambiguous Grammar
+    + Precedence 低的在外部
+    + Precedence 高的在內部
+
