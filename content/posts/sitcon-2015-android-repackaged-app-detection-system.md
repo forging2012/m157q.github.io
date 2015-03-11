@@ -5,6 +5,7 @@ Authors: m157q
 Category: Conf
 Tags: SITCON, SITCON2015, Project, Python, Perl, Java, JavaScript, Scrapy, NetworkX, SAAF, NodeJS, D3JS, Android
 Summary: 今年投稿 SITCON 有幸又被錄取為講者，對於目前沒有打算唸研究所的我，應該也是最後一年當講者了吧，記錄一下今年的感想。
+Modified: 2015-03-12 00:05:27
 
 先說說關於今年 SITCON 的感想好了  
 關於 Talk 的部分可能會敘述比較長XD  
@@ -15,7 +16,10 @@ Summary: 今年投稿 SITCON 有幸又被錄取為講者，對於目前沒有打
 其他都沒有聽 因為都在做簡報 XDrz  這種趕死線的壞習慣真的該改...  
 （但不知道為啥每次靈感都會在死線前有如泉湧）  
 
-能夠見到看到 CCCA 的創社社長的演講真的很感動  
+能夠見到看到 CCCA 創社社長梁伯嵩先生的演講真的很感動  
+從網路的起始開始講起  
+再提到當時 CCCA 在交大做的那些開路先鋒的事  
+至今在社辦都還找得到當年的文件、書籍及辦活動留下來的物品  
 雖然現在待的這個社團或許在歷史上有些紛紛擾擾  
 但我仍認為這個社團的前身就是 CCCA  
 以過去那些 CCCA 的前輩為榜樣  
@@ -35,24 +39,41 @@ Hacker 是無論哪個領域都有的
 真的很過癮  
 感謝辛苦的工作人員們 帶給我這麼一場精彩的會議  
 
-雖然第一年因為幫忙 Open House 而沒參與到 SITCON (當時還在台科大舉辦)
+剩下的時間真的都是在趕簡報  
+順便跟剛好遇到的 jserv 聊天  
+真的很佩服 jserv 的犧牲奉獻精神  
+在聊天的過程中也感受到自己的某些觀念還不夠成熟  
+跟資工相關的許多觀念也還唸的不夠透徹  
+意識到自己只是一味的喜歡 coding  
+卻忽略了 Algorithm, Data Structure, Operating System, Computer Organization, Assembly 等等  
+那些課本上的知識  
+或許是因為當時被迫考試的關係 才感到厭惡  
+現在回頭過來其實蠻後悔自己沒有認真把那些前人的智慧化為己用  
+是時候趁著這股動力和熱血 把那些遺忘的觀念複習一下了  
+
+雖然第一年因為幫忙 Open House 而沒參與到 SITCON (當時還在台科大舉辦)  
 但第二屆和第三屆都有幸成為講者  
 也許也是最後一次了吧  
 目前沒有繼續往研究所升學的打算  
 大概今年就要去從容就義 報效國家了XD  
+真的希望資訊教育能夠持續的推廣下去  
 
 ---
 
 ## 關於本次的 Talk
 
+### Android Repackaged App Detection System
+
 本次演講的投影片在此    
+<https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi>
 <script async class="speakerdeck-embed" data-id="6ab309bf1d5f42ecbeb4bace486631e8" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>      
 
 主要就是介紹在大學時做的專題  
 因為嘗試將許多現有的開放原始碼軟體整合起來  
 剛好跟今年的主題 The Ture Hacker 相呼應  
 投影片裡也有提到原因  
-主要就是 esr 在網路上的一篇知名文章 [How To Become A Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)  
+主要就是 esr ([Eric S. Raymond - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Eric_S._Raymond))  
+在網路上的一篇知名文章 [How To Become A Hacker](http://www.catb.org/esr/faqs/hacker-howto.html)  
 裡頭提到了
 
 > **No problem should ever have to be solved twice.**  
@@ -79,7 +100,7 @@ Dalvik, smali, baksmali, Data Dependence, Flow Dependence, ...
 其實中間也 survey 了很多不同的工具  
 雖然最後沒有採用  
 依稀記得的有  
-Wala, graph-tool 以及各種 Unofficial Android third party API  
+Wala, graph-tool 以及各種 Unofficial Android third party marketplace API  
 也很感謝陳仲寬學長在這過程之中給我們很大的幫忙  
 無論是在傳授給我們相關的知識亦或是給予我們相關論文來閱讀  
 還有國科會計劃申請書的參考範本也是來自學長當年的申請書   
@@ -114,3 +135,12 @@ Trace 許多 Source Code 之後
 在自己撰寫程式碼的方面  
 也明顯感受到了開發經驗與速度的不足   
 各種方面都還有待加強
+
+在農曆新年後 以這場 Talk 作為新年的開始  
+希望新的一年 自己也能不斷地學習新的知識  
+把想唸的書唸完 繼續增強自己的開發能力  
+向那些 True Hackers 看齊 利用自己所掌握的資訊開發能力  
+努力讓這個世界變得更好  
+
+寫到這邊突然好想再重看一次[黑客列傳：電腦革命俠客誌(25週年紀念版)](http://www.books.com.tw/products/0010548392)  
+讓自己回到半世紀前 感受當時那些時代先驅們的熱血精神  
