@@ -5,7 +5,6 @@ Authors: m157q
 Category: Conf
 Tags: SITCON, SITCON2015, Project, Python, Perl, Java, JavaScript, Scrapy, NetworkX, SAAF, NodeJS, D3JS, Android
 Summary: 今年投稿 SITCON 有幸又被錄取為講者，對於目前沒有打算唸研究所的我，應該也是最後一年當講者了吧，記錄一下今年的感想。
-Status: draft
 
 先說說關於今年 SITCON 的感想好了  
 關於 Talk 的部分可能會敘述比較長XD  
