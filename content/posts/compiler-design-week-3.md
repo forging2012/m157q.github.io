@@ -30,6 +30,25 @@ S' -> αS' | ɛ
 
 ## Chapter 3 - Regular Expression
 
-Regular Expresssion aka Regular Grammar, Regular Language, Regular, Regex
+### Regular Expression
++ Regular Expresssion aka Regular Grammar, Regular Language, Regular, Regex  
++ \* - Kleene Closure
+
+### FSA - Finite State Automata
++ Regular Expression <=> Finite State Machine
++ 5-tuple (Q, Σ, δ, q。, F)
+    + Q - a set of states
+    + Σ - an input alphabet, symbol.
+    + δ - a transition function
+    + q。 - the initial state
+    + F - a set of final states
++ DFA vs NFA
++ Finite => State 數量是有限的
++ 沒有 Memory, 無法記憶 alphabet 的數量
+
+### Thompson Construction
++ [Thompson's construction algorithm - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Thompson%27s_construction_algorithm)
++ Transforms a given regular expression into an equivalent nondeterministic finite automaton (NFA)
++ Establishing a conversion between two of many description formats for regular languages.
 
 ---
