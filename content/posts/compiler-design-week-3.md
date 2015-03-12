@@ -5,6 +5,7 @@ Authors: m157q
 Category: Course
 Tags: Cousre, Compiler
 Summary: Note for Compiler Design Course in NTHU - Week 3
+Modified: 2015-03-12 16:20:00
 
 ## 2015/03/10
 
@@ -51,4 +52,3 @@ S' -> αS' | ɛ
 + Transforms a given regular expression into an equivalent nondeterministic finite automaton (NFA)
 + Establishing a conversion between two of many description formats for regular languages.
 
----
