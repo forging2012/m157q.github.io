@@ -144,3 +144,10 @@ Trace 許多 Source Code 之後
 
 寫到這邊突然好想再重看一次[黑客列傳：電腦革命俠客誌(25週年紀念版)](http://www.books.com.tw/products/0010548392)  
 讓自己回到半世紀前 感受當時那些時代先驅們的熱血精神  
+
+---
+
+## SITCON 2015 相簿連結
++ [Sitcon 2015 - an album on Flickr](https://www.flickr.com/photos/sitcon/sets/72157649003614643/)
++ [Sitcon2015 幕後花絮 - an album on Flickr](https://www.flickr.com/photos/sitcon/sets/72157649027037894/)
++ [SITCON2015 by 海哥 - an album on Flickr](https://www.flickr.com/photos/sitcon/sets/72157650915441780/) // 這個拍超多妹子...
