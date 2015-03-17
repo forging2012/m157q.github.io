@@ -50,7 +50,10 @@ Hacker 是無論哪個領域都有的
 或許是因為當時被迫考試的關係 才感到厭惡  
 現在回頭過來其實蠻後悔自己沒有認真把那些前人的智慧化為己用  
 是時候趁著這股動力和熱血 把那些遺忘的觀念複習一下了  
-
+偷偷附上一張與 jserv 的合照  
+![](/images/sitcon-2015-android-repackaged-app-detection-system/jserv.jpg)  
+圖片原連結：<https://www.flickr.com/photos/sitcon/16818827202/in/set-72157649003614643>  
+    
 雖然第一年因為幫忙 Open House 而沒參與到 SITCON (當時還在台科大舉辦)  
 但第二屆和第三屆都有幸成為講者  
 也許也是最後一次了吧  
