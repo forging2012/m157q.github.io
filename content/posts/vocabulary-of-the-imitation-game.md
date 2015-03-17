@@ -742,7 +742,7 @@ a.形容詞
   
 關於破解 Enigma 的方面，呈現了他的天資聰穎以及那種無意的、不近人情的自傲，但其實以現在來看，很明顯就屬於亞斯伯格症的範疇。甚至是之後破解了 Enigma，也處於非常理性的狀態，而阻止了可能讓德軍得知 Enigma 已經被破解的事實。  
   
-在同性戀的部分，描述了從小與人不同，遭受到暴力的霸凌，而 Christopher Morcom 的拯救，與他們之間非常頻繁的互動，讓他發現自己是個同性戀的事實。然而在校長告知 Alan Turing 關於 Christopher Morcom 死於慢性肺結核時，他卻極力否認自己與他的親密關係，顯然是他自己也知道這在英國屬於犯法的事。  
+在同性戀的部分，描述了從小與人不同，遭受到暴力的霸凌，而 Christopher Morcom 的拯救，與他們之間非常頻繁的互動，讓他發現自己是個同性戀的事實。然而在校長告知 Alan Turing 關於 Christopher Morcom 死於慢性肺結核時，他卻極力否認自己與他的親密關係，顯然是他自己也知道這在英國屬於犯法的事。而 Alan Turing 所打造的用來破譯 Enigma 的機器就被他命名為 Christopher，可以看出他對 Alan Turing 有多麼的重要。
    
 還有出現了三次，第一次由 Christopher Morcom 對 Alan Turing、第二次是 Alan Turing 對 Joan Clarke 說、第三次則是 Joan Clarke 在 Alan Turing 已經遭到化學閹割，並肯定 Alan Turing 的一番作為時的這句話，無異是本片想要再三強調的核心概念。
   
