@@ -5,7 +5,7 @@ Authors: m157q
 Category: Course
 Tags: Cousre, Compiler
 Summary: Note for Compiler Design Course in NTHU - Week 3
-Modified: 2015-03-12 16:20:00
+Modified: 2015-03-19 16:00:00
 
 ## 2015/03/10
 
@@ -34,6 +34,8 @@ S' -> αS' | ɛ
 ### Regular Expression
 + Regular Expresssion aka Regular Grammar, Regular Language, Regular, Regex  
 + \* - Kleene Closure
+    + aka Kleene Operator, Kleene Star.
+    + [Kleene star - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Kleene_star)
 
 ### FSA - Finite State Automata
 + Regular Expression <=> Finite State Machine
