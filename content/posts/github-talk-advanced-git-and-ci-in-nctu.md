@@ -108,3 +108,6 @@ git reflog
 git gc
 // delete useless files (unreferenced files) after 90 days when someone do the action
 ```
+
+## Reference
++ [Example at NCTU by johndbritton · Pull Request #132 · muan/emoji · GitHub](https://github.com/muan/emoji/pull/132)
