@@ -5,7 +5,7 @@ Authors: m157q
 Category: Git
 Tags: Git, GitHub
 Summary: GitHub X CCCA X SITCON Talk in NCTU
-Modified: 2015-03-20 20:14:00
+Modified: 2015-03-20 20:18:00
 
 ## Look into .git directory
 
@@ -45,8 +45,8 @@ $ tree
 + objects
     + blob, tree, commit
         + blob
-            + type, bytes, content of blog`
-            + `blob 13hello,world`
+            + type, bytes, content of blob
+            + ex: `blob 13hello,world`
         + tree
             + main file directory for the project
             + tree: point to the next tree object
