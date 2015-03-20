@@ -5,6 +5,7 @@ Authors: m157q
 Category: Git
 Tags: Git, GitHub
 Summary: GitHub X CCCA X SITCON Talk in NCTU
+Modified: 2015-03-20 20:14:00
 
 ## Look into .git directory
 
@@ -120,11 +121,13 @@ git gc
 不過真的覺得 [Mr.Britton](https://github.com/johndbritton) 真的講解得蠻清楚的  
 比較理解 .git folder 裡面的東西是在做什麼用的  
 CI 的部分只有提到 Travis CI 在 GitHub 上面的 Webhook  
-然後 show 一下 GitHub Repo 綁 Traivs CI 後，在 PR 的時候會幫忙跑測試
+然後 show 一下 GitHub Repo 綁 Traivs CI 後  
+在 PR 的時候會幫忙跑測試  
 原本以為會介紹一下 Travis CI 大概要怎麼用  
 看來得自己找時間研究一下了  
+
 然後今天又拿到 Octocat 的新貼紙啦  
 ![Octocat](/images/github-talk-advanced-git-and-ci-in-nctu/octocat.jpg)
-感謝 [muan](https://github.com/muan) 的這則 Twitter [訊息](https://twitter.com/muanchiou/status/571684266490265601)  
+感謝 [muan](https://github.com/muan) 的這則 Twitter [訊息](https://twitter.com/muanchiou/status/571684266490265601) 才有機會在交大聽到這場 Talk  
 原來 <https://github.com/muan/emoji> 是她的 Repo  
 GitHub 上越來越多 emoji 了XDD  
