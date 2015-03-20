@@ -111,3 +111,20 @@ git gc
 
 ## Reference
 + [Example at NCTU by johndbritton · Pull Request #132 · muan/emoji · GitHub](https://github.com/muan/emoji/pull/132)
+
+---
+
+## Thoughts
+
+雖然內容大部份在 GitBook 都有  
+不過真的覺得 [Mr.Britton](https://github.com/johndbritton) 真的講解得蠻清楚的  
+比較理解 .git folder 裡面的東西是在做什麼用的  
+CI 的部分只有提到 Travis CI 在 GitHub 上面的 Webhook  
+然後 show 一下 GitHub Repo 綁 Traivs CI 後，在 PR 的時候會幫忙跑測試
+原本以為會介紹一下 Travis CI 大概要怎麼用  
+看來得自己找時間研究一下了  
+然後今天又拿到 Octocat 的新貼紙啦  
+![Octocat](/images/github-talk-advanced-git-and-ci-in-nctu/octocat.jpg)
+感謝 [muan](https://github.com/muan) 的這則 Twitter [訊息](https://twitter.com/muanchiou/status/571684266490265601)  
+原來 <https://github.com/muan/emoji> 是她的 Repo  
+GitHub 上越來越多 emoji 了XDD  
