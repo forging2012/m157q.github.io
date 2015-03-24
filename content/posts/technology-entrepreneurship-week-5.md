@@ -62,11 +62,15 @@ Summary: Note for the Technology Entrepreneurship Course in NCTU.
 # Thoughts
 
 At first, I thought he was going to talk about those two projects on Kickstarter because he said these two projects both are his students' projects. But, he just mentioned about them without any detials further then started to talk about those Contents and Suggestions for Entrepreneur above which I think all of those things he talked about actually can be found in most of books related to the entrepreneurship in the bookstores. Although I don't think I've learned something new, I can accept that because you know... this kind of speech always need to have such contents.  
+  
 But, he showed about 5 associations in the NCTU which are helping students about their startup company or entrepreneurship in his slides, I thought he was going to talk about the details how these associations in campus will help students to make their startup dreams come ture or some kind of promote students to join these associations or make some introductions about these associations for letting students know more about them. But I was wrong, just more rules and suggestions from books.  
-At last in this speech, the speaker said something like “If u wanna give advices, u need to be successful first, or your opinion is useless because it's not working anywhere.”   
+  
+At last in this speech, the speaker said something like “If u wanna give advices, u need to be successful first, or your opinion is useless because it's not working anywhere.”  
+  
 It just made me kind of angry and don't want to ask any questions because I am “not qualified to give some advices” in his opinion anyway. If I am already a successful entrepreneur, why did I take a course called “Technology Entrepreneurship” which is supposed to teach you about how to become an entrepreneur? It's really ridiculous for me to heard about this.  
+  
 I was going to ask him about:  
-
+  
 + “Why you just kept talking about those things in the books? I wanna learn more about what would student entrepreneurs encounter in their startup business and how you help those students with their startup based on your experience, because I think those real experience is more valuable for us not those things in books you just kept talking in this speech.”  
-
+  
 + “Why you kept talking about that we NCTU students is better than NTU students and know more about how to cooperate with other people without giving any improvement? As myself experience, I have some NTU friends who really know how to cooperate with their teammates. Also, I think NTU is a better place for students to build a startup because there are more and diversified departments in NTU while most of departments in NCTU are all science-related.”
