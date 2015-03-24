@@ -5,6 +5,10 @@ Authors: m157q
 Category: Course
 Tags: Entrepreneurship, speech
 Summary: Note for the Technology Entrepreneurship Course in NCTU.
+Modified: 2015-03-24 16:27:20
+
+
+## 2015/03/24
 
 # Information about the speech
 + Title: Volunteer Entrepreneur to Global Entrepreneur
