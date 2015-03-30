@@ -127,7 +127,7 @@ CI 的部分只有提到 Travis CI 在 GitHub 上面的 Webhook
 看來得自己找時間研究一下了  
 
 然後今天又拿到 Octocat 的新貼紙啦  
-![Octocat](/images/github-talk-advanced-git-and-ci-in-nctu/octocat.jpg)
+![Octocat](/files/github-talk-advanced-git-and-ci-in-nctu/octocat.jpg)
 感謝 [muan](https://github.com/muan) 的這則 Twitter [訊息](https://twitter.com/muanchiou/status/571684266490265601) 才有機會在交大聽到這場 Talk  
 原來 <https://github.com/muan/emoji> 是她的 Repo  
 GitHub 上越來越多 emoji 了XDD  

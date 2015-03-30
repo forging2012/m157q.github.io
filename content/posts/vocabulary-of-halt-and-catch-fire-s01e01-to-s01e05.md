@@ -19,47 +19,47 @@ Modified: 2015-02-18 11:27:00
 看的時候就一直截一些我覺得很 geek 的畫面XD  
     
 + 身為一個專業阿宅，當然要喝 Dr Pepper
-    + ![Dr pepper](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/drpepper.png)
+    + ![Dr pepper](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/drpepper.png)
 + 孩子的教育不能等，修玩具的時候就要教她什麼是 ROM, bits, VFD, Chip    
-    + ![ROM](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_rom.png)
-    + ![bits](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_bits.png)
-    + ![VFD](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_vfd.png)
-    + ![Chip](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_chip.png)
+    + ![ROM](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_rom.png)
+    + ![bits](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_bits.png)
+    + ![VFD](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_vfd.png)
+    + ![Chip](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/toy_chip.png)
 + 開源架構的未來(?) 
-    + ![Open Arch](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/openarch.png)
+    + ![Open Arch](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/openarch.png)
 + Reverse engineering an IBM PC with me.
-    + ![IBM PC](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/ibmpc.png)
-    + ![Reverse Engineering 1](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re1.png)
-    + ![Reverse Engineering 2](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re2.png)
-    + ![Reverse Engineering 3](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re3.png)
-    + ![Reverse Engineering 4](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re4.png)
-    + ![Reverse Engineering 5](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re5.png)
-    + ![Reverse Engineering 6](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re6.png)
-    + ![Reverse Engineering 7](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re7.png)
-    + ![Reverse Engineering 8](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re8.png)
-    + ![Reverse Engineering 9](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re9.png)
-    + ![Reverse Engineering 10](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re10.png)
-    + ![Reverse Engineering 11](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re11.png)
-    + ![Reverse Engineering 12](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re12.png)
+    + ![IBM PC](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/ibmpc.png)
+    + ![Reverse Engineering 1](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re1.png)
+    + ![Reverse Engineering 2](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re2.png)
+    + ![Reverse Engineering 3](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re3.png)
+    + ![Reverse Engineering 4](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re4.png)
+    + ![Reverse Engineering 5](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re5.png)
+    + ![Reverse Engineering 6](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re6.png)
+    + ![Reverse Engineering 7](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re7.png)
+    + ![Reverse Engineering 8](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re8.png)
+    + ![Reverse Engineering 9](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re9.png)
+    + ![Reverse Engineering 10](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re10.png)
+    + ![Reverse Engineering 11](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re11.png)
+    + ![Reverse Engineering 12](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/re12.png)
 + “Computers aren't the thing. They're the thing that gets us to the thing.”
 + Assembly Code
-    + ![ASM 1](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/asm1.png)
-    + ![ASM 2](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/asm2.png)
-    + ![ASM 3](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/asm3.png)
+    + ![ASM 1](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/asm1.png)
+    + ![ASM 2](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/asm2.png)
+    + ![ASM 3](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/asm3.png)
 + Programmer 的工作場所總是如此凌亂XD
-    + ![Coder Room](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/coderroom.png)
+    + ![Coder Room](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/coderroom.png)
 + “They’re just machines for turning pizza into code.” 現在則是把咖啡變代碼?
-    + ![Pizza](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/pizza.png)
+    + ![Pizza](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/pizza.png)
 + “Code monkeys, come here.”
-    + ![Code Monkeys](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/codemonkeys.png)
+    + ![Code Monkeys](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/codemonkeys.png)
 + 一講到 IC, 台灣也出現啦
-    + ![Taiwan](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/taiwan.png)
+    + ![Taiwan](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/taiwan.png)
 + 軟工聖經：人月神話(The Mythical Man-Month) 也出現了
-    + ![TMMM](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/tmmm.png)
+    + ![TMMM](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/tmmm.png)
 + Ada Lovelace - The First Programmer 
-    + ![Ada Lovelace](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/adalovelace.png)
+    + ![Ada Lovelace](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/adalovelace.png)
 + Grace Hopper - The Mother of COBOL, Compiler 先驅 
-    + ![Grace Hopper](/images/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/gracehopper.png)
+    + ![Grace Hopper](/files/vocabularies-in-halt-and-catch-fire-s01e01-to-s01e05/gracehopper.png)
     
 ## Vocabularies
 

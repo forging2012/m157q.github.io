@@ -33,7 +33,7 @@ TAGS_SAVE_AS = 'tags/index.html'
 CATEGORIES_SAVE_AS = 'categories/index.html'
 ARCHIVES_SAVE_AS = 'archives/index.html'
 
-STATIC_PATHS = ['images', 'extra/favicon.ico']
+STATIC_PATHS = ['files', 'extra/favicon.ico']
 
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
