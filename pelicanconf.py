@@ -86,7 +86,7 @@ RELATIVE_URLS = True
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap', 'related_posts', 'share_post', 'pin_to_top']
+PLUGINS = ['sitemap', 'related_posts', 'share_post', 'pin_to_top', 'render_math']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
@@ -101,3 +101,9 @@ SITEMAP = {
     }
 }
 RELATED_POSTS_MAX = 5
+MATH_JAX = {
+    'color' : 'blue',
+    'linebreak_automatic' : True,
+    'responsive' : True,
+    'tex_extensions' : ['color.js']
+}
