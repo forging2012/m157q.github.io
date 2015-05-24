@@ -5,20 +5,28 @@ Authors: m157q
 Category: Python
 Tags: Python, List, Slicing, Magic
 Summary: Some tricks for the list slicing in Python.
+Modified: 2015-05-25 04:26:38
 
 主要是想查 Python 要怎麼漂亮的寫 prepend 一個 item 到 list 時  
 找到了這篇 [append integer to beginning of list in python - Stack Overflow](http://stackoverflow.com/questions/17911091/append-integer-to-beginning-of-list-in-python)
 
 主要就三種寫法：  
 
-第一種，把 item 塞進一個 list 然後再加上原本的 list  
-`l = [item] + l`  
++ 第一種，把 item 塞進一個 list 然後再加上原本的 list  
+```
+l = [item] + l
+```  
 
-第二種，用 built-in 的 list.insert  
-`l.insert(0, item)` 
++ 第二種，用 built-in 的 list.insert  
+```
+l.insert(0, item)
+``` 
 
-第三種，評分最低、也是引起我好奇的寫法  
-`l[:0] = [item]`  
++ 第三種，評分最低、也是引起我好奇的寫法  
+```
+l[:0] = [item]
+``` 
+ 
 試了一下，發現真的可以這樣做，但在這之前從來沒看過這寫法。  
 於是就去翻了一下官方的文件  
 [5. Data Structures — Python 3.4.3 documentation](https://docs.python.org/3.4/tutorial/datastructures.html)  
@@ -37,16 +45,39 @@ Extend the list by appending all the items in the given list. Equivalent to a[le
 
 ---
 
-1. `l[:0] = [item]` equal to `l.insert(0, x)`
-2. `l[len(l):] = [x]` equal to `l.append(x)` equal to `l.insert(len(l), x)`
-3. `l[len(l):] = [a, b, c]` equal `l.extend([a, b, c])`
++ prepend
+```
+l[:0] = [item]
+```  
+```
+l.insert(0, x)
+```
++ list.append
+```
+l[len(l):] = [x]
+```
+```
+l.append(x)
+```
+```
+l.insert(len(l), x)
+```
++ list.extend
+```
+l[len(l):] = [a, b, c]
+```
+```
+l.extend([a, b, c])
+```
 
 ---
 
 1 和 2 都沒啥特別的，用 insert 和 append 的可讀性其實比較高。  
 主要是 3 的變化型  
 
-```l[i:i] = [a, b, c]```  
+```
+l[i:i] = [a, b, c]
+```  
 
 這會在 l 原本的的 i-1 和 i 中 insert a, b, c 這三個 elements，  
 可以看作是可 insert 任意位置的 list.extend，  
