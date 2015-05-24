@@ -35,6 +35,8 @@ endif
 # For quick create/edit
 PAGESDIR=$(INPUTDIR)/pages
 POSTSDIR=$(INPUTDIR)/posts
+DRAFTSDIR=$(INPUTDIR)/drafts
+
 DATE := $(shell date +'%Y-%m-%d %H:%M:%S')
 SLUG := $(shell echo '${NAME}' | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
 EXT ?= md
@@ -58,6 +60,10 @@ help:
 	@echo '   make s3_upload                   upload the web site via S3         '
 	@echo '   make cf_upload                   upload the web site via Cloud Files'
 	@echo '   make github                      upload the web site via gh-pages   '
+	@echo '   make newpost                     create a new post under DRAFTSDIR  '
+	@echo '   make editpost                    edit a post under POSTDIR          '
+	@echo '   make newpage                     create a new post under PAGESDIR   '
+	@echo '   make editpage                    edit a post under PAGESDIR         '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
@@ -122,16 +128,16 @@ endif
 
 newpost:
 ifdef NAME
-	echo "Title: $(NAME)" > $(POSTSDIR)/$(SLUG).$(EXT)
-	echo "Slug: $(SLUG)" >> $(POSTSDIR)/$(SLUG).$(EXT)
-	echo "Date: $(DATE)" >> $(POSTSDIR)/$(SLUG).$(EXT)
-	echo "Authors: $(AUTHOR)" >> $(POSTSDIR)/$(SLUG).$(EXT)
-	echo "Category: "    >> $(POSTSDIR)/$(SLUG).$(EXT)
-	echo "Tags: "        >> $(POSTSDIR)/$(SLUG).$(EXT)
-	echo "Summary: "     >> $(POSTSDIR)/$(SLUG).$(EXT)
-	echo "Status: draft" >> $(POSTSDIR)/$(SLUG).$(EXT)
-	echo ""     >> $(POSTSDIR)/$(SLUG).$(EXT)
-	${EDITOR} ${POSTSDIR}/${SLUG}.${EXT}
+	echo "Title: $(NAME)" > $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Slug: $(SLUG)" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Date: $(DATE)" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Authors: $(AUTHOR)" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Category: "    >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Tags: "        >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Summary: "     >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Status: draft" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo ""     >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	${EDITOR} ${DRAFTSDIR}/${SLUG}.${EXT}
 else
 	@echo 'Variable NAME is not defined.'
 	@echo 'Do make newpost NAME='"'"'Post Name'"'"
