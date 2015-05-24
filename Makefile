@@ -135,7 +135,6 @@ ifdef NAME
 	echo "Category: "    >> $(DRAFTSDIR)/$(SLUG).$(EXT)
 	echo "Tags: "        >> $(DRAFTSDIR)/$(SLUG).$(EXT)
 	echo "Summary: "     >> $(DRAFTSDIR)/$(SLUG).$(EXT)
-	echo "Status: draft" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
 	echo ""     >> $(DRAFTSDIR)/$(SLUG).$(EXT)
 	${EDITOR} ${DRAFTSDIR}/${SLUG}.${EXT}
 else
