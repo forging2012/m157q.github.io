@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 # Basic settings
 AUTHOR = u'm157q'
 SITENAME = u'Just for noting'
-PATH = 'content'
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_LANG = u'en'
 DEFAULT_PAGINATION = 10
@@ -15,6 +14,11 @@ THEME = 'themes/plumage'
 USE_FOLDER_AS_CATEGORY = False
 SUMMARY_MAX_LENGTH = 20
 
+# Directories for Pelican processing
+PATH = 'content'
+PAGE_PATHS = ['pages']
+ARTICLE_PATHS = ['posts']
+ARTICLE_EXCLUDES = ['drafts']
 
 # URLs and Paths
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
