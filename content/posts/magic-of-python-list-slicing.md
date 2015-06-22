@@ -5,7 +5,7 @@ Authors: m157q
 Category: Python
 Tags: Python, List, Slicing, Magic
 Summary: Some tricks for the list slicing in Python.
-Modified: 2015-05-25 04:26:38
+Modified: 2015-06-23 05:47:38
 
 主要是想查 Python 要怎麼漂亮的寫 prepend 一個 item 到 list 時  
 找到了這篇 [append integer to beginning of list in python - Stack Overflow](http://stackoverflow.com/questions/17911091/append-integer-to-beginning-of-list-in-python)
@@ -47,33 +47,45 @@ Extend the list by appending all the items in the given list. Equivalent to a[le
 
 + prepend
 ```
-l[:0] = [item]
+l[:0] = [x]
 ```  
+等於  
 ```
 l.insert(0, x)
 ```
+
+---
+
 + list.append
 ```
 l[len(l):] = [x]
 ```
+等於  
 ```
 l.append(x)
 ```
+等於  
 ```
 l.insert(len(l), x)
 ```
+
+---
+
 + list.extend
 ```
 l[len(l):] = [a, b, c]
 ```
+等於  
 ```
 l.extend([a, b, c])
 ```
 
 ---
 
-1 和 2 都沒啥特別的，用 insert 和 append 的可讀性其實比較高。  
-主要是 3 的變化型  
+prepend 和 append 的變化型都沒啥特別的，  
+用 insert 和 append 的可讀性其實比較高。  
+主要是 extend 的變化型有些有趣的東西可以討論。  
+例如：  
 
 ```
 l[i:i] = [a, b, c]
