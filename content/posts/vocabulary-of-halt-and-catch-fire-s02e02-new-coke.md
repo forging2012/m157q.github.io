@@ -4,7 +4,7 @@ Date: 2015-06-25 13:09:14
 Authors: m157q
 Category: Life
 Tags: Halt and Catch Fire, TV Series, Geek, Vocabulary, Learn English
-Summary: 
+Summary: Same as title.
 
 ```
 abysmal
@@ -19,7 +19,7 @@ a.形容詞
 ---
 
 + [tropane alkaloid](https://en.wikipedia.org/wiki/Tropane_alkaloid) - 莨菪烷生物鹼
-+ [tropane](https://en.wikipedia.org/wiki/Tropane) - 莨菪烷 
++ [tropane](https://en.wikipedia.org/wiki/Tropane) - 莨菪烷
 ```
 莨菪烷（英語：Tropane）是一種含氮橋環有機化合物，其名稱源於茄科植物莨菪（天仙子）。
 它主要因一類它的名為莨菪烷生物鹼的衍生物而為人們所知，而這類生物鹼包括了許多藥物， 如阿托品和古柯鹼。
