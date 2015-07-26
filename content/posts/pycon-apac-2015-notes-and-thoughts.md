@@ -99,12 +99,16 @@ PyCon 真的每年都有不一樣的東西，
 所以都是用下班或是假日的時間義務幫忙，
 真的很感謝他們辛苦的籌備！
 
----
+喔 對了 因為今年 irc channel 真的是有夠冷清
+所以官方開了個 gitter 代替 irc 的聊天功能
+想看聊天記錄的人可以去看看
+<https://gitter.im/pycontw/pyconapac2015>
+
 
 心得就是上面的部分啦
-
 以下是三天議程中我自己紀錄的筆記，附上 Hackpad 共筆連結：
 
+---
 
 + Date: 2015/06/05 - 2015/06/07
 [Slides of PyCon APAC 2015 - hackpad.com](https://hackpad.com/Slides-of-PyCon-APAC-2015-xyLGxKpDgwP)
