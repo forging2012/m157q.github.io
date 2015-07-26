@@ -56,7 +56,7 @@ source: <https://www.facebook.com/photo.php?fbid=10206661768324121&set=a.1209323
 
 Badge System & Bingo 令我印象深刻的程度僅次於 Night Party。
 
-由於今年的 Badge 是 RIFD card，
+由於今年的 Badge 是 RFID card，
 在各個廠商攤位以及會議室的門口都有 RPi 做好的 RFID Reader，
 會眾到贊助廠商的攤位可以 Check-in，
 一方面是讓廠商得到你的 email，之後可以寄送一些廣告或者是徵才訊息給你，
