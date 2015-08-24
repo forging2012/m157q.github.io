@@ -40,15 +40,27 @@ Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Lin
 
 ---
 
-> 以下環境為 MacBookAir6,2 (Macbook Air mid 2013)，不同的 MacBook 會有不同的問題。
-> 詳見 <https://wiki.archlinux.org/index.php/MacBook#Model-specific_information>
+以下環境為 MacBookAir6,2 (Macbook Air mid 2013)
+不同 model 的 MacBook 會有不同的問題
+詳見 <https://wiki.archlinux.org/index.php/MacBook#Model-specific_information>
+由於我是採用把 OS X 洗掉直接裝 Arch Linux 的方式，並不是雙系統
+所以安裝方式與一般的 Arch Linux 安裝並無太大不同，
+故本篇文章會著重在裝好之後的一些調整
+
+如果有人想灌成 Ubuntu 的話，可以參考 <https://help.ubuntu.com/community/MacBookAir>
+(但上面最新的資料似乎只有到 2013 年的機種就是，當然也歡迎勇者測試之後貢獻)
+
+> 警告：MacbookAir6,2 的網卡在 Linux 上"有可能"不被支援(需視網卡型號)，
+> 所以可能得另購 USB 無線網卡才有無線網路
+> 詳情請見底下關於 Wi-Fi 的部份
+
 
 # Install Arch Linux Only (No OS X Dual Boot) on MacBook Air
 
 > WARNING: After erasing OS X, We can only update the MacBook Air firmware via the external drive which has already installed OS X.
 
 1. Make Arch Linux bootable Live USB
-    + Go to <> and download the newest Arch Linux iso.
+    + Go to <https://www.archlinux.org/download/> and download the newest Arch Linux iso.
     + Plug in a USB drive
     + use `diskutil list` to find the USB dirve `/dev/sdX`
     + `dd if=$(path to arch linux iso) of=/dev/rsdX bs=1m`
@@ -90,14 +102,39 @@ make install
     + [xorg-xrdb](https://wiki.archlinux.org/index.php/X_resources) for .Xresources, some config related to X Window
 
 ### Wi-Fi
-+ <https://wiki.archlinux.org/index.php/MacBook#Wi-Fi>
+不同型號的網卡會有不同的問題，這部份也需要多加注意。
+光是參考 <https://wiki.archlinux.org/index.php/MacBook#Wi-Fi> 可能不夠
+必須再自行找些相關資料，我在這部份卡了一陣子。
+
+先確認是哪張網卡
+MacBookAir6,2 沒意外的話應該都是 BCM4360 這張
+但還是有細節得注意
+
 ```
-$ lspci |grep Network
-03:00.0 Network controller: Broadcom Corporation BCM4360 802.11ac Wireless Network Adapter (rev 03)
+$ lspci -vnn |grep 0280   
+03:00.0 Network controller [0280]: Broadcom Corporation BCM4360 802.11ac Wireless Network Adapter [14e4:43a0] (rev 03)
 ```
+
+Broadcom BCM4360 這張網卡有兩種  
+一種是 14e4:43a0, 另外一種是 14e4:4360  
+根據 <https://wireless.wiki.kernel.org/en/users/Drivers/b43?highlight=%28b43%29#Supported_devices>  
+43a0 這張是被 wl 驅動程式支援的，所以如果是這張的話可以用無線網路  
+4360 這張則是不被支援的，所以可能需要另外購買無線網卡  
+(我沒有親自測試過，如果有勇者或是有經驗的人歡迎回覆告知)  
+
+43a0 的話照著底下的指令做應該就可以使用無線網路連網了  
 + `yaourt -S broadcom-wl-dkms`  # follow the postinstall instructions
-+ `sudo pacman -S dialog wpa_supplicant`   # for using wifi-menu
 + `sudo pacman -S iw`
++ `sudo pacman -S wicd-gtk`
+```
+==> You need to restart the dbus service after
+==> upgrading wicd.
+==> Disable networkmanager, dhcpcd or other networking
+==> utility and add 'wicd' to your systemd configuration.
+```
+> 記得 disable dhcpcd 然後 enable wicd，
+> dhcpcd 跟 wicd 會衝突，開著 dhcpcd 的時候使用 wicd 的話
+> 會無法使用無線網路連線，錯誤訊息也看不出啥端倪，我就是卡在這很久Orz
 
 ### File Manager
 + `sudo pacman -S pcmanfm`
@@ -122,7 +159,6 @@ options hid_apple iso_layout=0
 + `sudo pacman -S xf86-input-synaptics`  # only basic functions
 or
 + `yaourt xf86-input-mtrack-git`  #for OS X like touchpad and flexible configuration
-
 ```
 /usr/share/X11/xorg.conf.d/10-mtrack.conf
 ---
@@ -157,10 +193,19 @@ defaults.ctl.card 1
 + `cp -r /usr/share/awesome/themes ~/.config/awesome/`
 
 ### Power Management
++ <>
 + `sudo pacman -S acpi`
 
-### Monitor Birghtness
+### Bluetooth
 
+### Monitor
+#### Dual Display
+#### Birghtness
++ `sudo pacman -S xorg-xbacklight`
++ `yaourt -S mba6x_bl-dkms`
++ (optional) `yaourt -S lightum-git`
+    + For auto adjust keyboard and monitor birghtness by light sensor
+    + The AUR version has bug, use this fork version <https://github.com/esoleyman/lightum>
 
 ### Chinese
 #### IME
@@ -176,17 +221,20 @@ defaults.ctl.card 1
     + <https://addons.mozilla.org/en-US/firefox/addon/flashblock/>
 
 #### Fonts
-+ `sudo pacman -S wqy-zenhei`
++ `sudo pacman -S wqy-zenhei adobe-source-han-sans-tw-fonts`
 
 ---
 
 There are my personal needed below. It's optional.
+<https://wiki.archlinux.org/index.php/List_of_applications>
 
 ## Misc
 + `sudo pacman -S virtualbox`
++ `sudo pacman -S unrar`
 
 ### Network
 + `sudo pacman -S mosh mtr wget nmap`
++ `sudo pacman -S dns-tools`   # for dig
 
 ### Google Drive
 
@@ -208,12 +256,17 @@ There are my personal needed below. It's optional.
 + `sudo pacman -S htop glances lm_sensors`
 
 ### Multi-Media
++ `sudo pacman -S eog`
 + `sudo pacman -S vlc`
 + `yaourt -S wine-git`
     + need to uncomment multilib in /etc/pacman.conf first
 + `sudo pacman -S playonlinux`
 
+### Office
++ `sudo pacman -S evince`   #for pdf
+
 ## App
+
 + TweetDeck
 + Slack
     + <https://github.com/raelgc/scudcloud>
@@ -234,3 +287,5 @@ There are my personal needed below. It's optional.
 + [Beginners' guide - ArchWiki](https://wiki.archlinux.org/index.php/Beginners'_guide)
 + [xf86-input-mtrack/README.md at master · BlueDragonX/xf86-input-mtrack · GitHub](https://github.com/BlueDragonX/xf86-input-mtrack/blob/master/README.md)
 + [MacBook - ArchWiki](https://wiki.archlinux.org/index.php/MacBook#Mid_2013_13.22_-_Version_6.2C2)
++ [List of applications - ArchWiki](https://wiki.archlinux.org/index.php/List_of_applications)
++ [MacBookAir6-2/Trusty - Community Help Wiki](https://help.ubuntu.com/community/MacBookAir6-2/Trusty#Bluetooth)
