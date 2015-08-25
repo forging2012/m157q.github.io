@@ -82,10 +82,25 @@ Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Lin
 
 ---
 
+> 底下其實有些調整不是那麼必要
+> 可能直接 `sudo pacman -S gnome-control-center` 就可以解掉許多問題
+> 只是個人覺得 gnome 太肥，想要用些 light weight 的 packages
+> 覺得麻煩的人可以直接裝 gnome 的東西，然後再視情況安裝需要的東西
+> 應該可以節省一些時間
+
 # Post-Install
 + <https://wiki.archlinux.org/index.php/MacBook#Post-installation>
 + <https://wiki.archlinux.org/index.php/General_recommendations>
 + Install [yaourt](https://aur.archlinux.org/packages/yaourt/)
+    + `sudo mkdir /var/cache/yaourt`
+    + save tarball to /var/cache/yaourt
+```
+/etc/yaourtrc
+---
+EXPORT=1
+EXPORTDIR="/var/cache/yaourt"
+```
+
 
 ## Configs
 ### dotfiles
@@ -96,10 +111,15 @@ cd rcfiles
 make install
 ```
 
+
+### Disable Mac Boot Sound
+
+
 ### Xorg
 + `sudo pacman -S xcompmgr xorg-xrdb`
     + [xcommpgr](https://wiki.archlinux.org/index.php/Xcompmgr) for simple effect like transparency of guake
     + [xorg-xrdb](https://wiki.archlinux.org/index.php/X_resources) for .Xresources, some config related to X Window
+
 
 ### Wi-Fi
 不同型號的網卡會有不同的問題，這部份也需要多加注意。
@@ -122,7 +142,7 @@ Broadcom BCM4360 這張網卡有兩種
 4360 這張則是不被支援的，所以可能需要另外購買無線網卡  
 (我沒有親自測試過，如果有勇者或是有經驗的人歡迎回覆告知)  
 
-43a0 的話照著底下的指令做應該就可以使用無線網路連網了  
+43a0 的話照著底下的指令做應該就可以使用無線網路連網了 (kerel 為 Linux 4.1.5-1)
 + `yaourt -S broadcom-wl-dkms`  # follow the postinstall instructions
 + `sudo pacman -S iw`
 + `sudo pacman -S wicd-gtk`
@@ -136,8 +156,10 @@ Broadcom BCM4360 這張網卡有兩種
 > dhcpcd 跟 wicd 會衝突，開著 dhcpcd 的時候使用 wicd 的話
 > 會無法使用無線網路連線，錯誤訊息也看不出啥端倪，我就是卡在這很久Orz
 
+
 ### File Manager
 + `sudo pacman -S pcmanfm`
+
 
 ### Keyboard
 + `sudo pacman -S xorg-xmodmap`  #for changing keymap like swap Ctrl and Caps Lock
@@ -154,6 +176,12 @@ options hid_apple iso_layout=0
 + `yaourt -S kbdlight`
 + `sudo pacman -S sxhkd`
     + use sxhkd to combine hotkey for kbdlight
+    + <https://wiki.archlinux.org/index.php/Sxhkd>
++ `sudo pacman -S xorg-xev`
+    + For chekcing the key value of keyboard
+
+#### Function keys
+
 
 ### Synaptic (Touchpad)
 + `sudo pacman -S xf86-input-synaptics`  # only basic functions
@@ -178,28 +206,57 @@ Section "InputClass"
 EndSection
 ```
 
+### Bluetooth (Headset)
++ links
+    + <https://wiki.archlinux.org/index.php/Bluetooth>
+    + <https://wiki.archlinux.org/index.php/Blueman>
+    + <https://wiki.archlinux.org/index.php/Bluetooth_headset>
++ `sudo pacman -S bluez bluez-utils bluez-libs bluez-firmware blueman pulseaudio-bluetooth pulseaudio-alsa pavucontrol`
++ `sudo modprobe btusb`
++ `sudo systemctl enable bluetooth`
++ `sudo systemctl start bluetooth`
++ `blueman-manager`
+    + scan, pair, connect
++ `pavucontrol`
+    + Change sound channel to bluetooth headset
+
+
+
 ### Sound
 + `sudo pacman -S xf86-video-intel alsa-utils` 
     + alsa-utils include alsamixer, amixer  
-+ Create `/etc/asound.conf` and add the content below. //Important
++ Add the content below to `/etc/asound.conf` //Important
+    + `/etc/asound.conf` should be created after installed `pulseaudio-alsa`
 ```
+/etc/asound.conf
+---
 defaults.pcm.card 1
 defaults.pcm.device 0
 defaults.ctl.card 1
 ```
 
+
 ### awesomewm
 + `sudo pacman -S awesome vicious`
 + `cp -r /usr/share/awesome/themes ~/.config/awesome/`
 
-### Power Management
-+ <>
-+ `sudo pacman -S acpi`
 
-### Bluetooth
+### Power Management
++ <https://wiki.archlinux.org/index.php/Power_management>
++ `sudo pacman -S acpi powertop tlp`
+
+
 
 ### Monitor
 #### Dual Display
++ <https://wiki.archlinux.org/index.php/Multihead>
++ `sudo pacman -S xorg-xrandr`
+    + <https://wiki.archlinux.org/index.php/Xrandr>
+    + xrandr should work. (But my 1280x720 external display only get 1027x768 support)
++ For more friendly setting, install `autorandr-git` from AUR
+    + `yaourt -S autorandr-git pm-utils xorg-xdpyinfo`
+        + pm-utils: For changing autorandr profile on thaw/resume
+        + xorg-xdpyinfo: For detecting the primary XRandR output
 #### Birghtness
 + `sudo pacman -S xorg-xbacklight`
 + `yaourt -S mba6x_bl-dkms`
@@ -207,7 +264,12 @@ defaults.ctl.card 1
     + For auto adjust keyboard and monitor birghtness by light sensor
     + The AUR version has bug, use this fork version <https://github.com/esoleyman/lightum>
 
+### USB
++ `yaourt -S pmount`
+
+
 ### Chinese
+
 #### IME
 + `sudo pacman -S gcin`
 + `sudo pacman -S libchewing`  # for chewing input method
@@ -215,7 +277,7 @@ defaults.ctl.card 1
 + `sudo gtk-query-immodules-2.0 --update-cache`
 
 #### Browser
-+ `sudo pacman -S firefox firefox-i18n-zh-tw
++ `sudo pacman -S firefox firefox-i18n-zh-tw`
 + Flash
     + `sudo pacman -S flashplugin`
     + <https://addons.mozilla.org/en-US/firefox/addon/flashblock/>
@@ -232,28 +294,37 @@ There are my personal needed below. It's optional.
 + `sudo pacman -S virtualbox`
 + `sudo pacman -S unrar`
 
+
 ### Network
 + `sudo pacman -S mosh mtr wget nmap`
 + `sudo pacman -S dns-tools`   # for dig
 
+
 ### Google Drive
+
 
 ### Python 
 + `sudo pacman -S python2 python-pip`
 + `sudo pip install virtualenvwrapper`
 
+
 ### GitHub
 + Add SSH Key
     + <https://help.github.com/articles/generating-ssh-keys/#platform-linux>
 
+
 ### Screenshot
 + `sudo pacman -S shutter`
+
 
 ### Terminal
 + `sudo pacman -S rxvt-unicode guake`
 
+
 ### Monitoring
 + `sudo pacman -S htop glances lm_sensors`
+    + `sudo sensors-detect`
+
 
 ### Multi-Media
 + `sudo pacman -S eog`
@@ -262,8 +333,10 @@ There are my personal needed below. It's optional.
     + need to uncomment multilib in /etc/pacman.conf first
 + `sudo pacman -S playonlinux`
 
+
 ### Office
 + `sudo pacman -S evince`   #for pdf
+
 
 ## App
 
@@ -272,8 +345,12 @@ There are my personal needed below. It's optional.
     + <https://github.com/raelgc/scudcloud>
     + `yaourt -S scudcloud`
 + Gitter
-+ Pocket
-+ Messenger
+    + `yaourt -S gitter`
++ Facebook Messenger
+    + `yaourt -S messengerfordesktop`
++ Popcorn-Time
+    + `yaourt -S popcorntime`
+    + Need some modifications about sha256sum and \_gitname
 
 ---
 
@@ -288,4 +365,8 @@ There are my personal needed below. It's optional.
 + [xf86-input-mtrack/README.md at master · BlueDragonX/xf86-input-mtrack · GitHub](https://github.com/BlueDragonX/xf86-input-mtrack/blob/master/README.md)
 + [MacBook - ArchWiki](https://wiki.archlinux.org/index.php/MacBook#Mid_2013_13.22_-_Version_6.2C2)
 + [List of applications - ArchWiki](https://wiki.archlinux.org/index.php/List_of_applications)
-+ [MacBookAir6-2/Trusty - Community Help Wiki](https://help.ubuntu.com/community/MacBookAir6-2/Trusty#Bluetooth)
++ [MacBookAir6-2/Trusty - Community Help Wiki](https://help.ubuntu.com/community/MacBookAir6-2/Trusty)
++ [Apple Keyboard - ArchWiki](https://wiki.archlinux.org/index.php/Apple_Keyboard)
++ [Sxhkd - ArchWiki](https://wiki.archlinux.org/index.php/Sxhkd)
++ [Bluetooth - ArchWiki](https://wiki.archlinux.org/index.php/Bluetooth)
++ [Bluetooth headset - ArchWiki](https://wiki.archlinux.org/index.php/Bluetooth_headset)
