@@ -65,6 +65,7 @@ jpg, gif, png, bmp, avi, exe, mpg, wav, riff, wmv, mov, pdf, ole, doc, zip, rar,
 + -v 的話可以把 log print 到 stdout  
 
 總之用法大概就是這樣  
+對了 要注意一下 -o 參數接的目標位置的容量夠不夠大，不夠大的話可能會悲劇(?)  
 
 
 ### 結果
