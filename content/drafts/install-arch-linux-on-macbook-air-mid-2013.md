@@ -4,7 +4,10 @@ Date: 2015-08-19 14:08:04
 Authors: m157q
 Category: Note
 Tags: Arch Linux, MacBook Air, Linux
+Modified: 2015-08-27 02:55:40  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。
+
+---
 
 > 使用上遇到問題，才有動力去解決、改善、貢獻並回饋程式碼到上游。  
 
@@ -79,6 +82,7 @@ Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Lin
 5. Install Arch Linux (Just like the normal installation with a little different)
     + [Beginners' guide - ArchWiki](https://wiki.archlinux.org/index.php/Beginners'_guide)
     + Important => [MacBook - ArchWiki](https://wiki.archlinux.org/index.php/MacBook#Arch_Only_Installation)
+    + Need to be aware about the EFI related options
 
 ---
 
@@ -181,6 +185,8 @@ options hid_apple iso_layout=0
     + For chekcing the key value of keyboard
 
 #### Function keys
++ <https://wiki.archlinux.org/index.php/Sxhkd>
+> to be continued...
 
 
 ### Synaptic (Touchpad)
@@ -244,19 +250,18 @@ defaults.ctl.card 1
 ### Power Management
 + <https://wiki.archlinux.org/index.php/Power_management>
 + `sudo pacman -S acpi powertop tlp`
-
-
+> to be continued...
 
 ### Monitor
 #### Dual Display
 + <https://wiki.archlinux.org/index.php/Multihead>
 + `sudo pacman -S xorg-xrandr`
     + <https://wiki.archlinux.org/index.php/Xrandr>
-    + xrandr should work. (But my 1280x720 external display only get 1027x768 support)
-+ For more friendly setting, install `autorandr-git` from AUR
-    + `yaourt -S autorandr-git pm-utils xorg-xdpyinfo`
-        + pm-utils: For changing autorandr profile on thaw/resume
-        + xorg-xdpyinfo: For detecting the primary XRandR output
+    + xrandr should work.
+        + But my 1280x720 external display only get 1024x768 support
+        + Maybe the problem is on the offical thunderbolt2VGA adapter?
++ For more friendly setting, `sudo pacman -S lxrandr` 
+
 #### Birghtness
 + `sudo pacman -S xorg-xbacklight`
 + `yaourt -S mba6x_bl-dkms`
@@ -307,6 +312,9 @@ There are my personal needed below. It's optional.
 + `sudo pacman -S python2 python-pip`
 + `sudo pip install virtualenvwrapper`
 
+#### Pelican
++ `pip2 install pelican markdown ghp-impor`
+
 
 ### GitHub
 + Add SSH Key
@@ -336,11 +344,18 @@ There are my personal needed below. It's optional.
 
 ### Office
 + `sudo pacman -S evince`   #for pdf
++ `sudo pacman -S libreoffice`
 
 
 ## App
 
 + TweetDeck
+    + `yaourt -S nwjs-bin`
+    + <https://github.com/passcod/twd> 
+        + `git clone https://github.com/passcod/twd.git`
+        + `cd twd`
+        + `nw .`
+        + Still buggy and need package on AUR
 + Slack
     + <https://github.com/raelgc/scudcloud>
     + `yaourt -S scudcloud`
