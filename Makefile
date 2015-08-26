@@ -59,11 +59,12 @@ help:
 	@echo '   make ftp_upload                  upload the web site via FTP        '
 	@echo '   make s3_upload                   upload the web site via S3         '
 	@echo '   make cf_upload                   upload the web site via Cloud Files'
-	@echo '   make github                      upload the web site via gh-pages   '
-	@echo '   make newpost                     create a new post under DRAFTSDIR  '
-	@echo '   make editpost                    edit a post under POSTDIR          '
-	@echo '   make newpage                     create a new post under PAGESDIR   '
-	@echo '   make editpage                    edit a post under PAGESDIR         '
+	@echo '   make github    MSG=              upload the web site via gh-pages   '
+	@echo '   make newdraft  NAME=             create a new draft under DRAFTSDIR '
+	@echo '   make editdraft NAME=             edit a post under DRAFTSDIR         '
+	@echo '   make editpost  NAME=             edit a post under POSTDIR          '
+	@echo '   make newpage   NAME=             create a new post under PAGESDIR   '
+	@echo '   make editpage  NAME=             edit a post under PAGESDIR         '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
@@ -126,7 +127,7 @@ else
 	@echo 'Do make github MSG='"'"'GitHub commit message'"'"
 endif
 
-newpost:
+newdraft:
 ifdef NAME
 	echo "Title: $(NAME)  " > $(DRAFTSDIR)/$(SLUG).$(EXT)
 	echo "Slug: $(SLUG)  " >> $(DRAFTSDIR)/$(SLUG).$(EXT)
@@ -139,7 +140,16 @@ ifdef NAME
 	${EDITOR} ${DRAFTSDIR}/${SLUG}.${EXT}
 else
 	@echo 'Variable NAME is not defined.'
-	@echo 'Do make newpost NAME='"'"'Post Name'"'"
+	@echo 'Do make newdraft NAME='"'"'Title of the article'"'"
+endif
+
+editdraft:
+ifdef NAME
+	echo "Modified: $(DATE)  " >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	${EDITOR} ${DRAFTSDIR}/${SLUG}.${EXT}
+else
+	@echo 'Variable NAME is not defined.'
+	@echo 'Do make editpost NAME='"'"'Title of the article'"'"
 endif
 
 editpost:
@@ -148,15 +158,14 @@ ifdef NAME
 	${EDITOR} ${POSTSDIR}/${SLUG}.${EXT}
 else
 	@echo 'Variable NAME is not defined.'
-	@echo 'Do make editpost NAME='"'"'Post Name'"'"
+	@echo 'Do make editpost NAME='"'"'Title of the article'"'"
 endif
 
 newpage:
 ifdef NAME
-	echo "Title: $(NAME)" >  $(PAGESDIR)/$(SLUG).$(EXT)
-	echo "Slug: $(SLUG)" >> $(PAGESDIR)/$(SLUG).$(EXT)
-	echo ""              >> $(PAGESDIR)/$(SLUG).$(EXT)
-	echo ""              >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo "Title: $(NAME)  " > $(PAGESDIR)/$(SLUG).$(EXT)
+	echo "Slug: $(SLUG)  " >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo ""                >> $(PAGESDIR)/$(SLUG).$(EXT)
 	${EDITOR} ${PAGESDIR}/${SLUG}.$(EXT)
 else
 	@echo 'Variable NAME is not defined.'
@@ -165,11 +174,11 @@ endif
 
 editpage:
 ifdef NAME
-	echo "Modified: $(DATE)" >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo "Modified: $(DATE)  " >> $(PAGESDIR)/$(SLUG).$(EXT)
 	${EDITOR} ${PAGESDIR}/${SLUG}.$(EXT)
 else
 	@echo 'Variable NAME is not defined.'
 	@echo 'Do make editpage NAME='"'"'Page Name'"'"
 endif
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github newpost editpost newpage editpage
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github newdraft editdraft editpost newpage editpage
