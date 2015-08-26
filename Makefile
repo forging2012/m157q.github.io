@@ -128,13 +128,13 @@ endif
 
 newpost:
 ifdef NAME
-	echo "Title: $(NAME)" > $(DRAFTSDIR)/$(SLUG).$(EXT)
-	echo "Slug: $(SLUG)" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
-	echo "Date: $(DATE)" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
-	echo "Authors: $(AUTHOR)" >> $(DRAFTSDIR)/$(SLUG).$(EXT)
-	echo "Category: "    >> $(DRAFTSDIR)/$(SLUG).$(EXT)
-	echo "Tags: "        >> $(DRAFTSDIR)/$(SLUG).$(EXT)
-	echo "Summary: "     >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Title: $(NAME)  " > $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Slug: $(SLUG)  " >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Date: $(DATE)  " >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Authors: $(AUTHOR)  " >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Category:   "    >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Tags:   "        >> $(DRAFTSDIR)/$(SLUG).$(EXT)
+	echo "Summary:   "     >> $(DRAFTSDIR)/$(SLUG).$(EXT)
 	echo ""     >> $(DRAFTSDIR)/$(SLUG).$(EXT)
 	${EDITOR} ${DRAFTSDIR}/${SLUG}.${EXT}
 else
@@ -144,7 +144,7 @@ endif
 
 editpost:
 ifdef NAME
-	echo "Modified: $(DATE)" >> $(POSTSDIR)/$(SLUG).$(EXT)
+	echo "Modified: $(DATE)  " >> $(POSTSDIR)/$(SLUG).$(EXT)
 	${EDITOR} ${POSTSDIR}/${SLUG}.${EXT}
 else
 	@echo 'Variable NAME is not defined.'
