@@ -16,7 +16,8 @@ Modified: 2015-08-26 15:58:58
 所以改成 `find | grep .JPG | xargs -I {}.JPG mv "{}.JPG" "{}.jpg"` 才能避免悲劇發生  
 (應該吧?有錯請指正)
 
-> 其實可以省略 grep
+> 其實可以省略 grep  
+
 `find -type f -name "*.JPG" | xargs -I {}.JPG mv "{}.JPG" "{}.jpg"`
 
 
