@@ -1,10 +1,11 @@
-Title: Data recovery by using foremost
-Slug: data-recovery-by-using-foremost
-Date: 2015-08-25 19:02:31
-Authors: m157q
-Category: Misc
-Tags: Misc, Data Recovery, foremost
-Summary: 今天早上一個不小心手殘，把外接硬碟裡從 2009 年到 2013 年結尾為 .JPG 的檔案都清掉了，哀傷懊悔了大概半小時左右(恩，沒辦法，我的很多美好回憶都在那些年)，開始找尋有沒有可以救援的辦法，踏上一條短暫的資料救援之路(?)
+Title: Data recovery by using foremost  
+Slug: data-recovery-by-using-foremost  
+Date: 2015-08-25 19:02:31  
+Authors: m157q  
+Category: Misc  
+Tags: Misc, Data Recovery, foremost  
+Summary: 今天早上一個不小心手殘，把外接硬碟裡從 2009 年到 2013 年結尾為 .JPG 的檔案都清掉了，哀傷懊悔了大概半小時左右(恩，沒辦法，我的很多美好回憶都在那些年)，開始找尋有沒有可以救援的辦法，踏上一條短暫的資料救援之路(?)  
+Modified: 2015-08-26 15:58:58  
 
 
 ### 溫馨小提醒
@@ -14,6 +15,9 @@ Summary: 今天早上一個不小心手殘，把外接硬碟裡從 2009 年到 2
 然後就悲劇了，因為如果以 .JPG 結尾的檔案有空白或啥其他特殊的符號的話，就會出現恐怖的意外  
 所以改成 `find | grep .JPG | xargs -I {}.JPG mv "{}.JPG" "{}.jpg"` 才能避免悲劇發生  
 (應該吧?有錯請指正)
+
+> 其實可以省略 grep
+`find -type f -name "*.JPG" | xargs -I {}.JPG mv "{}.JPG" "{}.jpg"`
 
 
 ### 資料救援之路 with foremost
