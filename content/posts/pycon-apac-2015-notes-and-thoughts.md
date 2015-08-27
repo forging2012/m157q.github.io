@@ -3,7 +3,7 @@ Slug: pycon-apac-2015-notes-and-thoughts
 Date: 2015-07-26 15:25:54
 Authors: m157q
 Category: Conf
-Tags: Python, PyCon, Note
+Tags: Python, PyCon, Note, PyConAPAC, Thought
 Summary: Some thoughts & notes for PyCon APAC 2015
 
 這次是第二次參加 PyCon，
