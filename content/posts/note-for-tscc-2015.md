@@ -52,7 +52,7 @@ $ make <NAME>-config THORNLIST=BSSN_Hydro.th options=c3.cfg
 $ make <NAME> 
 ```
 
-<NAME> is the name of the setting user-defined variable.  
+<NAME\> is the name of the setting user-defined variable.  
 You can have different settings with different names.  
 Here I use tscc.  
 
