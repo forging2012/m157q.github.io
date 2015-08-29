@@ -126,7 +126,7 @@ Nano$ enter your choice:
 以下開始講解各題：  
   
 ### NANO 1  
-[NANO 1 原始檔](/files/hitcon-2015-iot-wargame/nano/source/nano-1.tgz)  
+[NANO 1 原始檔](/files/hitcon-2015-iot-wargame/nano/nano-1.tgz)  
 這關會拿到一串[摩斯密碼](https://zh.wikipedia.org/zh-tw/%E6%91%A9%E5%B0%94%E6%96%AF%E7%94%B5%E7%A0%81)  
 `.... .. - -.-. --- -. -. .- -. --- --. .- -- . -- --- .-. ... .`  
 隨便找個解摩斯密碼的網站 <http://morsecode.scphillips.com/translator.html>  
@@ -138,7 +138,7 @@ Nano$ enter your choice:
   
   
 ### NANO 2  
-[NANO 2 原始檔](/files/hitcon-2015-iot-wargame/nano/source/nano-2.tgz)  
+[NANO 2 原始檔](/files/hitcon-2015-iot-wargame/nano/nano-2.tgz)  
 這關是要在九秒內走出 14\*14 的迷宮，  
 從 (0, 0) 走到 (14,14)  
 (除非你手速夠快，不然以本題的設計基本上九秒走不完)  
@@ -175,7 +175,7 @@ Nano$ enter your choice:
   
   
 ### NANO 3  
-[NANO 3 原始檔](/files/hitcon-2015-iot-wargame/nano/source/nano-3.tgz)  
+[NANO 3 原始檔](/files/hitcon-2015-iot-wargame/nano/nano-3.tgz)  
 這關是必須在一秒內回答四則運算的結果，  
 看一下題目，可以發現題目的字串長的像這樣  
 `Nano$ 7 * 10 - 14 + 6 - 5 - 19 = ?`  
@@ -202,7 +202,7 @@ Nano$ enter your choice:
 我只有碰 R0 跟 R1 的題目，有些想法，但都沒解出來，以下簡單紀錄。  
   
 ### R0  
-Web 那邊會拿到一個 ARM64 的 binary 執行檔，  
+Web 那邊會拿到一個 [ARM64 的 binary 執行檔](/files/hitcon-2015-iot-wargame/rpi/r0/forkyou)，  
 之後用 qemu-aarch64 的環境就可以執行，  
 聽說還蠻簡單的，可是我還是解不出來QQ  
 似乎有在某處看到 `/bin/sh -c` 之類的呼叫，  
