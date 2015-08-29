@@ -5,6 +5,7 @@ Authors: m157q
 Category: Write-up  
 Tags: HITCON, Arduino, Python, Raspberry Pi  
 Summary: Write-up about HITCON 2015 CMT IOT Wargame (Python Wargame?)  
+Modified: 2015-08-30 07:34:21  
   
 今年的 HITCON 的主題是 IoT，  
 所以 Wargame 也配合了 IoT 的主題，  
@@ -194,6 +195,13 @@ Nano$ enter your choice:
 真的真的想不出來的話再點下面的連結吧！  
 不然是不會進步的。  
 程式碼請見：<https://gist.github.com/M157q/164f9ba5bd8ae0b18afe>  
+  
+然後看到 IRC 有人提到，  
+他把 Nano 上的 binary dump 到電腦上，  
+直接用類似 strings 的指令直接看完 3 個 key 的樣子，  
+不知道怎麼做到的  
+avr-objdump?  
+  
 ---  
   
 ## Raspberry Pi 部份  
