@@ -5,7 +5,7 @@ Authors: m157q
 Category: Write-up  
 Tags: HITCON, Arduino, Python, Raspberry Pi  
 Summary: Write-up about HITCON 2015 CMT IOT Wargame (Python Wargame?)  
-Modified: 2015-08-30 07:34:21  
+Modified: 2015-08-30 10:54:42  
   
 今年的 HITCON 的主題是 IoT，  
 所以 Wargame 也配合了 IoT 的主題，  
@@ -52,11 +52,14 @@ IRC 上也很多人在詢問，
 因為我本身用 Arch Linux，  
 所以這篇文章會以 Arch Linux 為主，  
 (順便偷偷推廣 [Arch Linux](https://www.archlinux.org/) XD)  
+  
 Windows 的使用者可以參考會眾 toby 寫的教學  
 [HITCON 之 Windows 也要玩 Nano « Toby 'n Hack](http://toby.logdown.com/posts/293552/hitcon-play-nano-on-windows)，  
 仍然不行的話，可以看一下官方的 [Arduino - Windows](https://www.arduino.cc/en/Guide/Windows) 試試。  
-Mac 的使用者可以參考這篇 [Arduino Nano no serial port for MacBook Air 2013 - Arduino Stack Exchange](http://arduino.stackexchange.com/questions/5119/arduino-nano-no-serial-port-for-macbook-air-2013) (但有人反應裝了還是不讀不到)  
+  
+Mac 的使用者可以參考這篇 [Arduino Nano no serial port for MacBook Air 2013 - Arduino Stack Exchange](http://arduino.stackexchange.com/questions/5119/arduino-nano-no-serial-port-for-macbook-air-2013) (但有人反應裝了還是讀不到)  
 仍然不行的話，也可以看一下官方的 [Arduino - MacOSX](https://www.arduino.cc/en/Guide/MacOSX) 試試。  
+  
 至於 Linux 的話，可以參考 Arduino 官方的這篇 [Arduino Playground - Linux](http://playground.arduino.cc/Learning/Linux)。  
   
 而 Arch Linux 的話，當然就是看官方的 [Arduino - ArchWiki](https://wiki.archlinux.org/index.php/Arduino)，從 AUR 上安裝 Arduino。  
@@ -101,6 +104,8 @@ Nano$ [2] Calculator
 Nano$ enter your choice:  
 ```  
   
+  
+### 2. 透過 pip 安裝 pyserial  
 在使用官方提供的 `ans.py` 之前，  
 記得先安裝必要的套件 `pyserial`  
 使用 `pip install pyserial`  
@@ -109,7 +114,7 @@ Nano$ enter your choice:
 (這邊的 `/dev/ttyUSB0` 視實際情況更改)  
 就可以開始修改 `ans.py` 進行 Python Wargame 了(?)  
   
-修改第 47 行的 choice 可以選擇要進行的關卡，  
+修改第 47 行的 choice 可以選擇要解的題目，  
 '0' == NANO 1  
 '1' == NANO 2  
 '2' == NANO 3  
@@ -128,7 +133,7 @@ Nano$ enter your choice:
   
 ### NANO 1  
 [NANO 1 原始檔](/files/hitcon-2015-iot-wargame/nano/nano-1.tgz)  
-這關會拿到一串[摩斯密碼](https://zh.wikipedia.org/zh-tw/%E6%91%A9%E5%B0%94%E6%96%AF%E7%94%B5%E7%A0%81)  
+這題會拿到一串[摩斯密碼](https://zh.wikipedia.org/zh-tw/%E6%91%A9%E5%B0%94%E6%96%AF%E7%94%B5%E7%A0%81)  
 `.... .. - -.-. --- -. -. .- -. --- --. .- -- . -- --- .-. ... .`  
 隨便找個解摩斯密碼的網站 <http://morsecode.scphillips.com/translator.html>  
 解碼後得到 `HITCONNANOGAMEMORSE`  
@@ -140,36 +145,44 @@ Nano$ enter your choice:
   
 ### NANO 2  
 [NANO 2 原始檔](/files/hitcon-2015-iot-wargame/nano/nano-2.tgz)  
-這關是要在九秒內走出 14\*14 的迷宮，  
-從 (0, 0) 走到 (14,14)  
+這是三題裡面最難的一題，也是三題中最少人解出來的。  
+這題要在九秒內走出 `14*14` 的迷宮，  
+從 `(0, 0)` 走到 `(14,14)`  
 (除非你手速夠快，不然以本題的設計基本上九秒走不完)  
+  
+```  
 'O' 代表人、'.' 代表路、'+' 代表牆、'X' 代表出口  
 'w' 往上走、'a' 往左走、's' 往下走、'd' 往右走  
+```  
+  
 必須修改 `game1()` 裡頭的內容，  
 把走迷宮的演算法寫在裏面。  
   
 我用的方法其實是半自動的，在必要的時候需要手動，也不保證每次成功。  
+(要全自動的話可能需要用 [BFS](https://en.wikipedia.org/wiki/Breadth-first_search)，但我太廢，覺得這樣已經能解出題目就夠了。)  
   
 程式每次會呈獻 3x3 的現在位置地圖，  
 因為 'O' 每次的位置不固定，  
 所以先找到 'O' 的現在位置後，  
-將其紀錄為 pos\_x &  pos\_y，  
+將其紀錄為 `pos_x` 和 `pos_y`，  
 方便之後判斷其上下左右是否可走。  
   
 再來因為我們要往右下方行走才能到達出口，  
-所以就判斷如果 'O' 的右邊(lines\[pos\_y, pos\_x+1\]) 是 '.'(路) 的話就往右走，  
-如果有下列情況的話，就改換下一個優先的方向檢查： (以右來說，下一個就是下)  
+所以就判斷如果 'O' 的右邊(`lines[pos_y, pos_x+1]`) 是 '.'(路) 的話就往右走，  
+已右邊舉例的話，如果有下列情況的話，就改換下一個優先的方向檢查： (按照 右、下、左、上 的順序)  
   
-+ 邊界(pos\_x == 2)  
++ 邊界(`pos_x == 2`)  (`pos_x+ 1` 就超出邊界了)  
 + 'O' 的右邊是 '+' (牆)  
 + 上一步是往左走(往反方向走)  
-    + 避免在原地踏步不前  
+    + 避免左右左右、上下上下這種不會前進的狀況發生  
     + 造成了另一個問題，每當走入三面都是牆的洞的時候，就會卡住。  
     + 這時就會需要手動移動  
-    + 因為要得知上一步，所以我建立了 `steps = [None]` 紀錄每一步的順序，並透過 `steps[-1]` 得知上一步  
+    + 因為要得知上一步，所以我建立了 `steps = [None]` 紀錄每一步的順序  
+    + 把每次的移動利用 `steps.append()` 紀錄起來  
+    + 並在每次透過 `steps[-1]` 得知上一步  
   
 依此類推，照著 `右、下、左、上、手動` 的先後順序，寫出程式碼。  
-試個幾次很快就可以走出迷宮  
+開始執行後，遇到卡住的狀況就手動控制，試個幾次很快就可以走出迷宮  
   
   
 `Nano$ key is 3D52CB746F9E6C83`  
@@ -177,7 +190,7 @@ Nano$ enter your choice:
   
 ### NANO 3  
 [NANO 3 原始檔](/files/hitcon-2015-iot-wargame/nano/nano-3.tgz)  
-這關是必須在一秒內回答四則運算的結果，  
+這題是必須在一秒內回答四則運算的結果，  
 看一下題目，可以發現題目的字串長的像這樣  
 `Nano$ 7 * 10 - 14 + 6 - 5 - 19 = ?`  
 所以可以透過 Regular Expression  
@@ -198,9 +211,9 @@ Nano$ enter your choice:
   
 然後看到 IRC 有人提到，  
 他把 Nano 上的 binary dump 到電腦上，  
-直接用類似 strings 的指令直接看完 3 個 key 的樣子，  
+直接用類似 `strings` 的指令直接看完 3 個 key 的樣子，  
 不知道怎麼做到的  
-avr-objdump?  
+查了一些關鍵字，會是`avr-objdump`嗎?  
   
 ---  
   
@@ -211,13 +224,13 @@ avr-objdump?
   
 ### R0  
 Web 那邊會拿到一個 [ARM64 的 binary 執行檔](/files/hitcon-2015-iot-wargame/rpi/r0/forkyou)，  
-之後用 qemu-aarch64 的環境就可以執行，  
+之後用 `qemu-aarch64` 的環境就可以執行，  
 聽說還蠻簡單的，可是我還是解不出來QQ  
 似乎有在某處看到 `/bin/sh -c` 之類的呼叫，  
 應該是利用 BOF 把 EIP 指到那邊就可以拿到 shell 了?  
   
 ### R1  
-連進去是 Discuz! X3.2，  
+連進去是 Discuz! X3.2  
 查了一下，有 remote shell execute 漏洞:  
 [DiscuzX系列命令执行分析公开（三连弹） | WooYun知识库](http://drops.wooyun.org/papers/4611)  
 照著做之後，  
@@ -232,7 +245,7 @@ Web 那邊會拿到一個 [ARM64 的 binary 執行檔](/files/hitcon-2015-iot-wa
   
 這次的 Wargame 大概就是這樣吧，  
 果然實力還是不夠，  
-HST 的 wargame 拿到 reversed.txt 裡頭一串 ...---.. 後也沒啥想法。  
+HST 的 Wargame 拿到 reversed.txt 裡頭一串 ...---.. 後也沒啥想法。  
   
 會把 Nano 的部份寫的這麼詳細的原因，  
 是因為想要推廣大家玩一下 Wargame 吧！  
@@ -250,3 +263,4 @@ HST 的 wargame 拿到 reversed.txt 裡頭一串 ...---.. 後也沒啥想法。
 畢竟因為 Python 的方便性，很多 exploit 都用 Python 寫了。  
   
 總之，這篇就是一個小廢物的流水帳。  
+有問題歡迎留言討論，但我不一定會就是T_T。  
