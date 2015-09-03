@@ -5,7 +5,7 @@ Authors: m157q
 Category: Write-up  
 Tags: HITCON, Arduino, Python, Raspberry Pi  
 Summary: Write-up about HITCON 2015 CMT IOT Wargame (Python Wargame?)  
-Modified: 2015-08-30 10:54:42  
+Modified: 2015-09-03 21:32:19  
   
 今年的 HITCON 的主題是 IoT，  
 所以 Wargame 也配合了 IoT 的主題，  
@@ -211,9 +211,12 @@ Nano$ enter your choice:
   
 然後看到 IRC 有人提到，  
 他把 Nano 上的 binary dump 到電腦上，  
-直接用類似 `strings` 的指令直接看完 3 個 key 的樣子，  
+直接用 `strings` 拿到 3 個 key，  
 不知道怎麼做到的  
 查了一些關鍵字，會是`avr-objdump`嗎?  
+  
+> 補上直接 dump 的 write-up [HITCON Knowledge Base — 秒解 Hitcon Nano 題](http://kb.hitcon.org/post/128246307977/%E7%A7%92%E8%A7%A3-hitcon-nano-%E9%A1%8C)  
+  
   
 ---  
   
@@ -228,6 +231,8 @@ Web 那邊會拿到一個 [ARM64 的 binary 執行檔](/files/hitcon-2015-iot-wa
 聽說還蠻簡單的，可是我還是解不出來QQ  
 似乎有在某處看到 `/bin/sh -c` 之類的呼叫，  
 應該是利用 BOF 把 EIP 指到那邊就可以拿到 shell 了?  
+  
+> 補上 R0 write-up [HITCON Knowledge Base — HITCON 2015 IoT Wargame – R0 挑戰題](http://kb.hitcon.org/post/127947378507/hitcon-2015-iot-wargame-r0-%E6%8C%91%E6%88%B0%E9%A1%8C)  
   
 ### R1  
 連進去是 Discuz! X3.2  
