@@ -140,3 +140,5 @@ Modified: 2015-09-04 09:24
     - (blogpost)  
 - [x] Exemption from military service  
 - [x] [FunSlots 繽紛樂 | 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua.  
+- [x] Install OpenWrt on Raspberry Pi  
+    - (blogpost)  
