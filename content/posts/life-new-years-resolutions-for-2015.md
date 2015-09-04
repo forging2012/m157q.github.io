@@ -90,6 +90,9 @@ Modified: 2015-09-04 09:24
 - [ ] <https://www.vpnunlimitedapp.com/downloadlinux>  
     - Need package on AUR  
 - [ ] <https://github.com/wdv4758h/LTCC>  
+- [ ] <https://datecloud.hackpad.com/>  
+- [ ] r/archlinux twitter bot  
+- [ ] xrandr - cannot detect MacBook Air thunderbolt hotplug  
   
 ---  
   
