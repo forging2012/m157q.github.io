@@ -80,32 +80,6 @@ Modified: 2015-09-04 09:24
   
 ---  
   
-## Misc.  
-  
-- [ ] Finish the rest parts of the college graduation term project  
-- [x] \#iToolMan Hoodie  
-- [ ] Graduate from NCTU  
-    - (blogpost)  
-- Study about whole compiler things, get familiar with it and make myself like it.  
-- [x] At least give 1 talk in conference  
-    - [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi)  
-- [x] At least 1 write-up for some CTF  
-- [ ] At least build 1 useful open source project  
-    - [M157q/zdict · GitHub](https://github.com/M157q/zdict)  (WIP)  
-- [x] At least contribute to 1 open source project  
-    - [[plugins/pip] Add shortcut for upgrading pip outdated packages. by M157q · Pull Request #4303 · robbyrussell/oh-my-zsh · GitHub](https://github.com/robbyrussell/oh-my-zsh/pull/4303)  
-    - [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9)  
-    - Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks)  
-    - [fntsrlike/slack-irc-syncbot · GitHub](https://github.com/fntsrlike/slack-irc-syncbot)  
-- [ ] Get an intern job in some nice CS company  
-- [x] Write new blog post when learned something new  
-    - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](/posts/2015/01/21/infosec-dhc-rest-http-api-client/)  
-    - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](/posts/2015/01/22/infosec-mc-sqlr-amplification-attack/)  
-- [x] Remove OS X and install Arch Linux on MacBook Air 2013 13'  
-- [x] Exemption from military service  
-  
----  
-  
 ## Open Source Project todolist  
 - [ ] <https://github.com/passcod/twd>  
     - Height is wrong  
@@ -135,3 +109,31 @@ Modified: 2015-09-04 09:24
     - (blogpost)  
 - [x] HITCON 2015  
     - [HITCON 2015 IOT Wargame | Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
+  
+---  
+  
+## Misc.  
+  
+- [ ] Finish the rest parts of the college graduation term project  
+- [x] \#iToolMan Hoodie  
+- [ ] Graduate from NCTU  
+    - (blogpost)  
+- Study about whole compiler things, get familiar with it and make myself like it.  
+- [x] At least give 1 talk in conference  
+    - [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi)  
+- [x] At least 1 write-up for some CTF  
+- [ ] At least build 1 useful open source project  
+    - [M157q/zdict · GitHub](https://github.com/M157q/zdict)  (WIP)  
+- [x] At least contribute to 1 open source project  
+    - [[plugins/pip] Add shortcut for upgrading pip outdated packages. by M157q · Pull Request #4303 · robbyrussell/oh-my-zsh · GitHub](https://github.com/robbyrussell/oh-my-zsh/pull/4303)  
+    - [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9)  
+    - Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks)  
+    - [fntsrlike/slack-irc-syncbot · GitHub](https://github.com/fntsrlike/slack-irc-syncbot)  
+- [ ] Get an intern job in some nice CS company  
+- [x] Write new blog post when learned something new  
+    - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](/posts/2015/01/21/infosec-dhc-rest-http-api-client/)  
+    - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](/posts/2015/01/22/infosec-mc-sqlr-amplification-attack/)  
+- [ ] Remove OS X and install Arch Linux on MacBook Air 2013 13'  
+    - (blogpost)  
+- [x] Exemption from military service  
+- [x] [FunSlots 繽紛樂 | 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua.  
