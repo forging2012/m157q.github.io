@@ -119,6 +119,10 @@ make install
 ### Disable Mac Boot Sound  
   
 ### Prevent shutdown directly when power button is pressed  
++ <https://wiki.archlinux.org/index.php/MacBookPro11,x#Repurpose_the_power_key>  
++ `/etc/systemd/logind.conf`  
+    + `HandlePowerKey=suspend`  
+  
   
 ### Xorg  
 + `sudo pacman -S xcompmgr xorg-xrdb`  
@@ -160,6 +164,14 @@ Broadcom BCM4360 這張網卡有兩種
 > 記得 disable dhcpcd 然後 enable wicd，  
 > dhcpcd 跟 wicd 會衝突，開著 dhcpcd 的時候使用 wicd 的話  
 > 會無法使用無線網路連線，錯誤訊息也看不出啥端倪，我就是卡在這很久Orz  
+  
+#### Network Proxy Settings  
++ <https://wiki.archlinux.org/index.php/Proxy_settings>  
++ `wicd` has no proxy setting function, I can only set proxy configuration in `Firefox`.(This only works for web browsing)  
++ `networkmanager` can have proxy settings via install plugin `proxydriver`, check [NetworkManager - ArchWiki](https://wiki.archlinux.org/index.php/NetworkManager) for how to setup.  
++ I am kinda `wicd` lover and don't use proxy really often, so I think I'm just ok with it currently.  
++ Considering write the proxy setting function for `wicd`.  
+  
   
 ### File Manager  
 + `sudo pacman -S pcmanfm`  
@@ -225,6 +237,9 @@ EndSection
     + scan, pair, connect  
 + `pavucontrol`  
     + Change sound channel to bluetooth headset  
++ Sometimes the bluetooth device may be blocked  
+    + use `rfkill list` to check if it is blocked.  
+    + use `sudo rfkill unblock bluetooth` to unblock.  
   
   
   
@@ -249,10 +264,10 @@ defaults.ctl.card 1
   
 ### Power Management  
 + <https://wiki.archlinux.org/index.php/Power_management>  
-+ `sudo pacman -S acpi powertop tlp`  
-+ powertop  
-    + `sudo powertop --auto-tune`  
-> to be continued...  
+    + `sudo pacman -S acpi powertop tlp`  
+    + powertop  
+        + `sudo powertop --auto-tune`  
++ <https://wiki.archlinux.org/index.php/MacBookPro11,x#Powersave>  
   
 ### Monitor  
 #### Dual Display  
@@ -260,9 +275,43 @@ defaults.ctl.card 1
 + `sudo pacman -S xorg-xrandr`  
     + <https://wiki.archlinux.org/index.php/Xrandr>  
     + xrandr should work.  
-        + But my 1280x720 external display only get 1024x768 support  
-        + Maybe the problem is on the offical thunderbolt2VGA adapter?  
-+ For more friendly setting, `sudo pacman -S lxrandr`  
++ For more friendly GUI setting, `sudo pacman -S lxrandr`  
+  
+##### But my 1920x1080 external display only get 1024x768 support  
++ <https://wiki.archlinux.org/index.php/Xrandr#Adding_undetected_resolutions>  
+  
+```  
+$ cvt 1920 1080  
+# 1920x1080 59.96 Hz (CVT 2.07M9) hsync: 67.16 kHz; pclk: 173.00 MHz  
+Modeline "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync  
+  
+$ xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync  
+  
+$ xrandr --addmode DP1 1920x1080_60.00  
+  
+xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1  
+```  
+  
+##### Hotplug problem - xrandr won't detect hotplug mini-display port to VGA adapter  
++ I'm pretty sure that `udev` indeed detect the hotplug event, but `xrandr` always shows that `DP1`(external VGA monitor) is disconnected.  
++ This can be solved by adding mode for `DP1` (check commands above).  
++ After adding modes, just type `xrandr --output eDP1 --auto --output DP1 --mode ${mode_name} --left-of eDP1` again, even if `xrandr` still shows that `DP1` is disconnected, it works.  
++ So, add all modes we need (1920x1080, 1280x720, 1024x768, ...) can be a workaroud for this problem.  
++ I think the problem is on `xrandr` cannot recongnize whether thunderbolt to VGA adapter is connected or not when hotplug.  
++ Add below to `.xinitrc`  
+  
+```  
+xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync  
+xrandr --addmode DP1 1920x1080_60.00  
+  
+xrandr --newmode "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync  
+xrandr --addmode DP1 1280x720_60.00  
+  
+xrandr --newmode "1024x768_60.00"   63.50  1024 1072 1176 1328  768 771 775 798 -hsync +vsync  
+xrandr --addmode DP1 1024x768_60.00  
+  
+xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1  
+```  
   
 #### Birghtness  
 + `sudo pacman -S xorg-xbacklight`  
@@ -394,3 +443,5 @@ There are my personal needed below. It's optional.
 + [Sxhkd - ArchWiki](https://wiki.archlinux.org/index.php/Sxhkd)  
 + [Bluetooth - ArchWiki](https://wiki.archlinux.org/index.php/Bluetooth)  
 + [Bluetooth headset - ArchWiki](https://wiki.archlinux.org/index.php/Bluetooth_headset)  
++ [xrandr - ArchWiki](https://wiki.archlinux.org/index.php/Xrandr#Adding_undetected_resolutions)  
++ [NetworkManager - ArchWiki](https://wiki.archlinux.org/index.php/NetworkManager)  
