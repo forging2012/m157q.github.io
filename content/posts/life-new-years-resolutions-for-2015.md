@@ -93,6 +93,7 @@ Modified: 2015-09-04 09:24
 - [ ] <https://datecloud.hackpad.com/>  
 - [ ] r/archlinux twitter bot  
 - [ ] xrandr - cannot detect MacBook Air thunderbolt hotplug  
+- [ ] wicd - add proxy setting functionality  
   
 ---  
   
