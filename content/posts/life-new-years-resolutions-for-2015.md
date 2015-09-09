@@ -137,8 +137,8 @@ Modified: 2015-09-04 09:24
 - [x] Write new blog post when learned something new  
     - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](/posts/2015/01/21/infosec-dhc-rest-http-api-client/)  
     - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](/posts/2015/01/22/infosec-mc-sqlr-amplification-attack/)  
-- [ ] Remove OS X and install Arch Linux on MacBook Air 2013 13'  
-    - (blogpost)  
+- [x] Remove OS X and install Arch Linux on MacBook Air 2013 13'  
+    - [Install Arch Linux on MacBook Air Mid 2013 | Just for noting](https://m157q.github.io/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
 - [x] Exemption from military service  
 - [x] [FunSlots 繽紛樂 | 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua.  
 - [x] Install OpenWrt on Raspberry Pi  
