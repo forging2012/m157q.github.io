@@ -3,46 +3,57 @@ Slug: install-arch-linux-on-macbook-air-mid-2013
 Date: 2015-09-10 05:21:04  
 Authors: m157q  
 Category: Note  
-Tags: Arch Linux, MacBook Air, Linux  
+Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
   
 ---  
   
 > 使用上遇到問題，才有動力去解決、改善、貢獻並回饋程式碼到上游。  
   
-> 警告: 把 OS X 砍掉的話，之後要更新 firmware 必須使用有安裝 OS X 的外接硬碟上開機才能更新。  
+`警告: 把 OS X 砍掉的話，之後要更新 firmware 必須使用有安裝 OS X 的外接硬碟上開機才能更新。`  
   
+> 以下這段是一堆廢話，講了我會什麼決定要把 OS X 砍了然後灌 Linux 在 MacBook Air 上  
+> 不想看的可以直接跳過  
   
-改用 OS X 的這兩年，也不是說就完全沒用 Linux 了，舊的筆電退役成 Server 架在宿舍裡，  
-一個不用桌面環境的 Linux ，使用起來基本上是不會遇到太多問題的。  
+改用 OS X 的這兩年，  
+也不是說就完全沒用 Linux 了，  
+舊的筆電退役成 Server 架在宿舍裡，  
+一個不用桌面環境的 Linux ，  
+使用起來基本上是不會遇到太多問題的。  
 而 OS X 的確遇到使用上的問題減少了。  
-用起來的確跟當初想的一樣，是個問題比較沒那麼多的 UNIX-like System  
+用起來的確跟當初想的一樣，  
+是個問題比較沒那麼多的 UNIX-like System  
 但同時也在不知不覺中漸漸喪失了解決問題的能力，  
 就好像一把兩年前就不再磨的刀劍，愈發鈍鏽。  
-當初會買 MacBook Air 而不選擇 UltraBook 的原因主要是因為價錢、續航力、重量都是 MacBook Air 勝出，  
+當初會買 MacBook Air 而不選擇 UltraBook 的原因  
+主要是因為價錢、續航力、重量都是 MacBook Air 勝出，  
 當然之後在使用上，我也對重量和續航力很滿意，  
 但其實在使用 OS X 上也遇過許多無法接受的問題，有些妥協了，有些沒有  
 例如：  
+  
 + 原生的工具都非常老舊，舊版本代表著很多問題，無論是資安或是有無新功能。這對於一個從使用 Rolling Release 的 Arch Linux user 來說真的很不習慣。  
-    + 骨灰級的 Bash 真的令我印象深刻，如果沒有 Homebrew 的話，我肯定無法用這麼久，感謝 @mxcl  
+    + 骨灰級的 Bash 真的令我印象深刻，如果沒有 Homebrew 的話，我肯定無法用這麼久，感謝 `mxcl`  
 + 接網路線跟螢幕線得額外花錢買轉接頭  
     + 兩個加起來新台幣 1,600 左右。恩，我跟很多人一樣都買了。  
 + OS X 10.9 以前的視窗放大真的很雞肋和令人哭笑不得，放大後不會佔滿整個桌面，有時候甚至比按完放大前更小。  
     + 在 OS X 10.10 後，放大功能直接改成全螢幕了。恩，不意外，我在 10.9 以前早就都用全螢幕了。  
-+ 雙螢幕在 OS X 10.10 仍然有一個我常常踩到的詭異Bug，如果有程式被丟到外接螢幕那邊，在不拔掉螢幕線的情況下，把螢幕闔上進入休眠，接著把螢幕線拔掉，然後喚醒 Mac，這時候就會發現被丟到外接螢幕的應用程式仍然被認為是在外接螢幕的範圍但因為早就沒有外接螢幕了，所以即便程式仍然在執行，使用者也根本看不到畫面，重點是重新執行該程式也無法解決這問題，只能登出、重開機或是重新接上外接螢幕在電腦喚醒的情況下拔掉螢幕線，或是把該程式拉回原生螢幕，才有辦法解決。  
-    + 我不確定 Reproduce 的機率是不是 100%，寫這篇文章的時候已經把 OS X 砍了，所以也無從驗證。  
++ 雙螢幕在 OS X 10.10 仍然有一個我常常踩到的詭異Bug，如果有程式被丟到外接螢幕那邊，在不拔掉螢幕線的情況下，把螢幕闔上進入休眠，接著把螢幕線拔掉，然後喚醒 Mac，這時候就會發現被丟到外接螢幕的應用程式仍然被認為是在外接螢幕的範圍。但因為早就沒有外接螢幕了，所以即便程式仍然在執行，使用者也根本看不到畫面，重點是重新執行該程式也無法解決這問題，只能登出、重開機或是重新接上外接螢幕在電腦喚醒的情況下拔掉螢幕線，或是把該程式拉回原生螢幕，才有辦法解決。  
+    + 我不確定 Reproduce 的機率是不是 100%，但就是偶爾會遇到，而寫這篇文章的時候已經把我手邊唯一的 OS X 砍了，所以也無從驗證。  
 + 系統介面內建中文字型不好看，要改也很難改。  
     + 還好 OS X 10.9 以前有 TCFail 能用，到了 OS X 10.10 只能去改系統檔案設定，而換成了我想用的字型以後，內建的中文輸入法就會掛掉，只好又改回原本的字型。  
 + 輸入法也是個問題  
-    + 剛用 OS X 10.8 的時候就聽很多人說內建的中文輸入法不是很好用，所以很多人都裝開源的香草或是小麥注音，我本身也是注音輸入法的使用者，但我用了以後還是不太習慣(恩，當時明明用不習慣，卻沒有跳下去開發)。後來找到另一款開源的中州韻輸入法(RIME)，是對岸的中國人[佛振](https://github.com/lotem)開發的，在 Windows, Linux, Mac 上都能使用。裝來用以後發現還不錯用，自訂性蠻強大的，由於在用 gcin 時，我習慣把選字鍵從常人慣用的 1234567890 改成 asdfghjkl; 以減少手指移動的距離，這款輸入法也能做到，於是就用了。(至於後來關於 dvorak 跟拼音輸入法又是另一個故事了)  
+    + 剛用 OS X 10.8 的時候就聽很多人說內建的中文輸入法不是很好用，所以很多人都裝開源的香草或是小麥注音，我本身也是注音輸入法的使用者，但我用了以後還是不太習慣(恩，當時明明用不習慣，卻沒有跳下去幫忙貢獻)。後來找到另一款開源的中州韻輸入法(RIME)，是對岸的中國人[佛振](https://github.com/lotem)開發的，在 Windows, Linux, Mac 上都能使用。裝來用以後發現還不錯用，自訂性蠻強大的，由於在用 gcin 時，我習慣把選字鍵從常人慣用的 1234567890 改成 asdfghjkl; 以減少手指移動的距離，這款輸入法也能做到，於是就用了。(至於後來關於 dvorak 跟拼音輸入法又是另一個故事了)  
     + 到了 OS X 10.10 之後，不知怎的，非官方的中文輸入法都變得超級慢，慢到無法接受，於是又換回不是很好用的官方中文輸入法。(恩，又是一個妥協，沒去追根究底找出為什麼變得這麼慢的原因)  
   
 一不小心好像離題寫了太多關於 OS X 的部份。  
-Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Linux 的懷抱，促使我把 Arch Linux 灌在 Mac 上，以下是紀錄。  
+Anyway, 因為種種問題加上這次 COSCUP 的助力，  
+還是想回歸到 Linux Desktop Environment 的懷抱，  
+促使我把 Arch Linux 灌在我的 MacBook Air 2013 13' 上，  
+以下是紀錄。  
   
 ---  
   
-以下環境為 MacBookAir6,2 (Macbook Air mid 2013)  
+以下流程皆在 `MacBookAir6,2 (Macbook Air mid 2013)` 上進行  
 不同 model 的 MacBook 會有不同的問題  
 詳見 <https://wiki.archlinux.org/index.php/MacBook#Model-specific_information>  
 由於我是採用把 OS X 洗掉直接裝 Arch Linux 的方式，並不是雙系統  
@@ -52,15 +63,23 @@ Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Lin
 如果有人想灌成 Ubuntu 的話，可以參考 <https://help.ubuntu.com/community/MacBookAir>  
 (但上面最新的資料似乎只有到 2013 年的機種就是，當然也歡迎勇者測試之後貢獻)  
   
-> 警告：MacbookAir6,2 的網卡在 Linux 上"有可能"不被支援(需視網卡型號)，  
-> 所以可能得另購 USB 無線網卡才有無線網路  
-> 詳情請見底下關於 Wi-Fi 的部份  
+`  
+警告：MacbookAir6,2 的網卡在 Linux 上"有可能"不被支援(需視網卡型號)，  
+所以可能得另購 USB 無線網卡才有無線網路  
+詳情請見底下關於 Wi-Fi 的部份  
+`  
   
-> If you want to mute the MacBook firmware boot sound, be sure you mute the volume of the MacBook before you eliminating OS X.  
+`  
+If you want to mute the MacBook firmware boot sound,  
+be sure you mute the volume of the MacBook before you eliminating OS X.  
+`  
   
 # Install Arch Linux Only (No OS X Dual Boot) on MacBook Air  
   
-> WARNING: After erasing OS X, We can only update the MacBook Air firmware via the external drive which has already installed OS X.  
+`  
+WARNING: After erasing OS X,  
+We can only update the MacBook Air firmware via the external drive which has already installed OS X.  
+`  
   
 1. Make Arch Linux bootable Live USB  
     + Go to <https://www.archlinux.org/download/> and download the newest Arch Linux iso.  
@@ -89,7 +108,7 @@ Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Lin
 > 底下其實有些調整不是那麼必要  
 > 可能直接 `sudo pacman -S gnome-control-center` 就可以解掉許多問題  
 > 只是個人覺得 gnome 太肥，想要用些 light weight 的 packages  
-> 覺得麻煩的人可以直接裝 gnome 的東西，然後再視情況安裝需要的東西  
+> 覺得麻煩的人可以直接裝個 gnome-control-center ，然後再視情況安裝需要的東西  
 > 應該可以節省一些時間  
   
 # Post-Install  
@@ -97,7 +116,7 @@ Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Lin
 + <https://wiki.archlinux.org/index.php/General_recommendations>  
 + Install [yaourt](https://aur.archlinux.org/packages/yaourt/)  
     + `sudo mkdir /var/cache/yaourt`  
-    + save tarball to /var/cache/yaourt  
+    + save tarball to `/var/cache/yaourt`  
 ```  
 /etc/yaourtrc  
 ---  
@@ -124,8 +143,10 @@ make install
   
 ### Xorg  
 + `sudo pacman -S xcompmgr xorg-xrdb`  
-    + [xcommpgr](https://wiki.archlinux.org/index.php/Xcompmgr) for simple effect like transparency of guake  
-    + [xorg-xrdb](https://wiki.archlinux.org/index.php/X_resources) for .Xresources, some config related to X Window  
+    + [xcommpgr](https://wiki.archlinux.org/index.php/Xcompmgr)  
+        + for simple effect, like transparency in `guake`  
+    + [xorg-xrdb](https://wiki.archlinux.org/index.php/X_resources)  
+        + for `.Xresources`, some config related to X Window  
   
   
 ### Wi-Fi  
@@ -134,7 +155,7 @@ make install
 必須再自行找些相關資料，我在這部份卡了一陣子。  
   
 先確認是哪張網卡  
-MacBookAir6,2 沒意外的話應該都是 BCM4360 這張  
+`MacBookAir6,2` 沒意外的話應該都是 `BCM4360` 這張  
 但還是有細節得注意  
   
 ```  
@@ -142,23 +163,27 @@ $ lspci -vnn |grep 0280
 03:00.0 Network controller [0280]: Broadcom Corporation BCM4360 802.11ac Wireless Network Adapter [14e4:43a0] (rev 03)  
 ```  
   
-Broadcom BCM4360 這張網卡有兩種  
-一種是 14e4:43a0, 另外一種是 14e4:4360  
+`Broadcom BCM4360` 這張網卡有兩種  
+一種是 `14e4:43a0`, 另外一種是 `14e4:4360`  
 根據 <https://wireless.wiki.kernel.org/en/users/Drivers/b43?highlight=%28b43%29#Supported_devices>  
-43a0 這張是被 wl 驅動程式支援的，所以如果是這張的話可以用無線網路  
-4360 這張則是不被支援的，所以可能需要另外購買無線網卡  
+`43a0` 這張是被 wl 驅動程式支援的，所以如果是這張的話可以用無線網路  
+`4360` 這張則是不被支援的，所以可能需要另外購買無線網卡  
 (我沒有親自測試過，如果有勇者或是有經驗的人歡迎回覆告知)  
   
-43a0 的話照著底下的指令做應該就可以使用無線網路連網了 (kerel 為 Linux 4.1.5-1)  
-+ `yaourt -S broadcom-wl-dkms`  # follow the postinstall instructions  
+`43a0` 的話照著底下的指令做應該就可以使用無線網路連網了 (kerel 為 Linux 4.1.5-1)  
+  
++ `yaourt -S broadcom-wl-dkms`  
+    + after installation, follow the postinstall instructions.  
 + `sudo pacman -S iw`  
 + `sudo pacman -S wicd-gtk`  
+  
 ```  
 ==> You need to restart the dbus service after  
 ==> upgrading wicd.  
 ==> Disable networkmanager, dhcpcd or other networking  
 ==> utility and add 'wicd' to your systemd configuration.  
 ```  
+  
 > 記得 disable dhcpcd 然後 enable wicd，  
 > dhcpcd 跟 wicd 會衝突，開著 dhcpcd 的時候使用 wicd 的話  
 > 會無法使用無線網路連線，錯誤訊息也看不出啥端倪，我就是卡在這很久Orz  
@@ -168,7 +193,7 @@ Broadcom BCM4360 這張網卡有兩種
 + `wicd` has no proxy setting function, I can only set proxy configuration in `Firefox`.(This only works for web browsing)  
 + `networkmanager` can have proxy settings via install plugin `proxydriver`, check [NetworkManager - ArchWiki](https://wiki.archlinux.org/index.php/NetworkManager) for how to setup.  
 + I am kinda `wicd` lover and don't use proxy really often, so I think I'm just ok with it currently.  
-+ Considering write the proxy setting function for `wicd`.  
++ (Considering write the proxy setting functionality for `wicd`...)  
   
   
 ### File Manager  
@@ -176,9 +201,11 @@ Broadcom BCM4360 這張網卡有兩種
   
   
 ### Keyboard  
-+ `sudo pacman -S xorg-xmodmap`  #for changing keymap like swap Ctrl and Caps Lock  
++ `sudo pacman -S xorg-xmodmap`  
+    + for changing keymap like swap Ctrl and Caps Lock  
 + Check /etc/mkinitcpio.conf if `HOOKS` have `keyboard`, if not, add it then `sudo mkinitcpio -p linux`  
-+ fix '~' problem  
++ fix `~` problem  
+    + if you press `~` on the keyboard, it will not print out `~` correctly.  
 ```  
 /etc/modprobe.d/hid_apple.conf  
 ---  
@@ -193,9 +220,11 @@ options hid_apple iso_layout=0
   
   
 ### Synaptic (Touchpad)  
-+ `sudo pacman -S xf86-input-synaptics`  # only basic functions  
++ `sudo pacman -S xf86-input-synaptics`  
+    + only basic functions  
 or  
-+ `yaourt xf86-input-mtrack-git`  #for OS X like touchpad and flexible configuration  
++ `yaourt xf86-input-mtrack-git`  
+    + for OS X like touchpad and flexible configuration  
 ```  
 /usr/share/X11/xorg.conf.d/10-mtrack.conf  
 ---  
@@ -260,6 +289,7 @@ defaults.ctl.card 1
         + `sudo powertop --auto-tune`  
 + <https://wiki.archlinux.org/index.php/MacBookPro11,x#Powersave>  
   
+  
 ### Monitor  
 #### Dual Display  
 + <https://wiki.archlinux.org/index.php/Multihead>  
@@ -280,7 +310,7 @@ $ xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 108
   
 $ xrandr --addmode DP1 1920x1080_60.00  
   
-xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1  
+$ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1  
 ```  
   
 ##### Hotplug problem - xrandr won't detect hotplug mini-display port to VGA adapter  
@@ -317,8 +347,10 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
   
 #### IME  
 + `sudo pacman -S gcin`  
-+ `sudo pacman -S libchewing`  # for chewing input method  
-+ `sudo pacman -S anthy`  # for Japanese input method  
++ `sudo pacman -S libchewing`  
+    + for chewing input method  
++ `sudo pacman -S anthy`  
+    + for Japanese input method  
 + `sudo gtk-query-immodules-2.0 --update-cache`  
   
 #### Browser  
@@ -333,6 +365,12 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
 ### Mobile  
 #### USB-Tethering (Works out of box)  
 + <https://wiki.archlinux.org/index.php/Android_tethering#USB_tethering>  
+    + Disconnect from other networks  
+    + Connect phone to computer via USB cable  
+    + Enable the tethering option from the phone  
+    + Use `ip link` and search `usb?` or `enp?s??u?` interface  
+    + `sudo dhcpcd ${interface}`  
+    + Use `ip link` again to check if already got an ip on that interface  
 #### Mount Android phone  
 + <https://wiki.archlinux.org/index.php/MTP>  
 + install `libmtp`, `android-file-transfer`  
@@ -343,15 +381,18 @@ $ yaourt -S android-file-transfer
   
 (connect Android phone to Arch Linux via USB)  
   
-$ aft-mtp-mount ~/mnt   # mount android to ~/mnt  
-$ fusermount -u ~/mnt   # unmount  
+$ aft-mtp-mount ~/mnt   // mount android to ~/mnt  
+$ fusermount -u ~/mnt   // unmount  
 ```  
   
   
 ### Webcam (currently cannot use)  
 + <https://wiki.archlinux.org/index.php/MacBook#Webcam>  
   
-> The Facetime HD webcam (included on 2013 MBAs onwards) is no longer UVC device, and therefore, does not work out of the box. It is actually a PCIE device. While [a bcwc_pcie driver is being developed](https://github.com/patjak/bcwc_pcie), it will probably take some time before it is ready. See also [Linux bug #71131](https://bugzilla.kernel.org/show_bug.cgi?id=71131) and [Ubuntu bug #1276711](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1276811).  
+> The Facetime HD webcam (included on 2013 MBAs onwards) is no longer UVC device, and therefore, does not work out of the box.  
+> It is actually a PCIE device.  
+> While [a bcwc_pcie driver is being developed](https://github.com/patjak/bcwc_pcie), it will probably take some time before it is ready.  
+> See also [Linux bug #71131](https://bugzilla.kernel.org/show_bug.cgi?id=71131) and [Ubuntu bug #1276711](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1276811).  
   
   
 ### Disable MacBook Firmware Boot Sound  
@@ -362,7 +403,7 @@ $ fusermount -u ~/mnt   # unmount
   
 I forgot to mute the volume before deleting the OS X.  
 So, I have to get an OS X installed on USB drive.  
-In order to muse the firmware boot sound and for the firmware updating in the furture.  
+In order to mute the firmware boot sound and for the firmware updating in the furture.  
   
   
 ### Hotkey Settings  
@@ -425,22 +466,25 @@ awful.key({ }, "XF86AudioRaiseVolume",
   
 ---  
   
-There are my personal needed below. It's optional.  
+## Misc  
+  
+Below are my personal needed. It's optional.  
 <https://wiki.archlinux.org/index.php/List_of_applications>  
   
-## Misc  
 + `sudo pacman -S virtualbox`  
 + `sudo pacman -S unrar`  
   
   
 ### Network  
 + `sudo pacman -S mosh mtr wget nmap`  
-+ `sudo pacman -S dns-tools`   # for dig  
++ `sudo pacman -S dns-tools`  
+    + for `dig`  
   
   
 ### Google Drive  
   
 There are lots of 3rd party GNU/Linux clients for Google Drive:  
+  
 + <https://github.com/google/skicka>  
 + <https://github.com/odeke-em/drive>  
 + <https://github.com/vitalif/grive2>  
@@ -461,16 +505,16 @@ $ export GOPATH=~/go
 $ export PATH=$PATH:~/go/bin  
 $ go get github.com/google/skicka  
 $ skicka init  
-$ skicka -no-browser-auth ls    #set authentication for skicka  
+$ skicka -no-browser-auth ls    // set authentication for skicka  
 ```  
   
 You can check out <https://github.com/google/skicka/blob/master/README.md> for further info.  
   
   
-#### [drive](https://github.com/odeke-em/drive)  
 But, after I installed `skicka`, it didn't find all my directories on Google Drive.  
 So, I just changed to `drive`  
   
+#### [drive](https://github.com/odeke-em/drive)  
 use `yaourt -S drive` to install it.  
 then `drive init ${dir_for_google_drive}`  
 copy and paste the token, then it should work.  
@@ -483,7 +527,7 @@ Check <https://github.com/odeke-em/drive/blob/master/README.md> for more info.
 + `sudo pip install virtualenvwrapper`  
   
 #### Pelican  
-+ `pip2 install pelican markdown ghp-impor`  
++ `pip2 install pelican markdown ghp-import`  
   
   
 ### GitHub  
@@ -508,12 +552,13 @@ Check <https://github.com/odeke-em/drive/blob/master/README.md> for more info.
 + `sudo pacman -S eog`  
 + `sudo pacman -S vlc`  
 + `yaourt -S wine-git`  
-    + need to uncomment multilib in /etc/pacman.conf first  
+    + need to uncomment `multilib` in `/etc/pacman.conf` first  
 + `sudo pacman -S playonlinux`  
   
   
 ### Office  
-+ `sudo pacman -S evince`   #for pdf  
++ `sudo pacman -S evince`  
+    + for .pdf files  
 + `sudo pacman -S libreoffice`  
   
   
