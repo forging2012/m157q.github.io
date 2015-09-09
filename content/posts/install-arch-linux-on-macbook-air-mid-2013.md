@@ -1,10 +1,9 @@
 Title: Install Arch Linux on MacBook Air Mid 2013  
 Slug: install-arch-linux-on-macbook-air-mid-2013  
-Date: 2015-08-19 14:08:04  
+Date: 2015-09-10 05:21:04  
 Authors: m157q  
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux  
-Modified: 2015-08-27 02:55:40  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
   
 ---  
@@ -57,6 +56,7 @@ Anyway, 因為種種問題加上這次 COSCUP 的助力，還是想回歸到 Lin
 > 所以可能得另購 USB 無線網卡才有無線網路  
 > 詳情請見底下關於 Wi-Fi 的部份  
   
+> If you want to mute the MacBook firmware boot sound, be sure you mute the volume of the MacBook before you eliminating OS X.  
   
 # Install Arch Linux Only (No OS X Dual Boot) on MacBook Air  
   
@@ -115,8 +115,6 @@ cd rcfiles
 make install  
 ```  
   
-  
-### Disable Mac Boot Sound  
   
 ### Prevent shutdown directly when power button is pressed  
 + <https://wiki.archlinux.org/index.php/MacBookPro11,x#Repurpose_the_power_key>  
@@ -190,15 +188,8 @@ options hid_apple iso_layout=0
 #### Backlight  
 + <https://wiki.archlinux.org/index.php/MacBook#Keyboard_Backlight>  
 + `yaourt -S kbdlight`  
-+ `sudo pacman -S sxhkd`  
-    + use sxhkd to combine hotkey for kbdlight  
-    + <https://wiki.archlinux.org/index.php/Sxhkd>  
 + `sudo pacman -S xorg-xev`  
     + For chekcing the key value of keyboard  
-  
-#### Function keys  
-+ <https://wiki.archlinux.org/index.php/Sxhkd>  
-> to be continued...  
   
   
 ### Synaptic (Touchpad)  
@@ -324,8 +315,6 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
 + `yaourt -S pmount`  
   
   
-### Chinese  
-  
 #### IME  
 + `sudo pacman -S gcin`  
 + `sudo pacman -S libchewing`  # for chewing input method  
@@ -345,7 +334,93 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
 #### USB-Tethering (Works out of box)  
 + <https://wiki.archlinux.org/index.php/Android_tethering#USB_tethering>  
 #### Mount Android phone  
-+  
++ <https://wiki.archlinux.org/index.php/MTP>  
++ install `libmtp`, `android-file-transfer`  
+  
+```  
+$ sudo pacman -S libmtp  
+$ yaourt -S android-file-transfer  
+  
+(connect Android phone to Arch Linux via USB)  
+  
+$ aft-mtp-mount ~/mnt   # mount android to ~/mnt  
+$ fusermount -u ~/mnt   # unmount  
+```  
+  
+  
+### Webcam (currently cannot use)  
++ <https://wiki.archlinux.org/index.php/MacBook#Webcam>  
+  
+> The Facetime HD webcam (included on 2013 MBAs onwards) is no longer UVC device, and therefore, does not work out of the box. It is actually a PCIE device. While [a bcwc_pcie driver is being developed](https://github.com/patjak/bcwc_pcie), it will probably take some time before it is ready. See also [Linux bug #71131](https://bugzilla.kernel.org/show_bug.cgi?id=71131) and [Ubuntu bug #1276711](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1276811).  
+  
+  
+### Disable MacBook Firmware Boot Sound  
+<https://wiki.archlinux.org/index.php/MacBook#Arch_Linux_only>  
+  
+> The only special consideration is the MacBook firmware boot sound.  
+> To ensure that this sound is off: mute the volume in OS X before continuing further.  
+  
+I forgot to mute the volume before deleting the OS X.  
+So, I have to get an OS X installed on USB drive.  
+In order to muse the firmware boot sound and for the firmware updating in the furture.  
+  
+  
+### Hotkey Settings  
++ use `xev` to check the keymap  
++ modify `rc.lua` instead using `sxhkd` if you are using awesomewm.  
++ <https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control>  
++ Add below to the globalkeys in `rc.lua`  
+  
+```  
+-- MacBook Air function keys  
+awful.key({ }, "XF86MonBrightnessDown",  
+    function ()  
+        awful.util.spawn("xbacklight -dec 10")  
+    end  
+),  
+awful.key({ }, "XF86MonBrightnessUp",  
+    function ()  
+        awful.util.spawn("xbacklight -inc 10")  
+    end  
+),  
+awful.key({ }, "XF86LaunchA",  
+    function ()  
+        awful.util.spawn("xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1")  
+    end  
+),  
+awful.key({ }, "XF86LaunchB",  
+    function ()  
+        awful.util.spawn("xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --same-as eDP1")  
+    end  
+),  
+awful.key({ }, "XF86KbdBrightnessDown",  
+    function ()  
+        awful.util.spawn("kbdlight down 10")  
+    end  
+),  
+awful.key({ }, "XF86KbdBrightnessUp",  
+    function ()  
+        awful.util.spawn("kbdlight up 10")  
+    end  
+),  
+awful.key({ }, "XF86AudioMute",  
+    function ()  
+        awful.util.spawn("pactl set-sink-mute 1 toggle")  
+    end  
+),  
+awful.key({ }, "XF86AudioLowerVolume",  
+    function ()  
+        awful.util.spawn("pactl set-sink-mute 1 false")  
+        awful.util.spawn("pactl set-sink-volume 1 -5%")  
+    end  
+),  
+awful.key({ }, "XF86AudioRaiseVolume",  
+    function ()  
+        awful.util.spawn("pactl set-sink-mute 1 false")  
+        awful.util.spawn("pactl set-sink-volume 1 +5%")  
+    end  
+)  
+```  
   
   
 ---  
@@ -364,6 +439,43 @@ There are my personal needed below. It's optional.
   
   
 ### Google Drive  
+  
+There are lots of 3rd party GNU/Linux clients for Google Drive:  
++ <https://github.com/google/skicka>  
++ <https://github.com/odeke-em/drive>  
++ <https://github.com/vitalif/grive2>  
++ <https://github.com/astrada/google-drive-ocamlfuse>  
+  
+  
+#### [skicka](https://github.com/google/skicka)  
+Here, I chose `skicka` because some of my friends had already tried it  
+and they felt good about it, espcially for the `encrypt` funciton.  
+  
+To install `skicka` you need to install `go` and `mercurial` first, so  
+then, install `skicka`, follow instructions below should work.  
+  
+```  
+$ sudo pacman -S go mercurial  
+$ mkdir ~/go  
+$ export GOPATH=~/go  
+$ export PATH=$PATH:~/go/bin  
+$ go get github.com/google/skicka  
+$ skicka init  
+$ skicka -no-browser-auth ls    #set authentication for skicka  
+```  
+  
+You can check out <https://github.com/google/skicka/blob/master/README.md> for further info.  
+  
+  
+#### [drive](https://github.com/odeke-em/drive)  
+But, after I installed `skicka`, it didn't find all my directories on Google Drive.  
+So, I just changed to `drive`  
+  
+use `yaourt -S drive` to install it.  
+then `drive init ${dir_for_google_drive}`  
+copy and paste the token, then it should work.  
+Check <https://github.com/odeke-em/drive/blob/master/README.md> for more info.  
+(This command usage is a bit like `git`)  
   
   
 ### Python  
@@ -423,7 +535,6 @@ There are my personal needed below. It's optional.
     + `yaourt -S messengerfordesktop`  
 + Popcorn-Time  
     + `yaourt -S popcorntime`  
-    + Need some modifications about sha256sum and \_gitname  
   
 ---  
   
@@ -443,5 +554,6 @@ There are my personal needed below. It's optional.
 + [Sxhkd - ArchWiki](https://wiki.archlinux.org/index.php/Sxhkd)  
 + [Bluetooth - ArchWiki](https://wiki.archlinux.org/index.php/Bluetooth)  
 + [Bluetooth headset - ArchWiki](https://wiki.archlinux.org/index.php/Bluetooth_headset)  
-+ [xrandr - ArchWiki](https://wiki.archlinux.org/index.php/Xrandr#Adding_undetected_resolutions)  
-+ [NetworkManager - ArchWiki](https://wiki.archlinux.org/index.php/NetworkManager)  
++ [(=..=)/: skicka: Google drive command line tool](http://xatierlike.blogspot.tw/2015/05/skicka-google-drive-command-line-tool.html)  
++ [MTP - ArchWiki](https://wiki.archlinux.org/index.php/MTP)  
++ [PulseAudio - ArchWiki](https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control)  
