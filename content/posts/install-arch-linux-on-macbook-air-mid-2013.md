@@ -12,7 +12,7 @@ Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linu
   
 `警告: 把 OS X 砍掉的話，之後要更新 firmware 必須使用有安裝 OS X 的外接硬碟上開機才能更新。`  
   
-> 以下這段是一堆廢話，講了我會什麼決定要把 OS X 砍了然後灌 Linux 在 MacBook Air 上  
+> 以下這段是一堆廢話，講了我為什麼決定要把 OS X 砍了然後灌 Linux 在 MacBook Air 上  
 > 不想看的可以直接跳過  
   
 改用 OS X 的這兩年，  
