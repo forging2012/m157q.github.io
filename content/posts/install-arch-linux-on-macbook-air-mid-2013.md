@@ -495,8 +495,8 @@ There are lots of 3rd party GNU/Linux clients for Google Drive:
 Here, I chose `skicka` because some of my friends had already tried it  
 and they felt good about it, espcially for the `encrypt` funciton.  
   
-To install `skicka` you need to install `go` and `mercurial` first, so  
-then, install `skicka`, follow instructions below should work.  
+To install `skicka` you need to install `go` and `mercurial` first.  
+Then, install `skicka`, follow instructions below should work.  
   
 ```  
 $ sudo pacman -S go mercurial  
