@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2015-09-11 02:24:05  
+Modified: 2015-09-14 23:16:05  
   
 ---  
   
@@ -498,7 +498,7 @@ $ reboot  //optional
 Below are my personal needed. It's optional.  
 <https://wiki.archlinux.org/index.php/List_of_applications>  
   
-+ `sudo pacman -S virtualbox`  
++ `sudo pacman -S virtualbox virtualbox-host-modules`  
 + `sudo pacman -S unrar`  
   
   
