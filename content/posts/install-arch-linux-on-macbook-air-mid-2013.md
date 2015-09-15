@@ -336,7 +336,7 @@ sudo systemctl start thermald
 #### Fix the kworker CPU hug  
 "kworker" triggers some ACPI interrupts.  
 You can use `grep . -r /sys/firmware/acpi/interrupts/` to check.  
-For me, `GPE4E` triggered lots of ACPI interruptions.  
+For me, `gpe4E` triggered lots of ACPI interruptions.  
 So disable it via systemd.  
   
 Create `/etc/systemd/system/suppress-gpe4E.service`  
@@ -385,9 +385,9 @@ options i915 enable_rc6=1 enable_fbc=1 lvds_downclock=1
     + Add `vm.swappiness=1`  
   
 #### Fixing suspend mode  
-Use `cat /proc/acpi/wakeup.  
-There's a line saying `XHC1  S3  \*enabled  pci:0000:00:14.0`.  
-We only want the `LID0  S4  \*enabled   platform:PNP0C0D:00` to be enbaled.  
+Use `cat /proc/acpi/wakeup`.  
+There's a line saying `XHC1  S3  *enabled  pci:0000:00:14.0`.  
+We only want the `LID0  S4  *enabled   platform:PNP0C0D:00` to be enbaled.  
 So `sudoedit /etc/udev/rules.d/90-xhc_sleep.rules` and add the follwing lines.  
   
 ```  
@@ -451,10 +451,12 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
 + `yaourt -S pmount`  
   
 ### Fan  
-+ `yaourt -S macfanctld`  
-+ `sudo systemctl enable macfanctld`  
-+ `sudo systemctl start macfanctld`  
 + <https://github.com/MikaelStrom/macfanctld>  
+```  
+$ yaourt -S macfanctld  
+$ sudo systemctl enable macfanctld  
+$ sudo systemctl start macfanctld  
+```  
   
   
 ### IME  
@@ -558,19 +560,19 @@ awful.key({ }, "XF86KbdBrightnessUp",
 ),  
 awful.key({ }, "XF86AudioMute",  
     function ()  
-        awful.util.spawn("pactl set-sink-mute 1 toggle")  
+        awful.util.spawn("pactl set-sink-mute 0 toggle")  
     end  
 ),  
 awful.key({ }, "XF86AudioLowerVolume",  
     function ()  
-        awful.util.spawn("pactl set-sink-mute 1 false")  
-        awful.util.spawn("pactl set-sink-volume 1 -5%")  
+        awful.util.spawn("pactl set-sink-mute 0 false")  
+        awful.util.spawn("pactl set-sink-volume 0 -5%")  
     end  
 ),  
 awful.key({ }, "XF86AudioRaiseVolume",  
     function ()  
-        awful.util.spawn("pactl set-sink-mute 1 false")  
-        awful.util.spawn("pactl set-sink-volume 1 +5%")  
+        awful.util.spawn("pactl set-sink-mute 0 false")  
+        awful.util.spawn("pactl set-sink-volume 0 +5%")  
     end  
 )  
 ```  
