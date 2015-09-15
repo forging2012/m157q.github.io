@@ -6,7 +6,7 @@ Tags: Life, NewYear'sResolutions
 Slug: life-new-years-resolutions-for-2015  
 Pin: true  
 Summary: 新年新希望  
-Modified: 2015-09-04 09:24  
+Modified: 2015-09-15 23:12:55  
   
 雖然一月快過完了  
 但應該還不算太晚  
@@ -99,9 +99,9 @@ Modified: 2015-09-04 09:24
   
 ## Competition  
   
-- [ ] TSCC 5th  
+- [x] TSCC 5th  
     - Prize: An Excellent Work  
-    - (blogpost)  
+    - [TSCC 2015 Notes and Thoughts | Just for noting](https://m157q.github.io/posts/2015/09/15/tscc-2015-notes-and-thoughts/)  
   
 ---  
   
