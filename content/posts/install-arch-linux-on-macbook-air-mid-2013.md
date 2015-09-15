@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2015-09-14 23:16:05  
+Modified: 2015-09-15 22:55:56  
   
 ---  
   
@@ -136,12 +136,6 @@ make install
 ```  
   
   
-### Prevent shutdown directly when power button is pressed  
-+ <https://wiki.archlinux.org/index.php/MacBookPro11,x#Repurpose_the_power_key>  
-+ `/etc/systemd/logind.conf`  
-    + `HandlePowerKey=suspend`  
-  
-  
 ### Xorg  
 + `sudo pacman -S xcompmgr xorg-xrdb`  
     + [xcommpgr](https://wiki.archlinux.org/index.php/Xcompmgr)  
@@ -189,6 +183,15 @@ $ lspci -vnn |grep 0280
 > dhcpcd 跟 wicd 會衝突，開著 dhcpcd 的時候使用 wicd 的話  
 > 會無法使用無線網路連線，錯誤訊息也看不出啥端倪，我就是卡在這很久Orz  
   
+#### Improve DHCP connect init speed  
++ Add below into `/etc/dhcpcd.conf`  
+  
+```  
+# Disable IP ARP checking  
+noarp  
+```  
+  
+  
 #### Network Proxy Settings  
 + <https://wiki.archlinux.org/index.php/Proxy_settings>  
 + `wicd` has no proxy setting function, I can only set proxy configuration in `Firefox`.(This only works for web browsing)  
@@ -225,6 +228,7 @@ options hid_apple iso_layout=0
     + only basic functions  
 or  
 + `yaourt xf86-input-mtrack-git`  
+    + <https://github.com/BlueDragonX/xf86-input-mtrack>  
     + for OS X like touchpad and flexible configuration  
 ```  
 /usr/share/X11/xorg.conf.d/10-mtrack.conf  
@@ -234,8 +238,13 @@ Section "InputClass"
     Identifier "Touchpads"  
     Driver "mtrack"  
   
-    Option "Thumbsize" "50"  
+    Option "Thumbsize" "25"  
     Option "ScrollDistance" "100"  
+    Option "Sensitivity" "0.9"  
+    Option "MaxTapTime" "90"  
+    Option "IgnoreThumb" "true"  
+    Option "IgnorePalm" "true"  
+    Option "TapDragEnable" "false"  
   
     # Natural Scrolling  
     Option "ScrollUpButton" "5"  
@@ -285,10 +294,106 @@ defaults.ctl.card 1
   
 ### Power Management  
 + <https://wiki.archlinux.org/index.php/Power_management>  
-    + `sudo pacman -S acpi powertop tlp`  
-    + powertop  
-        + `sudo powertop --auto-tune`  
 + <https://wiki.archlinux.org/index.php/MacBookPro11,x#Powersave>  
+  
+#### ACPI  
++ `sudo pacman -S acpi`  
+  
+#### Powertop  
++ `sudo pacman -S powertop`  
++ Create `/etc/systemd/system/powertop.service`  
+```  
+[Unit]  
+Description=Powertop Service  
+[Service]  
+Type=oneshot  
+ExecStart=/usr/bin/powertop --auto-tune  
+[Install]  
+WantedBy=multi-user.target  
+```  
++ `sudo systemctl enable powertop.service`  
++ `sudo systemctl start powertop.service`  
+  
+  
+#### cpupower  
++ <https://github.com/torvalds/linux/tree/master/tools/power/cpupower>  
+```  
+sudo pacman -S cpupower  
+sudo systemctl enable cpupower  
+sudo systemctl start cpupower  
+sudo cpupower frequency-set -g powersave  
+```  
+  
+#### thermald  
++ [01org/thermal_daemon · GitHub](https://github.com/01org/thermal_daemon)  
++ Thermal daemon for Intel Architecture  
+```  
+yaourt -S thermald  
+sudo systemctl enable thermald  
+sudo systemctl start thermald  
+```  
+  
+#### Fix the kworker CPU hug  
+"kworker" triggers some ACPI interrupts.  
+You can use `grep . -r /sys/firmware/acpi/interrupts/` to check.  
+For me, `GPE4E` triggered lots of ACPI interruptions.  
+So disable it via systemd.  
+  
+Create `/etc/systemd/system/suppress-gpe4E.service`  
+and add the following lines.  
+  
+```  
+[Unit]  
+Description=Disables GPE 4E, an interrupt that is going crazy on Macs  
+[Service]  
+ExecStart=/usr/bin/bash -c 'echo "disable" > /sys/firmware/acpi/interrupts/gpe4E'  
+[Install]  
+WantedBy=multi-user.target  
+```  
+  
+then enable and start it:  
+`sudo systemctl enable suppress-gpe4E.service`  
+`sudo systemctl start suppress-gpe4E.service`  
+  
+#### Enable power save mode on Intel Audio card  
+Create new hook:  
+`sudoedit /etc/modprobe.d/60-snd-hda-intel.conf`  
+and add:  
+```  
+# Enable Power Saving on Intel HDA Audio  
+options snd_hda_intel power_save=1  
+```  
+  
+#### Enable powersaving options for Intel Processor  
+Create new hook:  
+`sudoedit /etc/modprobe.d/60-i915.conf`  
+and add:  
+```  
+# Experimental options to improve power saving on Intel Graphics  
+options i915 enable_rc6=1 enable_fbc=1 lvds_downclock=1  
+```  
+  
+### Suspend problem  
+#### Prevent shutdown directly when power button is pressed  
++ <https://wiki.archlinux.org/index.php/MacBookPro11,x#Repurpose_the_power_key>  
++ `/etc/systemd/logind.conf`  
+    + `HandlePowerKey=suspend`  
+  
+#### Disable [Swappiness](https://en.wikipedia.org/wiki/Swappiness)  
++ `sudo sysctl vm.swappiness=1`  
++ `sudoedit /etc/sysctl.d/99-sysctl.conf`  
+    + Add `vm.swappiness=1`  
+  
+#### Fixing suspend mode  
+Use `cat /proc/acpi/wakeup.  
+There's a line saying `XHC1  S3  \*enabled  pci:0000:00:14.0`.  
+We only want the `LID0  S4  \*enabled   platform:PNP0C0D:00` to be enbaled.  
+So `sudoedit /etc/udev/rules.d/90-xhc_sleep.rules` and add the follwing lines.  
+  
+```  
+# Disable wake from S3 on XHC1  
+SUBSYSTEM=="pci", KERNEL=="0000:00:14.0", ATTR{device}=="0x9c31" RUN+="/bin/sh -c '/bin/echo disabled > /sys$env{DEVPATH}/power/wakeup'"  
+```  
   
   
 ### Monitor  
@@ -345,8 +450,14 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
 ### USB  
 + `yaourt -S pmount`  
   
+### Fan  
++ `yaourt -S macfanctld`  
++ `sudo systemctl enable macfanctld`  
++ `sudo systemctl start macfanctld`  
++ <https://github.com/MikaelStrom/macfanctld>  
   
-#### IME  
+  
+### IME  
 + `sudo pacman -S gcin`  
 + `sudo pacman -S libchewing`  
     + for chewing input method  
@@ -354,13 +465,13 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
     + for Japanese input method  
 + `sudo gtk-query-immodules-2.0 --update-cache`  
   
-#### Browser  
+### Browser  
 + `sudo pacman -S firefox firefox-i18n-zh-tw`  
 + Flash  
     + `sudo pacman -S flashplugin`  
     + <https://addons.mozilla.org/en-US/firefox/addon/flashblock/>  
   
-#### Fonts  
+### Fonts  
 + `sudo pacman -S wqy-zenhei adobe-source-han-sans-tw-fonts`  
   
 ### Mobile  
@@ -490,6 +601,11 @@ $ sudo modprobe wl mba6x_bl
 $ reboot  //optional  
 (reboot again, and make sure that everything goes right.)  
 ```  
+  
++ Upgrade all packages  
+    + `yaourt -Syua`  
++ Upgrade all packages (with refetching and recompling all git packages  
+    + `yaourt -Syua --devel`  
   
 ---  
   
@@ -629,3 +745,4 @@ Check <https://github.com/odeke-em/drive/blob/master/README.md> for more info.
 + [(=..=)/: skicka: Google drive command line tool](http://xatierlike.blogspot.tw/2015/05/skicka-google-drive-command-line-tool.html)  
 + [MTP - ArchWiki](https://wiki.archlinux.org/index.php/MTP)  
 + [PulseAudio - ArchWiki](https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control)  
++ [Arch Linux running on my MacBook — Medium](https://medium.com/@PhilPlckthun/arch-linux-running-on-my-macbook-2ea525ebefe3)  
