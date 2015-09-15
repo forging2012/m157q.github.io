@@ -165,6 +165,7 @@ newpage:
 ifdef NAME
 	echo "Title: $(NAME)  " > $(PAGESDIR)/$(SLUG).$(EXT)
 	echo "Slug: $(SLUG)  " >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo "Date: $(DATE)  " >> $(PAGESDIR)/$(SLUG).$(EXT)
 	echo ""                >> $(PAGESDIR)/$(SLUG).$(EXT)
 	${EDITOR} ${PAGESDIR}/${SLUG}.$(EXT)
 else
