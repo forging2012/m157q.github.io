@@ -6,7 +6,7 @@ Tags: Life, NewYear'sResolutions
 Slug: life-new-years-resolutions-for-2015  
 Pin: true  
 Summary: 新年新希望  
-Modified: 2015-10-16 15:31:55  
+Modified: 2015-10-19 14:41  
   
 雖然一月快過完了  
 但應該還不算太晚  
@@ -129,6 +129,9 @@ Modified: 2015-10-16 15:31:55
 - [x] At least give 1 talk in conference  
     - [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi)  
 - [x] At least 1 write-up for some CTF  
+    - [0CTF 2015 Note | Just for noting](https://m157q.github.io/posts/2015/03/30/0ctf-2015-note/)  
+    - [HITCON 2015 IOT Wargame | Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
+    - [HITCON CTF 2015 Quals Write-up | Just for noting](https://m157q.github.io/posts/2015/10/19/hitcon-ctf-2015-quals-write-up/)  
 - [x] At least contribute to 1 open source project  
     - [[plugins/pip] Add shortcut for upgrading pip outdated packages. by M157q · Pull Request #4303 · robbyrussell/oh-my-zsh · GitHub](https://github.com/robbyrussell/oh-my-zsh/pull/4303)  
     - [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9)  
