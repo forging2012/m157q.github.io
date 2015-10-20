@@ -9,9 +9,13 @@ Modified: 2015-10-20 14:07
   
 交大 DSNS Lab 開發  
 有申請專利  
+看起來就是個有加密的 telnet (?)  
 聽說後來沒人維護，就被 SSH 幹掉了  
 又知道了奇怪的歷史  
 以前的人都好強啊  
+  
+[SNP telnet for Windows 給你安全的 telnet 環境 - PChome 下載](http://toget.pchome.com.tw/category/network/11685.html)  
+這邊還有相關軟體可以下載得到(?)  
   
 Quote from [《網路與通訊》 淺談網路安全與防護](http://www.ascc.sinica.edu.tw/nl/88/1517/02.txt)  
 > 3.SNP：  
@@ -49,6 +53,7 @@ Quote from [Prof. Shiuhpyng Shieh](https://comm.ntu.edu.tw/2010UKworkshop/NSP9.h
 + [Prof. Shiuhpyng Shieh](https://comm.ntu.edu.tw/2010UKworkshop/NSP9.htm)  
 + [netsec-intro-2nd](http://www.slidefinder.net/c/conventional_encryption/32524394)  
 + [BSD簡介 - SNP & ptelnet](http://content.edu.tw/senior/computer/ks_ks/pro/new8.htm)  
++ [SNP telnet for Windows 給你安全的 telnet 環境 - PChome 下載](http://toget.pchome.com.tw/category/network/11685.html)  
 + (dead) [FreeBSD SNP 1.裝設SNP](http://fanqiang.chinaunix.net/a1/b2/20020308/060200125_b.html)  
 	+ (backup) [[備份] 安裝 SNP 通訊全程加密](https://www.evernote.com/shard/s351/sh/18196c4c-a29c-4b39-a114-78991a799f26/908d2e28eaaced87bc50f9bd05b6dfd3)  
 + (dead) [《網路與通訊》 淺談網路安全與防護](http://www.ascc.sinica.edu.tw/nl/88/1517/02.txt)  
