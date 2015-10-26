@@ -1,10 +1,11 @@
-Title: [tmux] protocol version mismatch
-Date: 2014-02-27 16:01
-Author: m157q
-Category: Tmux
-Tags: tmux, error
-Slug: tmux-protocol-version-mismatch
-
+Title: Protocol version mismatch error in tmux  
+Date: 2014-02-27 16:01  
+Author: m157q  
+Category: Misc  
+Tags: tmux, error  
+Slug: protocol-version-mismatch-error-in-tmux  
+Modified: 2015-10-26 13:28  
+  
 今天打 `$ tmux attach` 之後  
   
 竟然噴了錯誤訊息 `protocol version mismatch (client 8, server 7)`  

@@ -1,10 +1,12 @@
-Title: [Linux] Install Mint 16 In Dual With Win8 On Notebook With UEFI
-Date: 2014-02-21 03:00
-Author: m157q
-Category: Linux
-Tags: Linux, Mint, Win8, UEFI, DualBoot
-Slug: linux-install-mint-16-in-dual-with-win8-on-notebook-with-uefi
-
+Title: Install Linux Mint 16 in Dual Boot with Win8 on Notebook with UEFI  
+Date: 2014-02-21 03:00  
+Author: m157q  
+Category: Misc  
+Tags: Linux, Mint, Win8, UEFI, Dual Boot  
+Slug: install-linux-mint-16-in-dual-boot-with-win8-on-notebook-with-uefi  
+Modified: 2015-10-26 13:53  
+  
+  
 有人不會裝，又剛好自己沒有在 UEFI 系統的 Win8 筆電上灌 Linux 的經驗，就想說來試試看。  
 (之前嘗試要幫人把 UEFI 系統的 Win8 灌成 Win7 失敗後，就覺得 UEFI + Win8 很難搞)  
   
@@ -16,10 +18,10 @@ Slug: linux-install-mint-16-in-dual-with-win8-on-notebook-with-uefi
   
 以下簡要紀錄過程  
   
-<!--more-->  
+---  
   
-1. 到 [Mint 官方網站](http://www.linuxmint.com/)下載 Image 檔  
-    + [Download Linux Mint 16 Petra](http://www.linuxmint.com/download.php)  
+1. 到 [Mint 官方網站](http://www.linuxmint.com/) 下載 Image 檔  
+    + [Download Linux Mint Latest Version](http://www.linuxmint.com/download.php)  
         + 自行選擇 Window Manager 和符合的位元版本  
     + 將 .iso 檔製作成 LiveUSB  
 2. 清出一個 Unallocated 的磁區給 Mint 安裝用  
@@ -41,9 +43,12 @@ Slug: linux-install-mint-16-in-dual-with-win8-on-notebook-with-uefi
 5. 重開機後，應該就會進入 LiveUSB 中  
 6. 其他就參考 References 部分的第一篇文章，照著 Mint 的安裝流程安裝  
     + 切 /, /swap, /home  
-          
-#### Refereneces  
+  
+---  
+  
+## Refereneces  
+  
 + [Guide To Install Linux Mint 16 In Dual Boot With Windows](http://itsfoss.com/guide-install-linux-mint-16-dual-boot-windows/)  
 + [Black screen when boot from liveUSB to install Linux Mint 16](http://forums.linuxmint.com/viewtopic.php?f=46&t=155164)  
-+ [Booting Linux Mint 16 from Live USB fails in initramfs](http://forums.linuxmint.com/viewtopic.php?f=46&t=159972)  
++ (dead) [Booting Linux Mint 16 from Live USB fails in initramfs](http://forums.linuxmint.com/viewtopic.php?f=46&t=159972)  
 + [《SOLVED》Black screen before installation, Mint 16](http://forums.linuxmint.com/viewtopic.php?f=46&t=153074)  

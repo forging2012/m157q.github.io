@@ -1,19 +1,19 @@
-Title: [OS] RAID Cheat Sheet
-Date: 2014-01-12 19:22
-Author: m157q
-Category: Os
-Tags: Operating_System, RAID, Disk
-Slug: os-raid-cheat-sheet
-
->Format  
->+ Type - Name  
->    + Minimum Disks (M)  
->    + Fault Tolerance Disks (F)  
->    + Attributes (A)  
+Title: RAID Cheat Sheet  
+Date: 2014-01-12 19:22  
+Author: m157q  
+Category: Misc  
+Tags: RAID, Cheat Sheet  
+Slug: raid-cheat-sheet  
+Modified: 2015-10-26 13:43  
   
+## Format of the note below  
   
-<!--more-->  
++ Type - Name  
+    + Minimum Disks (M)  
+    + Fault Tolerance Disks (F)  
+    + Attributes (A)  
   
+---  
   
 + RAID0 - Non Redundant Striping  
     + M: 2  
@@ -33,7 +33,7 @@ Slug: os-raid-cheat-sheet
 + RAID3 - Bit Interleaved Parity  
     + M: 3  
     + F: 1  
-    + A:   
+    + A:  
         + Bit Level Striping (Wikipedia said Byte Level)  
         + Dedicated Parity Code (Error Detection)  
 + RAID4 - Block Interleaved Parity  
@@ -53,7 +53,7 @@ Slug: os-raid-cheat-sheet
     + F: 2  
     + A:  
         + Block Level Striping  
-        + Double Distributed Parity Code (Error Detection) aka [Reed-Solomon Code](http://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction)   
+        + Double Distributed Parity Code (Error Detection) aka [Reed-Solomon Code](http://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction)  
 + RAID01 - RAID0 + RAID1  
     + M: 4  
     + F: ?  
@@ -63,7 +63,8 @@ Slug: os-raid-cheat-sheet
     + F: ?  
     + A: Mirroring First, then Striping.  
   
+---  
   
-#### References  
+## References  
 + [RAID - Wikipedia](http://en.wikipedia.org/wiki/RAID)  
 + [Reed-Solomon Error Correction - Wikipedia](http://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction)  
