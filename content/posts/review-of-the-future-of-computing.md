@@ -1,11 +1,16 @@
-Title: [Note] 代碼的未來 by 松本行弘
-Date: 2014-03-10 21:37
-Author: m157q
-Category: Note
-Tags: NoSQL, bigdata, RDBMS
-Slug: note-dai-ma-de-wei-lai-by-song-ben-xing-hong
-
+Title: Review of 代碼的未來  
+Date: 2014-03-10 21:37  
+Author: m157q  
+Category: Review  
+Tags: NoSQL, Big Data, RDBMS  
+Slug: review-of-the-future-of-computing  
+Modified: 2015-10-26 12:08  
+  
 ### The Future of Computing by Matz  
+  
+本書作者為 Ruby 之父松本行弘(Matz)  
+  
+中譯本連結：[博客來-圖靈程序設計叢書：代碼的未來](http://www.books.com.tw/products/CN11004414)  
   
 這本書裡面介紹了很多我都不知道的東西  
   
@@ -82,10 +87,10 @@ Ch5. 支持 Big Data 的儲存技術
             + Db4o  
             + ZopeDB  
             + ObjectStore  
-          
+  
 + MongoDB  
     + born in 2009.  
-    + mongod    
+    + mongod  
         + `$ sudo mongod --dbpath /var/db/mongo` use /var/db/mongo to store db files  
     + mongo command  
         + `$ mongo` for using mongo shell  
@@ -103,15 +108,20 @@ Ch5. 支持 Big Data 的儲存技術
     + Support **Atomic operation & optimistic concurrency control**  
     + Support Distributed Environment  
     + Compare with SQL  
-          
-```MySQL MySQL  
+  
+```MySQL  
 SELECT * FROM bench WHERE x = 4  
 ```  
-and   
-```JavaScript Mongo  
+in MySQL  
+  
+and  
+  
+```JavaScript  
 db.bench.find({x: 4})  
 ```  
-are some meaning.  
+in MongoDB  
+  
+are equal.  
   
 + Leaky abstraction  
     + 當 object 的調用越來越頻繁和複雜時，產生性能上的問題，導致 RDM 中的 Record 並沒有真的成為  object，在特殊的情況下，會暴露出抽象化的紕漏。  
@@ -156,7 +166,7 @@ are some meaning.
             + 必須用 Java 撰寫對 VoltDB Query 的 client function  
             + 因為存在 RAM 中，所以儲存量大小受到 RAM 的限制，而且資料遺失的危險性也比將資料存在硬碟中的傳統 RDBMS 更危險。  
             + 靈活性沒有 NoSQL 來的高  
-              
+  
 ---  
   
 Ch6. 多核時代的編程  
@@ -224,14 +234,14 @@ Ch6. 多核時代的編程
     + 透過 ssh 的安全性較高，但因為加密的關係，編譯效能會下降 25% 左右。  
     + 透過 distccd 的話，因為沒有認證機制，安全性較低，但編譯效能較快。  
     + 用法 `$ CC='distcc gcc' make -j4`  
-      
+  
 #### Ch6.3 Non Blocking I/O  
   
 + Event Driven Model  
 + read(2), select, O_NONBLOCK  
 + Ruby: read_partial, read_nonblock  
 + POSIX: aio_read  
-      
+  
 > POSIX (Portable Operating System Interface X), IEEE 103, 在各種 UNIX system 上 API 相互關聯的標準  
   
 #### Ch6.4 node.js  
@@ -251,7 +261,7 @@ Ch6. 多核時代的編程
 + 其他 Event Driven Model  
     + Ruby: EventMachine, Rev  
     + Python: Twisted  
-      
+  
 > [sid](http://www.debian.org/releases/sid/) - The unstable distribution of Debian  
   
 #### Ch6.5 ZeroMQ  
@@ -320,7 +330,5 @@ Ch6. 多核時代的編程
             + 雙向, 一對一  
     + 其標準 API 是以 C 撰寫的  
     + 啓動順序自由：一般必須先啓動 Server 端，但在 ZeroMQ，先啓動 Client 端也是可以的。如果 Client 發現 Server 端未啓動的話，便會進入待機狀態，等待 Server 開啓服務。  
-      
+  
 > 現在已是多核時代，撰寫程式的時候更應該考慮使用多核心來提高效能，而不是停留在以前單核心時代的撰寫方式。  
-      
-      
