@@ -1,17 +1,21 @@
-Title: [Web] Pass PHP Variables to JavaScript in Yii
-Date: 2014-02-27 13:55
-Author: m157q
-Category: Web
-Tags: javascript, php, Web, jquery, yii
-Slug: web-pass-php-variables-to-javascript-in-yii
-
+Title: Pass PHP Variables to JavaScript in Yii  
+Date: 2014-02-27 13:55  
+Author: m157q  
+Category: Web  
+Tags: JavaScript, PHP, jQuery, Yii  
+Slug: pass-php-variables-to-javascript-in-yii  
+Modified: 2015-10-27 22:40  
+  
+  
+## Preface  
+  
 因為網站需求 想找看看有沒有可以把 PHP 中的變數傳給 JavaScript 使用的方法  
   
 主要是因為 URL 不想像之前一樣是寫死在 JavaScript 裡面  
   
 不然之後 URL routing 又改的話 又得重新修改 實在很麻煩  
   
-想用 Yii::app()->createAbsoluteUrl(''); 生成該頁面的網址之後  
+想用 `Yii::app()->createAbsoluteUrl('');` 生成該頁面的網址之後  
   
 再丟給 JavaScript  
   
@@ -19,7 +23,10 @@ Slug: web-pass-php-variables-to-javascript-in-yii
   
 其實找了有點久 好像沒找比較好的解法  
   
-所以最後用了 [stackoverflow 上的這篇](http://stackoverflow.com/questions/8912548/in-yii-pass-php-variables-to-javascript)中最底下的回覆  
+  
+## Solution  
+  
+所以最後用了 [stackoverflow 上的這篇](http://stackoverflow.com/questions/8912548/in-yii-pass-php-variables-to-javascript) 中最底下的回覆  
   
 但裡面的寫法有一點點小錯誤  
   
@@ -35,7 +42,7 @@ Yii::app()->clientScript->registerScript("myVarList",
 所以最後寫的 Code 長這樣  
   
 ```php  
-<?php   
+<?php  
 $myVar = ['url' => Yii::app()->createAbsoluteUrl($this->module->id.'/default/list/json/1')];  
 ?>  
   
@@ -54,9 +61,9 @@ function updateList(name)
 ?>  
 ```  
   
-在 JavaScript 中，可以透過 myVar.url 順利拿到 URL  
+在 JavaScript 中，可以透過 `myVar.url` 順利拿到 URL  
   
-#### 補充  
+## Appendix  
   
 ```php  
 <<<EOD  
@@ -64,15 +71,17 @@ function updateList(name)
 EOD;  
 ```  
   
-此種寫法在 PHP 中稱為 HEREDOC  
+此種寫法在 PHP 中稱為 `HEREDOC`  
   
-> A third way to delimit strings is the heredoc syntax: <<<. After this operator, an identifier is provided, then a newline. The string itself follows, and then the same identifier again to close the quotation.  
+> A third way to delimit strings is the heredoc syntax: <<<.  
+> After this operator, an identifier is provided, then a newline.  
+> The string itself follows, and then the same identifier again to close the quotation.  
   
 詳見官方說明 [PHP - HEREDOC syntax](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)  
   
 ---  
   
-#### References  
+## References  
   
 + [In Yii, pass PHP variables to JavaScript](http://stackoverflow.com/questions/8912548/in-yii-pass-php-variables-to-javascript "In Yii, pass PHP variables to JavaScript")  
 + [jQuery.parseJSON](https://api.jquery.com/jQuery.parseJSON/)  
