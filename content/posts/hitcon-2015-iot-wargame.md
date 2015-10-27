@@ -2,10 +2,11 @@ Title: HITCON 2015 IOT Wargame
 Slug: hitcon-2015-iot-wargame  
 Date: 2015-08-29 21:11:33  
 Authors: m157q  
-Category: Write-up  
-Tags: HITCON, Arduino, Python, Raspberry Pi  
+Category: CTF  
+Tags: HITCON, Arduino, Python, Raspberry Pi, write-up  
 Summary: Write-up about HITCON 2015 CMT IOT Wargame (Python Wargame?)  
 Modified: 2015-09-03 21:32:19  
+  
   
 今年的 HITCON 的主題是 IoT，  
 所以 Wargame 也配合了 IoT 的主題，  

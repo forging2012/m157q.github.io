@@ -2,9 +2,10 @@ Title: HITCON CTF 2015 Quals Write-up
 Slug: hitcon-ctf-2015-quals-write-up  
 Date: 2015-10-19 11:42:55  
 Authors: m157q  
-Category: Write-up  
-Tags: HITCON, CTF, Ruby  
+Category: CTF  
+Tags: HITCON, write-up, Ruby  
 Summary: Just a write-up for HITCON CTF 2015 Quals. So difficult. T_T  
+  
   
 ## MISC - Flag not Found [1]  
   
