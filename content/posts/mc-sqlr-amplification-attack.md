@@ -1,20 +1,20 @@
-Title: [InfoSec] MC-SQLR 放大攻擊
-Date: 2015-01-22 15:20
-Modified: 2015-02-11 18:25
-Author: m157q
-Category: Infosec
-Tags: DDoS, InfoSec, MC-SQLR, Amplification Attack
-Slug: infosec-mc-sqlr-amplification-attack
-
+Title: MC-SQLR 放大攻擊  
+Date: 2015-01-22 15:20  
+Modified: 2015-02-11 18:25  
+Author: m157q  
+Category: Security  
+Tags: DDoS, MC-SQLR, Amplification Attack  
+Slug: mc-sqlr-amplification-attack  
+Modified: 2015-10-27 11:44  
+  
+  
 在 Twitter 上看到  
   
 [HD Moore on Twitter: "MS SQL Server Resolution Service enables reflected DDoS with 440x amplification http://t.co/wAy3szhseR < Still 200k+ vulnerable IPs on IPv4"](https://twitter.com/hdmoore/status/558041881138192386)  
   
-<!--more-->  
-  
 ---  
   
-**原文**  
+### 原文連結  
 [Default Deny: MC-SQLR Amplification: MS SQL Server Resolution Service enables reflected DDoS with 440x amplification](http://kurtaubuchon.blogspot.tw/2015/01/mc-sqlr-amplification-ms-sql-server.html)  
   
 ---  
@@ -23,7 +23,7 @@ Slug: infosec-mc-sqlr-amplification-attack
 有個據信由 Bitcoin Baron 發起的  
 針對 the City of Columbia, Missouri 的網站  
 進行的 DDoS 攻擊中  
-發現大量的 1434/UDP 封包  
+發現大量的 `1434/UDP` 封包  
 此類封包的平均大小大約為 441 bytes (含 header)  
 封包內容長得像這樣  
   
@@ -62,7 +62,7 @@ print(ans)
 間接對 victim 造成 DDoS 攻擊  
   
 而將此 Resolution Service 關閉會影響一些正常的服務  
-所以作者建議不要將有運行此 Service 的 MS SQL Server   
+所以作者建議不要將有運行此 Service 的 MS SQL Server  
 放在 Public Network  
 >The behavior exploited in this reflection attack is a key component of the functioning of MS SQL Server 2000 and later.  
 >Disabling this service is likely not to be an option.  

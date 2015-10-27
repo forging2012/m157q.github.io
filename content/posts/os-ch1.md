@@ -1,13 +1,11 @@
-Title: [Note] OS Ch1
-Date: 2013-11-04 15:23
-Author: m157q
-Category: Note
-Tags: OperatingSystem
-Slug: note-os-ch1
-
-## Note of Operating System Ch1  
+Title: OS Ch1  
+Date: 2013-11-04 15:23  
+Author: m157q  
+Category: Course  
+Tags: Operating System  
+Slug: os-ch1  
+Modified: 2015-10-26 15:30  
   
-<!--more-->  
   
 * What is an Operating System?  
     * A program that acts as an intermediary between an application and the computer hardware  
@@ -20,7 +18,7 @@ Slug: note-os-ch1
     * a piece of program (or pieces of programs)  
     * a resource allocator  
     * a control program  
-      
+  
 * Computer system can be divided into four components  
     * Hardware  
     * Operating system  
@@ -31,8 +29,8 @@ Slug: note-os-ch1
 "Everything else is either a system program (ships with the operating system) or an application program."  
   
 * Computer-System operation  
-    * One or more CPUs, device controllers connect through common bus providing access to   
-      shared memory    
+    * One or more CPUs, device controllers connect through common bus providing access to  
+      shared memory  
     * Concurrent execution of CPUs and devices competing for memory cycles  
     * I/O devices and the CPU can execute concurrently  
     * Each device controller is in charge of a particular device type  
@@ -40,7 +38,6 @@ Slug: note-os-ch1
     * CPU moves data from/to main memory to/from local buffers  
     * I/O is from the device to local buffer of controller  
     * Device controller informs CPU that it has finished its operation by causing an interrupt  
-  
 * ￼Common Functions of Interrupts  
     * Interrupt transfers control to the interrupt service routine generally, through the **interrupt vector, which contains the addresses of all the service routines**  
     * Interrupt architecture must save the address of the interrupted instruction  
@@ -49,26 +46,26 @@ Slug: note-os-ch1
     * An operating system is **interrupt driven**  
   
 * Interrupts  
-![Screen Shot 2013-11-04 at 11.40.26 PM.png](http://user-image.logdown.io/user/5428/blog/5443/post/158058/Z6fdFC3nQPyajnKFH4Y1_Screen%20Shot%202013-11-04%20at%2011.40.26%20PM.png)  
+![Interrupt Vectors in Liunx](/files/os-ch1/interrupt-vectors-in-linux.png)  
   
 * I/O structure  
     * After I/O starts, control returns to user program only upon I/O completion  
         * Wait instruction idles the CPU until the next interrupt  
         * At most one I/O request is outstanding at a time, no simultaneous I/O processing  
-      
+  
     * **I/O muliplexing** After I/O starts, control returns to user program without waiting f			   or I/O completion  
-        * **System call** – request to the operating system to allow user to wait for I/O   
+        * **System call** – request to the operating system to allow user to wait for I/O  
         	completion  
-        * **Device-status table** contains entry for each I/O device indicating its type,   
+        * **Device-status table** contains entry for each I/O device indicating its type,  
         	address, and state  
         * Operating system indexes into I/O device table to determine device status and to  
         	modify table entry to include interrupt  
-            
+  
 * Direct Memory Access Structure (DMA)  
     * Device controller transfers blocks of data from buffer storage directly to main  
       memory without CPU intervention  
     * Only one interrupt is generated per block, rather than the one interrupt per byte  
-         
+  
 * Storage Structure  
    * Main memory  
    * Secondary storage - extension of main memory that provides nonvolatile  
@@ -78,12 +75,12 @@ Slug: note-os-ch1
        * The **disk controller** determines the logical interaction between the device  
        	 and the computer  
        * NCQ vs no NCQ  
-             
+  
 * Storage Hierarchy  
     * Speed  
     * Cost  
     * Volatility  
-         
+  
 * Caching  
     * copying information into faster storage system; main memory  
       can be viewed as a last cache for secondary storage  
@@ -92,7 +89,7 @@ Slug: note-os-ch1
     * Cache smaller than storage being cached  
         * Cache management important design problem  
         * Cache size and replacement policy  
-             
+  
 * Computer-System Architecture  
     * single general-purpose processor (PDAs through mainframes)  
     * special-purpose processors  
@@ -103,7 +100,7 @@ Slug: note-os-ch1
         * Two types  
             * Asymmetric Multiprocessing  
             * Symmetric Multiprocessing  
-              
+  
 * Clustered Systems  
     * multiple systems working together  
     * Usually sharing storage via a storage-area network (SAN)  
@@ -112,16 +109,16 @@ Slug: note-os-ch1
         * Symmetric clustering has multiple nodes running applications, monitoring  
           each other  
     * Some clusters are for high-performance computing (HPC). Applications must be written to 		 use parallelization  
-      
+  
 * Computer Startup  
     1. bootstrap program is loaded at power-up or reboot  
         * Typically stored in ROM or EPROM, generally known as firmware  
         * Initializes all aspects of system  
         * Loads operating system kernel and starts execution  
-    2. Operating system probes and initializes hardware   
+    2. Operating system probes and initializes hardware  
     3. Hardware provides the driving power  
     4. Operating system administers the power to system services and applications (jobs)  
-      
+  
 * Operating System Structure  
     * Multiprogramming  
         * Needed for efficiency  
@@ -130,7 +127,7 @@ Slug: note-os-ch1
         * A subset of total jobs in system is kept in memory  
         * One job selected and run via **job scheduling**  
         * When it has to wait (for I/O for example), OS **switches to another job**  
-    * Timesharing (multitasking)    
+    * Timesharing (multitasking)  
         * logical extension in which CPU switches jobs so frequently that users can interact  
         	with each job while it is running, creating **interactive** computing  
         * **Response time** should be < 1 second  
@@ -170,7 +167,7 @@ Slug: note-os-ch1
         * Process synchronization  
         * Process communication  
         * Deadlock handling  
-          
+  
 * Memory Management  
     * Determines what is in memory when optimizing CPU utilization and computer response to  
     	users  
@@ -178,7 +175,7 @@ Slug: note-os-ch1
         * Keeping track of which parts of memory are currently being used and by whom  
         * Deciding which processes (or parts thereof) and data to move into and out of memory  
         * Allocating and deallocating memory space as needed  
-        
+  
 * Storage Management  
     * OS provides uniform, logical view of information storage  
         * **file** - Abstracts physical properties to logical storage unit  
@@ -194,7 +191,7 @@ Slug: note-os-ch1
            * Primitives to manipulate files and dirs  
            * Mapping files onto secondary storage  
            * Backup files onto stable (non-volatile) storage media  
-             
+  
 * Mass-Storage Management  
     * Disks used to store data that does not fit in main memory or data that must be kept for  
     	a “long” period of time  
@@ -203,9 +200,9 @@ Slug: note-os-ch1
         * Free-space management  
         * Storage allocation  
         * Disk scheduling  
-          
+  
 * Performance of Various Levels of Storage  
-![Screen Shot 2013-11-05 at 12.48.19 AM.png](http://user-image.logdown.io/user/5428/blog/5443/post/158058/EIKYzKUkRTu5lXiQSgZd_Screen%20Shot%202013-11-05%20at%2012.48.19%20AM.png)  
+![Performance of Various Levels of Storage](/files/os-ch1/performance-of-various-levels-of-storage.png)  
   
 > Multitasking environments must be careful to use most recent value, no matter where it is stored in the storage hierarchy  
   
@@ -218,7 +215,7 @@ Slug: note-os-ch1
         * spooling (the overlapping of output of one job with input of other jobs)  
     * General device-driver interface  
     * Drivers for specific hardware devices  
-     
+  
 * Protection and Security  
     * **Protection** – any mechanism for controlling access of processes or users to resources defined by the OS  
     * **Security** – defense of the system against internal and external attacks  
@@ -227,18 +224,18 @@ Slug: note-os-ch1
         * **uid, sid** - User identities (user IDs, security IDs), User ID then associated with all files, processes of that user to determine access control  
         * **gid** - Group identifier (group ID) allows set of users to be defined and controls managed, then also associated with each process, file  
         * **euid, egid** - **Privilege escalation** allows user to change to effective ID with more rights  
-          
+  
 * Computing Environments  
     * **Compute-server** provides an interface to client to request services (i.e. database)  
     * **File-server** provides interface for clients to store and retrieve files  
-      
+  
 * Peer-to-Peer Computing  
     * Another model of distributed system  
     * P2P does not distinguish clients and servers  
     * Node must join P2P network  
     * Broadcast request for service and respond to requests for service via discovery protocol  
     * Examples include Napster and Gnutella  
-      
+  
 * Web-Based Computing  
   
 * Cloud Computing  
@@ -248,4 +245,3 @@ Slug: note-os-ch1
     * Counter to the copy protection and Digital Rights Management (DRM) movement  
     * Started by Free Software Foundation (FSF), which has “copyleft” GNU Public License (GPL)  
     * Examples include **GNU/Linux**, **BSD UNIX** (including **core of Mac OS X**), and **Sun Solaris**  
-          

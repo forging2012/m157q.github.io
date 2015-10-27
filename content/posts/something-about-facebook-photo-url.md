@@ -1,17 +1,20 @@
-Title: [Note] Facebook Photo URL
-Date: 2014-04-15 19:40
-Author: m157q
-Category: Note
-Tags: facebook, URL
-Slug: note-facebook-photo-url
-
+Title: Something about Facebook Photo URL  
+Date: 2014-04-15 19:40  
+Author: m157q  
+Category: Misc  
+Tags: facebook, URL  
+Slug: something-about-facebook-photo-url  
+Modified: 2015-10-26 14:57  
+Summary: 因為好奇而研究了一下一長串的 Facebook URL  
+  
+  
 有 Facebook 相關開發經驗的應該就不必看了  
   
 以最近很紅的一段網址來舉例  
   
-`https://www.facebook.com/photo.php?fbid=710043139058199&set=a.231514793577705.59041.100001575585223&type=1`  
-  
-<!--more-->  
+```  
+https://www.facebook.com/photo.php?fbid=710043139058199&set=a.231514793577705.59041.100001575585223&type=1  
+```  
   
 + 其中 `fbid=710043139058199`，710043139058199 為此照片的ID，把這串數字接在 `www.facebook.com/` 後面，就會連到該張照片的網址。ex: <https://www.facebook.com/710043139058199> (看不到別怪我) (非循序流水號，估計跟使用者有關係)  
 + 再來是 `set=a.231514793577705.59041.100001575585223`，這邊可以看到三串數字，分別由 . 隔開。  

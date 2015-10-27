@@ -1,7 +1,7 @@
 Title: Unzip 7zip file by p7zip on Arch Linux  
 Date: 2013-04-11 18:34  
 Author: m157q  
-Category: Misc  
+Category: Linux  
 Tags: Arch Linux, Linux, 7zip, CLI  
 Slug: unzip-7zip-file-by-p7zip-on-arch-linux  
 Modified: 2015-10-26 14:19  

@@ -1,27 +1,24 @@
-Title: [Hack] sqlmap cheat sheet
-Date: 2014-12-01 05:04
-Author: m157q
-Category: Hack
-Tags: SQLinjection, sqlmap
-Slug: hack-sqlmap-cheat-sheet
-
-<!--more-->  
+Title: sqlmap Cheat Sheet  
+Date: 2014-12-01 05:04  
+Author: m157q  
+Category: Security  
+Tags: SQL, SQL Injection, sqlmap  
+Slug: sqlmap-cheat-sheet  
+  
   
 # Usage  
   
 + `$ sqlmap -u ${url}`  
-  
 + `$ sqlmap -u ${url} --dbs`  
-  
 + `$ sqlmap -u ${url} -D ${database} --tables`  
-  
 + `$ sqlmap -u ${url} -D ${database} -T ${table} --columns`  
-  
 + `$ sqlmap -u ${url} -D ${database} -T ${table} -C ${col1},${col2} --dump`  
+  
   
 # Options  
   
-+ `--tor --tor-type=SOCKS5  
++ `--tor --tor-type=SOCKS5`  
+  
   
 # References  
   

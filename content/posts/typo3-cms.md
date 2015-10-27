@@ -1,12 +1,14 @@
-Title: [Note] TYPO3 CMS
-Date: 2014-03-03 12:32
-Author: m157q
-Category: Note
-Tags: php, OpenSource, CMS, TYPO3
-Slug: note-typo3-cms
-
+Title: TYPO3 CMS  
+Date: 2014-03-03 12:32  
+Author: m157q  
+Category: Misc  
+Tags: PHP, Open Source, CMS, TYPO3  
+Slug: typo3-cms  
+Modified: 2015-10-26 15:10  
+  
 Introduction to [TYPO3](https://typo3.org/) by [Rüdiger Marwein](https://twitter.com/keinerweiss)  
-===  
+  
+---  
   
 + Why name [TYPO3](https://typo3.org/)?  
     + Because the author deleted the project unintentionally **TWICE**, so it called **TYPO3** .  
@@ -106,12 +108,11 @@ Introduction to [TYPO3](https://typo3.org/) by [Rüdiger Marwein](https://twitte
         + Use new "Extbase" framework in backend as well  
         + Final goal: merge in Flow framework -> product interoperability  
         + Backend layout / usability enhancements  
-   
+  
 ---  
   
-Appendix  
-====  
+## Appendix  
   
 + [gource - software version control visualization](https://code.google.com/p/gource/)  
   
-      
+  

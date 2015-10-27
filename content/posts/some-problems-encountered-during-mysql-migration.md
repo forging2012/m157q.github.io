@@ -1,28 +1,27 @@
-Title: [Note] Some Problems Encountered During MySQL Migration
-Date: 2014-08-31 23:19
-Author: m157q
-Category: Note
-Tags: mysql, database, Migration, bugs, Errors
-Slug: note-some-problems-encountered-during-mysql-migration
-
+Title: Some Problems Encountered During MySQL Migration  
+Date: 2014-08-31 23:19  
+Author: m157q  
+Category: Misc  
+Tags: MySQL, Database, sysadmin  
+Slug: some-problems-encountered-during-mysql-migration  
+Modified: 2015-10-26 14:48  
+  
 ### Some encountered errors  
   
-1. ERROR 1215 (HY000): Cannot add foreign key constraint  
+1. `ERROR 1215 (HY000): Cannot add foreign key constraint`  
     + in mysql shell: `SET GLOBAL FOREIGN_KEY_CHECKS = 0;`  
         + in mysql => not worked  
         + add into backup.sql => not worked  
         + finally deleted the foreign key constraint line in `backup.sql`  
-2. ERROR 1367 (22007): Illegal double  
+2. `ERROR 1367 (22007): Illegal double`  
     + `$ replace 1.79769313486232e+308 \'1.79769313486232e+308\' -- backup.sql` can solve the problem (bug).  
   
-<!--more-->  
+---  
   
 ### Backup  
   
 + On local server  
     + `mysqldump -f --all-databases --password='xxx' > /tmp/bakcup.sql`  
-  
----  
   
 Use `scp` or other command to transfter the `backup.sql` to destination server  
   
@@ -33,10 +32,11 @@ Use `scp` or other command to transfter the `backup.sql` to destination server
 + On destination server  
     + `mysql -u user -p < /tmp/backup.sql`  
   
-#### 開大絕  
+#### Use the Force  
   
-噴錯也不管，就讓它照樣執行的話就加上 `--force`  
 `mysql --force -u user -p < /tmp/backup.sql`  
+  
+---  
   
 ### References  
   
@@ -50,4 +50,3 @@ Use `scp` or other command to transfter the `backup.sql` to destination server
 + ERROR 1367 (22007): Illegal double  
     + <http://dba.stackexchange.com/questions/7885/error-on-import-of-mysqldump-file-illegal-double-value-found-during-parsing>  
     + <http://bugs.mysql.com/bug.php?id=44995>  
-  
