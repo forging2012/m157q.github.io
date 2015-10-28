@@ -1,9 +1,9 @@
-Title: [Misc] SNP (Secure Network Protocol)  
+Title: SNP (Secure Network Protocol)  
 Date: 2014-11-03 07:08  
 Author: m157q  
 Category: Misc  
 Tags: SNP, NCTU, DSNS  
-Slug: misc-snp-secure-network-protocol  
+Slug: snp-secure-network-protocol  
 Modified: 2015-10-20 14:07  
   
   
