@@ -1,10 +1,12 @@
-Title: [CLI] Bash 快捷鍵
-Date: 2014-10-16 10:23
-Author: m157q
-Category: Cli
-Tags: bash, Shortcuts, cli
-Slug: cli-bash-kuai-jie-jian
-
+Title: Bash Cheat Sheet  
+Date: 2014-10-16 10:23  
+Author: m157q  
+Category: CLI  
+Tags: CLI, bash, Cheat Sheet  
+Slug: bash-cheat-sheet  
+Modified: 2015-10-28 14:17  
+  
+  
 # Bash Hotkey Cheat Sheet  
   
 <!--more-->  
@@ -80,10 +82,10 @@ Slug: cli-bash-kuai-jie-jian
 All the above assume that bash is running in the default Emacs setting, if you prefer this can be switched to Vi shortcuts instead.  
   
 Set Vi Mode in bash:  
-`$ set -o vi`   
+`$ set -o vi`  
   
 Set Emacs Mode in bash:  
-`$ set -o emacs`   
+`$ set -o emacs`  
   
 # References  
   
