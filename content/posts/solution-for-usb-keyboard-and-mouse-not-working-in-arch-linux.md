@@ -1,4 +1,4 @@
-Title: [Arch Linux] USB鍵盤和USB滑鼠插上去卻無法使用的解法  
+Title: Arch Linux - USB鍵盤和USB滑鼠插上去卻無法使用的解法  
 Date: 2013-02-17 01:19  
 Author: m157q  
 Category: Linux  
