@@ -1,10 +1,10 @@
 Title: Sort hash by key or by value in Perl 5.16  
 Date: 2013-05-10 16:38  
 Author: m157q  
-Category: Misc  
+Category: Perl  
 Tags: Perl, sort  
 Slug: sort-hash-by-key-or-by-value-in-perl-5-16  
-Modified: 2015-10-26 13:36  
+Modified: 2015-10-28 15:12  
   
   
 `%h = hash, $key = keys in %h`  
@@ -14,21 +14,19 @@ Modified: 2015-10-26 13:36
 ## Sort by key  
   
 ```perl  
-    # if key is int  
+# if key is int  
+    # ascending  
+    for $key (sort keys %hash) {say "$key: $hash{$key}";}  
   
-        # ascending  
-        for $key (sort keys %hash) {say "$key: $hash{$key}";}  
+    # descending  
+    for $key (reverse sort keys %hash) {say "$key: $hash{$key}";}  
   
-        # descending  
-        for $key (reverse sort keys %hash) {say "$key: $hash{$key}";}  
+# if key is str (represent number)  
+    # ascending  
+    for $key (sort {$a <=> $b;} keys %h) {say "$key: $h{$key}";}  
   
-     # if key is str (represent number)  
-  
-        # ascending  
-        for $key (sort {$a <=> $b;} keys %h) {say "$key: $h{$key}";}  
-  
-        # descending  
-        for $key (sort {$b <=> $a;} keys %h) {say "$key: $h{$key}";}  
+    # descending  
+    for $key (sort {$b <=> $a;} keys %h) {say "$key: $h{$key}";}  
 ```  
   
 ---  
