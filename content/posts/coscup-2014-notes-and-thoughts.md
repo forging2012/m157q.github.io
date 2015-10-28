@@ -1,10 +1,12 @@
-Title: [Conf] COSCUP2014
-Date: 2014-07-20 06:22
-Author: m157q
-Category: Conf
-Tags: taiwan, COSCUP, OpenSource, conference, coscup2014
-Slug: conf-coscup2014
-
+Title: COSCUP 2014 Notes and Thoughts  
+Date: 2014-07-20 06:22  
+Author: m157q  
+Category: Life  
+Tags: Conf, Taiwan, COSCUP, Open Source, Note, Thought  
+Slug: coscup-2014-notes-and-thoughts  
+Modified: 2015-10-28 12:55  
+  
+  
 前面是有點長的廢話:  
   
 今年的日期和 HITCON 對調，改到了七月  
@@ -23,14 +25,14 @@ Slug: conf-coscup2014
   
 google drive 似乎就沒有這個問題的樣子  
   
-<!--more-->  
+---  
   
 今年最紅的應該就是桌機哥了吧  
 ![](http://i.imgur.com/PjAEL7x.jpg)  
   
-不但被人 [拍照放到噗浪上](http://www.plurk.com/p/k81ob1)   
+不但被人 [拍照放到噗浪上](http://www.plurk.com/p/k81ob1)  
   
-還成立了 [Facebook 粉絲團](https://www.facebook.com/pages/%E6%A1%8C%E6%A9%9F%E5%93%A5/742954022410671)   
+還成立了 [Facebook 粉絲團](https://www.facebook.com/pages/%E6%A1%8C%E6%A9%9F%E5%93%A5/742954022410671)  
   
 不知道會不會掀起自帶主機和螢幕參加 conf 的風潮  
   
@@ -65,7 +67,7 @@ google drive 似乎就沒有這個問題的樣子
   
 嗯 廢話完畢  
   
-所有相關共筆可以參考 <https://coscup.hackpad.com>   
+所有相關共筆可以參考 <https://coscup.hackpad.com>  
   
 或是直接看 [hack folder 整合](http://hackfoldr.org/coscup2014)  
   
@@ -134,5 +136,3 @@ google drive 似乎就沒有這個問題的樣子
        + 有人跟我一樣帶桌機的話可以考慮  
     + 什麼因緣下讓你帶桌機來?  
        + 就...剛好沒有筆電可以用  
-      
-          

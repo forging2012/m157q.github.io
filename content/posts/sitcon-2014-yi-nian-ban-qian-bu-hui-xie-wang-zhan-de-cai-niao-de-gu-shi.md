@@ -1,11 +1,20 @@
-Title: [SITCON 2014] 一年半前不會寫網站的菜鳥的故事
-Date: 2014-03-16 04:24
-Author: m157q
-Category: Conf
-Tags: Web, SITCON
-Slug: sitcon-2014-yi-nian-ban-qian-bu-hui-xie-wang-zhan-de-cai-niao-de-gu-shi
-
+Title: SITCON 2014 - 一年半前不會寫網站的菜鳥的故事  
+Date: 2014-03-16 04:24  
+Author: m157q  
+Category: Life  
+Tags: Conf, Web, SITCON  
+Slug: sitcon-2014-yi-nian-ban-qian-bu-hui-xie-wang-zhan-de-cai-niao-de-gu-shi  
+Modified: 2015-10-28 12:56  
+  
+  
+  
+## Slides on Speaker Deck  
+  
 <script async class="speakerdeck-embed" data-id="45b691608e54013146051a945ae20cc0" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>  
+  
+---  
+  
+## Thought  
   
 去年第一屆 SITCON (2013) 沒搶到票，  
 有人送票給我以後，我卻突然臨時有事不能去。  
@@ -29,6 +38,3 @@ SITCON 2014 網路報名當天，
 --絕對不是要他們來看我演講--  
 最後也在報名截止前兩天，  
 把手上的兩組 VIP Code 送出去給有需要的人  
-  
-  
-  

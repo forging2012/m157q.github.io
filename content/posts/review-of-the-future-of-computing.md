@@ -1,10 +1,11 @@
 Title: Review of 代碼的未來  
 Date: 2014-03-10 21:37  
 Author: m157q  
-Category: Review  
-Tags: NoSQL, Big Data, RDBMS  
+Category: Life  
+Tags: Review, NoSQL, Big Data, RDBMS  
 Slug: review-of-the-future-of-computing  
 Modified: 2015-10-26 12:08  
+  
   
 ### The Future of Computing by Matz  
   
