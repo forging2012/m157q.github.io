@@ -2,10 +2,11 @@ Title: static/extern/inline function/variable in C
 Slug: static-extern-inline-function-variable-in-c  
 Date: 2015-06-02 03:30:34  
 Authors: m157q  
-Category: Misc  
-Tags: C, static, extern, inline  
+Category: C  
+Tags: C, static, extern, inline, SITCON  
 Summary: [SITCON x CCCA 新竹定期聚 #12 - extern/static/inline function/variable in C by susu](http://sitcon.kktix.cc/events/sitcon-ccca-meetup-12)  
 Modified: 2015-10-26 14:16  
+  
   
 [SITCON x CCCA 新竹定期聚 #12 - extern/static/inline function/variable in C by susu](http://sitcon.kktix.cc/events/sitcon-ccca-meetup-12)  
   

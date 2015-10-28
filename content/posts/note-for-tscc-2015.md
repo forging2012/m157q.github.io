@@ -2,8 +2,8 @@ Title: Note for TSCC 2015
 Slug: note-for-tscc-2015  
 Date: 2015-05-02 16:27:52  
 Authors: m157q  
-Category: Misc  
-Tags: TSCC, HPC  
+Category: Life  
+Tags: TSCC, HPC, Note  
 Summary: A note for the TSCC 2015 Final  
 Modified: 2015-08-27 16:39:17  
   
