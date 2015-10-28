@@ -2,7 +2,7 @@ Title: Setup PPPoE Wired Network in Arch Linux
 Date: 2013-02-20 00:28  
 Author: m157q  
 Category: Linux  
-Tags: Arch Linux, Network, rp-pppoe, PPPoE  
+Tags: Linux, Arch Linux, Network, rp-pppoe, PPPoE  
 Slug: setup-pppoe-wired-network-in-arch-linux  
 Modified: 2015-10-27 22:03  
   

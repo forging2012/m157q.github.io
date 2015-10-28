@@ -2,7 +2,7 @@ Title: Disable auto suspend while the laptop lid close in Arch Linux
 Date: 2013-10-15 05:59  
 Author: m157q  
 Category: Linux  
-Tags: Arch Linux, Laptop, systemd  
+Tags: Linux, Arch Linux, Laptop, systemd  
 Slug: disable-auto-suspend-while-the-laptop-lid-close-in-arch-linux  
 Modified: 2015-10-27 21:24  
   
