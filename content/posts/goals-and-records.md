@@ -1,18 +1,14 @@
-Title: [Life] New Year's Resolutions for 2015  
+Title: Goals and Records  
 Date: 2015-01-21 22:13  
 Author: m157q  
 Category: Life  
-Tags: Life, NewYear'sResolutions  
-Slug: life-new-years-resolutions-for-2015  
+Tags: Life  
+Slug: goals-and-records  
 Pin: true  
-Summary: 新年新希望  
-Modified: 2015-10-19 21:36  
+Modified: 2015-11-11 21:36  
+Summary: Goals & Records for every year.  
   
-雖然一月快過完了  
-但應該還不算太晚  
-希望可以努力達成下列目標  
-  
----  
+# 2015  
   
 ## Reading  
   
