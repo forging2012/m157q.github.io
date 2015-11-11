@@ -33,6 +33,7 @@ Summary: Goals & Records for every year.
 - [x] Clean Code: A Handbook of Agile Software Craftsmanship  
 - [x] The Art of Intrusion (2015/10/16)  
 - [x] Writing Idiomatic Python 3 (2015/10/30)  
+- [x] The Cathedral and the Bazaar 大教堂與市集  (2015/11/11)  
   
 ---  
   
