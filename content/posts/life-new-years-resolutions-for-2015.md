@@ -12,11 +12,9 @@ Modified: 2015-10-19 21:36
 但應該還不算太晚  
 希望可以努力達成下列目標  
   
-<!--more-->  
+---  
   
-## Books  
-  
-### Extra-Curricular  
+## Reading  
   
 - [ ] C Programming: A Modern Approach  
 - [ ] UNIX and Linux System Administration Handbook  
@@ -38,21 +36,7 @@ Modified: 2015-10-19 21:36
 - [x] The Art of Deception  
 - [x] Clean Code: A Handbook of Agile Software Craftsmanship  
 - [x] The Art of Intrusion (2015/10/16)  
-  
-### Textbooks  
-  
-- [ ] Crafting a Compiler  
-- [ ] Fundamentals of Data Structures in C++  
-- [ ] Computer Networking: A Top-Down Approach  
-- [ ] C++ How to Program  
-- [ ] 小黃計概課本  
-- [ ] 小黃OOP課本  
-- [ ] Discrete Mathematics and Its Applications  
-- [ ] Introduction to Algorithms  
-- [ ] Operating System  
-- [ ] Computer Organization  
-- [ ] Assembly Code  
-- [ ] Databases  
+- [x] Writing Idiomatic Python 3 (2015/10/30)  
   
 ---  
   
@@ -67,31 +51,19 @@ Modified: 2015-10-19 21:36
   
 ---  
   
-## Coding  
-  
-- [ ] Master Python  
-- [ ] Master C  
-- [ ] Learn JavaScript  
-- [ ] Learn HTML5  
-- [ ] Learn CSS  
-- [ ] Learn Ruby  
-- [ ] Learn RoR and use it to build an website  
-- [ ] Review Perl, shell script  
-  
----  
-  
 ## Open Source Project todolist  
+  
+- [ ] r/archlinux twitter bot  
+- [ ] <https://www.vpnunlimitedapp.com/downloadlinux>  
+    - Need a package on AUR  
 - [ ] <https://github.com/passcod/twd>  
     - Height is wrong  
     - Need package on AUR  
 - [ ] <https://github.com/Guake/guake>  
     - [shortcut for toggling transparency · Issue #117 · Guake/guake · GitHub](https://github.com/Guake/guake/issues/117)  
     - [Add shortcut for transparency (fix #481) · Guake/guake@b2fd530 · GitHub](https://github.com/Guake/guake/commit/b2fd53053b0ff61757ca8fac2f97b3fa10d0be30)  
-- [ ] <https://www.vpnunlimitedapp.com/downloadlinux>  
-    - Need package on AUR  
 - [ ] <https://github.com/wdv4758h/LTCC>  
 - [ ] <https://datecloud.hackpad.com/>  
-- [ ] r/archlinux twitter bot  
 - [ ] xrandr - cannot detect MacBook Air thunderbolt hotplug  
 - [ ] wicd - add proxy setting functionality  
   
@@ -107,8 +79,7 @@ Modified: 2015-10-19 21:36
   
 ## Conference  
   
-- [ ] COSCUP 2015  
-    - (blogpost)  
+- [x] COSCUP 2015  
 - [x] PyConAPAC 2015  
     - [PyCon APAC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
 - [x] HITCON 2015  
@@ -118,12 +89,12 @@ Modified: 2015-10-19 21:36
   
 ## Misc.  
   
+- [ ] Get a job in some nice CS-related company  
 - [ ] Finish the rest parts of the college graduation term project  
-- [ ] Graduate from NCTU  
-    - (blogpost)  
-- [ ] At least build 1 useful open source project  
+- [x] Install OpenWrt on Raspberry Pi  
+- [x] Graduate from NCTU  
+- [x] At least build 1 useful open source project  
     - [M157q/zdict · GitHub](https://github.com/M157q/zdict)  (WIP)  
-- [ ] Get a job in some nice CS company  
 - [x] \#iToolMan Hoodie  
 - Study about whole compiler things, get familiar with it and make myself like it.  
 - [x] At least give 1 talk in conference  
@@ -144,5 +115,3 @@ Modified: 2015-10-19 21:36
     - [Install Arch Linux on MacBook Air Mid 2013 - Just for noting](https://m157q.github.io/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
 - [x] Exemption from military service  
 - [x] [FunSlots 繽紛樂 - 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua.  
-- [x] Install OpenWrt on Raspberry Pi  
-    - (blogpost)  
