@@ -5,10 +5,9 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2015-11-16 17:46  
-Summary: Goals & Records for every year.  
+Modified: 2015-11-16 18:29  
+Summary: Records for what I want to do and when I've done from 2015.  
   
-# 2015  
   
 ## Reading  
   
@@ -26,15 +25,16 @@ Summary: Goals & Records for every year.
 - [ ] Hacking Exposed 7th  
 - [ ] 浴缸裡的驚歎: 256道讓你恍然大悟的趣題  
 - [ ] K&R  
-- [x] Just for Fun: The Story of an Accidental Revolutionary  
-- [x] Gray Hat Python: Python Programming for Hackers and Reverse Engineers  
-- [x] The Pragmatic Programmers  
-- [x] The Art of Deception  
-- [x] Clean Code: A Handbook of Agile Software Craftsmanship  
-- [x] The Art of Intrusion (2015/10/16)  
-- [x] Writing Idiomatic Python 3 (2015/10/30)  
-- [x] The Cathedral and the Bazaar 大教堂與市集  (2015/11/11)  
-- [x] [建國路上 Tī Hit-tiâu Kiàn-kok ê lōo](http://www.hi-on.org.tw/bulletins.jsp?b_ID=152337) (2015/11/11)  
+- 2015  
+    - [x] [建國路上 Tī Hit-tiâu Kiàn-kok ê lōo](http://www.hi-on.org.tw/bulletins.jsp?b_ID=152337) (2015/11/11)  
+    - [x] The Cathedral and the Bazaar 大教堂與市集 (2015/11/11)  
+    - [x] Writing Idiomatic Python 3 (2015/10/30)  
+    - [x] The Art of Intrusion (2015/10/16)  
+    - [x] Clean Code: A Handbook of Agile Software Craftsmanship (2015/09)  
+    - [x] The Art of Deception (2015/08)  
+    - [x] Gray Hat Python: Python Programming for Hackers and Reverse Engineers (2015/07)  
+    - [x] The Pragmatic Programmers (2015/06)  
+    - [x] Just for Fun: The Story of an Accidental Revolutionary  (2015/05)  
   
 ---  
   
@@ -49,7 +49,16 @@ Summary: Goals & Records for every year.
   
 ---  
   
-## Open Source Project todolist  
+## At least one per year  
+  
+### Write-up for CTF  
+  
+- 2015  
+    - [x] [0CTF 2015 Note - Just for noting](https://m157q.github.io/posts/2015/03/30/0ctf-2015-note/)  
+    - [x] [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
+    - [x] [HITCON CTF 2015 Quals Write-up - Just for noting](https://m157q.github.io/posts/2015/10/19/hitcon-ctf-2015-quals-write-up/)  
+  
+###  Contributing to open source project  
   
 - [ ] r/archlinux twitter bot  
 - [ ] <https://www.vpnunlimitedapp.com/downloadlinux>  
@@ -64,12 +73,26 @@ Summary: Goals & Records for every year.
 - [ ] <https://datecloud.hackpad.com/>  
 - [ ] xrandr - cannot detect MacBook Air thunderbolt hotplug  
 - [ ] wicd - add proxy setting functionality  
+- 2015  
+    - [x] Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks) (2015/08/22)  
+    - [x] [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9) (2015/03/14)  
+    - [x] [fntsrlike/slack-irc-syncbot · GitHub](https://github.com/fntsrlike/slack-irc-syncbot) (2015/03/05)  
+  
+### Giving talk in conference  
+  
+- 2015  
+    - [x] [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi) (2015/03/07)  
+  
+### Building original open source project  
+  
+- 2015  
+    - [M157q/zdict · GitHub](https://github.com/M157q/zdict) (2015/04)  
   
 ---  
   
 ## Competition  
   
-- [x] TSCC 5th  
+- [x] TSCC 5th (2015/06/03~04)  
     - Prize: An Excellent Work  
     - [TSCC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/09/15/tscc-2015-notes-and-thoughts/)  
   
@@ -77,39 +100,25 @@ Summary: Goals & Records for every year.
   
 ## Conference  
   
-- [x] COSCUP 2015  
-- [x] PyConAPAC 2015  
-    - [PyCon APAC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
-- [x] HITCON 2015  
-    - [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
+- 2015  
+    - [x] HITCON 2015 (2015/08/28~29)  
+        - [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
+    - [x] COSCUP 2015 (2015/08/15~16)  
+    - [x] PyConAPAC 2015 (2015/06/05~06)  
+        - [PyCon APAC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
   
 ---  
   
 ## Misc.  
   
-- [ ] Get a job in some nice CS-related company  
-- [ ] Finish the rest parts of the college graduation term project  
-- [x] Install OpenWrt on Raspberry Pi  
-- [x] Graduate from NCTU  
-- [x] At least build 1 useful open source project  
-    - [M157q/zdict · GitHub](https://github.com/M157q/zdict)  (WIP)  
-- [x] \#iToolMan Hoodie  
-- Study about whole compiler things, get familiar with it and make myself like it.  
-- [x] At least give 1 talk in conference  
-    - [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi)  
-- [x] At least 1 write-up for some CTF  
-    - [0CTF 2015 Note - Just for noting](https://m157q.github.io/posts/2015/03/30/0ctf-2015-note/)  
-    - [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
-    - [HITCON CTF 2015 Quals Write-up - Just for noting](https://m157q.github.io/posts/2015/10/19/hitcon-ctf-2015-quals-write-up/)  
-- [x] At least contribute to 1 open source project  
-    - [[plugins/pip] Add shortcut for upgrading pip outdated packages. by M157q · Pull Request #4303 · robbyrussell/oh-my-zsh · GitHub](https://github.com/robbyrussell/oh-my-zsh/pull/4303)  
-    - [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9)  
-    - Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks)  
-    - [fntsrlike/slack-irc-syncbot · GitHub](https://github.com/fntsrlike/slack-irc-syncbot)  
-- [x] Write new blog post when learned something new  
-    - [[InfoSec] DHC - REST/HTTP API Client « Just for noting](/posts/2015/01/21/infosec-dhc-rest-http-api-client/)  
-    - [[InfoSec] MC-SQLR 放大攻擊 « Just for noting](/posts/2015/01/22/infosec-mc-sqlr-amplification-attack/)  
-- [x] Remove OS X and install Arch Linux on MacBook Air 2013 13'  
-    - [Install Arch Linux on MacBook Air Mid 2013 - Just for noting](https://m157q.github.io/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
-- [x] Exemption from military service  
-- [x] [FunSlots 繽紛樂 - 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua.  
+- 2015  
+    - [ ] Get a job in some nice CS-related company  
+    - [ ] Finish the rest parts of the college graduation term project  
+    - [x] Get MT Driving License (2015/11/09)  
+    - [x] Remove OS X and install Arch Linux on MacBook Air 2013 13' (2015/09/10)  
+        - [Install Arch Linux on MacBook Air Mid 2013 - Just for noting](https://m157q.github.io/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
+    - [x] Install OpenWrt on Raspberry Pi (2015/09/01)  
+    - [x] [FunSlots 繽紛樂 - 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua. (2015/08/30)  
+    - [x] Graduate from NCTU (2015/08/14)  
+    - [x] Exemption from military service (2015/08/06)  
+    - [x] \#iToolMan Hoodie (2015/06)  
