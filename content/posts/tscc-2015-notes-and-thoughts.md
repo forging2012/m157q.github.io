@@ -8,7 +8,7 @@ Summary: Notes and Thoughts about the Taiwan Student Cluster Competition 2015
   
   
 又是一篇遲來的文章  
-這比賽是在今年的 6/5 比的  
+這比賽是在今年的 6/4, 6/5 兩天比的  
 心得跟紀錄拖到現在才寫...  
   
 ---  
