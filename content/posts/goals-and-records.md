@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2015-11-11 21:36  
+Modified: 2015-11-16 17:46  
 Summary: Goals & Records for every year.  
   
 # 2015  
@@ -34,6 +34,7 @@ Summary: Goals & Records for every year.
 - [x] The Art of Intrusion (2015/10/16)  
 - [x] Writing Idiomatic Python 3 (2015/10/30)  
 - [x] The Cathedral and the Bazaar 大教堂與市集  (2015/11/11)  
+- [x] [建國路上 Tī Hit-tiâu Kiàn-kok ê lōo](http://www.hi-on.org.tw/bulletins.jsp?b_ID=152337) (2015/11/11)  
   
 ---  
   
