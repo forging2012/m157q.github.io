@@ -5,7 +5,7 @@ Authors: m157q
 Category: Linux  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2015-10-02 14:08  
+Modified: 2015-11-27 20:33  
   
 ---  
   
@@ -227,7 +227,7 @@ options hid_apple iso_layout=0
 + `sudo pacman -S xf86-input-synaptics`  
     + only basic functions  
 or  
-+ `yaourt xf86-input-mtrack-git`  
++ `yaourt -S xf86-input-mtrack-git`  
     + <https://github.com/BlueDragonX/xf86-input-mtrack>  
     + for OS X like touchpad and flexible configuration  
 ```  
