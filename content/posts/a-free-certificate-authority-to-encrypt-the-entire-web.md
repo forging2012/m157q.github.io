@@ -5,7 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: Let's Encrypt, EFF  
 Summary: 資訊與人權的交會: Seth Schoen 訪台系列活動之 11/27 專家講座  
-Modified: 2015-11-28 22:16  
+Modified: 2015-11-28 22:57  
   
   
 KKTIX URL: [專家講座：資訊與人權的交會](http://ocftw.kktix.cc/events/imhp)  
@@ -83,7 +83,7 @@ We need security for everything on the Internet?
 + Server issues one or more challenges to ask the client to prove its control (and/or possibly prove control of other cryptographic keys)  
 + Client satisfies these challenges and server verifies this automatically then issues cert and sends it over  
   
-Normal users: Certificats are for making browsers complain the wrong domain name or expired to users while browsing the Internet. (LOL)  
+Normal users: Certificates just make browsers complain the wrong domain name or expired to users while browsing the Internet. (LOL)  
   
   
 ## ACME  
