@@ -5,9 +5,12 @@ Authors: m157q
 Category: Life  
 Tags: Let's Encrypt, EFF  
 Summary: 資訊與人權的交會: Seth Schoen 訪台系列活動之 11/27 專家講座  
+Modified: 2015-11-28 21:47  
   
   
-[專家講座：資訊與人權的交會](http://ocftw.kktix.cc/events/imhp)  
+KKTIX URL: [專家講座：資訊與人權的交會](http://ocftw.kktix.cc/events/imhp)  
+  
+---  
   
 # Let's Encrypt: A Free Certificate Authority to Encrypt the Entire Web  
   
@@ -184,3 +187,7 @@ Let's Encrypt 的官方網站： [Let's Encrypt](https://letsencrypt.org/)
   
 順便附上他們的 Twitter： [EFF (@EFF) | Twitter](https://twitter.com/EFF)  
 可以比較快的知道一些新資訊  
+  
+最後覆蓋海報一張結束這篇文章  
+  
+![Poster](/files/a-free-certificate-authority-to-encrypt-the-entire-web/poster.jpg)  
