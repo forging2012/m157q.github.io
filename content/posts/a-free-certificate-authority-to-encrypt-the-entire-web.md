@@ -5,7 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: Let's Encrypt, EFF  
 Summary: 資訊與人權的交會: Seth Schoen 訪台系列活動之 11/27 專家講座  
-Modified: 2015-11-28 21:47  
+Modified: 2015-11-28 22:16  
   
   
 KKTIX URL: [專家講座：資訊與人權的交會](http://ocftw.kktix.cc/events/imhp)  
@@ -184,6 +184,13 @@ Client written in Python, Server written in Go.
   
 Let's Encrypt 的官方網站： [Let's Encrypt](https://letsencrypt.org/)  
 有興趣的人可以點進去瞧瞧，目前只有英文，也歡迎有興趣的人貢獻繁體中文的翻譯。  
+如果你覺得他們致力於網路安全的努力值得支持的話，也可以到官方網站的 donate 連結，小額贊助一些錢給他們。  
+  
+從 2015/9/12 到目前都是 limited beta 測試中，採填表申請並等待的制度。  
+但從下禮拜 (12/3 Thu) 開始，進入 public beta 測試階段，  
+屆時系統會開放給任何想申請的人，無需等待回信。  
+詳細公告在此 [Public Beta: December 3, 2015](https://letsencrypt.org/2015/11/12/public-beta-timing.html)  
+有興趣的人歡迎到時候申請來使用看看，遇到任何問題或 bug 都歡迎回報給他們。  
   
 順便附上他們的 Twitter： [EFF (@EFF) | Twitter](https://twitter.com/EFF)  
 可以比較快的知道一些新資訊  
