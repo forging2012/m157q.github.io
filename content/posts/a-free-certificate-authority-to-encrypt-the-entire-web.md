@@ -5,7 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: Let's Encrypt, EFF  
 Summary: 資訊與人權的交會: Seth Schoen 訪台系列活動之 11/27 專家講座  
-Modified: 2015-11-28 22:57  
+Modified: 2015-11-29 09:33  
   
   
 KKTIX URL: [專家講座：資訊與人權的交會](http://ocftw.kktix.cc/events/imhp)  
@@ -24,7 +24,7 @@ SSL, TLS, HTTPS, X.509, PKI, CA
 + SSL (Secure Sockets Layer)  
     + The old name for the main security layer for TCP  
 + TLS (Transport Layer Security)  
-    + The modern name of TLS  
+    + The modern name of SSL  
   
   
 ## Importance of TLS  
