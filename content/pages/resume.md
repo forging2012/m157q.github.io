@@ -193,8 +193,7 @@ Security Technology Center, Taiwan (財團法人資訊工業策進會, 行政院
   
   
 Team Name: 聽說名字太長躲在防火牆  
-URL: <http://www.nicst.ey.gov.tw/News_Content4.aspx?n=11EC3BA2351F93AA&sms=4D83>  
-3E26864BB926&s=4C2DD1B0FA325D80  
+URL: <http://www.nicst.ey.gov.tw/News_Content4.aspx?n=11EC3BA2351F93AA&sms=4D833E26864BB926&s=4C2DD1B0FA325D80>  
   
 #### Award for Excellent of Taiwan Student Cluster Competition (Team)  
 Held by National Center for High-Performance Computing, Taiwan at June 2015  
@@ -227,7 +226,6 @@ September 2013  –  May 2014
 September 2012  –  May 2013  
   
   
-  
 ---  
   
 ###  Test Scores  
@@ -237,4 +235,3 @@ September 2012  –  May 2013
   
   
 ---  
-  
