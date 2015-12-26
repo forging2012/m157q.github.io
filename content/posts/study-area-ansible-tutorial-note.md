@@ -241,7 +241,7 @@ register, debug 觀察錯誤的時候用
 ### Hands on Lab with Playbook  
   
 + [playbook using in this hands on](/file/study-area-ansible-tutorial-note/SA_playbook/shell_yum_when.yml)  
-+ [Some playbooks example](https://github.com/sakanamax/LearnAnsible/tree/master/books/Oreilly-Up-And-Running-Ansible/playbooks)  
++ [Some playbook examples](https://github.com/sakanamax/LearnAnsible/tree/master/books/Oreilly-Up-And-Running-Ansible/playbooks)  
 + [The playbook for hands on environment for this tutorial](https://github.com/sakanamax/LearnAnsible/blob/master/books/Oreilly-Up-And-Running-Ansible/playbooks/SA_20151226_Tainan_Ansible.yml)  
 + [The docker file for hands on environment for this tutorial](https://hub.docker.com/r/sakana/jupyterhub/)  
   
