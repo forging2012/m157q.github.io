@@ -5,6 +5,7 @@ Authors: m157q
 Category: Course  
 Tags: Python, Ansible, DevOps, automation  
 Summary: 簡單講解 Ansible  
+Modified: 2015-12-26 22:30  
   
 + Speaker  
     + [黃俊宏 sakana / Max](https://github.com/sakanamax)  
@@ -260,15 +261,16 @@ register, debug 觀察錯誤的時候用
 基本上就是把 shell script 包裝起來的概念，  
 感覺可以直接取代 shell script 了。  
 可以很簡單得用 YAML 撰寫 playbook 來針對不同作業系統做不同的事，  
-有種 unittest 的味道。  
+在 playbook 中的每一個 play 都代表著一個步驟，  
+每個一個 play 在 Jupyter notebook 中也都會顯示執行結果，  
+有種 unittest 的味道。有些人喜歡有些人不喜歡（誤）  
 然後也不需要在 managed nodes 上裝任何 clients，  
 只要 managed nodes 能夠用 ssh 登入進去，  
 就可以直接都在 contorl machine 上操作。  
   
 比較有趣的是講者有提到他們會直接使用 Jupyter notebook (IPython notebook)  
 讓不懂 playbook 詳細細節的人也可以操作，  
-因為 Jupyter notebook 可以在每個動作加上註解，  
-而且每個 play 也可以這麼做，  
+因為 Jupyter notebook 可以在每個 play 加上說明，  
 所以要交接的時候可以直接丟出這些 Jypyter notebooks 就無痛交接。  
   
 會後跟凍仁拿到了之前一直想拿的 Vim 貼紙，  
