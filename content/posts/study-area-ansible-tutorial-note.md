@@ -5,7 +5,7 @@ Authors: m157q
 Category: Course  
 Tags: Python, Ansible, DevOps, automation  
 Summary: 簡單講解 Ansible  
-Modified: 2015-12-26 22:30  
+Modified: 2015-12-29 00:06  
   
 + Speaker  
     + [黃俊宏 sakana / Max](https://github.com/sakanamax)  
@@ -46,7 +46,7 @@ Modified: 2015-12-26 22:30
   
 + Infrastructure as Code  
 + 語法簡單 (playbook 以 YAML 語法撰寫)  
-+ 不需要安裝client (clientless)  
++ 不需要安裝 client (clientless)  
 + Push-based  
 + Very thin layer of abstraction  
     + 以原有的習慣進行部署  
@@ -262,7 +262,7 @@ register, debug 觀察錯誤的時候用
 感覺可以直接取代 shell script 了。  
 可以很簡單得用 YAML 撰寫 playbook 來針對不同作業系統做不同的事，  
 在 playbook 中的每一個 play 都代表著一個步驟，  
-每個一個 play 在 Jupyter notebook 中也都會顯示執行結果，  
+每一個 play 在 Jupyter notebook 中也都會顯示執行結果，  
 有種 unittest 的味道。有些人喜歡有些人不喜歡（誤）  
 然後也不需要在 managed nodes 上裝任何 clients，  
 只要 managed nodes 能夠用 ssh 登入進去，  
