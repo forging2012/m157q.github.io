@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2015-11-16 18:29  
+Modified: 2016-01-07 20:15  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -25,6 +25,8 @@ Summary: Records for what I want to do and when I've done from 2015.
 - [ ] Hacking Exposed 7th  
 - [ ] 浴缸裡的驚歎: 256道讓你恍然大悟的趣題  
 - [ ] K&R  
+- 2016  
+    - [x] [程序员跳槽全攻略] (2016/01/07)  
 - 2015  
     - [x] [建國路上 Tī Hit-tiâu Kiàn-kok ê lōo](http://www.hi-on.org.tw/bulletins.jsp?b_ID=152337) (2015/11/11)  
     - [x] The Cathedral and the Bazaar 大教堂與市集 (2015/11/11)  
@@ -40,12 +42,13 @@ Summary: Records for what I want to do and when I've done from 2015.
   
 ## Health  
   
-- [ ] Lose weight to 65kg  
-- [ ] Lose body fat to 10%  
-- [ ] Muscle Training for six packs  
-- [ ] Jogging for cardiorespiratory endurance  
-- [ ] Training for Parkour  
-- [ ] Go to bed on time, do not stay up late and keep normal daily routine  
+- 2016  
+    - [ ] Lose weight to 65kg  
+    - [ ] Lose body fat to 10%  
+    - [ ] Muscle Training for six packs  
+    - [ ] Jogging for cardiorespiratory endurance  
+    - [ ] Training for Parkour  
+    - [ ] Go to bed on time, do not stay up late and keep normal daily routine  
   
 ---  
   
@@ -61,8 +64,6 @@ Summary: Records for what I want to do and when I've done from 2015.
 ###  Contributing to open source project  
   
 - [ ] r/archlinux twitter bot  
-- [ ] <https://www.vpnunlimitedapp.com/downloadlinux>  
-    - Need a package on AUR  
 - [ ] <https://github.com/passcod/twd>  
     - Height is wrong  
     - Need package on AUR  
@@ -87,6 +88,8 @@ Summary: Records for what I want to do and when I've done from 2015.
   
 - 2015  
     - [M157q/zdict · GitHub](https://github.com/M157q/zdict) (2015/04)  
+    - [M157q/gettitle · GitHub](https://github.com/M157q/gettitle) (2015/09)  
+    - [M157q/linkedin2md · GitHub](https://github.com/M157q/linkedin2md) (2015/12)  
   
 ---  
   
@@ -111,9 +114,10 @@ Summary: Records for what I want to do and when I've done from 2015.
   
 ## Misc.  
   
-- 2015  
-    - [ ] Get a job in some nice CS-related company  
+- 2016  
     - [ ] Finish the rest parts of the college graduation term project  
+- 2015  
+    - [x] Get a job in some nice CS-related company  
     - [x] Get MT Driving License (2015/11/09)  
     - [x] Remove OS X and install Arch Linux on MacBook Air 2013 13' (2015/09/10)  
         - [Install Arch Linux on MacBook Air Mid 2013 - Just for noting](https://m157q.github.io/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
