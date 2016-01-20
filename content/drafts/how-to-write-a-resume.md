@@ -1,6 +1,6 @@
 Title: 程式設計師的履歷撰寫要點  
 Slug: how-to-write-a-resume-for-programming-jobs  
-Date: 2016-01-19 20:42:04  
+Date: 2016-01-20 20:42:04  
 Authors: m157q  
 Category: Life  
 Tags: Resume  
@@ -92,6 +92,11 @@ Summary: 2015 年 12 月我到台南成功大學去找 Jserv review 我人生的
   
 ## 在說自己的經歷或自己會哪些東西的時候，請舉實際的例子  
   
+只說自己用過什麼東西是不夠的。  
+請重點描述自己究竟做了什麼事。  
+例如修改或改善過哪個開源專案中哪個部份的程式碼，  
+描述你解決了什麼 bug，能夠附上 accepted PR 的連結的話更好。  
+只寫改善效能是不夠的，快了幾秒，使用者上限增加了多少，請給出數字。  
   
 ---  
   
