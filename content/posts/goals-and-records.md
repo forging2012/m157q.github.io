@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-01-24 17:15  
+Modified: 2016-01-24 18:16  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -136,9 +136,8 @@ Summary: Records for what I want to do and when I've done from 2015.
   
 ---  
   
-## Moives  
+## Movies  
   
 - 2016  
     - [x] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
-    - [x] [Fight Club (1999) - IMDb](http://www.imdb.com/title/tt0137523/) (2016/01/23)  
-        - 會知道這部電影是因為它在很多我看過的電影中都被提及，看完後真的覺得很棒。一直都很喜歡這類需要動腦看的電影，因為我很喜歡專注看電影的細節然後猜劇情。雖然這部的劇情有被我猜中，但後來看了一些影評才發現我有很多細節沒有注意到。尤其是對於資本主義的嘲諷，以及導演試圖告訴觀眾主角其實就是每個在看電影的你，因為電影裡頭從頭到尾都沒提到主角的名字。還有首尾呼應以及電影本身就和電影裡投提到的哲學相互呼應（關於剪接的部份），覺得是部很棒的作品。然後看英文字幕的過程也查了一堆不會的單字...  
+    - [x] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
