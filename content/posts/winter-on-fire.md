@@ -4,7 +4,8 @@ Date: 2016-01-10 17:35:58
 Authors: m157q  
 Category: Movie  
 Tags: Movie, Winter on Fire, Ukraine, Freedom  
-Summary: 2016 年初，Netflix 在臺灣上市，第一個月免費試用，搶先嘗試了一下。這部 Winter on Fire 是我在 Netflix 上看的第 1 部電影。  
+Summary: 2016 年初，Netflix 進軍臺灣市場，第一個月免費試用，搶先嘗試了一下。這部 Winter on Fire 是我在 Netflix 上看的第 1 部電影。  
+Modified: 2016-01-24 23:47  
   
   
 [Winter on Fire: Ukraine's Fight for Freedom](http://www.imdb.com/title/tt4908644/)  

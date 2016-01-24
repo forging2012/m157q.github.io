@@ -68,6 +68,7 @@ Summary: Records for what I want to do and when I've done from 2015.
 - 2016  
     - [ ] Send PR back to [imageme](https://github.com/M157q/imageme)  
     - [ ] r/archlinux twitter bot  
+        - <https://www.reddit.com/r/archlinux/.rss>  
     - [ ] <https://github.com/passcod/twd>  
         - Height is wrong  
         - Need package on AUR  
