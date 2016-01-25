@@ -5,14 +5,14 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-01-24 18:16  
+Modified: 2016-01-25 11:28  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
 ## Reading  
   
 - 2016  
-    - [x] 程序员跳槽全攻略 (2016/01/07)  
+    - [x] [程序员跳槽全攻略](https://selfstore.io/products/190) (2016/01/07)  
     - [ ] 編程人生（上）(Coders at work)  
     - [ ] 編程人生（下）(Coders at work)  
     - [ ] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job)  
@@ -31,15 +31,15 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [ ] 浴缸裡的驚歎: 256道讓你恍然大悟的趣題  
     - [ ] K&R  
 - 2015  
-    - [x] [建國路上 Tī Hit-tiâu Kiàn-kok ê lōo](http://www.hi-on.org.tw/bulletins.jsp?b_ID=152337) (2015/11/11)  
-    - [x] The Cathedral and the Bazaar 大教堂與市集 (2015/11/11)  
-    - [x] Writing Idiomatic Python 3 (2015/10/30)  
-    - [x] The Art of Intrusion (2015/10/16)  
-    - [x] Clean Code: A Handbook of Agile Software Craftsmanship (2015/09)  
-    - [x] The Art of Deception (2015/08)  
-    - [x] Gray Hat Python: Python Programming for Hackers and Reverse Engineers (2015/07)  
-    - [x] The Pragmatic Programmers (2015/06)  
     - [x] Just for Fun: The Story of an Accidental Revolutionary  (2015/05)  
+    - [x] The Pragmatic Programmers (2015/06)  
+    - [x] The Art of Deception (2015/08)  
+    - [x] Clean Code: A Handbook of Agile Software Craftsmanship (2015/09)  
+    - [x] The Art of Intrusion (2015/10/16)  
+    - [x] Writing Idiomatic Python 3 (2015/10/30)  
+    - [x] Gray Hat Python: Python Programming for Hackers and Reverse Engineers (2015/07)  
+    - [x] The Cathedral and the Bazaar 大教堂與市集 (2015/11/11)  
+    - [x] [建國路上 Tī Hit-tiâu Kiàn-kok ê lōo](http://www.hi-on.org.tw/bulletins.jsp?b_ID=152337) (2015/11/11)  
   
 ---  
   
@@ -80,9 +80,9 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [ ] xrandr - cannot detect MacBook Air thunderbolt hotplug  
     - [ ] wicd - add proxy setting functionality  
 - 2015  
-    - [x] Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks) (2015/08/22)  
-    - [x] [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9) (2015/03/14)  
     - [x] [fntsrlike/slack-irc-syncbot · GitHub](https://github.com/fntsrlike/slack-irc-syncbot) (2015/03/05)  
+    - [x] [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9) (2015/03/14)  
+    - [x] Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks) (2015/08/22)  
   
 ### Giving talk in conference  
   
@@ -110,30 +110,31 @@ Summary: Records for what I want to do and when I've done from 2015.
 ## Conferences  
   
 - 2015  
-    - [x] HITCON 2015 (2015/08/28~29)  
-        - [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
-    - [x] COSCUP 2015 (2015/08/15~16)  
     - [x] PyConAPAC 2015 (2015/06/05~06)  
         - [PyCon APAC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
+    - [x] COSCUP 2015 (2015/08/15~16)  
+    - [x] HITCON 2015 (2015/08/28~29)  
+        - [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
   
 ---  
   
 ## Misc.  
   
 - 2016  
+    - [x] [2016 第十四任正副總統暨第九屆立法委員選舉監票](https://imgur.com/a/m2PUa) (2016/01/16)  
     - [ ] [Finish the rest parts of the college graduation term project](https://github.com/M157q/Android-Repackaged-App-Detection-System)  
     - [ ] Do my best for the job in Tagtoo as a Python engineer.  
         - [ ] Get familiar with the job content and server architecture then write the tutorial for newbie in R&D team.  
 - 2015  
-    - [x] Get a job in some nice CS-related company  
-    - [x] Get MT Driving License (2015/11/09)  
+    - [x] [iToolMan Hoodie](https://hackpad.com/iToolMan-T-cOJlcwLntzx) (2015/06)  
+    - [x] Exemption from military service (2015/08/06)  
+    - [x] Graduate from NCTU (2015/08/14)  
+    - [x] [FunSlots 繽紛樂 - 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua. (2015/08/30)  
+    - [x] Install OpenWrt on Raspberry Pi (2015/09/01)  
     - [x] Remove OS X and install Arch Linux on MacBook Air 2013 13' (2015/09/10)  
         - [Install Arch Linux on MacBook Air Mid 2013 - Just for noting](https://m157q.github.io/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
-    - [x] Install OpenWrt on Raspberry Pi (2015/09/01)  
-    - [x] [FunSlots 繽紛樂 - 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua. (2015/08/30)  
-    - [x] Graduate from NCTU (2015/08/14)  
-    - [x] Exemption from military service (2015/08/06)  
-    - [x] [iToolMan Hoodie](https://hackpad.com/iToolMan-T-cOJlcwLntzx) (2015/06)  
+    - [x] Get MT Driving License (2015/11/09)  
+    - [x] Get a job for CS-related company (2015/12/28)  
   
 ---  
   
