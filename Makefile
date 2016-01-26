@@ -25,6 +25,8 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 
 DROPBOX_DIR=~/Dropbox/Public/
 
+GITHUB_REMOTE_NAME=origin
+GITHUB_SOURCE_CODES_BRANCH=source
 GITHUB_PAGES_BRANCH=master
 
 DEBUG ?= 0
@@ -120,8 +122,8 @@ cf_upload: publish
 
 github: publish
 ifdef MSG
-	ghp-import -m "$(MSG)" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push origin $(GITHUB_PAGES_BRANCH)
+	git push $(GITHUB_REMOTE_NAME) $(GITHUB_SOURCE_CODES_BRANCH)
+	ghp-import -p -m "$(MSG)" -r $(GITHUB_REMOTE_NAME) -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 else
 	@echo 'Variable MSG is not defined.'
 	@echo 'Do make github MSG='"'"'GitHub commit message'"'"
