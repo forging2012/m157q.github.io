@@ -43,13 +43,13 @@ EXTRA_PATH_METADATA = {
 }
 
 MENUITEMS = [
-    #('home', '/index'),
+    # ('home', '/index'),
     ('Categories', '/categories'),
     ('Archives', '/archives'),
     ('Tags', '/tags'),
-    #('search', 'search'),
-    #('authors', 'authors'),
-    #('about', 'about'),
+    # ('search', 'search'),
+    # ('authors', 'authors'),
+    # ('about', 'about'),
 ]
 
 DIRECT_TEMPLATES = (
@@ -57,9 +57,9 @@ DIRECT_TEMPLATES = (
     'tags',
     'categories',
     'archives',
-    #'search',
-    #'authors',
-    #'about',
+    'search',
+    # 'authors',
+    # 'about',
 )
 
 # Feed generation is usually not desired when developing
@@ -90,7 +90,17 @@ RELATIVE_URLS = True
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['sitemap', 'related_posts', 'share_post', 'pin_to_top', 'render_math']
+PLUGINS = [
+    'neighbors',
+    'pin_to_top',
+    'related_posts',
+    'render_math',
+    'sitemap',
+    'share_post',
+    'tipue_search',
+]
+TIPUE_SEARCH = True
+
 SITEMAP = {
     'format': 'xml',
     'priorities': {
@@ -104,10 +114,11 @@ SITEMAP = {
         'pages': 'yearly'
     }
 }
+
 RELATED_POSTS_MAX = 5
 MATH_JAX = {
-    'color' : 'blue',
-    'linebreak_automatic' : True,
-    'responsive' : True,
-    'tex_extensions' : ['color.js']
+    'color': 'blue',
+    'linebreak_automatic': True,
+    'responsive': True,
+    'tex_extensions': ['color.js']
 }
