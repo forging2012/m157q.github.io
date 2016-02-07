@@ -170,9 +170,9 @@ Summary: 紀錄我人生第一次找工作的面試過程
 ### CHOCOLABS - 歐酷網路  
 + 應徵職位：Cloud Engineer in Operation （透過 Referral）  
     + <https://github.com/M157q/find-jobs/issues/14>  
-+ 面試時間：  
-+ 面試地點：  
-+ 面試官：  
++ 面試時間： 2016/01/13  
++ 面試地點： 台北市民權東路三段 142 號 17 樓  
++ 面試官： Darren, Henry, Jerry  
 + 面試過程  
 + 結果  
   
