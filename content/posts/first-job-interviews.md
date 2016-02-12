@@ -107,6 +107,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 畢竟我 Node.js 只有大學專題的時候自己寫一寫而已。  
   
 + 應徵職位：API Backend Developer / Cloud System Admin （透過 sudo 投遞）  
+    + <https://github.com/M157q/find-jobs/issues/21>  
 + 面試時間：2016/01/08 11:30  
 + 面試地點：台北市信義區信義路五段 2 號 6 F (震旦大樓)  
 + 面試官：Popo (CEO)  
@@ -136,6 +137,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 #### 第一階段  
   
 + 應徵職位：Application Engineer / Backend Server Engineer （透過 sudo 投遞）  
+    + <https://github.com/M157q/find-jobs/issues/22>  
 + 面試時間：2016/01/11 14:00  
 + 面試地點：松山區南京東路四段16號7樓B  
 + 面試官：Kana (HR Manager, Eng), ??? (HR, 中文)  
@@ -188,7 +190,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 ### CHOCOLABS - 歐酷網路  
   
 + 應徵職位：Cloud Engineer in Operation （透過 Referral）  
-    + <https://github.com/M157q/find-jobs/issues/14>  
+    + <https://github.com/M157q/find-jobs/issues/23>  
 + 面試時間： 2016/01/13  
 + 面試地點： 台北市民權東路三段 142 號 17 樓  
     + 新辦公室，我面試的時候才剛搬一個禮拜，裝潢都還沒好，印象最深刻的是有一整片的透明玻璃就面對著松山機場，有一排座位和桌子，可以讓你看著飛機起降 coding。  
