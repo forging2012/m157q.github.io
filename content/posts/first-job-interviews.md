@@ -1,6 +1,6 @@
 Title: 我的新鮮人面試紀錄  
 Slug: first-job-interviews  
-Date: 2016-02-12 21:55:37  
+Date: 2016-02-12 23:40:37  
 Authors: m157q  
 Category: Life  
 Tags: interview, resume, job  
@@ -12,6 +12,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 從去年 11/13 開始寫完我的 LinkedIn profile 後，算是開始找工作的起點。  
 但過沒多久就發現，LinkedIn 充其量只能當作參考，也不是必要的，最重要的還是 resume。  
   
+---  
   
 ### LinkedIn 好難用，所以寫了個程式。  
   
@@ -21,6 +22,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 [linkedin2md](https://github.com/M157q/linkedin2md)  
 這樣我就可以偷懶直接用 LinkedIn 生一份 resume 出來。  
   
+---  
   
 ### 公司要的是 Resume，不是 CV。  
   
@@ -30,6 +32,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 雖然跟我的經歷也有點關係就是，  
 因為一直就是有興趣的東西我就會去碰，所以容易給人一種鼯鼠五技而窮的感覺。  
   
+---  
   
 ### 覺得整理想去的公司好麻煩，乾脆整理在 GitHub 上  
   
@@ -38,6 +41,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 之後大概就是往 Web Backend 跟 DevOps 這兩個職位去找，  
 並把想投的公司及狀況紀錄在 [Issues · M157q/find-jobs · GitHub](https://github.com/M157q/find-jobs/issues)。  
   
+---  
   
 ### 透過獵人頭找工作  
   
@@ -53,6 +57,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 而且 sudo 上的履歷支援 markdown 語法，光是這點我就覺得比 LinkedIn 好用了。  
 我一直覺得 LinkedIn 自訂的 description 不能用超連結，只能用純文字 URL 是件很扯的事。）  
   
+---  
   
 ### 履歷寫的太爛，被慘電。  
   
@@ -62,6 +67,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
 跑去成大當面給 Jserv review 我的第一份 resume 被慘電 3 個小時，  
 著實獲益良多。  
 詳細內容則紀錄在 [程式設計師的履歷撰寫要點](/posts/2016/01/22/how-to-write-a-resume-for-programming-jobs/)  
+[最終版本的履歷在此](https://github.com/M157q/find-jobs/blob/master/resume.pdf)  
   
 ---  
   
@@ -144,6 +150,7 @@ Summary: 紀錄我人生第一次找工作的面試過程
         + 技能樹不太 match 的確是事實，不過稍嫌自信我當下怎麼想都想不透，後來覺得是中文履歷的問題，大概是因為我死都不肯寫個中文履歷，覺得之後公司有什麼要求我可能也會據理力爭的不照辦一些事情，會讓他們覺得很麻煩吧？  
     + 但也是很感謝兩位人資花時間面試我，畢竟這是我人生第一個英文面試。  
   
+---  
   
 ### VMFive  
   
@@ -176,7 +183,10 @@ Summary: 紀錄我人生第一次找工作的面試過程
     + 被出了個後試，就是上面的第 3 題，但自己回去考慮了一陣子後覺得之後不太想做純維運的工作，就回信感謝面試官花時間面試這樣。  
     + 這間是我面試的公司裏面，我覺得面試的最認真的一間公司，3 個 Engineer 不說，其中一位還是該 Team 的主管，而且問的問題我覺得都蠻有深度的，有些我真的不太熟，答不上來。他們很謹慎的選擇應徵者的能力，還有必須確認應徵者之後真的是想跟他們一起衝的，如果對自己的能力有信心而且對這間公司在做的事情有興趣的話，可以去應徵看看。  
   
+---  
+  
 ### CHOCOLABS - 歐酷網路  
+  
 + 應徵職位：Cloud Engineer in Operation （透過 Referral）  
     + <https://github.com/M157q/find-jobs/issues/14>  
 + 面試時間： 2016/01/13  
