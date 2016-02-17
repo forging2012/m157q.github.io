@@ -82,19 +82,29 @@ TSCC 佳作 (第四名)，紀錄在[這篇](/posts/2015/09/15/tscc-2015-notes-an
   
 + 待在家繼續增肥，月中申請體重複檢。  
     + 但同時又被我弟抓去打籃球和跟我爸去游泳  
-+ 繼續開發 zdict  
++ 繼續開發 [zdict](https://github.com/zdict/zdict)  
 + 研究和撰寫一些小型的開源軟體  
-    + zdict  
-    + imageme  
+    + [imageme](https://github.com/M157q/imageme)  
+    + [gettitle](https://github.com/M157q/gettitle)  
 + 高雄氣爆  
 + 高中生反課綱  
-  
   
 ---  
   
 ## 8 月  
   
-拿到國家認証的肥宅證明書，不用當兵。  
++ 拿到國家認証的肥宅證明書，不用當兵。  
++ COSCUP 2015 (COSCUP 十週年)  
+    + 宅色夫宣佈封麥  
+        + [「男人有錢會變壞 linux 使用者有錢會投入 Mac 的懷抱」](https://twitter.com/welkineins/status/632397066698756097)  
+    + 覺得很多人還是不夠認真看待開源這件事  
+        + [「為啥講到專案都是一個人寫的時候一堆人都笑了 真的笑不出來啊」](https://twitter.com/M157q/statuses/632819732501041152)  
+    + 拖到後來就沒寫心得文了 囧  
+    + 決定把 OS X 砍了，重回 Linux Desktop Environment 的懷抱，灌 Arch Linux 在 Macbook Air 2013 上面。  
++ [HITCON 2015](/posts/2015/08/29/hitcon-2015-iot-wargame/)  
++ 拿來翻牆用的 ShadowSocks 的作者被中共抄家了，把他當時的版本回復了一下。  
+    + [GitHub - M157q/shadowsocks: (Restored to versoin 2.8.2 and wiki) A secure socks5 proxy, designed to protect your Internet traffic.](https://github.com/M157q/shadowsocks)  
++ 天津氣爆  
   
 ---  
   
