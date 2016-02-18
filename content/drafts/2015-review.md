@@ -105,6 +105,8 @@ TSCC 佳作 (第四名)，紀錄在[這篇](/posts/2015/09/15/tscc-2015-notes-an
 + 拿來翻牆用的 ShadowSocks 的作者被中共抄家了，把他當時的版本回復了一下。  
     + [GitHub - M157q/shadowsocks: (Restored to versoin 2.8.2 and wiki) A secure socks5 proxy, designed to protect your Internet traffic.](https://github.com/M157q/shadowsocks)  
 + 天津氣爆  
++ Install OpenWRT on Raspberry Pi  
+    + 又一個原本打算要寫結果沒寫的文章  
   
 ---  
   
@@ -118,7 +120,7 @@ TSCC 佳作 (第四名)，紀錄在[這篇](/posts/2015/09/15/tscc-2015-notes-an
   
 ## 11 月  
   
-考到汽車手排駕照  
++ 考到汽車手排駕照  
   
 ---  
   
