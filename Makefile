@@ -28,6 +28,7 @@ DROPBOX_DIR=~/Dropbox/Public/
 GITHUB_REMOTE_NAME=origin
 GITHUB_SOURCE_CODES_BRANCH=source
 GITHUB_PAGES_BRANCH=master
+GITHUB_COMMIT_MSG=$(shell git --no-pager log --format=%s -n 1)
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -61,7 +62,7 @@ help:
 	@echo '   make ftp_upload                  upload the web site via FTP        '
 	@echo '   make s3_upload                   upload the web site via S3         '
 	@echo '   make cf_upload                   upload the web site via Cloud Files'
-	@echo '   make github    MSG=              upload the web site via gh-pages   '
+	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '   make newdraft  NAME=             create a new draft under DRAFTSDIR '
 	@echo '   make editdraft NAME=             edit a post under DRAFTSDIR         '
 	@echo '   make editpost  NAME=             edit a post under POSTDIR          '
@@ -121,13 +122,8 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-ifdef MSG
 	git push $(GITHUB_REMOTE_NAME) $(GITHUB_SOURCE_CODES_BRANCH)
-	ghp-import -p -m "$(MSG)" -r $(GITHUB_REMOTE_NAME) -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-else
-	@echo 'Variable MSG is not defined.'
-	@echo 'Do make github MSG='"'"'GitHub commit message'"'"
-endif
+	ghp-import -p -m "$(GITHUB_COMMIT_MSG)" -r $(GITHUB_REMOTE_NAME) -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 
 newdraft:
 ifdef NAME
