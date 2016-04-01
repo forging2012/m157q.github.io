@@ -1,5 +1,5 @@
-Title: [Taipei.py] 20160331-Skyfield_and_Uncomplicated_Concurrency_in_Python  
-Slug: taipei-py-20160331-skyfield-and-uncomplicated-concurrency-in-python  
+Title: Skyfield and Uncomplicated Concurrency in Python  
+Slug: skyfield-and-uncomplicated-concurrency-in-python  
 Date: 2016-04-01 09:54:54  
 Authors: m157q  
 Category: Python  
