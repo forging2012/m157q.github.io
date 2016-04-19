@@ -5,6 +5,7 @@ Authors: m157q
 Category: AWS  
 Tags: AWS, AWSUGTW, EC2, Serverless  
 Summary: Note for 2016/04/19 AWSUGTW Meetup 10th  
+Modified: 2016-04-20 00:03  
   
   
 <http://awsugtw.kktix.cc/events/10-tpe>  
@@ -176,3 +177,31 @@ API Gateway => API Gateway Cache
 + AWS API Gateway  
     + Managed HTTPS API Gateway  
     + 權限設計頗複雜，說明文件寫的蠻糟的，必須詳讀文件。  
+  
+---  
+  
+# 心得  
+  
+第一次參加 AWS 的聚會，也算是第一次認真接觸 AWS 啦。  
+畢竟之前也就只有在參加 Conf 還有一些閒聊的時候聽到些名詞。  
+只有懵懵懂懂的瞭解，印象最深的就是 AWS 有一堆自創的 service name，讓我不是很喜歡。  
+雖然公司目前都在用 GCP ，但還是會想瞭解一下 AWS 的內容。  
+希望之後對 GCP 和 AWS 都足夠瞭解之後，  
+可以有辦法自己歸納瞭解 GCP 和 AWS 之間的優缺點，  
+無論是在 Performance, Scalability, Pricing, Flexibility 等等。  
+畢竟如果要朝 Architect 走的話我想這是不可少的。  
+如果能力足夠的話可能還會再看看 Azure 吧。  
+不過目前看來應該還是會以 GCP 為主  
+希望之後研究夠深入的話可以有機會成為 GCP 相關 Library 的 contributor，  
+只是當個 User 的話實在是有點無趣。  
+  
+話說 AWSUGTW 感覺蠻用心在經營的，  
+挑的 CLBC 夠寬敞（跟我常去 Taipei.py 用的那個 CLBC 差好多 QQ），  
+備有額外的茶點，而且免場地費。（真好奇錢從哪來的 XD)  
+還會請參加者填寫問卷收集回饋意見。  
+跟我最近參加過的 Taipei.py 跟 GCPUGTW 比起來算是比較會讓新加入者比較想繼續來的那種。  
+（而且女生好多，Taipei.py 只有一點點，GCPUGTW 完全沒有 XDDD）  
+不過沒啥人問問題，讓我不知道參加者到底是有沒有聽懂，  
+不過會後感覺蠻多人私底下去找講者討論的，應該只是不想或不敢當面問吧？  
+然後沒看到平常跑社群的熟面孔，  
+果然不同的 User Group 就是不同的生態圈啊。  
