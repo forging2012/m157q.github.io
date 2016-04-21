@@ -1,13 +1,18 @@
-Title: Skyfield and Uncomplicated Concurrency in Python  
-Slug: skyfield-and-uncomplicated-concurrency-in-python  
+Title: Taipei.py 20160331 Meetup Note  
+Slug: taipei-py-20160331-meetup-note  
 Date: 2016-04-01 09:54:54  
 Authors: m157q  
 Category: Python  
 Tags: Python, Taipei.py, skyfield, astronomy, concurrency  
-Summary: Note for 2016/03/31 Taipei.py meetup.  
+Summary: "Skyfield" & "Uncomplicated Concurrency in Python"  
   
   
 <https://www.meetup.com/Taipei-py/events/229246749>  
+  
++ Topic 1: Skyfield  
++ Topic 2: Uncomplicated Concurrency in Python  
+  
+---  
   
 # Tutorial about skyfield  
 ## David Mikolas (david.mikolas@gmail.com)  
