@@ -5,6 +5,7 @@ Authors: m157q
 Category: Python  
 Tags: Python, Taipei.py, Neural Network, KKBOX  
 Summary: "Neural Art and Neural Doodle in Python" & "Experience from KKBOX"  
+Modified: 2016-04-22 00:15  
   
   
 <http://www.meetup.com/Taipei-py/events/230083921/>  
@@ -54,10 +55,10 @@ Topic 2: Experience from KKBOX
                     + alpha 的比重愈高，畫作愈寫實。  
                     + beta 的比重愈高，愈接近畫作。  
 + [Neural Doodle](http://www.slideshare.net/ckmarkohchang/neural-doodle)  
-    + 改良 neural art 的缺點  
+    + 改良 Neural Art 的缺點  
         + <http://arxiv.org/abs/1601.04589>  
-    + Neural 採用 gram-based matrix 取得風格，因為忽略位置訊息，所以所有的部份風格都是相同的。  
-    + 採用 patch-based Matrix 則不會忽略位置訊息，會尋找畫作中與畫布相近的部份取得該部份的風格，因此改善了 Neural Art 的缺點。  
+    + Neural Art 採用 gram-based matrix 取得風格，因為忽略位置訊息，所以所有的部份風格都是相同的。  
+    + Neural Doodle 則採用了不會忽略位置訊息的 Patch-based Matrix，會尋找畫作中與畫布相近的部份取得該部份的風格，因此改善了 Neural Art 的缺點。  
     + Patch-Based Style Transfer  
         + 透過兩向量內積除以兩向量絕對值來判斷相近的程度，然後自動去尋找最相近的 patch，得到 Most simillar patch  
     + Sematic Style Transfer  
@@ -82,11 +83,16 @@ Topic 2: Experience from KKBOX
             + In 3 months, the API's verion changed 5 times.  
             + There is even no broadcasters to listen to.  
             + In academia, we may call this "ill-posed (optimization) problem".  
-    + A bot for poc.  
-    + end in 2013.  
+    + A bot for poc  
+        + 主管要求在沒有 broadcaster 的情況下 demo iOS client 的功能，只好用 Python 接 API 快速刻一個偽 broadcaster 出來。  
+    + 因為 iOS team 的不熟 Python，不打算教 venv 那類的東西，所以只用到 built-in modules 跟 PyObject，code 直接 clone 下來就能跑了，完全不用 third-party packages。  
+    + 用 Python 可以快速的建出 PoC，協助開發。  
+    + 2013 就停止開發了。停止原因是沒有進一步的計劃和需求，而且畢竟是個 iOS team。  
 + [PyUIA](https://github.com/imsardine/pyuia)  
-    + 2013  
+    + Started in 2013.  
     + Testing for Playlist Auto-Sync  
+    + 想做到讓 unittestings 可以儘量不需要額外寫程式碼，讓不會寫程式的 QA 可以用特定格式的 natural language 就可以新增測試。  
+        + （我記得 robotframework 好像也可以辦到這件事？）  
 + Video Encoding System  
     + Challenges  
         + Given a thousands of videos  
@@ -102,5 +108,6 @@ Topic 2: Experience from KKBOX
     + 用 tcl 寫 Job Script，使用 Producter-Consumer model  
     + [Mass](https://github.com/KKBOX/mass)  
     + 最大的挑戰是一天要轉三千部影片  
+        + 最後成功了，但一天內用 AWS 燒掉了十幾萬還是幾十萬台幣，忘了。  
 + RDC Toolbox  
 + Python 是個方便且讓人寫起來感到快樂的語言，歡迎大家一起開心地寫 Python。  
