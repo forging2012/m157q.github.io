@@ -123,7 +123,10 @@ cf_upload: publish
 
 github: publish
 	git push $(GITHUB_REMOTE_NAME) $(GITHUB_SOURCE_CODES_BRANCH)
-	cp $(BASEDIR)/.gitattributes $(OUTPUTDIR)
+	# Use git-lfs for *.pdf, so remove *.pdf for output dir.
+	# Should specify https://github.com/M157q/m157q.github.io/raw/source/content/files/
+	# in the posts.
+	find $(OUTPUTDIR)/files -name "*.pdf" -type f -delete
 	ghp-import -p -m "$(GITHUB_COMMIT_MSG)" -r $(GITHUB_REMOTE_NAME) -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 
 newdraft:
