@@ -5,11 +5,13 @@ Authors: m157q
 Category: Data Science  
 Tags: Data Science, Deep Learning, Note  
 Summary: 台灣資料科學愛好者年會系列活動筆記  
+Modified: 2016-04-24 14:43  
   
   
 + <http://dsc.kktix.cc/events/video-signal>  
 + <http://datasci.tw/event/vision_and_learning/>  
 + Slides: <http://www.slideshare.net/tw_dsconf/ss-61255961>  
+    + [備份](/files/video-signal-processing-and-the-application-of-deep-learning/video-signal-processing-and-the-application-of-deep-learning.pdf)  
   
 ---  
   
@@ -34,11 +36,12 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
 + Loitering  
 + People Count  
 + Speed Test  
-    + 不用都卜勒雷達算，直接用影像計算，不小心歪掉就不准了 XDD  
+    + 不用都卜勒雷達算，直接用影像計算。  
+    + 不小心歪掉就不準了，所以大家知道怎麼躲這種測速了吧 （XDD  
 + Smart Daily  
     + 用監視器的影像辨認人臉打卡。  
-+ Smart Fast Forward (Skywatch)  
-    + 用影像辨識來判斷監視器畫面中哪些時間是有人的，用來定期追蹤是否有噴灑農藥。  
++ Smart Fast Forward (Skywatch 的產品)  
+    + 用影像辨識來判斷農舍監視器畫面中哪些時間是有人的，主要是用來定期追蹤是否有記得噴灑農藥。  
 + Structure from motion  
 + 3D Reconstruction  
 + Person tracking  
@@ -54,13 +57,13 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
     + 要變成人類歷史的一部份，轉化成可搜尋的話，是個問題。  
   
   
-## A brief History of Computer Vision  
+## A Brief History of Computer Vision  
   
 + 1966, Marvin Minsky  
-    + 50 年過後，我們仍然還沒完全解決這個問題。  
-+ 1960's: interpretation of synthetic worlds  
+    + 50 年過後，我們還沒完全解決這個問題。  
++ 1960's: Interpretation of Synthetic Worlds  
     + Larry Roberts (Father of Computer Vision)  
-+ 1970's: some progress on interpreting selected images  
++ 1970's: Some progress on interpreting selected images  
 + 1980's: AI Winter ... back to basics  
     + 1984: Perceptual Organization and Visual Recognition, David Lowe  
     + Blending  
@@ -68,6 +71,7 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
         + 用三角函數找出反光的角度建模  
     + Edge Detection  
     + From Science to Engineering  
++ 1990's: structure, segmentation and face recognition  
 + 2000's: more object classes, computational photography, video processing  
     + 重新對焦的照相機  
     + Texture Sythesis  
@@ -82,12 +86,17 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
   
 ### Reference Books  
   
++ "Multiple View Geometry in Computer Vision", Richard Hartley and Andrew Zisserman  
+    + A good book to get started on camera geometry  
+    + More math heavry but very old school  
 + ["Computer Vision: Algorithms and Applications", Richard Szeliski](http://szeliski.org/Book/)  
+    + More balanced mix between math and application  
+    + Freely available online.  
   
-### Image formation and 2D image processing  
+### Image Formation and 2D Image Processing  
   
 + Image formation  
-    + 照相原理：散射會造成無法成像，所以透過針孔（barrier），使其成像。  
+    + 照相原理：散射會造成無法成像，所以透過針孔（作為 barrier），使其成像。  
         + 缺點  
             + 光線不足，所以很暗  
             + 針孔太大的話，成像會變模糊，所以加上透鏡輔助。  
@@ -113,7 +122,7 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
         + Digital Color Images  
             + Bayer Filter  
                 + 人對綠色比較敏感，對藍色比較不敏感。  
-                + 彩色的照片還是 3 個黑白的 RGB 疊加起來  
+                + 彩色的照片是 3 個黑白的 RGB 疊加起來  
                 + Many early algorithms use greyscale instead of color images, Why?  
                     + 早期只有灰階照片  
                     + 彩色會有偏差  
@@ -128,11 +137,14 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
 + Recovering structure from a single view  
     + Intrinsic ambiguity of the mapping from 3D to image (2D)  
     + 2D 是無法直接確定物體距離與深度的，必須用兩個眼睛來看，三角定位。  
-+ Epipolar geomerty  
-    + Parallel Epipo  
++ [Epipolar geomerty](https://en.wikipedia.org/wiki/Epipolar_geometry)  
+    + Parallel Images Plane  
     + Forward translation  
     + Epipolar line  
     + [The "Vertigo" Effect](https://www.youtube.com/watch?v=sKJeTaIEldM)  
+    + Epipolar Constraint (F)  
+        + Estimating F  
+            + The Eight-Point Algorithm  
     + Fundamental Matrix 很重要！  
     + Rectification  
         + Your basic stereo algorithm  
@@ -164,9 +176,14 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
         + Possion Equation: 微分、微分、再積分  
         + 照片合成特效  
         + Seamless Poisson cloning  
+        + Face Cloning  
         + Texture Swapping  
++ Interactive Mobile Panorama  
 + High Dynamic Range Imaging (HDR)  
-    + Vary Exposure  
+    + The real word is high dynamic range  
+        + Typical cameras have limited dynamic range  
+            + Solution: Merge multiple exposures  
+    + Varying Exposure  
     + Tone Mapping  
     + Simple Global Operator  
 + Interactive Local Adjustment of Tonal Values  
@@ -174,12 +191,14 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
     + Constraint Propagation  
     + Touch-Tone: Point-and-Swipe Image Editing  
   
-### Visual Recognition  
+### Visual Recognition and Query  
   
-+ 1989, Backpropagation applied to handwritten zip code recognition  
++ 1989  
+    + MNIST, Backpropagation applied to handwritten zip code recognition  
+    + Character Recognition (LeNet)  
 + 1998, Neural Network-Based Face Detection  
 + 1999, SIFT (Scale Invariant Feature Transform)  
-    + Object Recognition from Local Scale-Invariant Features  
+    + Object Recognition from Local Scale-Invariant Features, Lowe, ICCV 1999.  
     + No more sliding windows (interest points)  
     + Better features (use more computation)  
     + 找出來的特徵點會是一個球，而不是邊邊角角。  
@@ -208,6 +227,8 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
     + What failed?  
         + 無法認出運動中的人，必須要站著。  
 + 2007, Pascal VOC  
+    + The PASCAL Visual Object Classes (VOC) Challenge  
+    + 只有 20 個分類  
 + 2008, DPM (Deformable parts model)  
     + Object Detection with Discriminatively Trained Part Based Model  
     + Star-structure  
@@ -218,7 +239,11 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
     + SUN Database: Large-scale Scene Recognition from Abbey to Zoo  
 + [MS COCO](http://mscoco.org)  
     + over 77,000 worker hours (8+ years)  
-+ DNN, CNN, RNN  
++ 2012 DNNs  
+    + GPUs + Data  
+    + Classification vs Deteciton  
+        + Detection need to know the position of the target object  
+    + CNN, RNN  
     + Why it fails  
         + 找不到位置的話就很難去判斷  
         + Neural Networks are easily fooled  
@@ -272,26 +297,60 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
   
 ---  
   
-# 【加速】圖形處理器與深度學習  
+# 【加速】圖形處理器與深度學習 (GPU and Computation)  
   
-## Parallel Computing Goals  
+## Parallel Processing and GPU  
+  
+### Parallel Computing Goals  
   
 + To slove your problem in less time  
     + 平行化去處理  
 + In order to parallelize a problem  
     + 要去看哪邊有關聯性，並確定處理這些關聯性對演算法的影響。  
   
-## GPU Applications  
+### Types of Parallelism  
+  
++ Multiple Programs  
+    + Multi-tasking  
+    + Multi-threading  
++ Single Program  
+    + Instruction-levl parallelism  
+        + Multiple instructions in a serial program get excuted simultaneously  
+    + Data-level parallelism  
+        + **S**ingle **I**nstruction, **M**ultiple **D**ata processing model (SIMD)  
++ Amdahl's Law  
+    + Named after computer architect Gene Amdahl  
+    + Speedup of a parallel computer is limited by the amount of serial work  
++ Resource Management  
+    + 哲學家晚餐問題  
+  
+### GPU Applications  
   
 + Real-time rendering. e.g. Game  
 + Movie Effect  
   
-## NVIDIA CUDA  
+### GPUs Today  
+  
++ GPUs are becoming more programmable  
++ GPUs now support 32/64 bit floating points numbers  
++ GPUs have higher memory bandwidth than CPUs  
+  
+### NVIDIA CUDA  
   
 + Compute Unified Device Architecture  
 + CUDA Workflow  
+    + Get a CUDA-enabled GPU  
+    + Write C/C++ like code (\*.cu)  
+    + Compile with CUDA compiler (nvcc)  
+        + Generated PTX code ("Parallel Thread Execution")  
+    + Applications auto-magically run on GPUs  
+        + Many many parallel threads  
+        + CUDA driver translate PTX code into hardware.  
++ CUDA Overview  
   
-## Frameworks and Libraries  
+> 之前學 CUDA 時收集的一份不錯的 CUDA 教學系列文：[Nice Series of CUDA Tutorials on ptt.cc](/posts/2015/08/15/nice-series-of-cuda-tutorials-on-ptt-cc/)  
+  
+### Frameworks and Libraries  
   
 + MATLAB  
 + BLAS Library (Basic Linear Algebra Subprograms)  
@@ -357,4 +416,3 @@ Summary: 台灣資料科學愛好者年會系列活動筆記
     + Basic OpenCV functionalities  
     + OpenCV and image processing  
     + OpenCV and detection  
-  
