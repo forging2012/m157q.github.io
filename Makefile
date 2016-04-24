@@ -123,6 +123,7 @@ cf_upload: publish
 
 github: publish
 	git push $(GITHUB_REMOTE_NAME) $(GITHUB_SOURCE_CODES_BRANCH)
+	cp $(BASEDIR)/.gitattributes $(OUTPUTDIR)
 	ghp-import -p -m "$(GITHUB_COMMIT_MSG)" -r $(GITHUB_REMOTE_NAME) -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 
 newdraft:
