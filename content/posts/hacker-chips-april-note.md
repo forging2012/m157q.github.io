@@ -3,9 +3,9 @@ Slug: hacker-chips-april-note
 Date: 2016-04-24 16:00:21  
 Authors: m157q  
 Category: Life  
-Tags: Hacker Chips, Sudo\_, Meetup  
+Tags: Hacker Chips, Sudo_, Meetup  
 Summary: 紀錄一下第一次參加由 [Sudo\_](https://sudo.com.tw/) 舉辦的 Hacker Chips  
-Modified: 2016-04-28 11:02  
+Modified: 2016-04-28 11:08  
   
   
 <https://www.facebook.com/events/472611622946460/>  
