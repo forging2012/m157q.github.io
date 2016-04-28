@@ -5,6 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: Hacker Chips, Sudo\_, Meetup  
 Summary: 紀錄一下第一次參加由 [Sudo\_](https://sudo.com.tw/) 舉辦的 Hacker Chips  
+Modified: 2016-04-28 11:02  
   
   
 <https://www.facebook.com/events/472611622946460/>  
