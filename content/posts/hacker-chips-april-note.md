@@ -85,6 +85,12 @@ Friday Night 純聊天不寫 code 還蠻棒的 哈哈
     + (App) 自動幫你把照片或影片加上許多特效，處理成看起來很專業的影片。  
 + [Vito Technology - iPhone, iPad, iPod Touch and MacOS Educational Apps](http://vitotechnology.com/star-walk.html)  
     + (App) 手機對著夜空就會在手機上顯示對著的星星和衛星的位置，特效還蠻潮的。  
++ [Hacker Paradise: A Traveling Community for Developers, Designers, and Other Creative Types.](http://www.hackerparadise.org/)  
+    + 邊環遊世界邊玩邊工作的一群人們  
++ [湾区日报：关注创业与技术，每天推送5篇优质英文文章](https://wanqu.co/)  
+    + 還不錯的資訊科技新聞分享平台，只由一個人負責維護，採用 ChatOps 管理，詳細可看這篇文章：[湾区日报是如何运作的？ | 湾区日报 Blog](https://wanqu.co/blog/2015-05-24-behind-the-scenes.html?s=home)  
++ [Grab a Bite 幸福提食](https://www.facebook.com/2014Grab.a.Bite/)  
+    + 今天聚會中的培根三明治和火腿三明治就是這家買的，覺得還不錯吃。  
   
 ---  
   
