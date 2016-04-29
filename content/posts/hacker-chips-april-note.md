@@ -5,7 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: Hacker Chips, Sudo_, Meetup  
 Summary: 紀錄一下第一次參加由 [Sudo\_](https://sudo.com.tw/) 舉辦的 Hacker Chips  
-Modified: 2016-04-28 11:08  
+Modified: 2016-04-30 02:00  
   
   
 <https://www.facebook.com/events/472611622946460/>  
@@ -48,6 +48,10 @@ Friday Night 純聊天不寫 code 還蠻棒的 哈哈
     + (Python) 用 Terminal 查線上字典，適合討厭用 Web browser 開分頁的 CLI 控。（像我就是）  
 + [軟體工程師的鄙視鏈（程序员的鄙视链） | 真．他媽的](https://vinta.ws/blog/695)  
     + 看了沒笑的人，肯定不是軟體工程師。  
++ [50 Nerds of Grey (@50NerdsofGrey) | Twitter](https://twitter.com/50NerdsofGrey)  
+    + (English)《格雷的五十種阿宅》（？）  
+    + 裏面有很多很好笑的阿宅哏，像是這個 [50 Nerds of Grey on Twitter: "'I've been a very bad girl,' she said, biting her lip. 'I need to be punished.' 'Very well,' he said and installed Windows 10 on her laptop."](https://twitter.com/50NerdsofGrey/status/640985632941064192)  
+  
 + [CodeTengu Weekly 碼天狗週刊](http://weekly.codetengu.com/)  
     + 由臺灣的工程師們撰寫的技術資訊分享週刊，每星期一早上十點出刊，標題都很有哏。  
     + 內容比較偏技術導向，較適合工程師們看。  
