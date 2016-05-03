@@ -1,0 +1,17 @@
+language: python
+python:
+- '2.7'
+
+branches:
+  only:
+  - source
+
+install:
+- pip install -r requirements.txt
+
+script:
+- make travis
+
+env:
+  global:
+    secure: gMbpWHFsnQLQNKjOKeTGacIFrWE6idWOrFPyYbrYFR0E2TPxZj/rRolgKD0SJwPrRgUp5P6zjyl8vpOwQrv9dgUrtsEbZlcVqKallf6a9eB75GW9ggGBFaNFrSroNCNsVTQU9+giqobAdomCFxwEVXr8YkH7whRq35qFS6Q5MiCSUUP29l9TDysk5QPbs+L0978iskNNrR18g+4oZq8A72MvJ330Eb5JdllT6/GFwAYGJajcfwhUWlaPmX6FS1dmdQ/D1c2frwovYqdHUkqCONuGZBAayFMQb3rgFZKC7Q5TTiwQTzyuqGGSM9iOHj9G2M4krzkg/G296VJaWupS7UyXkHYnn0rNpseYkyYI0UeTBR5KJQ/J3uqoZS7qFA9qajn+Tnc3kq6GgVniU7K2hCAUgYewXcsGBI4L6IoKMUQlQe962UEnX34VRlTirJlEj5mClFm4/umezCXVPW2Bm9cnHKr2MmZexN2V4oP7bVBqjw3rGqkB/o2NUEfECbeOFFNM/9OqdE/fF3sCBDskEb3FTC5fscbYOhwR0/qFOs93bv3kxgJM0LLfT5Sptf4KmHecuXRlzn8mRwiKU1w3UkHtofNicnDhbn/C/kta097yfoFo+tt3vBkQnVGTyyLevh4WfvAX3oMTgf9dg+3LbbbyHziIzb8oeZ14WOOROPk=
