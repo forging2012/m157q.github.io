@@ -4,7 +4,7 @@ Author: m157q
 Category: VirtualBox  
 Tags: VirtualBox, USB  
 Slug: solution-for-the-failure-to-attach-usb-device-in-virtualbox  
-Modified: 2015-10-28 14:46  
+Modified: 2016-05-03 20:32  
   
   
 ## Solution  
@@ -20,7 +20,7 @@ Modified: 2015-10-28 14:46
 3. USB  
 4. Add a new USB Filter  
 5. Choose device which cannot be attached  
-6. Clear all fiels except the name  
+6. Clear all fields except the name  
 7. Unplug the USB device  
 8. Plug in the USB device again  
 9. Attach the USB device to guest  
