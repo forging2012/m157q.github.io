@@ -130,10 +130,8 @@ travis: publish
 	# Should specify https://github.com/M157q/m157q.github.io/raw/source/content/files/
 	# in the posts.
 	find $(OUTPUTDIR)/files -name "*.pdf" -type f -delete
-	git remote set-url origin https://${GH_TOKEN}@github.com/$(GITHUB_REPO_SLUG).git
-	ghp-import -n -p -m "$(GITHUB_COMMIT_MSG)" -r $(GITHUB_REMOTE_NAME) -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	# ghp-import -n -m "$(GITHUB_COMMIT_MSG)" $(OUTPUTDIR)
-	# @git push -fq https://${GH_TOKEN}@github.com/$(GITHUB_REPO_SLUG).git $(GITHUB_PAGES_BRANCH) > /dev/null
+	ghp-import -n -m "$(GITHUB_COMMIT_MSG)" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	@git push -fq https://${GH_TOKEN}@github.com/$(GITHUB_REPO_SLUG).git $(GITHUB_PAGES_BRANCH):$(GITHUB_PAGES_BRANCH) > /dev/null
 
 newdraft:
 ifdef NAME
