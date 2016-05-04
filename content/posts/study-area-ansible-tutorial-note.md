@@ -5,7 +5,7 @@ Authors: m157q
 Category: Course  
 Tags: Python, Ansible, DevOps, automation  
 Summary: 簡單講解 Ansible  
-Modified: 2015-12-29 00:06  
+Modified: 2016-05-05 03:44  
   
 + Speaker  
     + [黃俊宏 sakana / Max](https://github.com/sakanamax)  
@@ -53,7 +53,7 @@ Modified: 2015-12-29 00:06
   
 ---  
   
-### The role of Ansile  
+### The role of Ansible  
   
 + Control Machine  
     + Control managed nodes  
