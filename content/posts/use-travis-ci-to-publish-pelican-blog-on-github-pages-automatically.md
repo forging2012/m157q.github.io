@@ -1,10 +1,10 @@
 Title: 用 Travis CI 自動化發佈 Pelican blog 到 GitHub Pages 上  
 Slug: use-travis-ci-to-publish-pelican-blog-on-github-pages-automatically  
-Date: 2016-05-05 04:01:07  
+Date: 2016-05-08 13:00:07  
 Authors: m157q  
 Category: Python  
 Tags: Pelican, Travis CI, GitHub Pages, Blog  
-Summary: 因為總文章數已經累積到約 150 篇，所以每次 build Pelican 的時候都差不多要十秒，覺得每次都要等這十秒實在是很浪費時間，所以幾個月前想到可以用 Travis CI 來自動幫我完成這件事，但直到前天才花一個晚上的時間成功設定完。  
+Summary: 因為總文章數已經累積到約 150 篇，所以每次 build Pelican 的時候都差不多要十秒，覺得每次都要等這十秒實在是很浪費時間，所以幾個月前想到可以用 Travis CI 來自動幫我完成這件事，但直到前幾天才花一個晚上的時間成功設定完，紀錄一下。  
   
   
 # 前言  
@@ -23,6 +23,8 @@ Summary: 因為總文章數已經累積到約 150 篇，所以每次 build Pelic
 ---  
   
 # 作法  
+  
+先到 `https://travis-ci.org/profile/${your_github_username}` switch on 該 repo  
   
 ## 設定 `.travis.yml`  
   
@@ -87,13 +89,14 @@ travis: publish
 ## 設定 `GH_TOKEN`  
   
 先到 <https://github.com/settings/tokens> 點選右上方的 `Generate new token`  
-GitHub 可能會要求輸入密碼，確定現在是本人使用  
-填寫 Token description 描述一下這是 Travis CI 要拿來 build Pelican blog 用的  
+GitHub 可能會要求輸入密碼，確定現在是本人使用，然後進入 sudo mode。  
+填寫 Token description 描述一下這是 Travis CI 要拿來 build Pelican blog 用的，  
+主要是給自己看的，怕之後忘記。  
 然後 select scopes 就點選 repo 就夠了  
 直接移到底下點選 Generate token  
 之後就會有一組 GitHub Personal Access Token 可以複製了  
 然後我們要將這個 Token 的權限綁到 Travis CI 上，  
-讓 Travis CI 有權限將 commit push 到我們的 repo  
+讓 Travis CI 有權限將 commit push 到 repo  
 這邊有兩種作法，  
 一種是直接在 Travis CI 的 Web 介面上設定環境變數（比較簡單），  
 另一種是寫在 `.travis.yml` 裡頭，但有先透過 travis 將 token 進行加密，  
@@ -102,7 +105,39 @@ GitHub 可能會要求輸入密碼，確定現在是本人使用
   
 ### 透過 Travis CI Web Interface 設定  
   
++ 到 `https://travis-ci.org/${user_name}/${repo_name}`  
++ 移到右手邊的 more options 並點選 settings  
++ 底下有個 Environment Variables，有 Name 和 Value 兩個欄位  
+    + 在 Name 欄位填上 `GH_TOKEN`  
+    + 在 Value 欄位貼上剛剛複製的 Token  
++ 然後點選 Add 即可  
+  
 ### 透過 Travis CI CLI 設定  
+  
++ 首先必須確認有安裝 `travis` 的 CLI tool  
++ 之後在 terminal 輸入 `travis encrypt GH_TOKEN=${your_token} --add`  
++ 就會看到 `.travis.yml` 裡頭多了一個 block 顯示類似下面的內容  
+  
+```  
+env:  
+  global:  
+    secure: xxxxxxxxxx  
+```  
+  
++ 這樣就行了，之後每次 Travis CI 在跑的時候都會把這串值拿去 decode 並解密成原本的 token。  
+  
+  
+## 讓 Travis CI 不要在有 PR 的時候重新產生 blog  
+  
+到 `https://travis-ci.org/${user_name}/${repo_name}/settings`，  
+把 `Build pull requests` 那個 switch 切換成 off  
+  
+  
+## 測試有沒有成功  
+  
+都設定完的話，  
+之後只要把新的 commit push 到 GitHub 上，  
+Travis CI 就會自動 build blog 啦~  
   
 ---  
   
