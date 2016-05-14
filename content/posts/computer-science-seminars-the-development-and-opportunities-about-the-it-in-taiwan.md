@@ -6,6 +6,7 @@ Tags: Microsoft, speech
 Slug: computer-science-seminars-the-development-and-opportunities-about-the-it-in-taiwan  
 Modified: 2015-10-26 15:17  
   
+  
 + 講題  
     + 台灣資訊與軟體產業未來之發展與機會  
 + 演講者  

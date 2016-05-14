@@ -28,7 +28,7 @@ google drive 似乎就沒有這個問題的樣子
 ---  
   
 今年最紅的應該就是桌機哥了吧  
-![](http://i.imgur.com/PjAEL7x.jpg)  
+![桌機哥](/files/coscup-2014-notes-and-thoughts/desktop-bro.jpg)  
   
 不但被人 [拍照放到噗浪上](http://www.plurk.com/p/k81ob1)  
   
