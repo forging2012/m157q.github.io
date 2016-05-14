@@ -2,8 +2,8 @@ Title: A Free Certificate Authority to Encrypt the Entire Web
 Slug: a-free-certificate-authority-to-encrypt-the-entire-web  
 Date: 2015-11-27 22:05:53  
 Authors: m157q  
-Category: Life  
-Tags: Let's Encrypt, EFF  
+Category: Note  
+Tags: Let's Encrypt, EFF, Speech  
 Summary: 資訊與人權的交會: Seth Schoen 訪台系列活動之 11/27 專家講座  
 Modified: 2015-11-29 09:33  
   

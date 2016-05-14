@@ -2,8 +2,8 @@ Title: GitHub Talk - Advanced Git and CI in NCTU
 Slug: github-talk-advanced-git-and-ci-in-nctu  
 Date: 2015-03-20 14:30:29  
 Authors: m157q  
-Category: Life  
-Tags: Note, Thought, Git, GitHub  
+Category: Note  
+Tags: Thought, Git, GitHub, Speech  
 Summary: GitHub X CCCA X SITCON Talk in NCTU  
 Modified: 2015-10-27 12:31  
   
