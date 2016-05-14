@@ -1,10 +1,10 @@
-Title: [Mac] Use Option Key as Meta in iTerm2 and Terminal
-Date: 2014-07-09 18:46
-Author: m157q
-Category: Mac
-Tags: mac, terminal, iTerm2, MetaKey, OptionKey
-Slug: mac-use-option-key-as-meta-in-iterm2-and-terminal
-
+Title: Use Option Key as Meta in iTerm2 and Terminal on Mac  
+Date: 2014-07-09 18:46  
+Author: m157q  
+Category: Note  
+Tags: Mac, terminal, iTerm2, MetaKey, OptionKey  
+Slug: use-option-key-as-meta-in-iterm2-and-terminal-on-mac  
+  
 I am learning some bash shortcut keys in emacs mode in order to become a better sysytem administrator and just found that Alt+\* shortcut keys can't be used in my MacBook Air within iTerm2 and default Terminal.  
   
 Here are solutions below.  

@@ -2,7 +2,7 @@ Title: Nice Series of CUDA Tutorials on ptt.cc
 Slug: nice-series-of-cuda-tutorials-on-ptt-cc  
 Date: 2015-08-15 01:53:21  
 Authors: m157q  
-Category: Misc  
+Category: Note  
 Tags: CUDA, GPU, Tutorial  
 Summary: A series of nice tutorials about CUDA found on ptt.cc while I was preparing for the TSCC 5th competition.  
 Modified: 2015-10-26 14:04  

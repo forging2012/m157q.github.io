@@ -1,7 +1,7 @@
 Title: Sort hash by key or by value in Perl 5.16  
 Date: 2013-05-10 16:38  
 Author: m157q  
-Category: Perl  
+Category: Note  
 Tags: Perl, sort  
 Slug: sort-hash-by-key-or-by-value-in-perl-5-16  
 Modified: 2015-10-28 15:12  

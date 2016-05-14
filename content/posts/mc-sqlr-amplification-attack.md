@@ -1,8 +1,8 @@
 Title: MC-SQLR 放大攻擊  
 Date: 2015-01-22 15:20  
 Author: m157q  
-Category: Security  
-Tags: DDoS, MC-SQLR, Amplification Attack  
+Category: Note  
+Tags: DDoS, MC-SQLR, Amplification Attack, Security  
 Slug: mc-sqlr-amplification-attack  
 Modified: 2015-10-27 11:44  
   

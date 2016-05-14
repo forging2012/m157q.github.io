@@ -1,7 +1,7 @@
 Title: 防拷貝 DVD 光碟燒錄  
 Date: 2014-10-28 09:04  
 Author: m157q  
-Category: Misc  
+Category: Note  
 Tags: DVD, Windows, Copy Protected  
 Slug: how-to-copy-the-copy-protected-dvd-on-windows  
 Modified: 2015-10-28 15:30  

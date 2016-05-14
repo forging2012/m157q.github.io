@@ -1,7 +1,7 @@
 Title: Install Linux Mint 16 in Dual Boot with Win8 on Notebook with UEFI  
 Date: 2014-02-21 03:00  
 Author: m157q  
-Category: Linux  
+Category: Note  
 Tags: Linux, Linux Mint, Win8, UEFI, Dual Boot  
 Slug: install-linux-mint-16-in-dual-boot-with-win8-on-notebook-with-uefi  
 Modified: 2015-10-26 13:53  

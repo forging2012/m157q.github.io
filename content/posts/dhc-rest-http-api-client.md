@@ -2,8 +2,8 @@ Title: DHC - REST/HTTP API Client
 Date: 2015-01-21 22:36  
 Modified: 2015-02-11 18:27  
 Author: m157q  
-Category: Security  
-Tags: Chrome, CTF, DHC  
+Category: Note  
+Tags: Chrome, CTF, DHC, Security  
 Slug: dhc-rest-http-api-client  
 Summary: 上週末打 CTCTF 才知道然後拿來用的 Chrome Extension  
   

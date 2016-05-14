@@ -1,7 +1,7 @@
 Title: RAID Cheat Sheet  
 Date: 2014-01-12 19:22  
 Author: m157q  
-Category: Misc  
+Category: Note  
 Tags: RAID, Cheat Sheet  
 Slug: raid-cheat-sheet  
 Modified: 2015-10-26 13:43  

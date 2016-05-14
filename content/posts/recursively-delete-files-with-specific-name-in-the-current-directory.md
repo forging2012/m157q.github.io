@@ -2,7 +2,7 @@ Title: Recursively Delete Files with Specific Name in the Current Directory
 Slug: recursively-delete-files-with-specific-name-in-the-current-directory  
 Date: 2015-02-26 15:42:42  
 Authors: m157q  
-Category: CLI  
+Category: Note  
 Tags: CLI, find, one-liner  
 Summary: Recursively delete files with specific name by using `find` command  
 Modified: 2015-10-28 14:11  

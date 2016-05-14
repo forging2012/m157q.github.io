@@ -3,7 +3,7 @@ Slug: pip-install-lxml-fail-in-mac
 Date: 2015-02-04 15:39:08  
 Modified: 2015-02-11 04:25:05  
 Author: m157q  
-Category: Mac  
+Category: Note  
 Tags: Python, pip, lxml, Mac, Pelican  
 Summary: A brief solution to solve this problem  
   

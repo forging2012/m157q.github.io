@@ -1,7 +1,7 @@
 Title: Estimate program execution time in C  
 Date: 2013-05-30 16:35  
 Author: m157q  
-Category: C  
+Category: Note  
 Tags: C, Cpp  
 Slug: estimate-program-execution-time-in-c  
 Modified: 2015-10-28 13:15  

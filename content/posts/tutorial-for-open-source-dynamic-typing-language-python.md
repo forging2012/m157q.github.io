@@ -1,7 +1,7 @@
 Title: 開放源碼的動態程式設計語言體驗營 - Python  
 Date: 2013-04-09 15:42  
 Author: m157q  
-Category: Python  
+Category: Note  
 Tags: Python, Tutorial  
 Slug: tutorial-for-open-source-dynamic-typing-language-python  
 Modified: 2015-10-27 11:20  

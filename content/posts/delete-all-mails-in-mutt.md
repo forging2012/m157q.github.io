@@ -1,7 +1,7 @@
 Title: Delete all mails in Mutt  
 Date: 2014-08-01 12:37  
 Author: m157q  
-Category: CLI  
+Category: Note  
 Tags: CLI, Mutt  
 Slug: delete-all-mails-in-mutt  
 Modified: 2015-10-26 14:51  

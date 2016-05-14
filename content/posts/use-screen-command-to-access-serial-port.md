@@ -1,7 +1,7 @@
 Title: Use screen Command to Access Serial Port  
 Date: 2014-10-16 08:12  
 Author: m157q  
-Category: CLI  
+Category: Note  
 Tags: CLI, screen, serial port  
 Slug: use-screen-command-to-access-serial-port  
   

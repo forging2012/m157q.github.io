@@ -2,8 +2,8 @@ Title: 視訊訊號處理與深度學習應用
 Slug: video-signal-processing-and-the-application-of-deep-learning  
 Date: 2016-04-23 09:20:46  
 Authors: m157q  
-Category: Data Science  
-Tags: Data Science, Deep Learning, Note  
+Category: Note  
+Tags: Data Science, Deep Learning, Conf  
 Summary: 台灣資料科學愛好者年會系列活動筆記  
 Modified: 2016-04-24 14:43  
   

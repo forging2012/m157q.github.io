@@ -1,7 +1,7 @@
 Title: find 指令排除指定路徑  
 Date: 2014-05-21 15:10  
 Author: m157q  
-Category: CLI  
+Category: Note  
 Tags: CLI, find, sysadmin  
 Slug: exclude-path-in-find-command  
 Modified: 2015-10-28 14:29  

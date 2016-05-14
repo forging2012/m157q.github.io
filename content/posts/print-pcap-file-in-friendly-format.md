@@ -1,7 +1,7 @@
 Title: Print pcap file in friendly format  
 Date: 2014-11-06 01:16  
 Author: m157q  
-Category: CLI  
+Category: Note  
 Tags: CLI, WireShark, pcap, tcpdump, tcpick, tcpxtract  
 Slug: print-pcap-file-in-friendly-format  
 Modified: 2015-10-28 13:55  

@@ -1,7 +1,7 @@
 Title: Boot LiveUSB in VirtualBox 4.3.18  
 Date: 2014-12-04 04:21  
 Author: m157q  
-Category: VirtualBox  
+Category: Note  
 Tags: VirtualBox, LiveUSB, sysadmin  
 Slug: boot-liveusb-in-virtualbox-4-3-18  
 Modified: 2015-10-28 14:36  

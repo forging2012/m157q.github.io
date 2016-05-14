@@ -1,7 +1,7 @@
 Title: Wrong % (matching parens searching) action in Vim  
 Date: 2014-08-12 20:27  
 Author: m157q  
-Category: Misc  
+Category: Note  
 Tags: Vim  
 Slug: wrong-matching-parens-searching-action-in-vim  
 Modified: 2015-10-26 13:04  

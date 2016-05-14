@@ -1,8 +1,8 @@
 Title: Simple Backdoor by using NetCat  
 Date: 2014-07-06 11:03  
 Author: m157q  
-Category: Security  
-Tags: NetCat, nc, Backdoor  
+Category: Note  
+Tags: NetCat, nc, Backdoor, Security  
 Slug: simple-backdoor-by-using-netcat  
 Modified: 2015-10-27 12:13  
   

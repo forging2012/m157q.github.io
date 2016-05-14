@@ -1,8 +1,8 @@
 Title: Find Malicious Website via Google Safe Browsing Diagnostic API  
 Date: 2015-01-14 14:23  
 Author: m157q  
-Category: Security  
-Tags: Malicious Website, Safe Browsing  
+Category: Note  
+Tags: Malicious Website, Safe Browsing, Security  
 Slug: find-malicious-website-via-google-safe-browsing-diagnostic-api  
 Modified: 2015-10-27 12:00  
   

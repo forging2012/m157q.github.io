@@ -1,7 +1,7 @@
 Title: Simple File Transmission by using Netcat  
 Date: 2014-10-22 06:02  
 Author: m157q  
-Category: CLI  
+Category: Note  
 Tags: CLI, NetCat, nc  
 Slug: simple-file-transmission-by-using-netcat  
 Modified: 2015-10-28 13:57  

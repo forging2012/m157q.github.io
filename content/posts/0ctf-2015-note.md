@@ -2,7 +2,7 @@ Title: 0CTF 2015 Note
 Slug: 0ctf-2015-note  
 Date: 2015-03-30 18:15:23  
 Authors: m157q  
-Category: Security  
+Category: Note  
 Tags: CTF, Write-up, 0CTF  
 Summary: A note for 0CTF 2015  
   

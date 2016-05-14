@@ -1,7 +1,7 @@
 Title: Something about Facebook Photo URL  
 Date: 2014-04-15 19:40  
 Author: m157q  
-Category: Misc  
+Category: Note  
 Tags: facebook, URL  
 Slug: something-about-facebook-photo-url  
 Modified: 2015-10-26 14:57  

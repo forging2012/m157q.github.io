@@ -1,7 +1,7 @@
 Title: Arch Linux - USB鍵盤和USB滑鼠插上去卻無法使用的解法  
 Date: 2013-02-17 01:19  
 Author: m157q  
-Category: Linux  
+Category: Note  
 Tags: Linux, Arch Linux, USB, mkinitcpio  
 Slug: solution-for-usb-keyboard-and-mouse-not-working-in-arch-linux  
 Modified: 2015-10-27 22:14  

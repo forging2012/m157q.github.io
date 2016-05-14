@@ -2,8 +2,8 @@ Title: Vocabulary of Halt and Catch Fire S02E02 - New Coke
 Slug: vocabulary-of-halt-and-catch-fire-s02e02-new-coke  
 Date: 2015-06-25 13:09:14  
 Authors: m157q  
-Category: Vocabulary  
-Tags: Halt and Catch Fire, TV Series, Geek, English  
+Category: Life  
+Tags: Vocabulary, Halt and Catch Fire, TV Series, Geek, English  
 Summary: Same as title.  
 Modified: 2015-10-27 12:41  
   

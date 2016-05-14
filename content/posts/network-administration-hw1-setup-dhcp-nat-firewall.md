@@ -1,7 +1,7 @@
 Title: Network Administration Hw1: Setup DHCP, NAT, Firewall  
 Date: 2013-04-09 15:29  
 Author: m157q  
-Category: Linux  
+Category: Note  
 Tags: Linux, Arch Linux, iptables, Firewall, DHCP, NAT, sysadmin  
 Slug: network-administration-hw1-setup-dhcp-nat-firewall  
 Modified: 2015-10-27 21:31  

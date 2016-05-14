@@ -1,8 +1,8 @@
 Title: Pass PHP Variables to JavaScript in Yii  
 Date: 2014-02-27 13:55  
 Author: m157q  
-Category: Web  
-Tags: JavaScript, PHP, jQuery, Yii  
+Category: Note  
+Tags: Web, JavaScript, PHP, jQuery, Yii  
 Slug: pass-php-variables-to-javascript-in-yii  
 Modified: 2015-10-27 22:40  
   

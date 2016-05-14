@@ -1,7 +1,7 @@
 Title: Interesting JavaScript online encoder  
 Date: 2014-02-27 14:34  
 Author: m157q  
-Category: Misc  
+Category: Note  
 Tags: JavaScript  
 Slug: interesting-javascript-online-encoder  
 Modified: 2015-10-26 14:02  

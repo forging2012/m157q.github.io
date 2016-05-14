@@ -1,8 +1,8 @@
 Title: Laravel 4 Traditional Chinese Tutorial  
 Date: 2014-02-27 14:14  
 Author: m157q  
-Category: Web  
-Tags: PHP, Laravel, framework  
+Category: Note  
+Tags: Web, PHP, Laravel, framework  
 Slug: laravel-4-traditional-chinese-tutorial  
 Modified: 2015-10-27 22:40  
   

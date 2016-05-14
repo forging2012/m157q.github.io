@@ -1,7 +1,7 @@
 Title: Bash Cheat Sheet  
 Date: 2014-10-16 10:23  
 Author: m157q  
-Category: CLI  
+Category: Note  
 Tags: CLI, bash, Cheat Sheet  
 Slug: bash-cheat-sheet  
 Modified: 2015-10-28 14:17  
