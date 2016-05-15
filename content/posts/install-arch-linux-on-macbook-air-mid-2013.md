@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2015-11-27 20:33  
+Modified: 2016-05-15 12:14  
   
 ---  
   
@@ -231,26 +231,31 @@ or
     + <https://github.com/BlueDragonX/xf86-input-mtrack>  
     + for OS X like touchpad and flexible configuration  
 ```  
-/usr/share/X11/xorg.conf.d/10-mtrack.conf  
+/etc/X11/xorg.conf.d/10-mtrack.conf  
 ---  
 Section "InputClass"  
     MatchIsTouchpad "on"  
-    Identifier "Touchpads"  
-    Driver "mtrack"  
+    Identifier      "Touchpads"  
+    Driver          "mtrack"  
   
-    Option "Thumbsize" "25"  
-    Option "ScrollDistance" "100"  
-    Option "Sensitivity" "0.9"  
-    Option "MaxTapTime" "90"  
-    Option "IgnoreThumb" "true"  
-    Option "IgnorePalm" "true"  
-    Option "TapDragEnable" "false"  
+    Option "Thumbsize"      "50"  
+    Option "ScrollDistance" "150"  
+    Option "Sensitivity"    "1.0"  
+    Option "MaxTapTime"     "120"  
+    Option "IgnoreThumb"    "true"  
+    Option "IgnorePalm"     "true"  
+    Option "TapDragEnable"  "false"  
   
     # Natural Scrolling  
-    Option "ScrollUpButton" "5"  
-    Option "ScrollDownButton" "4"  
-    Option "ScrollLeftButton" "7"  
-    Option "ScrollRightButton" "6"  
+    Option "ScrollUpButton"     "5"  
+    Option "ScrollDownButton"   "4"  
+    Option "ScrollLeftButton"   "7"  
+    Option "ScrollRightButton"  "6"  
+  
+    # Disable tap-to-click  
+    # Option "TapButton1" "0"  
+    # Option "TapButton2" "0"  
+    # Option "TapButton3" "0"  
 EndSection  
 ```  
   
