@@ -5,12 +5,11 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-05-17 10:54  
+Modified: 2016-05-17 21:47  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
 ## Reading  
-  
 - 2016  
     - [x] [程序员跳槽全攻略](https://selfstore.io/products/190) (2016/01/07)  
     - [x] 編程人生（上）(Coders at work) (2016/02/14)  
@@ -46,7 +45,6 @@ Summary: Records for what I want to do and when I've done from 2015.
 ---  
   
 ## Health  
-  
 - 2016  
     - [ ] Lose weight to 65 kg  
     - [ ] Lose body fat to 10%  
@@ -59,15 +57,14 @@ Summary: Records for what I want to do and when I've done from 2015.
 ## At least one per year  
   
 ### Write-up for CTFs  
-  
 - 2015  
     - [x] [0CTF 2015 Note - Just for noting](https://m157q.github.io/posts/2015/03/30/0ctf-2015-note/)  
     - [x] [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
     - [x] [HITCON CTF 2015 Quals Write-up - Just for noting](https://m157q.github.io/posts/2015/10/19/hitcon-ctf-2015-quals-write-up/)  
   
 ###  Contributing to open source projects  
-  
 - 2016  
+    - [x] [Add configuration check for sqlite by M157q � Pull Request #919 � coleifer/peewee � GitHub](https://github.com/coleifer/peewee/pull/919) (2016/04/28)  
     - [ ] Send PR back to [imageme](https://github.com/M157q/imageme)  
     - [ ] r/archlinux twitter bot  
         - <https://www.reddit.com/r/archlinux/.rss>  
@@ -87,21 +84,21 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [x] Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks) (2015/08/22)  
   
 ### Giving talk in conference  
-  
 - 2015  
     - [x] [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi) (2015/03/07)  
   
-### Building original open source project  
-  
+### Build some open source projects/applications  
 - 2015  
     - [M157q/zdict · GitHub](https://github.com/M157q/zdict) (2015/04)  
     - [M157q/gettitle · GitHub](https://github.com/M157q/gettitle) (2015/09)  
+    - [GitHub - M157q/imageme: A super simple image & video gallery server](https://github.com/M157q/imageme)  
     - [M157q/linkedin2md · GitHub](https://github.com/M157q/linkedin2md) (2015/12)  
+    - [GitHub - M157q/py-feedr: A Python parser to tweet the latest updates from multiple RSS feeds.](https://github.com/M157q/py-feedr) (2015/12)  
+        - <https://twitter.com/M157q_News_RSS>  
   
 ---  
   
 ## Competitions  
-  
 - 2015  
     - [x] TSCC 5th (2015/06/03~04)  
         - Prize: An Excellent Work  
@@ -110,7 +107,6 @@ Summary: Records for what I want to do and when I've done from 2015.
 ---  
   
 ## Conferences  
-  
 - 2015  
     - [x] PyConAPAC 2015 (2015/06/05~06)  
         - [PyCon APAC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
@@ -121,7 +117,6 @@ Summary: Records for what I want to do and when I've done from 2015.
 ---  
   
 ## Misc.  
-  
 - 2016  
     - [x] [2016 第十四任正副總統暨第九屆立法委員選舉監票](https://imgur.com/a/m2PUa) (2016/01/16)  
     - [ ] [Finish the rest parts of the college graduation term project](https://github.com/M157q/Android-Repackaged-App-Detection-System)  
@@ -141,7 +136,6 @@ Summary: Records for what I want to do and when I've done from 2015.
 ---  
   
 ## Movies  
-  
 - 2016  
     - [x] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [x] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
