@@ -1,10 +1,11 @@
-Title: Review of 代碼的未來  
+Title: 《代碼的未來》  
 Date: 2014-03-10 21:37  
 Author: m157q  
 Category: Reading  
 Tags: Review, NoSQL, Big Data, RDBMS  
-Slug: review-of-the-future-of-computing  
+Slug: the-future-of-computing  
 Modified: 2015-10-26 12:08  
+Summary: 《代碼的未來》讀後感與筆記  
   
   
 ### The Future of Computing by Matz  
