@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2016-05-15 12:14  
+Modified: 2016-05-19 10:10  
   
 ---  
   
@@ -400,6 +400,56 @@ So `sudoedit /etc/udev/rules.d/90-xhc_sleep.rules` and add the follwing lines.
 SUBSYSTEM=="pci", KERNEL=="0000:00:14.0", ATTR{device}=="0x9c31" RUN+="/bin/sh -c '/bin/echo disabled > /sys$env{DEVPATH}/power/wakeup'"  
 ```  
   
+#### Powersave  
++ [GitHub - Unia/powersave: Linux power save settings, compatible with systemd](https://github.com/Unia/powersave)  
+  
+```  
+/etc/sysctl.d/99-powersave.conf  
+---  
+# Disable NMI watchdog  
+kernel.nmi_watchdog = 0  
+  
+# laptop_mode is a knob that controls "laptop mode". All the things that are controlled by this  
+# knob are discussed in https://www.kernel.org/doc/Documentation/laptops/laptop-mode.txt (Default  
+# is 0).  
+vm.laptop_mode = 5  
+  
+# Contains, as a percentage of total available memory that contains free pages and reclaimable  
+# pages, the number of pages at which a process which is generating disk writes will itself start  
+# writing out dirty data (Default is 20).  
+#vm.dirty_ratio = 20  
+  
+# Contains, as a percentage of total available memory that contains free pages and reclaimable  
+# pages, the number of pages at which the background kernel flusher threads will start writing out  
+# dirty data (Default is 10).  
+#vm.dirty_background_ratio = 10  
+  
+# This tunable is used to define when dirty data is old enough to be eligible for writeout by the  
+# kernel flusher threads.  It is expressed in 100'ths of a second.  Data which has been dirty  
+# in-memory for longer than this interval will be written out next time a flusher thread wakes up  
+# (Default is 3000).  
+#vm.dirty_expire_centisecs = 3000  
+  
+# The kernel flusher threads will periodically wake up and write `old' data out to disk.  This  
+# tunable expresses the interval between those wakeups, in 100'ths of a second (Default is 500).  
+vm.dirty_writeback_centisecs = 1500  
+```  
+  
+```  
+/etc/udev/rules.d/50-powersave-brightness.rules  
+---  
+# Display Power Management Signaling  
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="0", ENV{DISPLAY}="DPY", ENV{XAUTHORITY}="/home/USER/.Xauthority", RUN+="/usr/bin/xset dpms 120 240 360"  
+SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_ONLINE}=="1", ENV{DISPLAY}="DPY", ENV{XAUTHORITY}="/home/USER/.Xauthority", RUN+="/usr/bin/xset dpms 300 450 600"  
+```  
+  
+```  
+/etc/udev/rules.d/50-powersave-suspend.rules  
+---  
+# Suspend when battery is at 2%  
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="2", RUN+="/usr/bin/systemctl suspend"  
+```  
+  
   
 ### Monitor  
 #### Dual Display  
@@ -753,3 +803,6 @@ Check <https://github.com/odeke-em/drive/blob/master/README.md> for more info.
 + [MTP - ArchWiki](https://wiki.archlinux.org/index.php/MTP)  
 + [PulseAudio - ArchWiki](https://wiki.archlinux.org/index.php/PulseAudio#Keyboard_volume_control)  
 + [Arch Linux running on my MacBook — Medium](https://medium.com/@PhilPlckthun/arch-linux-running-on-my-macbook-2ea525ebefe3)  
++ [Power management - ArchWiki](https://wiki.archlinux.org/index.php/Power_management)  
++ [MacBookPro11,x - ArchWiki](https://wiki.archlinux.org/index.php/MacBookPro11,x#Powersave)  
++ [GitHub - Unia/powersave: Linux power save settings, compatible with systemd](https://github.com/Unia/powersave)  
