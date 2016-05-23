@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-05-17 23:47  
+Modified: 2016-05-24 01:40  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -66,9 +66,8 @@ Summary: Records for what I want to do and when I've done from 2015.
 ###  Contributing to open source projects  
 - 2016  
     - [x] [Add configuration check for sqlite by M157q � Pull Request #919 � coleifer/peewee � GitHub](https://github.com/coleifer/peewee/pull/919) (2016/04/28)  
+    - [x] [[blacklist.conf] should be bluetooth not bluetooh by M157q � Pull Request #3 � Unia/powersave � GitHub](https://github.com/Unia/powersave/pull/3) (2016/05/19)  
     - [ ] Send PR back to [imageme](https://github.com/M157q/imageme)  
-    - [ ] r/archlinux twitter bot  
-        - <https://www.reddit.com/r/archlinux/.rss>  
     - [ ] <https://github.com/passcod/twd>  
         - Height is wrong  
         - Need package on AUR  
@@ -82,13 +81,22 @@ Summary: Records for what I want to do and when I've done from 2015.
 - 2015  
     - [x] [fntsrlike/slack-irc-syncbot · GitHub](https://github.com/fntsrlike/slack-irc-syncbot) (2015/03/05)  
     - [x] [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9) (2015/03/14)  
+    - [x] [[Update 01.intro.md] Fix typo by M157q � Pull Request #12 � chusiang/working-on-gnu-linux � GitHub](https://github.com/chusiang/working-on-gnu-linux/pull/12) (2015/03/23)  
     - [x] Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks) (2015/08/22)  
+    - [x] [Update some outdated links by M157q � Pull Request #10 � pandeiro/arch-on-air � GitHub](https://github.com/pandeiro/arch-on-air/pull/10) (2015/09/10)  
+    - [x] [Fix executing  twice problem and pass flake8 by M157q � Pull Request #7 � odkq/curses-2048 � GitHub](https://github.com/odkq/curses-2048/pull/7) (2015/09/16)  
+    - [x] [Fix button in form issue by M157q � Pull Request #56 � jmcarp/robobrowser � GitHub](https://github.com/jmcarp/robobrowser/pull/56) (2015/11/18)  
+    - [x] [Fix some typos by M157q � Pull Request #3 � jminh/hour_of_code_python_2015 � GitHub](https://github.com/jminh/hour_of_code_python_2015/pull/3) (2015/12/12)  
+    - [x] [Use opencc -c s2twp for translation and split zh to zh-tw & zh-cn by M157q � Pull Request #1 � chusiang/the-art-of-command-line � GitHub](https://github.com/chusiang/the-art-of-command-line/pull/1) (2015/12/14)  
   
 ### Giving talk in conference  
 - 2015  
     - [x] [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi) (2015/03/07)  
   
 ### Build some open source projects/applications  
+- 2016  
+    - [ ] r/archlinux twitter bot  
+        - <https://www.reddit.com/r/archlinux/.rss>  
 - 2015  
     - [M157q/zdict · GitHub](https://github.com/M157q/zdict) (2015/04)  
     - [M157q/gettitle · GitHub](https://github.com/M157q/gettitle) (2015/09)  
