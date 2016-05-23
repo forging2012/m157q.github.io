@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-05-24 01:40  
+Modified: 2016-05-24 01:42  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -16,7 +16,7 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [x] 編程人生（下）(Coders at work) (2016/03/14)  
     - [x] 被囚禁的台灣 (2016/05/15)  
         - [《被囚禁的台灣》  | Just for noting](https://m157q.github.io/posts/2016/05/15/imprisoned-taiwan/)  
-    - [ ] 科學的極致：漫談人工智能  
+    - [x] 科學的極致：漫談人工智能 (2016/05/22)  
     - [ ] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
