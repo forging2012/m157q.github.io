@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Google Cloud Platform  
 Summary: [CP100A](https://events.withgoogle.com/cp100a-420770/) 筆記  
-Modified: 2016-05-25 22:41  
+Modified: 2016-05-25 22:47  
   
   
 # 課程資訊  
@@ -785,11 +785,13 @@ Configurability DevOps <-----------------------------> Agility NoOps
 + Project migration 的建議  
 + Bigtable 和 BigQuery 的主要差異  
 + GKE 的 MySQL cluster  
++ GAE 的 Front-end instances 跟 Back-end instances 的差別  
   
 > 其實還有很多問題啦，只是沒有太多時間可以問，  
 > 而且要在網路上發問又必須描述的很詳細，  
 > 然後 Facebook 又是個黑洞，很難找之前的發文內容，  
 > 實在不太喜歡拿 Facebook 來問問題。  
+> 所以可能就自己 Google 、親自實驗或之後有機會再在 GCPUG.tw 當面問吧  
   
 ---  
   
