@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Google Cloud Platform  
 Summary: [CP100A](https://events.withgoogle.com/cp100a-420770/) 筆記  
+Modified: 2016-05-25 22:41  
   
   
 # 課程資訊  
@@ -28,7 +29,6 @@ Summary: [CP100A](https://events.withgoogle.com/cp100a-420770/) 筆記
 ## Why Choose Google Cloud Platform?  
   
 + 你可以在 GCP 看到所有不同 Region 的機器，不用像 AWS 一樣必須切換 Region  
-+ 全世界共用一個 Database  
 + 可以直接享用 Google 遍布全球的網路設施  
   
   
@@ -187,7 +187,7 @@ Configurability DevOps <-----------------------------> Agility NoOps
 + Managed runtimes for specific versions of Java, Python, PHP and Go. (Standard Runtime)  
 + Autoscale workloads to meet demand  
     + 可以透過 app.yaml 去做 autoscale 的設定  
-    + 也可以透過 app.yaml 對 instance class 做設定，預設是用最低階的 F1，可以參考  
+    + 也可以透過 app.yaml 對 instance class 做設定，預設是用最低階的 F1，可以參考 [app.yaml Reference|Python|Google Cloud Platform](https://cloud.google.com/appengine/docs/python/config/appref#scaling_elements)  
 + Free daily quota, usage based pricing  
 + Local SDK for development, testing and deployment  
 + Need to conform to sandbox constraints  
@@ -211,7 +211,7 @@ Configurability DevOps <-----------------------------> Agility NoOps
     + 目前只支援 Python 2  
 + Autoscale  
 + Free daily quota, usage based pricing.  
-+ 原本 support 一天發 2000 封 email，但現在收回來了，現在要在 GCP 上寄信的話，統一都要使用 SendGrid，會有比較嚴格的審核，避免大量的垃圾信件。  
++ 原本 support 一天發 2000 封 email，但現在收回來了，現在要在 GCP 上寄信的話，統一都要使用 [SendGrid](https://sendgrid.com/)，會有比較嚴格的審核，避免大量的垃圾信件。  
     + AWS 也採用 SendGrid，蠻多 Cloud Platform 都把寄信的部份交給它。  
 + 跟 Google 的很多服務都有滿完整的整合。  
 + GAE 的設計理念是服務要愈 light weight 愈好  
@@ -297,10 +297,10 @@ Configurability DevOps <-----------------------------> Agility NoOps
 + All storage options accessed through the same APIs and include client libraries  
     + JSON API  
     + XML API  
-        + 可能是因為 AWS S3 是用 XML  
+        + 可能是因為 AWS S3 是用 XML API，所以也要跟著提供一下。  
 + 補充  
-    + 硬碟上的資要是有做 encryption 的  
-    + 上面的容器是以 bucket 為單位  
+    + 硬碟上的資料是有做 encryption 的  
+    + 容器是以 bucket 為單位  
   
   
 ### Cloud Storage Classes  
@@ -311,7 +311,7 @@ Configurability DevOps <-----------------------------> Agility NoOps
 + DRA  
     + 可以限制資料的區域  
 + Nearline  
-    + 經常性變動的資料不適合存在這裡，cost 會增加。  
+    + 經常變動的資料不適合存在這裡，cost 會增加。  
     + 比較適合拿來做 backup, archive, 長久性不太會變動的資料。  
 + 這 3 個 classes 存取的 API 是相同的  
   
@@ -338,7 +338,10 @@ Configurability DevOps <-----------------------------> Agility NoOps
   
 + NoSQL database service for large-workload applications (Terabytes to Petabytes)  
     + 不便宜  
+        + 貴在 Node 執行時間的收費，目前是 $1.95 USD/hour per node  
+        + 最少必須開 3 個 node  
     + 是儲存在 SSD 上  
+        + 最近開始可以選擇儲存在普通硬碟上了，Storage 的費用會降低大概十倍。  
 + Protected  
     + Replicated storage  
     + Data encryption in-flight and at rest  
@@ -368,17 +371,17 @@ Configurability DevOps <-----------------------------> Agility NoOps
     + 第一代的 performance 不是那麼好  
     + 第二代則是選擇 run 在 container 上  
     + 所有要連線來的 IP 都需要經過 white list  
-        + 有個例外是 App Engine，可以  
-        + 而且可以設定讓 Cloud SQL 綁定 GAE，讓它開在跟 GAE 同個 region  
+        + 有個例外是 App Engine，可以直接連線，不會被白名單限制。  
+        + 可以設定讓 Cloud SQL 綁定 GAE，讓它開在跟 GAE 同個 region，用來降低 Latency  
     + 七天一個 cycle 的 backup  
-    + REST API for management  
+  
   
 ### Cloud SQL Features  
   
 + Familiar with MySQL  
 + Flexible pricing  
 + Google Security  
-    + AEC128 encryption  
+    + [AES-128 encryption](https://cloud.google.com/sql/faq#encryption_manage)  
 + Managed backups  
 + Automatic replication  
     + master-slave  
@@ -472,8 +475,7 @@ Configurability DevOps <-----------------------------> Agility NoOps
     + 不只在 GCP 可以用，AWS 或是自己架都可以，因為是 Based on Open Source 的 k8s  
     + 可以執行很多 Container，彼此可以透過 k8s 達到 HA  
     + 目前的費用是算在 Compute Engine 上，因為實際還是開 GCE 然後在上面 run containers  
-    + Based on k8s  
-    + 目前以 GCE 計價  
+    + 目前以 GCE 的收費方式計價  
     + Google Cloud Container Builder  
         + Create Docker container images from app code in Google Cloud Storage  
     + Google Container Registry  
@@ -514,7 +516,7 @@ Configurability DevOps <-----------------------------> Agility NoOps
         + 壓力測試跑了大概一個多小時，最後收到帳單大概是 500 美金左右。  
     + 硬碟必須至少要 200 GB 才會有一般的 performance, < 200 GB 的話會比較慢。  
     + 目前看到比較多的是拿來當 Load Balancer  
-    + 目前 Load Balancer 使用 BSD 是會有問題的，因為會缺少某些 Libraries  
+    + 目前 Load Balancer 使用 BSD 是會有問題的，因為缺少某些 Linux 才有的 Libraries。  
   
   
 ## Google Cloud Networking  
@@ -523,9 +525,9 @@ Configurability DevOps <-----------------------------> Agility NoOps
   
 + Carrier Interconnect  
 + Direct Peering  
+    + 需要有第 2 類電信執照才能申請  
     + Connect your business directly to Google  
     + 所有流量的費用打對折，速度會更快，適合擁有 Data Center 的公司申請。  
-    + 需要有第2類電信執照才能申請  
   
   
 ### Google Cloud VPN  
@@ -630,12 +632,12 @@ Configurability DevOps <-----------------------------> Agility NoOps
     + 一個 column 就儲存一個 object，不是存 row。(column based)  
         + 不要下 `select *`，會很慢，而且很貴，因為會對 process 的資料量收費。  
     + 每次 query 就透過 mapreduce 去做 macthing  
-    + 可以透過 SQL-like 的語法去查詢 big data  
+    + 可以透過 SQL-like 的語法(GQL)去查詢 big data  
     + [Apache drill](https://drill.apache.org/)  
 + Pub/Sub  
-    + 建立一個 queue  
-    + 比較常用的案例 IoT  
-    + 可搭配 dataflow 作 bigdata 的運算  
+    + 建立一個 big data 用的 queue  
+    + 比較常用的案例是 IoT  
+    + 可搭配 dataflow 作 big data 的運算  
 + Dataflow  
     + 幫你整理資料  
 + Dataproc  
@@ -653,7 +655,7 @@ Configurability DevOps <-----------------------------> Agility NoOps
 + Supports open standads  
 + 補充  
     + 當作 storage 和 analyze 的工具  
-    + 類似 Cassandra  
+    + 類似 [Cassandra](https://cassandra.apache.org/)  
     + Column-based  
     + 1 TB 的資料大概花 6 秒就可以 scan 完  
     + 一次會幫你開很多機器去做運算，最後吐回一個結果給你  
@@ -733,7 +735,6 @@ Configurability DevOps <-----------------------------> Agility NoOps
     + Use Google Charts or matplotlib for easy visualizations  
 + Code, documentation, results, visualizations in intuitive notebook format  
 + 補充  
-    + Python only  
     + 可以透過 Google 去銜接很多 Datasource，可以做整合，例如匯出報表。  
     + 有支援 BigQuery, Cloud Dataflow，可以利用他們去做分析  
     + 用法跟 Jupyter Notebook 差不多  
@@ -785,6 +786,11 @@ Configurability DevOps <-----------------------------> Agility NoOps
 + Bigtable 和 BigQuery 的主要差異  
 + GKE 的 MySQL cluster  
   
+> 其實還有很多問題啦，只是沒有太多時間可以問，  
+> 而且要在網路上發問又必須描述的很詳細，  
+> 然後 Facebook 又是個黑洞，很難找之前的發文內容，  
+> 實在不太喜歡拿 Facebook 來問問題。  
+  
 ---  
   
 # 相關連結  
@@ -800,4 +806,5 @@ Configurability DevOps <-----------------------------> Agility NoOps
   
 > 有種吃了 GCP 大還丹的感覺，需要時間消化。  
 > 能夠在上班時間來 Google Taipei 上課實在太棒了！  
+> 謝謝同事 Finley 一直被我煩被我問問題 XD  
 > 感謝老闆 Teddy，也感謝辛苦的講師 Simon。  
