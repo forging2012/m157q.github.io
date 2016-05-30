@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-05-24 01:42  
+Modified: 2016-05-30 21:42  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -128,6 +128,7 @@ Summary: Records for what I want to do and when I've done from 2015.
 ## Misc.  
 - 2016  
     - [x] [2016 第十四任正副總統暨第九屆立法委員選舉監票](https://imgur.com/a/m2PUa) (2016/01/16)  
+    - [x] [TypeRacer 達到最近 10 場 WPM 81 以上進入 Megaracer level，並創下個人新高 94 WPM](https://twitter.com/M157q/status/737274967583166467)  
     - [ ] [Finish the rest parts of the college graduation term project](https://github.com/M157q/Android-Repackaged-App-Detection-System)  
     - [ ] Do my best for the job in Tagtoo as a Python engineer.  
         - [ ] Get familiar with the job content and server architecture then write the tutorial for newbie in R&D team.  
