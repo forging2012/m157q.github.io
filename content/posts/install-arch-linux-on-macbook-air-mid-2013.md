@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2016-05-19 10:10  
+Modified: 2016-05-31 01:08  
   
 ---  
   
@@ -240,7 +240,7 @@ Section "InputClass"
   
     Option "Thumbsize"      "50"  
     Option "ScrollDistance" "150"  
-    Option "Sensitivity"    "1.0"  
+    Option "Sensitivity"    "0.9"  
     Option "MaxTapTime"     "120"  
     Option "IgnoreThumb"    "true"  
     Option "IgnorePalm"     "true"  
