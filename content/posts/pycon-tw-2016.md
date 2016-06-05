@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Python, Conf, PyCon, PyConTW  
 Summary: Just a note for PyCon TW 2016  
-Modified: 2016-06-03 21:57  
+Modified: 2016-06-05 23:22  
   
   
 Really appreciate [eldarion](http://eldarion.com/) gave me the free sponsored ticket or I could not attend this biggest annual Python event in Taiwan.  
