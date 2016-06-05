@@ -377,4 +377,223 @@ uid_email_map = {
   
 ---  
   
+## Keynote: Inside the Hat: Python @ Walt Disney Animation Studios by Paul Hildebrandt  
+  
+提到了許多迪士尼內製作動畫的時候相關的經驗，覺得好酷啊。  
+  
+---  
+  
+## R0: 用 Numpy 做一個自己的股票分析系統 by PF  
+  
++ 資料從哪來  
+    + 台灣證券交易所  
+    + 台灣期貨交易所  
++ 重要資訊  
+    + 時間  
+    + 開盤價(Open)  
+    + 收盤價(Close)  
+    + 最高價(High)  
+    + 最低價(Low)  
+    + 成交量(Volume)  
++ 移動平均線(MA)  
+    + (P1 + P2 + ... + Pn) / n  
+    + n 日均線，季線  
++ 動作  
+    + 賣出、不動、買進  
+    + 判斷買賣點  
+    + 計算收益  
++ [隨機指標(KD)](https://zh.wikipedia.org/wiki/%E9%9A%8F%E6%9C%BA%E6%8C%87%E6%A0%87)  
++ 判斷多空、計算利潤、代入參數  
++ `itertools`  
+    + `itertools.combination_with_replacement` 拿來比較不同的均線  
+    + 但這樣做量會非常大  
+    + 所以利用 numpy 的高效能特性來解決  
++ Numpy  
++ 架構  
+    + Sqlite + Flask + jQuery + amchart.js  
+  
+---  
+  
+## R1: 用 Google Cloud Platform 玩交通資料分析 by 柯維然(Odie)  
+  
++ 人每天都會有交通需求，會產生很多交通相關的資料  
+    + 流量、車速、密度、旅行時間、旅次、號誌、停車位、交通事故  
+    + 交通資料庫  
+        + 高速公路局提供國道 VD(Viehcle Detector)、ETC 資料  
+        + 縣市 Open Data 有些也有提供 VD 資料  
+        + 約有 314 個門架、約有 3000 個 VD  
+        + 國道五號每五百公尺就有一個 VD  
++ 為何用 Google Cloud Platform  
+    + 因為我只會用這個 XD  
+    + 架構  
+        + App Engine (網站、爬蟲、API）  
+            + 因為其他學統計的是寫 R，所以要提供 API 給他們  
+            + 用 `cron.yaml` 設定定時啟動  
+                + 無法在 10 秒內完成的 job，就加到 TaskQueue 裏面，讓他失敗的時候會自動重跑。  
+        + Cloud Storage  
+            + 存 blob files  
+            + 可以 serve 靜態網站  
+        + Datastore  
+            + 儲存部份資料  
+        + BigQuery  
+            + 儲存和分析、可接其他 tools  
+            + 可用搭配 Pandas  
+            + Streaming Data into BigQuery  
+        + Datalab  
+            + 資料視覺化  
+            + 可以直接用 scikit-learn, Pandas  
+  
+---  
+  
+## R1: 連淡水阿嬤都聽得懂的機器學習套件入門 scikit-learn by Cicilia (Chia-ying Lee)  
+  
+Slides: <http://www.slideshare.net/aacs0130/scikitlearn-62706630>  
+  
+### 對機器學習瞭解程度的分類  
+  
++ Level 1: 不知道什麼是機器學習  
++ Level 2: 知道機器學習是 AI 的子學門  
++ Level 3: 會使用機器學習套件解問題  
++ Level 4: 會選擇適合的機器學習演算法與調整參數  
++ Level 5: 知道機器學習演算法的數學原理  
++ Level 6: 會設計新的機器學習演算法  
+  
+  
+### 什麼是機器學習  
+  
++ 我們有大量的樣本資料，讓機器自動從中學習出規則，用來預測其他未知的資料。  
++ 機器學習是基於機率、統計、逼近論等數學理論的研究。  
++ 機器學習可應用於電腦視覺、自然語言處理、語音和手寫識別與機器人等領域。  
+  
+  
+### 機器學習的分類  
+  
+分類的方法有很多種，以下為粗略的分類。  
+  
++ Supervised Learning  
+    + 訓練集的目標是人為標註的。  
+    + 分類(Classification)：預測類別  
+    + 回歸(Regression)：預測變量  
++ Unsupervised Learning  
+    + 訓練集的目標沒有人為標註。  
+    + 分群(Clustering)  
+  
+  
+### 機器學習的流程  
+  
++ Training set => Learning Algorithm => Hypothesis / Model  
++ 再拿 Training set 透過 model 得到預測的 data  
+  
+  
+### Scikit-learn 數字辨識步驟  
+  
+1. Load Data  
+2. Set a classifier  
+3. Learn a model  
+4. predict the result  
+    + 資料有一半當作 training set，有一半當作 testing set.  
+5. Evaluate  
+    + 得到結果  
+    + 會去算 precision, recall, f1-score  
+        + precision: 所有正確的例子裏面猜對了幾個  
+        + recall: 所有猜的例子裏面猜對了幾個  
+        + f1-score: 整合 precision 和 recall 的結果，得到總正確率  
+    + Confusion Matrix  
+        + 可以得知哪個類別比較容易被誤判成另外的某一個類別  
+  
+  
+### 前處理  
+  
+大部分的機器學習演算法都是數學或統計模型有關的，  
+所以資料餵進去的時候必須要有維度，必須經過處理。  
+  
+1. Clean data  
+    + 把不需要或多餘的資料(noise)去除  
+2. Feature extraction  
+    + 需要 domain knowledge 把用來判斷的關鍵抓出來  
+3. Convert category and string to number  
+4. Sparse data  
+5. Feature selection  
+  
+  
+### 如何選擇該用哪個機器學習演算法  
+  
+<http://scikit-learn.org/stable/tutorial/machine_learning_map/>  
+  
+  
+### References  
+  
++ [林軒田教授的機器學習教學影片](https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf)  
+> <http://blog.fukuball.com/tag/machine-learning/> 有人寫了筆記可以參考  
+  
+---  
+  
+## R0: Deep Learning with Python & TensorFlow by Ian Lewis  
+  
++ Neural Network can find a way to solve the problem.  
++ <http://playground.tensorflow.org>  
+  
+> 基本上就是簡介 TensorFlow 及基本的 Machine Learning 概念  
+  
+---  
+  
 # Day 3 (2016/06/05 Sun)  
+  
+## Lightning Talks  
+  
++ Swiftypy: Embedding Python in Swift  
+    + <https://github.com/johnlinvc/swiftpy>  
++ 跟雪隧塞車說再見  
+    + 結論：「避開各種假日就好了。」  
+    + 半夜最不塞，半個小時就到了，你可以開到那邊再睡。XDD  
+    + 你如果是今天看到新聞想說今天塞完了明天去，你就是最塞的那個。 XDDD  
+    > 雖然跟 Python 沒什麼關係 XDDD  
++ [徵音梅林計劃](https://github.com/ProjectMeilin)  
+    + 中文版的初音！  
++ Play with Python importer  
+    + 可以做到直接 import 進來就去 pip 上抓下來用  
+    + cffi  
++ PyCon TW 2016 Vendor Machine  
++ 用 Python 來分析德文性什麼  
++ 用 Python 玩 Docker  
+    + <https://github.com/windperson/docker-crontab>  
++ Rpi 在研討會上的應用  
+    + 今年的新玩具：Pi 立得，用 Rpi 做相機，拍照完可以馬上列印出相片。  
+    + 明年想做的玩具：講者評分系統  
+        + 問卷回饋大家愛填不填  
+        + 可以用 Camera 來看底下有多少人在睡覺來做評分 XD  
++ 我在業界學到的 Python Coding sytle  
++ 用 Python 寫視覺小說遊戲（亮亮的祭品）  
+  
+---  
+  
+今年原本預計要投稿結果還是沒投稿，  
+看明年有沒有機會吧？  
+其實應該不是沒東西可講，  
+只是單純覺得要到夠資格投稿講的程度還有一段差距。  
+而且好像該每天找些時間，  
+把近幾年世界各地的 PyCon 講了哪些 talks 都瞭解一下才是，  
+一直沒有花時間去好好瞭解其他地方的 PyCon 講了哪些議題。  
+  
+今年和 Machine Learning 相關的 talk 明顯多了很多，  
+然後發現蠻多議程都有用到 Google Cloud Platform，  
+尤其很多人都拿 BigQuery 來用，  
+或許之後跟 GCP 更熟之後，  
+明年有機會可以來講場 Python 跟 GCP 有關的 talk 吧？  
+然後 Apua 講的那場 Roboframework 的 Q&A 也蠻熱烈的，  
+看來在 Agile 跟如何更快更方便的寫出夠完整的測試也還有蠻多關注的空間的。  
+  
+第二天晚上因為弟弟電影的畢展，和爸媽一起去看，所以沒能參加 BoF。  
+第三天到了中午才到中研院，所以就只有參加到 Lightnig talks。  
+大概是因為用的是 eldarion 送的贊助票，所以互動販賣機的系統無法登入，也沒玩到互動販賣機。  
+大概也因為太久沒打 CTF 了，趨勢的五個題目也都沒解出來啊。  
+總之還有很多進步的空間。  
+  
+在天瓏的攤位買了五本書，  
+希望可以如期看完，  
+今年要增加自己的閱讀量，  
+希望可以趕快看完啊。  
+  
+當然還是要感謝辛苦的工作人員們，  
+感謝給了大家這麼好的一場年會。  
+  
