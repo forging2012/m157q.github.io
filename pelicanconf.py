@@ -36,10 +36,11 @@ TAGS_SAVE_AS = 'tags/index.html'
 CATEGORIES_SAVE_AS = 'categories/index.html'
 ARCHIVES_SAVE_AS = 'archives/index.html'
 
-STATIC_PATHS = ['files', 'extra/favicon.ico']
+STATIC_PATHS = ['files', 'extra/favicon.ico', 'extra/CNAME']
 
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 MENUITEMS = [
