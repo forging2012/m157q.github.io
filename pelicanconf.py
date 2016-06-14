@@ -86,7 +86,11 @@ SOCIAL = (
 )
 
 # Debug
-LOAD_CONTENT_CACHE = False
+CACHE_PATH = 'cache'
+CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = True
+GZIP_CACHE = True
+
 RELATIVE_URLS = True
 
 # Plugins
