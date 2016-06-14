@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 AUTHOR = u'm157q'
 SITENAME = u'Just for noting'
 TIMEZONE = 'Asia/Taipei'
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = u'zh'
 DEFAULT_PAGINATION = 10
 TWITTER_USERNAME = u'M157q'
 THEME = 'themes/plumage'
