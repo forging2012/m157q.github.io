@@ -8,6 +8,7 @@ Summary: 《編程人生》讀後感
   
   
 # 前言  
+  
 其實這篇算重寫一次...  
 之前其實有寫好了，  
 而且當時已經拖了一個多月，  
@@ -23,16 +24,23 @@ Summary: 《編程人生》讀後感
 ---  
   
 # 心得  
+  
 原文是這本：  
+  
 + [Coders at Work: Reflections on the Craft of Programming](http://www.codersatwork.com/)  
-+ 於 2009/09/16 出版  
+  
+於 2009/09/16 出版  
+  
 但我看的是在若水堂買的簡中翻譯版，分成上下冊兩本：  
+  
 + [編程人生：15 位軟件先驅訪談錄 (上卷)](http://www.waterlike.com.tw/bookdata.asp?NO=TP3C153043)  
 + [編程人生：15 位軟件先驅訪談錄 (下卷)](http://www.waterlike.com.tw/bookdata.asp?NO=TP3C153044)  
-+ 於 2015/01 出版 （竟然隔了 5 年多才被翻譯，個人覺得有點罕見。）  
+  
+於 2015/01 出版 （竟然隔了 5 年多才被翻譯，個人覺得有點罕見。）  
   
 作者總共訪談了 15 位在資訊界都有著極大貢獻的人物，  
 上冊的 8 位：  
+  
 + 第 1 篇 [Jamie Zawinski](http://www.codersatwork.com/jamie-zawinski.html)  
     + Mozilla 計劃的先驅及主要貢獻者之一  
     + XScreenSaver 的 Contributor  
@@ -55,7 +63,9 @@ Summary: 《編程人生》讀後感
     + Director of Research at Google  
     + co-author, with Stuart Russell, of "Artificial Intelligence: A Modern Approach"  
     + was head of the Computational Sciences Division (now the Intelligent Systems Division) at NASA Ames Research Center  
+  
 下冊的 7 位：  
+  
 + 第 1 篇 [Guy Steele](http://www.codersatwork.com/guy-steele.html)  
     + <https://en.wikipedia.org/wiki/Guy_L._Steele_Jr.>  
     + 寫過非常多種程式語言  
@@ -94,6 +104,7 @@ Summary: 《編程人生》讀後感
 然後對整個圈子的生態和歷史也很瞭解，  
 所以問的許多問題都還蠻犀利的，  
 除了問每一位受訪者共同的問題，像是：  
+  
 + 「你對其他工程師推薦哪些書籍？」  
 + 「你有看完 The Art of Programming 嗎？你對這本書的想法是什麼？」  
 + 「你覺得自己應該算是下列哪一項：藝術家？工程師？建築師？專家？程式設計師？」  
@@ -102,6 +113,7 @@ Summary: 《編程人生》讀後感
 + 「如果讓你重選一次，你還會寫程式嗎？」（我記得應該有這問題，沒有的話就是我記錯了。）  
   
 其中也有針對受訪者詢問不同的軟體工程相關問題：  
+  
 + 「你認為 Pair Programming 對於寫程式有沒有幫助？」  
 + 「你對 Agile Programming, Extreme Programming 和 Waterfall 有什麼看法？」  
 + 「你認為 unit testing 是不是必須的？」  
@@ -112,6 +124,7 @@ Summary: 《編程人生》讀後感
 + 「你對 Code Review 有什麼看法？你覺得對開發有幫助嗎？」  
   
 也會針對受訪者問個別的問題：  
+  
 + Jamin Zawinski  
     + Netscape 和 Firefox 當時的狀況  
     + Lisp  
@@ -152,8 +165,10 @@ Summary: 《編程人生》讀後感
   
 但其中也有一致認同的地方，  
 像是：  
+  
 + 「數學雖然不是必須的，但對寫程式有一定程度以上的幫助。」  
 + 「寫程式是很花時間及講求經驗的」  
+  
 我覺得如果有個把作者問所有受訪者的共同問題和回答整合起來的筆記應該會很有趣。  
   
 整本書看下來讓我覺得就像是看著作者和受訪者在眼前對談，  
