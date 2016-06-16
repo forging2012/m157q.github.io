@@ -5,6 +5,7 @@ Authors: m157q
 Category: Reading  
 Tags: Programmer, Book  
 Summary: 《編程人生》讀後感  
+Modified: 2016-06-16 20:54  
   
   
 # 前言  
@@ -187,3 +188,4 @@ Summary: 《編程人生》讀後感
 + [Coders at Work: Reflections on the Craft of Programming](http://www.codersatwork.com/)  
 + [Coders at work - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Coders_at_work)  
 + [PARC (company) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/PARC_(company))  
++ [ruanyf on Twitter: "Erlang语言的发明者Armstrong回忆说：“刚进公司时，我喜欢帮别人Debug，同事会买杯啤酒感谢我。后来，我们就用啤酒表示bug的难度，这个是两杯啤酒bug，那个是三杯啤酒bug……” #书摘"](https://twitter.com/ruanyf/status/743420600840912898)  
