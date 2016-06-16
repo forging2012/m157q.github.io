@@ -1,6 +1,6 @@
 Title: 《編程人生》(Coders at Work)  
 Slug: coders-at-work  
-Date: 2016-05-25 00:19:42  
+Date: 2016-06-16 10:07:42  
 Authors: m157q  
 Category: Reading  
 Tags: Programmer, Book  
@@ -16,7 +16,7 @@ Summary: 《編程人生》讀後感
 不小心把 git repo 搞炸了，  
 所以只好重新 clone...  
 然後就拖到了現在，  
-算起來離看完這本書過了兩個多月了，  
+算起來離看完這本書過了三個月了，  
 只好憑印象寫一下心得，  
 剛好順便復習一下裡頭的內容。  
   
@@ -56,13 +56,39 @@ Summary: 《編程人生》讀後感
     + co-author, with Stuart Russell, of "Artificial Intelligence: A Modern Approach"  
     + was head of the Computational Sciences Division (now the Intelligent Systems Division) at NASA Ames Research Center  
 下冊的 7 位：  
-+ 第 1 篇 Guy Steele  
-+ 第 2 篇 Dan Ingalls  
-+ 第 3 篇 LPeter Deutsch  
-+ 第 4 篇 Ken Thompson  
-+ 第 5 篇 Fran Allen  
-+ 第 6 篇 Bernie Cosell  
-+ 第 7 篇 Donald Knuth  
++ 第 1 篇 [Guy Steele](http://www.codersatwork.com/guy-steele.html)  
+    + <https://en.wikipedia.org/wiki/Guy_L._Steele_Jr.>  
+    + 寫過非常多種程式語言  
+    + 參與過許多程式語言的制定過程，是 Common Lisp 和 Scheme 的作者之一，也參與了 Fortran, C, ECMAScript 的標準制定過程。  
+    + 曾被 Bill Joy 邀請加入 Sun 幫忙訂定 Java 的標準。  
+    + ACM Grace Murray Hopper Award 1988 年得主。  
++ 第 2 篇 [Dan Ingalls](http://www.codersatwork.com/dan-ingalls.html)  
+    + <https://en.wikipedia.org/wiki/Daniel_Henry_Holmes_Ingalls,_Jr.>  
+    + 物件導向先驅之一  
+    + 對於 Smalltalk 程式語言貢獻極多，1976 年設計了 bytecoded virtual machine 使得 Smalltalk 得以實作。  
+    + ACM Grace Murray Hopper Award 1984 年得主。  
++ 第 3 篇 [L Peter Deutsch](http://www.codersatwork.com/l-peter-deutsch.html)  
+    + <https://en.wikipedia.org/wiki/L_Peter_Deutsch>  
+    + 11 歲開始寫程式，過沒多久就開始在 MIT 閒晃，在 PDP-1 上實作 Lisp，和比自己年紀大了快兩倍的 MIT Hackers 一起寫程式。（有出現在[《黑客列傳：電腦革命俠客誌》（Hackers: Heroes of the Computer Revolution）](http://www.books.com.tw/products/0010548392) 這本書裏面）  
+    + 在 UC Berkeley 當大二生的時候，他參與了 Project Genie（最早的 minicomputer-based timesharing system 之一），他負責撰寫這個作業系統大部分的 kernel。  
+    + 在 Project Genie 商業化失敗後，他到了 Xerox PARC 這間公司，負責 Interlisp system 和 Smalltalk virtual machine，協助 JIT compilation 技術的部份。  
++ 第 4 篇 [Ken Thompson](http://www.codersatwork.com/ken-thompson.html)  
+    + <https://en.wikipedia.org/wiki/Ken_Thompson>  
+    + MULTICS, UNIX, B programming language, Plan 9, UTF-8, golang  
+    + 1983 年圖靈獎得主之一 （和 Dennis Ritchie 共同獲得）  
++ 第 5 篇 [Fran Allen](http://www.codersatwork.com/fran-allen.html)  
+    +  <https://en.wikipedia.org/wiki/Frances_E._Allen>  
+    + 2006 年圖靈獎得主  
+    + 在 IBM 待了 45 年，負責一系列的編譯器相關的專案。  
+    + 似乎是這本書的受訪者裡頭唯一一位女性  
++ 第 6 篇 [Bernie Cosell](http://www.codersatwork.com/bernie-cosell.html)  
+    + 參與了 ARPANET 早期使用的 IMP (Interface Message Processors) 的實作。  
+    + 在 BBN 待了 26 年，基本上裡面的專案都有碰，因其精湛的除錯技巧，而贏得了 Master debugger 跟 Fixer 的稱號。  
++ 第 7 篇 [Donald Knuth](http://www.codersatwork.com/donald-knuth.html) （高德納）  
+    + <https://en.wikipedia.org/wiki/Donald_Knuth>  
+    + "The Art of Computer Programming" 一書的作者  
+    + TeX, METAFONT  
+    + 1971 年 Grace Murray Hopper Award 得主、1974 年圖靈獎得主、1995 年 John von Neumann Medal 得主、...  
   
 因為作者 Peter Siebel 本身也是會寫程式的人，  
 然後對整個圈子的生態和歷史也很瞭解，  
@@ -104,12 +130,17 @@ Summary: 《編程人生》讀後感
 + Peter Norvig  
     + NASA, AI, Google  
 + Guy Steele  
+    + （忘了）  
 + Dan Ingalls  
+    + （忘了）  
 + LPeter Deutsch  
+    + （忘了）  
 + Ken Thompson  
     + 針對 UNIX 的開發還有問一些 Denis Ritchie 的事  
 + Fran Allen  
+    + （忘了）  
 + Bernie Cosell  
+    + （忘了）  
 + Donald Knuth  
     + 問 LaTeX 還有 The Art of Programming  
   
@@ -140,3 +171,4 @@ Summary: 《編程人生》讀後感
   
 + [Coders at Work: Reflections on the Craft of Programming](http://www.codersatwork.com/)  
 + [Coders at work - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Coders_at_work)  
++ [PARC (company) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/PARC_(company))  
