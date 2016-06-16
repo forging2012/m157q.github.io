@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-06-16 20:33  
+Modified: 2016-06-16 20:37  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -14,9 +14,9 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [x] [程序员跳槽全攻略](https://selfstore.io/products/190) (2016/01/07)  
     - [x] 編程人生（上）(Coders at work) (2016/02/14)  
     - [x] 編程人生（下）(Coders at work) (2016/03/14)  
-        + [《編程人生》(Coders at Work)](/posts/2016/06/16/coders-at-work/)  
+        + [《編程人生》(Coders at Work) | Just for noting](/posts/2016/06/16/coders-at-work/)  
     - [x] 被囚禁的台灣 (2016/05/15)  
-        - [《被囚禁的台灣》  | Just for noting](https://m157q.github.io/posts/2016/05/15/imprisoned-taiwan/)  
+        - [《被囚禁的台灣》  | Just for noting](/posts/2016/05/15/imprisoned-taiwan/)  
     - [x] 科學的極致：漫談人工智能 (2016/05/22)  
     - [ ] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job)  
     - [ ] C Programming: A Modern Approach  
@@ -60,9 +60,9 @@ Summary: Records for what I want to do and when I've done from 2015.
   
 ### Write-up for CTFs  
 - 2015  
-    - [x] [0CTF 2015 Note - Just for noting](https://m157q.github.io/posts/2015/03/30/0ctf-2015-note/)  
-    - [x] [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
-    - [x] [HITCON CTF 2015 Quals Write-up - Just for noting](https://m157q.github.io/posts/2015/10/19/hitcon-ctf-2015-quals-write-up/)  
+    - [x] [0CTF 2015 Note - Just for noting](/posts/2015/03/30/0ctf-2015-note/)  
+    - [x] [HITCON 2015 IOT Wargame - Just for noting](/posts/2015/08/29/hitcon-2015-iot-wargame/)  
+    - [x] [HITCON CTF 2015 Quals Write-up - Just for noting](/posts/2015/10/19/hitcon-ctf-2015-quals-write-up/)  
   
 ###  Contributing to open source projects  
 - 2016  
@@ -112,17 +112,17 @@ Summary: Records for what I want to do and when I've done from 2015.
 - 2015  
     - [x] TSCC 5th (2015/06/03~04)  
         - Prize: An Excellent Work  
-        - [TSCC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/09/15/tscc-2015-notes-and-thoughts/)  
+        - [TSCC 2015 Notes and Thoughts - Just for noting](/posts/2015/09/15/tscc-2015-notes-and-thoughts/)  
   
 ---  
   
 ## Conferences  
 - 2015  
     - [x] PyConAPAC 2015 (2015/06/05~06)  
-        - [PyCon APAC 2015 Notes and Thoughts - Just for noting](https://m157q.github.io/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
+        - [PyCon APAC 2015 Notes and Thoughts - Just for noting](/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
     - [x] COSCUP 2015 (2015/08/15~16)  
     - [x] HITCON 2015 (2015/08/28~29)  
-        - [HITCON 2015 IOT Wargame - Just for noting](https://m157q.github.io/posts/2015/08/29/hitcon-2015-iot-wargame/)  
+        - [HITCON 2015 IOT Wargame - Just for noting](/posts/2015/08/29/hitcon-2015-iot-wargame/)  
   
 ---  
   
@@ -140,7 +140,7 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [x] [FunSlots 繽紛樂 - 創新技術名詞產生器](http://slot.miario.com/machines/134420) with Apua. (2015/08/30)  
     - [x] Install OpenWrt on Raspberry Pi (2015/09/01)  
     - [x] Remove OS X and install Arch Linux on MacBook Air 2013 13' (2015/09/10)  
-        - [Install Arch Linux on MacBook Air Mid 2013 - Just for noting](https://m157q.github.io/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
+        - [Install Arch Linux on MacBook Air Mid 2013 - Just for noting](/posts/2015/09/10/install-arch-linux-on-macbook-air-mid-2013/)  
     - [x] Get MT Driving License (2015/11/09)  
     - [x] Get a job for CS-related company (2015/12/28)  
   
