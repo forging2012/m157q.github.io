@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-06-17 00:40  
+Modified: 2016-06-17 14:46  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -88,9 +88,10 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks) (2015/08/22)  
     - [o] [Update some outdated links by M157q � Pull Request #10 � pandeiro/arch-on-air � GitHub](https://github.com/pandeiro/arch-on-air/pull/10) (2015/09/10)  
     - [o] [Fix executing  twice problem and pass flake8 by M157q � Pull Request #7 � odkq/curses-2048 � GitHub](https://github.com/odkq/curses-2048/pull/7) (2015/09/16)  
-    - [o] [Fix button in form issue by M157q � Pull Request #56 � jmcarp/robobrowser � GitHub](https://github.com/jmcarp/robobrowser/pull/56) (2015/11/18)  
+    - [x] [Fix button in form issue by M157q � Pull Request #56 � jmcarp/robobrowser � GitHub](https://github.com/jmcarp/robobrowser/pull/56) (2015/11/18)  
     - [o] [Fix some typos by M157q � Pull Request #3 � jminh/hour_of_code_python_2015 � GitHub](https://github.com/jminh/hour_of_code_python_2015/pull/3) (2015/12/12)  
     - [o] [Use opencc -c s2twp for translation and split zh to zh-tw & zh-cn by M157q � Pull Request #1 � chusiang/the-art-of-command-line � GitHub](https://github.com/chusiang/the-art-of-command-line/pull/1) (2015/12/14)  
+    - [x] [[plugins/pip] Add shortcut for upgrading pip outdated packages. by M157q · Pull Request #4303 · robbyrussell/oh-my-zsh · GitHub](https://github.com/robbyrussell/oh-my-zsh/pull/4303)  
   
 ### Giving talk in conference  
 - 2015  
