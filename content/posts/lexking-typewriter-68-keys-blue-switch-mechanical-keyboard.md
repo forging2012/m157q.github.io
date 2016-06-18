@@ -5,10 +5,11 @@ Authors: m157q
 Category: Life  
 Tags: Mechanical Keyboard, Lexking, Blue Switch  
 Summary: 農曆丙申新年的時候在網路上看到，就下訂了，然後今天收到貨，就發了這篇廢文。  
-Modified: 2016-06-10 03:12  
+Modified: 2016-06-18 16:13  
   
   
-> 圖片待補，最近手機的 Google Photos Backup 怪怪的，沒辦法 sync 到 Google Drive。  
+![keybaord 2](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard2.jpg)  
+![keybaord 3](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard3.jpg)  
   
 商品連結：<https://uccu.cool3c.com/projects/205>  
   
@@ -30,18 +31,23 @@ Ducky One 80% 的手感比這把好上許多，價錢其實差不多。
 ## 個人認為的優缺點  
   
 優點：  
-1. 吸睛指數極高，打字機復古風格，背光呼吸燈炫炮。（連公司都有女同事說想買這把了XD）  
-2. 英文鍵帽為懸浮鍵帽，所以非常好拆，不需要拔鍵器，但有種很容易噴掉的感覺。（中文鍵帽則需要拔鍵器。）  
-3. 沒有鐵板，但我打起來不會晃，重量極輕。(但對習慣機械式鍵盤有鐵板的人來說這是個缺點）  
-4. 無邊框，好清理，平常應該只要拿來抖一抖就可以了，感覺應該不太容易卡灰塵，頂多鍵帽用久了得擦拭這樣。  
+  
++ 吸睛指數極高，打字機復古風格，背光呼吸燈炫炮。（連公司都有女同事說想買這把了XD）  
+    + ![keyboard 4](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard4.jpg)  
++ 英文鍵帽為懸浮鍵帽，所以非常好拆，不需要拔鍵器，但有種很容易噴掉的感覺。（中文鍵帽則需要拔鍵器。）  
++ 沒有鐵板，但我打起來不會晃，重量極輕。(但對習慣機械式鍵盤有鐵板的人來說這是個缺點）  
++ 無邊框，好清理，平常應該只要拿來抖一抖就可以了，感覺應該不太容易卡灰塵，頂多鍵帽用久了得擦拭這樣。  
   
 缺點：  
-1. 作工粗糙，鍵帽幾乎都沒磨乾淨，應該是因為廠商趕工的關係。然後鍵帽也有破損。  
-2. 手感頗怪，打起來的感覺是中間 asdf 那列凸起來，然後上下 qwer 跟 zxcv 兩列下滑，有種小山坡的感覺。  
-3. 圓形鍵帽的面積比傳統方形的面積還大，大概是那個金屬外框的關係，所以很容易錯按相鄰的鍵。  
-4. 我拿到的這把的 T 鍵比旁邊的 R 和 Y 鍵還低了一些，位置怪怪的。  
-5. 中文鍵帽做的太緊，而且不知道是鬆緊不一還是軸的粗細有差，導致中文鍵帽會一高一低，完美詮釋了「橫看成嶺側成峰，遠近高低各不同。」，英文鍵帽倒沒這問題。（所以中文鍵帽記得不要塞太緊，不然用拔鍵器拔的時候，如果一個沒拔好只拔到一邊的話，會連底下的凱華青軸都拔起一邊來，得把軸用力塞回去鍵盤裡。）  
-6. 隨中文鍵帽一起附贈的拔鍵器無法拔長鍵，要試著夾窄的部份的時候，只能夾到一邊，因為拔鍵器太短，最後是拿我買 Ducky One 80% 時拿到的 Ducky 拔鍵器來拔。  
+  
++ 作工粗糙，鍵帽幾乎都沒磨乾淨，應該是因為廠商趕工的關係。然後鍵帽也有破損。  
+    + ![keyboard 6](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard6.jpg)  
++ 手感頗怪，打起來的感覺是中間 asdf 那列凸起來，然後上下 qwer 跟 zxcv 兩列下滑，有種小山坡的感覺。  
++ 圓形鍵帽的面積比傳統方形的面積還大，大概是那個金屬外框的關係，所以很容易錯按相鄰的鍵。  
++ 我拿到的這把的 T 鍵比旁邊的 R 和 Y 鍵還低了一些，位置怪怪的。  
++ 中文鍵帽做的太緊，而且不知道是鬆緊不一還是軸的粗細有差，導致中文鍵帽會一高一低，完美詮釋了「橫看成嶺側成峰，遠近高低各不同。」，英文鍵帽倒沒這問題。（所以中文鍵帽記得不要塞太緊，不然用拔鍵器拔的時候，如果一個沒拔好只拔到一邊的話，會連底下的凱華青軸都拔起一邊來，得把軸用力塞回去鍵盤裡。）  
+    + ![keyboard 5](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard5.jpg)  
++ 隨中文鍵帽一起附贈的拔鍵器無法拔長鍵，要試著夾窄的部份的時候，只能夾到一邊，因為拔鍵器太短，最後是拿我買 Ducky One 80% 時拿到的 Ducky 拔鍵器來拔。  
   
 ---  
   
@@ -83,6 +89,7 @@ Ducky One 80% 的手感比這把好上許多，價錢其實差不多。
   
 ## 補充  
   
-附上其他開箱照片  
-  
-（照片待補）  
++ 用 PET 包裝的悲劇中文鍵帽  
+    + ![keyboard 1](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard1.jpg)  
++ 實際使用情況  
+    + ![keyboard 7](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard7.jpg)  
