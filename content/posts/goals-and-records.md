@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-06-23 21:50  
+Modified: 2016-06-25 11:38  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -69,7 +69,7 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [Add configuration check for sqlite by M157q � Pull Request #919 � coleifer/peewee � GitHub](https://github.com/coleifer/peewee/pull/919) (2016/04/28)  
     - [x] [Add dryscrape into Web Crawling section. by M157q · Pull Request #644 · vinta/awesome-python · GitHub](https://github.com/vinta/awesome-python/pull/644) (2016/05/17)  
     - [o] [[blacklist.conf] should be bluetooth not bluetooh by M157q � Pull Request #3 � Unia/powersave � GitHub](https://github.com/Unia/powersave/pull/3) (2016/05/19)  
-    - [x] [Fix Google Cloud SDK v114.0.0 GAE deploy error by M157q · Pull Request #463 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/463) (2016/06/16)  
+    - [o] [Fix Google Cloud SDK v114.0.0 GAE deploy error by M157q · Pull Request #463 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/463) (2016/06/16)  
     - [ ] Send PR back to [imageme](https://github.com/M157q/imageme)  
     - [ ] <https://github.com/passcod/twd>  
         - Height is wrong  
