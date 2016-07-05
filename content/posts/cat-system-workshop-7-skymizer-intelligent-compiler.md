@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Compiler  
 Summary: Note for Cat System Workshop #7  
+Modified: 2016-07-05 21:36  
   
   
 Event link: <http://skymizer.kktix.cc/events/cat0621>  
@@ -129,7 +130,7 @@ Event link: <http://skymizer.kktix.cc/events/cat0621>
     + <https://en.wikipedia.org/wiki/MILEPOST_GCC>  
 + Collective TUNING  
     + 每個人都用他的 compiler，他就會偷偷把你的 source code 送回去他的 server，然後再去用 AI 分析該 source code 可不可以做更好的 optimization，藉此收集很多的資料來作為優化的依據。  
-    > xater: 這不是跟微軟最近在 VS 的 profiler 塞了一個 entrypoint 是一樣的事情嗎？ XD  
+    > xatier: 這不是跟微軟最近在 VS 的 profiler 塞了一個 entrypoint 是一樣的事情嗎？ XD  
 + 集眾人之力的群眾 Compile  
 + 在 4 年前就沒在動了  
   
