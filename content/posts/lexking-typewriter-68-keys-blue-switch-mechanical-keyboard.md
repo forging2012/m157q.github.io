@@ -8,6 +8,8 @@ Summary: 農曆丙申新年的時候在網路上看到，就下訂了，然後�
 Modified: 2016-06-18 16:13  
   
   
+**當程式猿變成了打字猿（？）**  
+  
 ![keybaord 2](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard2.jpg)  
 ![keybaord 3](/files/lexking-typewriter-68-keys-blue-switch-mechanical-keyboard/keyboard3.jpg)  
   
@@ -22,9 +24,6 @@ Modified: 2016-06-18 16:13
 （稍微有點概念的應該都是看到凱華軸就不會買了吧 XD）  
 Ducky One 80% 的手感比這把好上許多，價錢其實差不多。  
 覺得專心把打字機鍵帽弄好只賣鍵帽可能還比較有搞頭？  
-  
-**當程式猿變成了打字猿（？）**  
-（照片待補）  
   
 ---  
   
