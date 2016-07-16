@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Python, Ansible, DevOps, automation, Meetup  
 Summary: 簡單講解 Ansible  
-Modified: 2016-05-05 03:44  
+Modified: 2016-07-16 15:17  
   
 + Speaker  
     + [黃俊宏 sakana / Max](https://github.com/sakanamax)  
@@ -48,8 +48,28 @@ Modified: 2016-05-05 03:44
 + 語法簡單 (playbook 以 YAML 語法撰寫)  
 + 不需要安裝 client (clientless)  
 + Push-based  
+    + Pull-bsaed: Agent check to server by time. (Chef / Puppet by default)  
+    + Push-based: Server push change by order  
+        + 你可以決定何時進行設定  
 + Very thin layer of abstraction  
     + 以原有的習慣進行部署  
+  
+---  
+  
+### 預備知識  
+  
++ ssh  
++ CLI  
++ 安裝套件  
++ sudo  
++ 管理檔案權限  
++ 管理 service  
+  
+---  
+  
+### How to install Ansible  
+  
++ <https://docs.ansible.com/ansible/intro_installation.html>  
   
 ---  
   
@@ -68,11 +88,13 @@ Modified: 2016-05-05 03:44
 ### Difference between shell script  
   
 + 不用登入遠端去抓 shell script 與執行 (中央集權)  
++ 會從佈署失敗的地方開始繼續，不會整個重跑。  
 + 針對所有主機同時進行，**按照順序**執行任務  
 + 有許多現成的 Module 可用,用法習慣跟原系統差不多  
 + 有別人寫好的 Role 可以參考與套用 (Ansible-galaxy)  
 + 語法簡單，容易上手(YAML)  
 + 可以利用 fact 與變數執行 loop 或是其他的做法  
++ 有別人寫好的 Role 可以參考與套用：[Ansible Galaxy](https://galaxy.ansible.com/)  
   
 ---  
   
@@ -141,7 +163,9 @@ retry_files_save_path = ./ansible-retry
 ### Ansible Module  
   
 Ansible 使用上, 會根據不同的功能呼叫不同的 Module  
-Module 目錄： <http://docs.ansible.com/ansible/modules_by_category.html>  
+  
++ Module 目錄： <http://docs.ansible.com/ansible/modules_by_category.html>  
++ [All Modules — Ansible Documentation](https://docs.ansible.com/ansible/list_of_all_modules.html)  
   
 + System module  
     + ping  
@@ -157,9 +181,11 @@ Module 目錄： <http://docs.ansible.com/ansible/modules_by_category.html>
   
 `ansible 對象 -m 模組名稱 -a 要傳入的參數`  
   
-官方 doc 的 Options 先看 required  
-required 裏面先看 yes 的就好  
-Example 沒差，因為有時候是騙你的XD  
+#### 官方文件該怎麼看  
+  
++ 官方 doc 的 Options 先看 required  
++ required 裏面先看 yes 的就好  
++ Example 沒差，因為有時候是騙你的XD  
   
 ---  
   
@@ -225,9 +251,10 @@ state: North Takoma
     + A set of hosts to configure. （目標主機）  
     + A list of tasks to be executed on those hosts. （工作內容）  
 + 常用的設定  
-    + name - 執行的 play 或是 task 名稱  
-    + sudo - 要不要執行 sudo  
-    + vars - 變數設定  
+    + `name` - 執行的 play 或是 task 名稱  
+    + `sudo` - 要不要執行 sudo  
+        +  已經改叫 `become` 了  
+    + `vars` - 變數設定  
 + Tasks  
     + 要在遠端主機執行的工作  
         + Modules  
@@ -248,10 +275,15 @@ register, debug 觀察錯誤的時候用
   
 ---  
   
-## References  
+## References / Related Links  
   
-+ [Ansible Mind Map](https://github.com/sakanamax/LearnAnsible/blob/master/Mindmap/ansible20151210.mm) (Use FreeMind to open it)  
++ [Ansible Up & Running](http://shop.oreilly.com/product/0636920035626.do)  
++ [sakananote](https://sakananote2.blogspot.tw/)  
++ <https://hub.docker.com/r/sakana/ansible2.x_ubuntu14043/>  
++ <https://hub.docker.com/r/sakana/jupyterhub/>  
++ [Ansible Mind Map](https://github.com/sakanamax/LearnAnsible/blob/master/Mindmap) (Use FreeMind to open it)  
 + [sakanamax/LearnAnsible · GitHub](https://github.com/sakanamax/LearnAnsible)  
++ [Google Cloud Platform Guide — Ansible Documentation](https://docs.ansible.com/ansible/guide_gce.html)  
   
 ---  
   
@@ -289,5 +321,7 @@ Single Sign-On, 選課系統之類的...
 StudyArea 好像是我參與的社群裏面第一次可以這麼快聊起來的，  
 真的很開心。  
   
-寫於成功大學資訊舊館前  
-(好多蚊子啊！)  
++ 2015/12/26 寫於成功大學資訊舊館前  
+    + (好多蚊子啊！)  
++ 2016/07/16 Study Area 2016 群英會  
+    + 補充一些新的內容  
