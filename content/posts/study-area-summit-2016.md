@@ -8,6 +8,7 @@ Summary: 2016/07/16 在交大 EC122 教室舉辦的 Study-Area 2016 群英會的
   
   
 Event Link: <http://studyarea.kktix.cc/events/c6457aff>  
+> 好多人報了名沒出現啊 ww  
   
 ---  
   
@@ -461,7 +462,7 @@ A: AD server 的雷有遇到，然後因為我其實比較常用 Linux 和 Mac�
   
 + 英文超級無敵重要  
 + 平時要多參與 Open Source 專案累積經驗  
-> 個人覺得廣度不是重點，重點是深度，專案最好都要彼此有相關。  
+> 個人覺得還要注意的重點是深度，而且專案最好都要彼此有相關。  
 + 面試一定要準備  
 + 做的專案要能夠適當的行銷  
     + 雖然當時的重點是放在怎麼 promote Taiwan  
