@@ -164,6 +164,7 @@ for B: `X2<<X1>>X1<<A>>`
   
 ## Public-Key Infrastructure (PKI)  
 RFC 2828, RFC 4949, RFC 5280  
+  
 + PKI Users  
 + CA  
 + ![p.43](/files/itc-week10-key-management-and-distribution/p43.jpg)  
