@@ -2,7 +2,7 @@ Title: TSCC 2015 Notes and Thoughts
 Slug: tscc-2015-notes-and-thoughts  
 Date: 2015-09-15 00:18:11  
 Authors: m157q  
-Category: Life  
+Category: Note  
 Tags: Thought, TSCC, HPC, Competition, Cluster  
 Summary: Notes and Thoughts about the Taiwan Student Cluster Competition 2015  
   
