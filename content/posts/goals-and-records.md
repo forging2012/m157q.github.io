@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-07-12 15:09  
+Modified: 2016-08-02 05:33  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -20,6 +20,8 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [《科學的極致：漫談人工智能》](/posts/2016/07/12/科學的極致-漫談人工智能/) (2016/05/22)  
     - [o] [《圍城》](/posts/2016/07/11/fortress-besieged/) (2016/07/10)  
     - [o] [《蟬堡：沒有夢的小鎮》](/posts/2016/07/14/蟬堡-沒有夢的小鎮/) (2016/07/14)  
+    - [o] 《蟬堡：全世界我們最可憐》 (2016/07/20)  
+    - [o] 《人月神話》 (2016/08/02)  
     - [ ] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
@@ -122,6 +124,9 @@ Summary: Records for what I want to do and when I've done from 2015.
 ---  
   
 ## Conferences  
+- 2016  
+    - [o] [PyCon TW 2016](/posts/2016/06/03/pycon-tw-2016/) (2016/06/03~05)  
+    - [o] [HITCON 2016 CMT](/2016/07/23/hitcon-2016-cmt/) (2016/07/22~23)  
 - 2015  
     - [o] PyConAPAC 2015 (2015/06/05~06)  
         - [PyCon APAC 2015 Notes and Thoughts - Just for noting](/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
