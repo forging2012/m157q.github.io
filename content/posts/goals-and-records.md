@@ -20,7 +20,7 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [《科學的極致：漫談人工智能》](/posts/2016/07/12/科學的極致-漫談人工智能/) (2016/05/22)  
     - [o] [《圍城》](/posts/2016/07/11/fortress-besieged/) (2016/07/10)  
     - [o] [《蟬堡：沒有夢的小鎮》](/posts/2016/07/14/蟬堡-沒有夢的小鎮/) (2016/07/14)  
-    - [o] 《蟬堡：全世界我們最可憐》 (2016/07/20)  
+    - [o] [《蟬堡：全世界我們最可憐》](/posts/2016/08/02/蟬堡-全世界我們最可憐/) (2016/07/20)  
     - [o] 《人月神話》 (2016/08/02)  
     - [ ] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job)  
     - [ ] C Programming: A Modern Approach  
