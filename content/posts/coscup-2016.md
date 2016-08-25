@@ -146,7 +146,7 @@ Slack 跟 Trello 算在專業技能裏面。
 ![resume](/files/coscup-2016/resume.jpg)  
   
 然後依照慣例就是披薩跟可樂吃到飽。  
-![pizza](/files/coscup-2016/pizza)  
+![pizza](/files/coscup-2016/pizza.jpg)  
   
 跑去 CTLUG x openSUSE x RailsFun，  
 看到了有點久沒看到的 JC，  
