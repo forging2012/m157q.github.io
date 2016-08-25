@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-08-02 05:33  
+Modified: 2016-08-25 13:28  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -21,8 +21,8 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [《圍城》](/posts/2016/07/11/fortress-besieged/) (2016/07/10)  
     - [o] [《蟬堡：沒有夢的小鎮》](/posts/2016/07/14/蟬堡-沒有夢的小鎮/) (2016/07/14)  
     - [o] [《蟬堡：全世界我們最可憐》](/posts/2016/08/02/蟬堡-全世界我們最可憐/) (2016/07/20)  
-    - [o] 《人月神話》 (2016/08/02)  
-    - [ ] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job)  
+    - [o] 《人月神話：20 週年紀念版》 (2016/08/02)  
+    - [o] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job) (2016/08/25)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
@@ -126,7 +126,8 @@ Summary: Records for what I want to do and when I've done from 2015.
 ## Conferences  
 - 2016  
     - [o] [PyCon TW 2016](/posts/2016/06/03/pycon-tw-2016/) (2016/06/03~05)  
-    - [o] [HITCON 2016 CMT](/2016/07/23/hitcon-2016-cmt/) (2016/07/22~23)  
+    - [o] [HITCON 2016 CMT](/posts/2016/07/23/hitcon-2016-cmt/) (2016/07/22~23)  
+    - [o] [COSCUP 2016](/posts/2016/08/25/coscup-2016) (2016/08/20~21)  
 - 2015  
     - [o] PyConAPAC 2015 (2015/06/05~06)  
         - [PyCon APAC 2015 Notes and Thoughts - Just for noting](/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
