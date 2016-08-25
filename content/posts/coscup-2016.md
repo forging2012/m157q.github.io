@@ -204,7 +204,7 @@ Slack 跟 Trello 算在專業技能裏面。
   
 ---  
   
-## Lightening talks  
+## Lightning talks  
   
 + othree: 用 git 線圖來畫臺北捷運路網  
     + <https://github.com/othree/taipei-mrt>  
