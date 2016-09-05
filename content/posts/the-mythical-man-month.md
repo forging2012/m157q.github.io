@@ -1,10 +1,11 @@
-Title: The Mythical Man-Month  
+Title: 《人月神話：專案管理之道》二十週年紀念版  
 Slug: the-mythical-man-month  
-Date: 2016-09-05 23:42:08  
+Date: 2016-09-05 23:49  
 Authors: m157q  
 Category: Reading  
 Tags: Software Engineering,  
-Summary: 讀《人月神話：二十週年紀念版》（其實從 1975 年出版到現在已經 41 年了）  
+Summary: 讀《人月神話：專案管理之道》二十週年紀念版（其實從 1975 年出版到現在已經 41 年了）  
+Modified: 2016-09-06 00:00  
   
   
 ![封面](/files/the-mythical-man-month/cover.jpg)  
@@ -40,6 +41,16 @@ Summary: 讀《人月神話：二十週年紀念版》（其實從 1975 年出�
 可能會對書中說的事情更有體會吧。  
   
 ---  
+  
+## 作者簡介  
+  
+[Frederick Phillips Brooks, Jr.](https://en.wikipedia.org/wiki/Fred_Brooks)  
+  
++ 曾在 IBM 管理過非常大型的 [OS/360](https://en.wikipedia.org/wiki/OS/360_and_successors) 系列專案，本書就是他集結這些大型專案的開發經驗後得到的結論並分享出來。  
++ 1999 年圖靈獎得主。  
+  
+---  
+  
   
 ## 紀錄  
   
@@ -79,9 +90,25 @@ Summary: 讀《人月神話：二十週年紀念版》（其實從 1975 年出�
 基本上只會讓進度更加落後。  
 （這也是本書的同名章節《人月神話》所表達的核心觀念）  
   
+但軟體又不能慢慢開發，  
+房子蓋了很久才蓋好仍然可以住人，  
+但軟體開發很久才開發完的話，  
+等開發出來以後早就過時而且沒人要用了。  
+  
 然後印象中，  
 《焦油坑》那個章節也滿不錯的。  
 （請原諒一個過了一個月才回想讀書內容的人QQ）  
   
 真的是個值得多閱讀幾次的好書，  
 我覺得不管是專案管理者還是軟體開發者真的都推薦看一下。  
+  
+軟體開發真的還有很多本質上的難題懸而未解，  
+後面新的章節也有列出作者認為一旦被解決了，  
+就會讓軟體開發有質的躍進的那些問題。  
+  
+---  
+  
+## References  
+  
++ [The Mythical Man-Month - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)  
++ [Fred Brooks - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fred_Brooks)  
