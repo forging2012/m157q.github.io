@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-08-25 13:28  
+Modified: 2016-09-05 23:44  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -21,7 +21,7 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [《圍城》](/posts/2016/07/11/fortress-besieged/) (2016/07/10)  
     - [o] [《蟬堡：沒有夢的小鎮》](/posts/2016/07/14/蟬堡-沒有夢的小鎮/) (2016/07/14)  
     - [o] [《蟬堡：全世界我們最可憐》](/posts/2016/08/02/蟬堡-全世界我們最可憐/) (2016/07/20)  
-    - [o] 《人月神話：20 週年紀念版》 (2016/08/02)  
+    - [o] [《人月神話：20 週年紀念版》](/posts/2016/09/05/the-mythical-man-month/) (2016/08/02)  
     - [o] 程序員面試攻略 （Programming Interviews Exposed: Secrets to Landing Your Next Job) (2016/08/25)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
