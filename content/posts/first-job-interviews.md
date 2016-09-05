@@ -5,7 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: interview, resume, job  
 Summary: 紀錄我人生第一次找工作的面試過程  
-Modified: 2016-05-16 00:55  
+Modified: 2016-09-05 21:39  
   
   
 ## 前言  
@@ -38,9 +38,9 @@ Modified: 2016-05-16 00:55
 ### 覺得整理想去的公司好麻煩，乾脆整理在 GitHub 上  
   
 於是過了一個月，到了十二月中旬，  
-才把[第一版英文履歷](https://github.com/M157q/find-jobs/blob/master/archives/version-1/resume.pdf)生了出來。  
+才把[第一版英文履歷](https://github.com/M157q/resume/blob/8a70dabbea604ec780c247baa683b1df46d612d4/archives/version-1/resume.pdf)生了出來。  
 之後大概就是往 Web Backend 跟 DevOps 這兩個職位去找，  
-並把想投的公司及狀況紀錄在 [Issues · M157q/find-jobs · GitHub](https://github.com/M157q/find-jobs/issues)。  
+並把想投的公司及狀況紀錄在 [Issues · M157q/resume · GitHub](https://github.com/M157q/resume/issues)。  
   
 ---  
   
@@ -68,7 +68,7 @@ Modified: 2016-05-16 00:55
 跑去成大當面給 Jserv review 我的第一份 resume 被慘電 3 個小時，  
 著實獲益良多。  
 詳細內容則紀錄在 [程式設計師的履歷撰寫要點](/posts/2016/01/22/how-to-write-a-resume-for-programming-jobs/)  
-[最終版本的履歷在此](https://github.com/M157q/find-jobs/blob/master/resume.pdf)  
+[最終版本的履歷在此](https://github.com/M157q/resume/blob/8a70dabbea604ec780c247baa683b1df46d612d4/resume.pdf)  
   
 ---  
   
@@ -83,7 +83,7 @@ Modified: 2016-05-16 00:55
 （這又是另外一個故事了w）  
   
 + 應徵職位：Web Backend (Python) Engineer  
-    + <https://github.com/M157q/find-jobs/issues/10>  
+    + <https://github.com/M157q/resume/issues/10>  
 + 面試時間：2015/12/30 16:00  
 + 面試地點：台北市光復南路 612 號 5 樓  
 + 面試官：Teddy (CEO)  
@@ -108,7 +108,7 @@ Modified: 2016-05-16 00:55
 畢竟我 Node.js 只有大學專題的時候自己寫一寫而已。  
   
 + 應徵職位：API Backend Developer / Cloud System Admin （透過 sudo 投遞）  
-    + <https://github.com/M157q/find-jobs/issues/21>  
+    + <https://github.com/M157q/resume/issues/21>  
 + 面試時間：2016/01/08 11:30  
 + 面試地點：台北市信義區信義路五段 2 號 6 F (震旦大樓)  
 + 面試官：Popo (CEO)  
@@ -138,7 +138,7 @@ Modified: 2016-05-16 00:55
 #### 第一階段  
   
 + 應徵職位：Application Engineer / Backend Server Engineer （透過 sudo 投遞）  
-    + <https://github.com/M157q/find-jobs/issues/22>  
+    + <https://github.com/M157q/resume/issues/22>  
 + 面試時間：2016/01/11 14:00  
 + 面試地點：松山區南京東路四段16號7樓B  
 + 面試官：Kana (HR Manager, Eng), ??? (HR, 中文)  
@@ -158,7 +158,7 @@ Modified: 2016-05-16 00:55
 ### VMFive  
   
 + 應徵職位：Cloud Engineer in Operation （透過 Referral）  
-    + <https://github.com/M157q/find-jobs/issues/14>  
+    + <https://github.com/M157q/resume/issues/14>  
 + 面試時間： 2016/01/12 16:00  
 + 面試地點： 台北市大安區敦化南路二段 105 號 19 樓 B 室  
     + 這位置超尷尬的，在 4 個捷運站中間  
@@ -191,7 +191,7 @@ Modified: 2016-05-16 00:55
 ### CHOCOLABS - 歐酷網路  
   
 + 應徵職位：Cloud Engineer in Operation （透過 Referral）  
-    + <https://github.com/M157q/find-jobs/issues/23>  
+    + <https://github.com/M157q/resume/issues/23>  
 + 面試時間： 2016/01/13  
 + 面試地點： 台北市民權東路三段 142 號 17 樓  
     + 新辦公室，我面試的時候才剛搬一個禮拜，裝潢都還沒好，印象最深刻的是有一整片的透明玻璃就面對著松山機場，有一排座位和桌子，可以讓你看著飛機起降 coding。  
