@@ -4,12 +4,12 @@ Date: 2016-09-06 18:25
 Authors: m157q  
 Category: Life  
 Tags: Domain name, CloudFlare, Gandi, GitHub Pages  
-Summary: 心血來潮買了一個域名，用到了 [Gandi](https://www.gandi.net/) 和 [CloudFlare 免費版](https://www.cloudflare.com/)的服務，也順便紀錄一下。  
+Summary: 約 3 個月前，心血來潮買了一個域名，用到了 [Gandi](https://www.gandi.net/) 和 [CloudFlare 免費版](https://www.cloudflare.com/)的服務，也順便紀錄一下。  
   
   
 ## 前言  
   
-其實今年 6/13 的時候一時心血來潮就買了，  
+今年 6/13 的時候一時心血來潮就買了，  
 Domain Name 是 `m157q.tw`。  
 從 [Gandi](https://www.gandi.net/) 那邊買的，  
 因為之前還蠻常看到 Gandi 出現在 Conf 的攤位擺攤的，  
@@ -82,7 +82,7 @@ Gandi 的 web admin interface 我覺得沒有很好用，
   
 ---  
   
-## CloudFlare 使用相關  
+## CloudFlare 相關  
   
 CloudFlare 是因為公司裡頭的服務有用到而接觸，  
 使用了以後覺得還滿好用的，  
@@ -109,7 +109,7 @@ CloudFlare 是因為公司裡頭的服務有用到而接觸，
   
 其他還有像是：  
   
-+ Auto Minnify JavaScript, CSS, HTML  
++ Auto Minify JavaScript, CSS, HTML  
 + HTTP/2+SPDY  
 + 免費版可以設定 3 條 Page (Rewrite) Rules  
 + 也有 Firewall 可以設定，但因為我是用 static site，沒啥好擔心的，所以目前沒用到。  
