@@ -45,6 +45,12 @@ Domain Name 是 `m157q.tw`。
 要在 master branch 新增一個 `CNAME` 的檔案，  
 內容則是這個 GitHub Pages 的 Custom Domain，  
 [我的話當然就是放 `blog.m157q.tw`](https://github.com/M157q/m157q.github.io/blob/master/CNAME)，  
+  
+設定好的話，  
+連到原本的 GitHub Pages 預設的 Domain Name，  
+就會幫你 redirect 到 Custom Domain 去。  
+例如：<https://m157q.github.io> 現在就會直接被導到 <https://blog.m157q.tw>。  
+  
 詳細的 GitHub 官方說明文件在此： [Using a custom domain with GitHub Pages - User Documentation](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)  
   
 ---  
