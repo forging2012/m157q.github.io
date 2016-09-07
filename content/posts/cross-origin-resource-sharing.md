@@ -148,6 +148,53 @@ Google App Engine 這邊也只能幫忙加上 header，
   
 ---  
   
+## Postscript  
+  
+弄這個 CDN 大約是6月底的事，  
+所以算來也差不多兩個月了，  
+直到最近又遇到了一次 CORS 的問題。  
+  
+主要是公司有些功能想要實作，  
+會需要在客戶的網站上呼叫我們自家公司的 API，  
+同事嘗試了以後就遇到 CORS 的問題然後跑來問我。  
+因為 API 也是跑在 Google App Engine，  
+所以我第一時間就想到在該 API 的 url handler 加上 http_headers。  
+但加上去以後用 `appcfg.py` 要 deploy 的時候遇到了下面這個錯誤，  
+  
+```  
+appcfg.py: error: Error parsing ./app.yaml: Unexpected attribute "http_headers" for mapping type script.  
+  in "./app.yaml", line 70, column 1.  
+```  
+  
+看來 Google App Engine 不允許對非 static files 的 handler 加上 HTTP Headers，  
+於是只好另尋出路。  
+  
+想了一下，  
+依稀記得之前在處理這個問題的時候好像有看到 JSONP 可以跳過一些跨域名請求的限制，  
+於是找到了這篇 [javascript - Google Place API - No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access - Stack Overflow](https://stackoverflow.com/questions/28359730/google-place-api-no-access-control-allow-origin-header-is-present-on-the-req)  
+底下有一個回應給出了解答，  
+可以透過 jQuery 的 `$.ajax()` 跳過 CORS 的限制，  
+直接拿到 Cross-Domain 的 JSON API 的結果。  
+  
+作法如下：  
+  
+```  
+$.ajax({  
+    url: $url_of_api,  
+    type: "GET",  
+    dataType: 'jsonp',  
+    cache: false,  
+    success: function(response){  
+        console.log(response);  
+    }  
+});  
+```  
+  
+其中把 `$url_of_api` 換成會回傳 JSON 結果的 Cross-Domain API 的網址就行了，  
+我把這個事件叫作「JSONP 拯救 Cross-Domain JSON API Request」。(啥  
+  
+---  
+  
 ## Related Links  
   
 + [HTTP access control (CORS) - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Access-Control-Allow-Origin)  
@@ -157,3 +204,4 @@ Google App Engine 這邊也只能幫忙加上 header，
 + [CORS with Wildcard Subdomains Using Nginx — Rustyrazorblade](http://rustyrazorblade.com/2013/10/cors-with-wildcard-subdomains-using-nginx/)  
 + [Apache Configure CORS Headers for Whitelist Domains](http://blog.blakesimpson.co.uk/read/64-apache-configure-cors-headers-for-whitelist-domains)  
 + [app.yaml Reference | App Engine standard environment for Python | Google Cloud Platform](https://cloud.google.com/appengine/docs/python/config/appref)  
++ [javascript - Google Place API - No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access - Stack Overflow](https://stackoverflow.com/questions/28359730/google-place-api-no-access-control-allow-origin-header-is-present-on-the-req)  
