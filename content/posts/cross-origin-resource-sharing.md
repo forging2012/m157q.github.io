@@ -177,7 +177,7 @@ appcfg.py: error: Error parsing ./app.yaml: Unexpected attribute "http_headers" 
   
 作法如下：  
   
-```  
+```javascript  
 $.ajax({  
     url: $url_of_api,  
     type: "GET",  
