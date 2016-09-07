@@ -1,6 +1,6 @@
 Title: 紀錄一下和 CORS (Cross-Origin Resource Sharing) 有關的問題  
 Slug: cross-origin-resource-sharing  
-Date: 2016-09-07 22:59:28  
+Date: 2016-09-07 23:22:28  
 Authors: m157q  
 Category: Note  
 Tags: W3C, HTTP, CORS, Cross-Origin HTTP Request, Google App Engine  
@@ -131,8 +131,7 @@ Apache 和 Nginx 都可以針對這個部份做設定，
 + [CORS with Wildcard Subdomains Using Nginx — Rustyrazorblade](http://rustyrazorblade.com/2013/10/cors-with-wildcard-subdomains-using-nginx/)  
 + [Apache Configure CORS Headers for Whitelist Domains](http://blog.blakesimpson.co.uk/read/64-apache-configure-cors-headers-for-whitelist-domains)  
   
-當然因為這個 protocol 本身設計的關係，  
-還是回一個寫死 domain 的 `Access-Control-Allow-Origin` 的 HTTP Header，  
+似乎是回一個寫死 domain 的 `Access-Control-Allow-Origin` 的 HTTP Header，  
 但是可以在設定檔裏面做設定，  
 如果 request 是來自允許的 domain 的話，  
 就把 `Access-Control-Allow-Origin` 的值設定成該 domain，  
