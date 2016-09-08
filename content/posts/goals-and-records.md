@@ -161,3 +161,9 @@ Summary: Records for what I want to do and when I've done from 2015.
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
+    - [o] [Suicide Squad (2016) - IMDb](http://www.imdb.com/title/tt1386697/) (2016/08/18)  
+        - 真的是去看小丑女的，小丑女太棒。  
+    - [o] [樓下的房客 - 維基百科，自由的百科全書](https://zh.wikipedia.org/zh-hant/%E6%A8%93%E4%B8%8B%E7%9A%84%E6%88%BF%E5%AE%A2) (2016/08/23)  
+        - 怎麼說呢？電影礙於尺度問題我覺得還是沒辦法完全詮釋小說就是，第一次看原著小說的時候我是真的看到想吐。  
+    - [o] [Jason Bourne (2016) - IMDb](http://www.imdb.com/title/tt4196776/) (2016/08/28)  
+        - 覺得劇情還好，就是爽片一部，特殊的點就是會加入一些時事吧？希臘抗議遊行跟史諾登等等。  
