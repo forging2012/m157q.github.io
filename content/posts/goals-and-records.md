@@ -14,7 +14,7 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [程序员跳槽全攻略](https://selfstore.io/products/190) (2016/01/07)  
     - [o] 編程人生（上）(Coders at work) (2016/02/14)  
     - [o] 編程人生（下）(Coders at work) (2016/03/14)  
-        + [《編程人生》(Coders at Work) | Just for noting](/posts/2016/06/16/coders-at-work/)  
+        + [《編程人生》(Coders at Work)](/posts/2016/06/16/coders-at-work/)  
     - [o] [《認識虛擬化技術的第一本書》](/posts/2016/06/23/認識虛擬化技術的第一本書/) (2016/05/09)  
     - [o] [《被囚禁的台灣》](/posts/2016/05/15/imprisoned-taiwan/) (2016/05/15)  
     - [o] [《科學的極致：漫談人工智能》](/posts/2016/07/12/科學的極致-漫談人工智能/) (2016/05/22)  
@@ -40,11 +40,11 @@ Summary: Records for what I want to do and when I've done from 2015.
 - 2015  
     - [o] Just for Fun: The Story of an Accidental Revolutionary  (2015/05)  
     - [o] The Pragmatic Programmers (2015/06)  
+    - [o] Gray Hat Python: Python Programming for Hackers and Reverse Engineers (2015/07)  
     - [o] The Art of Deception (2015/08)  
     - [o] Clean Code: A Handbook of Agile Software Craftsmanship (2015/09)  
     - [o] The Art of Intrusion (2015/10/16)  
     - [o] Writing Idiomatic Python 3 (2015/10/30)  
-    - [o] Gray Hat Python: Python Programming for Hackers and Reverse Engineers (2015/07)  
     - [o] The Cathedral and the Bazaar 大教堂與市集 (2015/11/11)  
     - [o] [建國路上 Tī Hit-tiâu Kiàn-kok ê lōo](http://www.hi-on.org.tw/bulletins.jsp?b_ID=152337) (2015/11/11)  
   
