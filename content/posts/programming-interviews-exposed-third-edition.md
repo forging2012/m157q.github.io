@@ -7,8 +7,8 @@ Tags: Interview, Programming Job
 Summary: 讀《程序員面試攻略》(Programming Interviews Exposed: Secrets to Landing Your Net Job, Third Edition)  
   
   
-![front cover](/files/programming-interviews-exposed/front_cover.jpg)  
-![back cover](/files/programming-interviews-exposed/back_cover.jpg)  
+![front cover](/files/programming-interviews-exposed-third-edition/front_cover.jpg)  
+![back cover](/files/programming-interviews-exposed-third-edition/back_cover.jpg)  
   
 ---  
   
