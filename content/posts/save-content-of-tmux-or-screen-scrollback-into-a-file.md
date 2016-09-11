@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: CLI, tmux, screen  
 Summary: Steps to save content of tmux/screen scrollback into a file.  
-Modified: 2015-10-28 14:08  
+Modified: 2016-09-12 00:24  
   
   
 因為某些原因，  
@@ -43,6 +43,10 @@ Modified: 2015-10-28 14:08
 ```  
   
 但這個用法只能儲存全部的內容，無法選擇行數。  
+  
+然後我在 screen 版本 4.04.00 (GNU) 19-Jun-16 使用時，  
+如果內容裏面有中文的話，  
+dump 出來以後中文會變成亂碼。  
   
 ---  
   
