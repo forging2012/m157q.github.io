@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-09-09 12:49  
+Modified: 2016-09-15 09:19  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -167,3 +167,5 @@ Summary: Records for what I want to do and when I've done from 2015.
         - 怎麼說呢？電影礙於尺度問題我覺得還是沒辦法完全詮釋小說就是，第一次看原著小說的時候我是真的看到想吐。  
     - [o] [Jason Bourne (2016) - IMDb](http://www.imdb.com/title/tt4196776/) (2016/08/28)  
         - 覺得劇情還好，就是爽片一部，特殊的點就是會加入一些時事吧？希臘抗議遊行跟史諾登等等。  
+    - [o] [X-Men: Apocalypse (2016) - IMDb](http://www.imdb.com/title/tt3385516/)  
+        - 覺得還滿好看的，有許多不同的元素，然後濃濃的復古風，也交待了很多事，例如：X 授怎麼變光頭的、萬磁王的悲慘過去、第一次與金鋼狼的相遇、風暴女如何出現的。但不知道這次才出現的音速小子是誰，之前好像都沒看過？  
