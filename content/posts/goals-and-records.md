@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-09-15 09:19  
+Modified: 2016-09-18 15:30  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -169,3 +169,8 @@ Summary: Records for what I want to do and when I've done from 2015.
         - 覺得劇情還好，就是爽片一部，特殊的點就是會加入一些時事吧？希臘抗議遊行跟史諾登等等。  
     - [o] [X-Men: Apocalypse (2016) - IMDb](http://www.imdb.com/title/tt3385516/)  
         - 覺得還滿好看的，有許多不同的元素，然後濃濃的復古風，也交待了很多事，例如：X 授怎麼變光頭的、萬磁王的悲慘過去、第一次與金鋼狼的相遇、風暴女如何出現的。但不知道這次才出現的音速小子是誰，之前好像都沒看過？  
+    - [o] [Warcraft: The Beginning (2016) - IMDb](http://www.imdb.com/title/tt0803096/)  
+        - 覺得拍的還不錯耶，雖然只玩過一點點魔獸世界，也沒有很瞭解劇情，查了一下，電影好像有改編過，但劇情的複雜度看起來是夠的，Frostwolf 的首領實在太賺人眼淚了。  
+    - [o] [The Bronze (2015) - IMDb](http://www.imdb.com/title/tt3859304/)  
+        - 講的是個體操奧運選手得了銅牌後因傷退休後成了整天無所事事的米蟲，之後因為當初訓練她的教練自殺身亡，而代替了該教練的職務訓練一位體操新秀的故事，看完後覺得沒什麼值得看的。裏面大量的髒話，非常的美式。當初會知道這部也只是因為女主角是飾演 The Big Bang Theory 中 Bernadette 的 [Melissa Rauch](https://en.wikipedia.org/wiki/Melissa_Rauch)，然後[裡面的性愛場景非常之猛](https://www.youtube.com/watch?v=N4mQzJ40pWA)。（雖然後來查了一下似乎是替身）然後看完這部只覺得 Melissa Rauch 身上的雀斑真的好多啊（誒  
+        - 發現美國近年來好像都有電影拿奧運當題材，像之前的 Foxcatcher 也是講一些奧運摔角的黑暗面。  
