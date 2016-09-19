@@ -104,8 +104,6 @@ Summary: Records for what I want to do and when I've done from 2015.
   
 ### Build some open source projects/applications  
 - 2016  
-    - [ ] r/archlinux twitter bot  
-        - <https://www.reddit.com/r/archlinux/.rss>  
 - 2015  
     - [M157q/zdict · GitHub](https://github.com/M157q/zdict) (2015/04)  
     - [M157q/gettitle · GitHub](https://github.com/M157q/gettitle) (2015/09)  
