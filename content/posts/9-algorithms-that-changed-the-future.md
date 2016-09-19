@@ -5,6 +5,7 @@ Authors: m157q
 Category: Reading  
 Tags: Algorithm, Computer Science  
 Summary: 《改變世界的九大演算法》讀後感  
+Modified: 2016-09-19 22:38  
   
   
 ![front cover](/files/9-algorithms-that-changed-the-future/front-cover.jpg)  
@@ -61,11 +62,19 @@ Summary: 《改變世界的九大演算法》讀後感
 因為不是想像中的去比較各個領域中演算法的優缺點。）  
   
 裏面印象比較深刻的就是第四章講非對稱加密的部份，  
-用了混合油漆的例子來比喻整個非對稱加密的過程。  
+用了混合油漆的例子來比喻 Diffie-Hellman Key exchange 及非對稱加密的過程。  
+這裡有[一部影片](https://www.youtube.com/watch?v=YEBfamv-_do)跟[一則 tweet](https://mobile.twitter.com/JZdziarski/status/753640015108841472) 作為詮釋。  
+要是我當年修密碼學的時候可以早點知道這樣的解釋也許會學的比較好吧？  
+  
 之前修密碼學的時候，  
 剛碰到這部份也是有點一頭霧水。  
 尤其是一開始的部份沒理解清楚的話，  
 到之後的 X.509 憑證交換的部份又會更難理解。  
+  
+這邊又想到之前看到[一則 tweet](https://twitter.com/JZdziarski/status/753223642297892864) 用 emoji 來講 Public Key Infrastructure，也是很簡單易懂。  
+因為覺得很重要，所以截個圖好了。  
+![Explain PKI in emoji way](/files/9-algorithms-that-changed-the-future/pki-emoji.png)  
+  
   
 這本書本來就定位為科普書籍，  
 所以作者儘量以非常簡單的例子來比喻，  
@@ -113,3 +122,6 @@ Summary: 《改變世界的九大演算法》讀後感
 + [9 Algorithms that Changed the Future - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/9_Algorithms_that_Changed_the_Future)  
 + [Zero-knowledge Protocol](https://en.wikipedia.org/wiki/Zero-knowledge_proof)  
 + [拜占庭將軍問題](https://zh.wikipedia.org/zh-tw/%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B0%86%E5%86%9B%E9%97%AE%E9%A2%98)  
++ [Public key cryptography - Diffie-Hellman Key Exchange (full version) - YouTube](https://www.youtube.com/watch?v=YEBfamv-_do)  
++ [Jonathan Zdziarski on Twitter: "Diffie-Hellman-Merkle: 💙 - 💙 Common Color  💛 - ❤️ + Secret Colors 💚 - 💜 = Mixture 💜 - 💚 < Swap 💛 - ❤️ + Secret Color ⚫️ - ⚫️ = Common Secret"](https://twitter.com/JZdziarski/status/753640015108841472)  
++ [Jonathan Zdziarski on Twitter: "PKI / PGP Primer: 🔑 Public Key 🗝 Private Key 📝 Message  📝+🔑 = 🔒✉️ Encrypted 🔒✉️+🗝 = 🔓📝 Decrypted 📝+🗝 = 🔏✉️ Signed 🔏✉️ + 🔑 = 👤 Authenticated"](https://twitter.com/JZdziarski/status/753223642297892864)  
