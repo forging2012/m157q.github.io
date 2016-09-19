@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: C, GUTS, jserv, pointers  
 Summary: Jserv 線上 C 語言講座《0918 - 你所不知道的 C 語言：指標篇 復刻！》筆記  
+Modified: 2016-09-20 01:17  
   
   
 這篇嚴格來說不算筆記，  
@@ -30,6 +31,16 @@ Summary: Jserv 線上 C 語言講座《0918 - 你所不知道的 C 語言：指�
   
 + 「我去天瓏書店翻書的時候，看到有些書提到『雙指標』，但其實根本沒有雙指標這種東西，只有『指標的指標』，這兩個是完全不同的東西，就像『雙馬尾』跟『馬尾的馬尾』是完全不同的東西，所以拜託看到有『雙指標』的 C 語言的書就不要買了。」  
 + 「要看懂 C 語言的規格書，你得先會微積分。所以微積分很重要的，趕快去複習一下。」(註：Function Designator 的部份)  
+```c  
+// 這句應該是指 function designator 的這種狀況  
+  
+int main() {  
+    return (********puts)("Hello");  
+}  
+  
+// 不管有幾個 * 結果都一樣  
+// 就像 e^x 對 x 微分不管微幾次結果都是 e^x  
+```  
 + 「Function Designator 的 Designator 不要唸成跟 Design 一樣，它的 i 是短音的。」  
     + 附上音標  
 ```  
