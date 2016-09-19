@@ -5,6 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: Domain name, CloudFlare, Gandi, GitHub Pages  
 Summary: 約 3 個月前，心血來潮買了一個域名，用到了 [Gandi](https://www.gandi.net/) 和 [CloudFlare 免費版](https://www.cloudflare.com/)的服務，也順便紀錄一下。  
+Modified: 2016-09-19 21:52  
   
   
 ## 前言  
@@ -106,6 +107,13 @@ CloudFlare 是因為公司裡頭的服務有用到而接觸，
     + 透過後台可以馬上做設定，而且生效極快。  
 + CDN + Cache  
     + 非常強大，而且今年已經在臺北有 Node（與中華電信合作），所以存取速度大增。  
+    + （2016/09/19 更新）目前因為中華電信的費用實在太貴，所以 CloudFlare 把 Free 跟 Pro User 的台灣流量都導到美西去了，[說是只有 Business User 才能使用台北的 Node](https://twitter.com/ihower/status/777723975300321280)。  
+        + <https://blog.cloudflare.com/bandwidth-costs-around-the-world/>  
+            + 之前看到這篇的時候沒有仔細看，以為只有單純婊中華電信和其他國家的五家電信很貴。(六家電信在 CloudFlare 總流量只有 6% 卻佔頻寬費用將近 50%)  
+            > Today, however, there are six expensive networks (HiNet, Korea Telecom, Optus, Telecom Argentina, Telefonica, Telstra) that are more than an order of magnitude more expensive than other bandwidth providers around the globe and refuse to discuss local peering relationships. To give you a sense, these six networks represent less than 6% of the traffic but nearly 50% of our bandwidth costs.  
+            + 沒想到裏面有提及，會把 CloudFlare 免費版使用者有用到這六家電信的流量導到其他費用比較合理的國家，直到這六家電信的費用有變便宜才會再做考慮。  
+            > While we’ve tried to engage all these providers to reduce their extremely high costs and ensure that even our Free customers can be served across their networks, we’ve hit an impasse. To that end, unfortunately, we’ve made the decision that the only thing that will change these providers’ pricing is to make it clear how out of step they are with the rest of the world. To demonstrate this, we’ve moved our Free customers off these six transit providers. Free customers will still be accessible across our network and served from another regional cache with more reasonable bandwidth pricing.  
+            + 剛剛用 [Claire](https://github.com/cloudflare/claire) 看了一下 blog，的確從原本台北的 node 變成 Los Angeles 的 node 了，所以 ping 的 latency 升到了 180 ms 左右。blog 好像還好，不過公司的 service 影響可能比較大就是了，雖然之前台北沒 node 的時候公司好像還是照用 CloudFlare 就是了。所以應該沒差吧（？  
 + 免費的 HTTPS  
     + 這部份本來使用 GitHub Pages 就有 HTTPS 了。  
     + 在 Crypto 的 SSL 設定要設定成 Full，設定成 Full(strict) 我記得是會有問題的。  
