@@ -54,10 +54,10 @@ Summary: Note for Cat System Workshop #11 (2016/09/20)
   
 + Environment (x86\_64 maching)  
     + Linux 4.6.2  
-    + FreeBSD 10.6  
+    + FreeBSD 10.2  
 + Tools  
-    + kpatch  
-    + Docker  
+    + kpatch: A tool for kernel livepatch  
+    + docker  
   
 ### Step 1: From LivePatching to Detouring  
   
