@@ -80,8 +80,6 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('GitHub', 'https://github.com/M157q'),
-    ('Twitter', 'https://twitter.com/M157q'),
-    ('Google+', 'https://plus.google.com/u/0/+SYJheng/posts'),
     ('LinkedIn', 'https://www.linkedin.com/in/shunyi'),
 )
 
