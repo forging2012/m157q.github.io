@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-09-19 00:53  
+Modified: 2016-11-14 23:30  
 Summary: Records for what I want to do and when I've done from 2015.  
   
   
@@ -24,6 +24,7 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [《人月神話：20 週年紀念版》](/posts/2016/09/05/the-mythical-man-month/) (2016/08/02)  
     - [o] [《程序員面試攻略》(Programming Interviews Exposed: Secrets to Landing Your Next Job)](/posts/2016/09/09/programming-interviews-exposed-third-edition/) (2016/08/25)  
     - [o] [《改變世界的九大演算法》](/posts/2016/09/18/9-algorithms-that-changed-the-future/) (2016/09/17)  
+    - [o] [《程序員思維修煉》(Pragmatic Thinking and Learning: Refactor Your Wetware)] (2016/11/13)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
@@ -57,7 +58,6 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [ ] Lose body fat to 10%  
     - [ ] Muscle Training for six-pack abs  
     - [ ] Training for Parkour  
-    - [ ] Go to bed on time, do not stay up late and keep normal daily routine  
   
 ---  
   
@@ -75,6 +75,8 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [x] [Add dryscrape into Web Crawling section. by M157q · Pull Request #644 · vinta/awesome-python · GitHub](https://github.com/vinta/awesome-python/pull/644) (2016/05/17)  
     - [o] [[blacklist.conf] should be bluetooth not bluetooh by M157q � Pull Request #3 � Unia/powersave � GitHub](https://github.com/Unia/powersave/pull/3) (2016/05/19)  
     - [o] [Fix Google Cloud SDK v114.0.0 GAE deploy error by M157q · Pull Request #463 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/463) (2016/06/16)  
+    - [o] [GitHub - pellaeon/fengyuan](https://github.com/pellaeon/fengyuan)  
+        - 用 Django 刻一個 OwnCloud or Google Drive 出來的計劃，由 Pellaeon 開啟，我負責 Python 的部份，目前緩慢進行中。  
     - [ ] Send PR back to [imageme](https://github.com/M157q/imageme)  
     - [ ] <https://github.com/passcod/twd>  
         - Height is wrong  
@@ -140,9 +142,9 @@ Summary: Records for what I want to do and when I've done from 2015.
 - 2016  
     - [o] [2016 第十四任正副總統暨第九屆立法委員選舉監票](https://imgur.com/a/m2PUa) (2016/01/16)  
     - [o] [TypeRacer 達到最近 10 場 WPM 81 以上進入 Megaracer level，並創下個人新高 94 WPM](https://twitter.com/M157q/status/737274967583166467)  
+    - [o] Do my best for the job in Tagtoo as a Python engineer.  
+        - [o] Get familiar with the job content and server architecture then write the tutorial for newbie in R&D team.  
     - [ ] [Finish the rest parts of the college graduation term project](https://github.com/M157q/Android-Repackaged-App-Detection-System)  
-    - [ ] Do my best for the job in Tagtoo as a Python engineer.  
-        - [ ] Get familiar with the job content and server architecture then write the tutorial for newbie in R&D team.  
 - 2015  
     - [o] [iToolMan Hoodie](https://hackpad.com/iToolMan-T-cOJlcwLntzx) (2015/06)  
     - [o] Exemption from military service (2015/08/06)  
@@ -173,3 +175,15 @@ Summary: Records for what I want to do and when I've done from 2015.
     - [o] [The Bronze (2015) - IMDb](http://www.imdb.com/title/tt3859304/)  
         - 講的是個體操奧運選手得了銅牌後因傷退休後成了整天無所事事的米蟲，之後因為當初訓練她的教練自殺身亡，而代替了該教練的職務訓練一位體操新秀的故事，看完後覺得沒什麼值得看的。裏面大量的髒話，非常的美式。當初會知道這部也只是因為女主角是飾演 The Big Bang Theory 中 Bernadette 的 [Melissa Rauch](https://en.wikipedia.org/wiki/Melissa_Rauch)，然後[裡面的性愛場景非常之猛](https://www.youtube.com/watch?v=N4mQzJ40pWA)。（雖然後來查了一下似乎是替身）然後看完這部只覺得 Melissa Rauch 身上的雀斑真的好多啊（誒  
         - 發現美國近年來好像都有電影拿奧運當題材，像之前的 Foxcatcher 也是講一些奧運摔角的黑暗面。  
+    - [o] [《師父》](http://www.imdb.com/title/tt4851640/) (2016/10/15)  
+        - 很棒的武打戲，埋了很多哏，節奏非常快，需要注意一些細節。  
+        - 需要注意一些細節，不是按照事件發生的時間順序播放。  
+        - 出現很多種刀類的兵器，尤其是最後的巷戰非常過癮。  
+    - [o] [《箭士柳白猿》](https://movie.douban.com/subject/7564989/) (2016/11/12)  
+        — 和《師父》一樣是徐皓峰的作品，不過這部前面有點跳，中間有點拖，然後有些導演慣用的幽默手法和個人覺得有一點點蒙太奇的感覺。  
+    - [o] [《奇異博士》](http://www.imdb.com/title/tt1211837/) (2016/11/13)  
+        - 看了之後才知道 Doctor Strange 的 Doctor 是醫生不是博士，雖然翻成《奇異醫生》也滿怪的就是。  
+        - 開車千萬他媽的不要用手機  
+        - 滿多笑點的，算是 Marvel 一貫的笑點。  
+        - 時光倒流打架那段很酷  
+        - 「多瑪暮，我是來找你談判的。」無窮迴圈很白目  
