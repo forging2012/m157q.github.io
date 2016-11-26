@@ -6,7 +6,7 @@ Tags: Life
 Slug: goals-and-records  
 Pin: true  
 Modified: 2016-11-14 23:30  
-Summary: Records for what I want to do and when I've done from 2015.  
+Summary: Records for what I want to do and when I've done since 2015.  
   
   
 ## Reading  
