@@ -25,6 +25,8 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [《程序員面試攻略》(Programming Interviews Exposed: Secrets to Landing Your Next Job)](/posts/2016/09/09/programming-interviews-exposed-third-edition/) (2016/08/25)  
     - [o] [《改變世界的九大演算法》](/posts/2016/09/18/9-algorithms-that-changed-the-future/) (2016/09/17)  
     - [o] [《程序員思維修煉》(Pragmatic Thinking and Learning: Refactor Your Wetware)] (2016/11/13)  
+    - [o] [《怪獸與牠們的產地》(Fantastic Beasts & Where to Find Them)](https://zh.wikipedia.org/wiki/%E6%80%AA%E7%8D%B8%E8%88%87%E7%89%A0%E5%80%91%E7%9A%84%E7%94%A2%E5%9C%B0) (2016/11/29)  
+        - 因為看了電影，所以跟同事借了 2001 年出版的這本書來看，內容非常短，但挺有趣的。  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
@@ -187,3 +189,9 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 滿多笑點的，算是 Marvel 一貫的笑點。  
         - 時光倒流打架那段很酷  
         - 「多瑪暮，我是來找你談判的。」無窮迴圈很白目  
+    - [o] [《奇異博士》](http://www.imdb.com/title/tt1211837/) (2016/11/13)  
+    - [o] [《怪獸與牠們的產地》](http://www.imdb.com/title/tt3183660/) (2016/11/17, 2016/11/27)  
+        - 看了兩次，第一次是和同事們看 2D 的，第二次是跟 Apua 看 3D 的。  
+        - 有看過哈利波特系列作品的人應該會比較瞭解劇情走向，但沒有看過的人還是可以看看可愛的怪獸（？  
+        - 即便是有看過哈利波特系列的人可能也會忽略掉一些細節  
+        - 我還滿喜歡[這部電影的配樂](https://www.youtube.com/watch?v=WBOMpfxsUpk&index=1&list=PLt2IXJmkinUXaipWpm4teTmVPSXq8hLKw)的。  
