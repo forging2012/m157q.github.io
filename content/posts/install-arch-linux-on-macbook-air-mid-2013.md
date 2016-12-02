@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2016-05-31 01:08  
+Modified: 2016-12-02 11:39  
   
 ---  
   
@@ -498,6 +498,10 @@ xrandr --output eDP1 --auto --output DP1 --mode 1920x1080_60.00 --left-of eDP1
 #### Birghtness  
 + `sudo pacman -S xorg-xbacklight`  
 + `yaourt -S mba6x_bl-dkms`  
+    + (2016/12/02 update)  
+        + `mba6x_bl-dkms` now depends on `mba6x_bl_dkms-git`  
+        + `mba6x_bl-dkms-git-48.055d50d-1` doesn't work with `linux-4.8.11-1`  
+        + Need to use `sudo rmmod mba6x_bl` to make `xbacklight` work.  
 + (optional) `yaourt -S lightum-git`  
     + For auto adjust keyboard and monitor birghtness by light sensor  
     + The AUR version has bug, use this fork version <https://github.com/esoleyman/lightum>  
@@ -555,8 +559,13 @@ $ fusermount -u ~/mnt   // unmount
 ```  
   
   
-### Webcam (currently cannot use)  
+### Webcam  
 + <https://wiki.archlinux.org/index.php/MacBook#Webcam>  
++ (2016/12/02 update)  
+    + [bcwc-pcie-dkms](https://aur.archlinux.org/packages/bcwc-pcie-dkms/) on AUR works.  
+        + `bcwc-pcie-dkms 0r213.bb3c229-1`  
+        + `linux-4.8.11-1-ARCH`  
+        + Use `yaourt -S bcwc-pcie-dkms` to install it.  
   
 > The Facetime HD webcam (included on 2013 MBAs onwards) is no longer UVC device, and therefore, does not work out of the box.  
 > It is actually a PCIE device.  
