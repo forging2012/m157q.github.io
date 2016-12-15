@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-12-10 01:20  
+Modified: 2016-12-15 22:19  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -78,8 +78,8 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [x] [Add dryscrape into Web Crawling section. by M157q · Pull Request #644 · vinta/awesome-python · GitHub](https://github.com/vinta/awesome-python/pull/644) (2016/05/17)  
     - [o] [[blacklist.conf] should be bluetooth not bluetooh by M157q � Pull Request #3 � Unia/powersave � GitHub](https://github.com/Unia/powersave/pull/3) (2016/05/19)  
     - [o] [Fix Google Cloud SDK v114.0.0 GAE deploy error by M157q · Pull Request #463 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/463) (2016/06/16)  
-    - [o] [GitHub - pellaeon/fengyuan](https://github.com/pellaeon/fengyuan)  
-        - 用 Django 刻一個 OwnCloud or Google Drive 出來的計劃，由 Pellaeon 開啟，我負責 Python 的部份，目前緩慢進行中。  
+    - [o] [:rainbow_flag: 我支持婚姻平權 I support marriage equality by M157q · Pull Request #281 · RainbowEngineer/taiwan_love_wins · GitHub](https://github.com/RainbowEngineer/taiwan_love_wins/pull/281) (2016/12/07)  
+    - [?] [Fix GAE deployment version error in gcloud sdk v138.0.0. by M157q · Pull Request #549 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/549)  (2016/12/15)  
     - [ ] Send PR back to [imageme](https://github.com/M157q/imageme)  
     - [ ] <https://github.com/passcod/twd>  
         - Height is wrong  
@@ -98,7 +98,7 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] Restore shadowsocks - [M157q/shadowsocks · GitHub](https://github.com/M157q/shadowsocks) (2015/08/22)  
     - [o] [Update some outdated links by M157q � Pull Request #10 � pandeiro/arch-on-air � GitHub](https://github.com/pandeiro/arch-on-air/pull/10) (2015/09/10)  
     - [o] [Fix executing  twice problem and pass flake8 by M157q � Pull Request #7 � odkq/curses-2048 � GitHub](https://github.com/odkq/curses-2048/pull/7) (2015/09/16)  
-    - [x] [Fix button in form issue by M157q � Pull Request #56 � jmcarp/robobrowser � GitHub](https://github.com/jmcarp/robobrowser/pull/56) (2015/11/18)  
+    - [?] [Fix button in form issue by M157q � Pull Request #56 � jmcarp/robobrowser � GitHub](https://github.com/jmcarp/robobrowser/pull/56) (2015/11/18)  
     - [o] [Fix some typos by M157q � Pull Request #3 � jminh/hour_of_code_python_2015 � GitHub](https://github.com/jminh/hour_of_code_python_2015/pull/3) (2015/12/12)  
     - [o] [Use opencc -c s2twp for translation and split zh to zh-tw & zh-cn by M157q � Pull Request #1 � chusiang/the-art-of-command-line � GitHub](https://github.com/chusiang/the-art-of-command-line/pull/1) (2015/12/14)  
     - [x] [[plugins/pip] Add shortcut for upgrading pip outdated packages. by M157q · Pull Request #4303 · robbyrussell/oh-my-zsh · GitHub](https://github.com/robbyrussell/oh-my-zsh/pull/4303)  
@@ -109,6 +109,8 @@ Summary: Records for what I want to do and when I've done since 2015.
   
 ### Build some open source projects/applications  
 - 2016  
+    - [GitHub - pellaeon/fengyuan](https://github.com/pellaeon/fengyuan)  
+        - 用 Django 刻一個 OwnCloud or Google Drive 出來的計劃，由 Pellaeon 開啟，我負責 Python 的部份，目前緩慢進行中。  
 - 2015  
     - [M157q/zdict · GitHub](https://github.com/M157q/zdict) (2015/04)  
     - [M157q/gettitle · GitHub](https://github.com/M157q/gettitle) (2015/09)  
