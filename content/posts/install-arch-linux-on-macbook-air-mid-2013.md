@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2016-12-02 11:39  
+Modified: 2016-12-16 08:52  
   
 ---  
   
@@ -385,9 +385,17 @@ options i915 enable_rc6=1 enable_fbc=1 lvds_downclock=1
     + `HandlePowerKey=suspend`  
   
 #### Disable [Swappiness](https://en.wikipedia.org/wiki/Swappiness)  
-+ `sudo sysctl vm.swappiness=1`  
+  
+To save SSD and avoid kswapd using lots of CPU resource on finding available swap when there's no more virtual memory can be used.  
+  
++ [kswapd 100% CPU-usage · Issue #219 · igorpecovnik/lib · GitHub](https://github.com/igorpecovnik/lib/issues/219)  
++ <https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/Documentation/sysctl/vm.txt>  
++ `sudo sysctl vm.swappiness=0`  
+    + `The kernel will swap only to avoid an out of memory condition, when free memory will be below vm.min_free_kbytes limit. See the "VM Sysctl documentation"`  
+    + `sudo sysctl vm.min_free_kbytes=0`  
 + `sudoedit /etc/sysctl.d/99-sysctl.conf`  
-    + Add `vm.swappiness=1`  
+    + Add `vm.swappiness=0`  
+    + Add `vm.min_free_kbytes=0`  
   
 #### Fixing suspend mode  
 Use `cat /proc/acpi/wakeup`.  
