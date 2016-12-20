@@ -24,7 +24,7 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [《人月神話：20 週年紀念版》](/posts/2016/09/05/the-mythical-man-month/) (2016/08/02)  
     - [o] [《程序員面試攻略》(Programming Interviews Exposed: Secrets to Landing Your Next Job)](/posts/2016/09/09/programming-interviews-exposed-third-edition/) (2016/08/25)  
     - [o] [《改變世界的九大演算法》](/posts/2016/09/18/9-algorithms-that-changed-the-future/) (2016/09/17)  
-    - [o] [《程序員思維修煉》(Pragmatic Thinking and Learning: Refactor Your Wetware)] (2016/11/13)  
+    - [o] [《程序員思維修煉》(Pragmatic Thinking and Learning: Refactor Your Wetware)](/posts/2016/12/21/pragmatic-thinking-and-learning-refactor-your-wetware/) (2016/11/13)  
     - [o] [《怪獸與牠們的產地》(Fantastic Beasts & Where to Find Them)](https://zh.wikipedia.org/wiki/%E6%80%AA%E7%8D%B8%E8%88%87%E7%89%A0%E5%80%91%E7%9A%84%E7%94%A2%E5%9C%B0) (2016/11/29)  
         - 因為看了電影，所以跟同事借了 2001 年出版的這本書來看，內容非常短，但挺有趣的。  
     - [o] [程序員修煉之道 專業程序員必知的 33 個技巧 （New Programmer's Survival Manual: Navigate Your Workplace, Cube Farm, or Startup）] (2016/12/10)  
