@@ -14,10 +14,10 @@ plugins/*
 !plugins/pin_to_top
 
 
-#swap
-*.swp
+# Vim swap files
+*.sw*
 
-#Python
+# Python
 *.py[cod]
 __pycache__/*
 
