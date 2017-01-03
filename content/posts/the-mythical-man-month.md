@@ -57,18 +57,18 @@ Modified: 2016-09-06 00:00
   
 以下附上我自己讀的時候把比較喜歡的內容拍下來的照片：  
   
-+ ![](/files/the-mythical-man-month/1.jpg)  
++ ![content 1](/files/the-mythical-man-month/1.jpg)  
     + 公車上拍的... 窗簾有點紅...  
-+ ![](/files/the-mythical-man-month/2.jpg)  
++ ![content 2](/files/the-mythical-man-month/2.jpg)  
     + 這個比較圖不知道會不會引起戰爭  
-+ ![](/files/the-mythical-man-month/3.jpg)  
++ ![content 3](/files/the-mythical-man-month/3.jpg)  
     + 尤其是一堆公司會讓很會寫程式的人去當管理者  
-+ ![](/files/the-mythical-man-month/4.jpg)  
++ ![content 4](/files/the-mythical-man-month/4.jpg)  
     + 覺得沒有幾間公司可以完全做到以上這幾點，而且中間還有很多變因，但真的是很理想的情況啊。  
-+ ![](/files/the-mythical-man-month/5.jpg)  
++ ![content 5](/files/the-mythical-man-month/5.jpg)  
     + 我也覺得流程圖真的蠻雞肋的，但即便是到了現在，好像也沒有出現什麼更好的將程式視覺化的方法？頂多就是讓流程圖變成用程式產生，但這邊的流程圖是要在程式設計之前就要事先畫好的東西，類似設計圖的概念，讓人可以提早檢驗出設計上的缺失。也許就像本書自己講的，軟體工程上的本質不同，所以要像這樣採用和其他工程學一樣預先畫出設計圖的方法可能也不太可行？而且實務上的經驗來說，頂多只能概略的畫出架構圖，但這是針對伺服器的架構，好像很少人在寫一個程式之前會先畫出流程圖的。  
     + 即便是採用 Extreme Programming，把程式拆成好幾個部份，不要一次設計全部。我覺得還是得需要先設計出一個約略的架構，否則到最後應該還是會有拼不起來的問題？  
-+ ![](/files/the-mythical-man-month/6.jpg)  
++ ![content 6](/files/the-mythical-man-month/6.jpg)  
     + 即便已經證實有更有效的方法，人類也很難在短時間內就讓自己改變已經習慣的方法。  
     + 看看特別用來設計讓人打字變慢的 QWERTY 鍵盤還是遠遠多餘特別設計用來讓人打字變快的 Dvorak 鍵盤就知道了？  
   
