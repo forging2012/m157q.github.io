@@ -13,6 +13,7 @@ Modified: 2016-12-16 17:07:43
 + <http://myclass.gcptrain.org/>  
     + azkyY21yCg==  
     + <https://sites.google.com/a/google.com/cloud-platform-training/cloud-platform-training/cpb200-bigquery-for-data-analysts>  
+    + [slides](/files/cpb200-bigquery-for-data-analysts/CPB200.zip)  
 + Google 系列課程  
     + CP100: 介紹性質，廣而淺，新手課程。  
     + CP200: 開始針對單一技術做比較深的介紹。  
