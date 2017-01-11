@@ -10,6 +10,22 @@ Summary: Records for what I want to do and when I've done since 2015.
   
   
 ## Reading  
+  
+- 2017  
+    - [ ] C Programming: A Modern Approach  
+    - [ ] UNIX and Linux System Administration Handbook  
+    - [ ] Python Essential Reference  
+    - [ ] Programming Interviews Exposed: Secrets to Landing Your Next Job  
+    - [ ] Unix 內核源碼剖析  
+    - [ ] Programming from the Ground Up  
+    - [ ] 挑戰程序設計競賽  
+    - [ ] The Rootkit Arsenal: Escape and Evasion in the Dark Corners of the System  
+    - [ ] Free Software, Free Society  
+    - [ ] Node.js in Action  
+    - [ ] The Way of Algorithms  
+    - [ ] Hacking Exposed 7th  
+    - [ ] 浴缸裡的驚歎: 256道讓你恍然大悟的趣題  
+    - [ ] K&R  
 - 2016  
     - [o] [程序员跳槽全攻略](https://selfstore.io/products/190) (2016/01/07)  
     - [o] 編程人生（上）(Coders at work) (2016/02/14)  
@@ -27,21 +43,7 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [《程序員思維修煉》(Pragmatic Thinking and Learning: Refactor Your Wetware)](/posts/2016/12/21/pragmatic-thinking-and-learning-refactor-your-wetware/) (2016/11/13)  
     - [o] [《怪獸與牠們的產地》(Fantastic Beasts & Where to Find Them)](https://zh.wikipedia.org/wiki/%E6%80%AA%E7%8D%B8%E8%88%87%E7%89%A0%E5%80%91%E7%9A%84%E7%94%A2%E5%9C%B0) (2016/11/29)  
         - 因為看了電影，所以跟同事借了 2001 年出版的這本書來看，內容非常短，但挺有趣的。  
-    - [o] [程序員修煉之道 專業程序員必知的 33 個技巧 （New Programmer's Survival Manual: Navigate Your Workplace, Cube Farm, or Startup）] (2016/12/10)  
-    - [ ] C Programming: A Modern Approach  
-    - [ ] UNIX and Linux System Administration Handbook  
-    - [ ] Python Essential Reference  
-    - [ ] Programming Interviews Exposed: Secrets to Landing Your Next Job  
-    - [ ] Unix 內核源碼剖析  
-    - [ ] Programming from the Ground Up  
-    - [ ] 挑戰程序設計競賽  
-    - [ ] The Rootkit Arsenal: Escape and Evasion in the Dark Corners of the System  
-    - [ ] Free Software, Free Society  
-    - [ ] Node.js in Action  
-    - [ ] The Way of Algorithms  
-    - [ ] Hacking Exposed 7th  
-    - [ ] 浴缸裡的驚歎: 256道讓你恍然大悟的趣題  
-    - [ ] K&R  
+    - [o] [程序員修煉之道 專業程序員必知的 33 個技巧 （New Programmer's Survival Manual: Navigate Your Workplace, Cube Farm, or Startup）]() (2016/12/10)  
 - 2015  
     - [o] Just for Fun: The Story of an Accidental Revolutionary  (2015/05)  
     - [o] The Pragmatic Programmers (2015/06)  
@@ -56,7 +58,8 @@ Summary: Records for what I want to do and when I've done since 2015.
 ---  
   
 ## Health  
-- 2016  
+  
+- 2017  
     - [ ] Lose weight to 65 kg  
     - [ ] Lose body fat to 10%  
     - [ ] Muscle Training for six-pack abs  
@@ -64,22 +67,17 @@ Summary: Records for what I want to do and when I've done since 2015.
   
 ---  
   
-## At least one per year  
+## Write-up for CTFs  
   
-### Write-up for CTFs  
 - 2015  
     - [o] [0CTF 2015 Note - Just for noting](/posts/2015/03/30/0ctf-2015-note/)  
     - [o] [HITCON 2015 IOT Wargame - Just for noting](/posts/2015/08/29/hitcon-2015-iot-wargame/)  
     - [o] [HITCON CTF 2015 Quals Write-up - Just for noting](/posts/2015/10/19/hitcon-ctf-2015-quals-write-up/)  
+---  
   
-###  Contributing to open source projects  
-- 2016  
-    - [o] [Add configuration check for sqlite by M157q � Pull Request #919 � coleifer/peewee � GitHub](https://github.com/coleifer/peewee/pull/919) (2016/04/28)  
-    - [x] [Add dryscrape into Web Crawling section. by M157q · Pull Request #644 · vinta/awesome-python · GitHub](https://github.com/vinta/awesome-python/pull/644) (2016/05/17)  
-    - [o] [[blacklist.conf] should be bluetooth not bluetooh by M157q � Pull Request #3 � Unia/powersave � GitHub](https://github.com/Unia/powersave/pull/3) (2016/05/19)  
-    - [o] [Fix Google Cloud SDK v114.0.0 GAE deploy error by M157q · Pull Request #463 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/463) (2016/06/16)  
-    - [o] [:rainbow_flag: 我支持婚姻平權 I support marriage equality by M157q · Pull Request #281 · RainbowEngineer/taiwan_love_wins · GitHub](https://github.com/RainbowEngineer/taiwan_love_wins/pull/281) (2016/12/07)  
-    - [?] [Fix GAE deployment version error in gcloud sdk v138.0.0. by M157q · Pull Request #549 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/549)  (2016/12/15)  
+##  Contributing to open source projects  
+  
+- 2017  
     - [ ] Send PR back to [imageme](https://github.com/M157q/imageme)  
     - [ ] <https://github.com/passcod/twd>  
         - Height is wrong  
@@ -91,6 +89,13 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [ ] <https://datecloud.hackpad.com/>  
     - [ ] xrandr - cannot detect MacBook Air thunderbolt hotplug  
     - [ ] wicd - add proxy setting functionality  
+- 2016  
+    - [o] [Add configuration check for sqlite by M157q � Pull Request #919 � coleifer/peewee � GitHub](https://github.com/coleifer/peewee/pull/919) (2016/04/28)  
+    - [x] [Add dryscrape into Web Crawling section. by M157q · Pull Request #644 · vinta/awesome-python · GitHub](https://github.com/vinta/awesome-python/pull/644) (2016/05/17)  
+    - [o] [[blacklist.conf] should be bluetooth not bluetooh by M157q � Pull Request #3 � Unia/powersave � GitHub](https://github.com/Unia/powersave/pull/3) (2016/05/19)  
+    - [o] [Fix Google Cloud SDK v114.0.0 GAE deploy error by M157q · Pull Request #463 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/463) (2016/06/16)  
+    - [o] [:rainbow_flag: 我支持婚姻平權 I support marriage equality by M157q · Pull Request #281 · RainbowEngineer/taiwan_love_wins · GitHub](https://github.com/RainbowEngineer/taiwan_love_wins/pull/281) (2016/12/07)  
+    - [?] [Fix GAE deployment version error in gcloud sdk v138.0.0. by M157q · Pull Request #549 · travis-ci/dpl · GitHub](https://github.com/travis-ci/dpl/pull/549)  (2016/12/15)  
 - 2015  
     - [o] [fntsrlike/slack-irc-syncbot · GitHub](https://github.com/fntsrlike/slack-irc-syncbot) (2015/03/05)  
     - [o] [fix typo (woild => would) · pcman-bbs/pcmanx@fe71feb · GitHub](https://github.com/pcman-bbs/pcmanx/commit/fe71febde878142698609298c725c845bfeda8b9) (2015/03/14)  
@@ -103,11 +108,17 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [Use opencc -c s2twp for translation and split zh to zh-tw & zh-cn by M157q � Pull Request #1 � chusiang/the-art-of-command-line � GitHub](https://github.com/chusiang/the-art-of-command-line/pull/1) (2015/12/14)  
     - [x] [[plugins/pip] Add shortcut for upgrading pip outdated packages. by M157q · Pull Request #4303 · robbyrussell/oh-my-zsh · GitHub](https://github.com/robbyrussell/oh-my-zsh/pull/4303)  
   
+---  
+  
 ### Giving talk in conference  
+  
 - 2015  
     - [o] [SITCON2015 Android Repackaged App Detection System by shunyi // Speaker Deck](https://speakerdeck.com/m157q/sitcon2015-android-repackaged-app-detection-system-by-shunyi) (2015/03/07)  
   
+---  
+  
 ### Build some open source projects/applications  
+  
 - 2016  
     - [GitHub - pellaeon/fengyuan](https://github.com/pellaeon/fengyuan)  
         - 用 Django 刻一個 OwnCloud or Google Drive 出來的計劃，由 Pellaeon 開啟，我負責 Python 的部份，目前緩慢進行中。  
@@ -122,6 +133,7 @@ Summary: Records for what I want to do and when I've done since 2015.
 ---  
   
 ## Competitions  
+  
 - 2015  
     - [o] TSCC 5th (2015/06/03~04)  
         - Prize: An Excellent Work  
@@ -130,10 +142,12 @@ Summary: Records for what I want to do and when I've done since 2015.
 ---  
   
 ## Conferences  
+  
 - 2016  
     - [o] [PyCon TW 2016](/posts/2016/06/03/pycon-tw-2016/) (2016/06/03~05)  
     - [o] [HITCON 2016 CMT](/posts/2016/07/23/hitcon-2016-cmt/) (2016/07/22~23)  
     - [o] [COSCUP 2016](/posts/2016/08/25/coscup-2016) (2016/08/20~21)  
+    - [o] [33C3]() (2016/12/27~30)  
 - 2015  
     - [o] PyConAPAC 2015 (2015/06/05~06)  
         - [PyCon APAC 2015 Notes and Thoughts - Just for noting](/posts/2015/07/26/pycon-apac-2015-notes-and-thoughts/)  
@@ -144,12 +158,14 @@ Summary: Records for what I want to do and when I've done since 2015.
 ---  
   
 ## Misc.  
+  
+- 2017  
+    - [ ] [Finish the rest parts of the college graduation term project](https://github.com/M157q/Android-Repackaged-App-Detection-System)  
 - 2016  
     - [o] [2016 第十四任正副總統暨第九屆立法委員選舉監票](https://imgur.com/a/m2PUa) (2016/01/16)  
     - [o] [TypeRacer 達到最近 10 場 WPM 81 以上進入 Megaracer level，並創下個人新高 94 WPM](https://twitter.com/M157q/status/737274967583166467)  
     - [o] Do my best for the job in Tagtoo as a Python engineer.  
         - [o] Get familiar with the job content and server architecture then write the tutorial for newbie in R&D team.  
-    - [ ] [Finish the rest parts of the college graduation term project](https://github.com/M157q/Android-Repackaged-App-Detection-System)  
 - 2015  
     - [o] [iToolMan Hoodie](https://hackpad.com/iToolMan-T-cOJlcwLntzx) (2015/06)  
     - [o] Exemption from military service (2015/08/06)  
