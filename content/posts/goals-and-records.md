@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2016-12-15 22:19  
+Modified: 2017-01-11 22:19  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -180,6 +180,10 @@ Summary: Records for what I want to do and when I've done since 2015.
 ---  
   
 ## Movies  
+  
+- 2017  
+    - [o] [La La Land (2016) - IMDb](http://www.imdb.com/title/tt3783958/) (2017/01/10)  
+        - 會讓人想起往事的一部電影啊。也許一部好的音樂劇電影的要素，除了音樂和舞蹈的渲染力以外，就是要在完美中加上一點不完美，從而更貼近現實，進而觸動觀眾心靈深處某個已經上鎖的回憶吧。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
