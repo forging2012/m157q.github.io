@@ -1,5 +1,5 @@
 Title: 2016 塔圖員工旅遊之沖繩五天四夜自由行  
-Slug: 2016-塔圖員工旅遊之沖繩五天四夜自由行  
+Slug: 2016-tagtoo-staff-travel-okinawa-japan  
 Date: 2016-10-25 09:52:34  
 Authors: m157q  
 Category: Life  
