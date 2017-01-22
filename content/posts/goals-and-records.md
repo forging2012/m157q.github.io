@@ -186,6 +186,8 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 會讓人想起往事的一部電影啊。也許一部好的音樂劇電影的要素，除了音樂和舞蹈的渲染力以外，就是要在完美中加上一點不完美，從而更貼近現實，進而觸動觀眾心靈深處某個已經上鎖的回憶吧。  
     - [o] [Sully (2016) - IMDb](http://www.imdb.com/title/tt3263904/) (2017/01/22)  
         - 那種奇蹟般成功迫降 Hudison 河面死裡逃生的緊張感真的有拍出來，讓人彷彿也身歷其境，流下幾滴感動的淚水。可能是前陣子才在短時間內搭了四次飛機，所以特別有感覺吧。  
+    - [o] [Me Before You (2016) - IMDb](http://www.imdb.com/title/tt2674426/) (2017/01/22)  
+        - 我絕對沒有說我覺得這部的人物設定啥的讓我感覺像是主角殘廢版的 Fifty Shades of Grey  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
