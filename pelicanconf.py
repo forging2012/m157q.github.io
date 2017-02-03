@@ -11,7 +11,7 @@ DEFAULT_PAGINATION = 10
 TWITTER_USERNAME = u'M157q'
 THEME = 'themes/plumage'
 USE_FOLDER_AS_CATEGORY = False
-SUMMARY_MAX_LENGTH = 20
+SUMMARY_MAX_LENGTH = 5
 
 # Directories for Pelican processing
 PATH = 'content'
