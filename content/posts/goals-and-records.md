@@ -5,13 +5,14 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-01-11 22:19  
+Modified: 2017-02-09 05:33  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
 ## Reading  
   
 - 2017  
+    - [o] [《巴拿馬文件》(Panama Papers)](/posts/2017/02/09/panama-papers/) (2017/02/09)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
