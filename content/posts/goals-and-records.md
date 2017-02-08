@@ -44,7 +44,7 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [《程序員思維修煉》(Pragmatic Thinking and Learning: Refactor Your Wetware)](/posts/2016/12/21/pragmatic-thinking-and-learning-refactor-your-wetware/) (2016/11/13)  
     - [o] [《怪獸與牠們的產地》(Fantastic Beasts & Where to Find Them)](https://zh.wikipedia.org/wiki/%E6%80%AA%E7%8D%B8%E8%88%87%E7%89%A0%E5%80%91%E7%9A%84%E7%94%A2%E5%9C%B0) (2016/11/29)  
         - 因為看了電影，所以跟同事借了 2001 年出版的這本書來看，內容非常短，但挺有趣的。  
-    - [o] [程序員修煉之道 專業程序員必知的 33 個技巧 （New Programmer's Survival Manual: Navigate Your Workplace, Cube Farm, or Startup）]() (2016/12/10)  
+    - [o] [程序員修煉之道 專業程序員必知的 33 個技巧 （New Programmer's Survival Manual: Navigate Your Workplace, Cube Farm, or Startup）](/posts/2016/12/10/new-programmers-survival-manual-navigate-your-workplace-cube-farm-or-startup/) (2016/12/10)  
 - 2015  
     - [o] Just for Fun: The Story of an Accidental Revolutionary  (2015/05)  
     - [o] The Pragmatic Programmers (2015/06)  
