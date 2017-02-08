@@ -3,7 +3,7 @@ Slug: new-programmers-survival-manual-navigate-your-workplace-cube-farm-or-start
 Date: 2016-12-10 15:53:51  
 Authors: m157q  
 Category: Reading  
-Tags: Programming  
+Tags: programmer  
 Summary: 《程序員修煉之道：專業程序員必知的 33 個技巧》(New Programmer's Survival Manual: Navigate Your Workplace, Cube Farm, or Startup) 讀後感  
 Modified: 2017-02-09 05:41:51  
   
