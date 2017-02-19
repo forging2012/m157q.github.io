@@ -13,6 +13,7 @@ Summary: Records for what I want to do and when I've done since 2015.
   
 - 2017  
     - [o] [《巴拿馬文件》(Panama Papers)](/posts/2017/02/09/panama-papers/) (2017/02/09)  
+    - [o] [《惡童當街》漫畫 1~3 集（完）](/posts/2017/02/19/tekkonkinkreet/) (2017/02/19)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
