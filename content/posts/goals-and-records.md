@@ -190,6 +190,8 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 那種奇蹟般成功迫降 Hudison 河面死裡逃生的緊張感真的有拍出來，讓人彷彿也身歷其境，流下幾滴感動的淚水。可能是前陣子才在短時間內搭了四次飛機，所以特別有感覺吧。  
     - [o] [Me Before You (2016) - IMDb](http://www.imdb.com/title/tt2674426/) (2017/01/22)  
         - 我絕對沒有說我覺得這部的人物設定啥的讓我感覺像是主角殘廢版的 Fifty Shades of Grey  
+    - [o] [Forrest Gump (1994) - IMDb](http://www.imdb.com/title/tt0109830/) (2017/02/12)  
+        - 經典的《阿甘正傳》，除了首尾呼應以外，巧妙的編劇融入了許多美國的事件，以及當時的反戰與嬉皮的元素，導演說故事的手段很厲害，沒有複雜的劇情，卻能用一個不斷努力的虛構小人物阿甘來引起一般人的共鳴。  
     - [o] [Arrival (2016) - IMDb](http://www.imdb.com/title/tt2543164/) (2017/02/18)  
         - 台灣譯為《異星入境》  
         - 覺得導演的鋪陳和敘事手法挺棒的，但完全不能接受劇本上對於女主角的能力設定，給人一種 Deus ex machina 的感覺。  
