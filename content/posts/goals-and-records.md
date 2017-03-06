@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-02-19 22:49  
+Modified: 2017-03-06 23:46  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -195,6 +195,14 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [Arrival (2016) - IMDb](http://www.imdb.com/title/tt2543164/) (2017/02/18)  
         - 台灣譯為《異星入境》  
         - 覺得導演的鋪陳和敘事手法挺棒的，但完全不能接受劇本上對於女主角的能力設定，給人一種 Deus ex machina 的感覺。  
+    - [o] [Finding Dory (2016) - IMDb](http://www.imdb.com/title/tt2277860/) (2017/02/28)  
+        - I have short-term memory issue.  
+    - [o] [The Secret Life of Pets (2016) - IMDb](http://www.imdb.com/title/tt2709768/) (2017/02/28)  
+        - 喜歡狗跟貓的人看一定會覺得這動畫很可愛，因為有把狗和貓的一些小動作演出來。  
+    - [o] [A Dog's Purpose (2017) - IMDb](http://www.imdb.com/title/tt1753383/) (2017/03/01)  
+        - 台灣譯為《為了與你相遇》  
+        - 算是一部哭點跟笑點兼具的電影吧，而且還離的很近。在電影院看時，座位兩旁的女生都有哭呀  
+        - 真的很好奇到底是怎麼讓真的狗做出這麼到位的演技的  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
