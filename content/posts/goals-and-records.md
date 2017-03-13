@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-03-06 23:46  
+Modified: 2017-03-13 11:33  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -14,6 +14,7 @@ Summary: Records for what I want to do and when I've done since 2015.
 - 2017  
     - [o] [《巴拿馬文件》(Panama Papers)](/posts/2017/02/09/panama-papers/) (2017/02/09)  
     - [o] [《惡童當街》漫畫 1~3 集（完）](/posts/2017/02/19/tekkonkinkreet/) (2017/02/19)  
+    - [o] [《不能不去愛的兩件事》]() (2017/02/25)  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
