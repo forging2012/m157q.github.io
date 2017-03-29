@@ -60,7 +60,7 @@ Link: <http://golang.kktix.cc/events/gtg22>
         + `fission fn create --name GTG22 --env nodejs --code hello.js`  
         + `fission route create --method GET --url /hello --function GTG22`  
         + `fission fn edit --name GTG22`  
-        + 看 log  
+        + 看 log (講者貢獻的 [PR](https://github.com/fission/fission/pull/131)，不到一個星期前才剛 merge 進 master branch)  
             + `fission fn logs --name GTG22`  
             + `fission fn logs --name GTG22 -f`  
             + `fission fn logs --name GTG22 -f -d` # 看更詳細的 log (Debug mode)  
