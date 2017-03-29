@@ -13,6 +13,8 @@ Link: <http://golang.kktix.cc/events/gtg22>
   
 ## 19:30~20:10: 陳敬翔 (Sean) - Go 的技能與安裝入門  
   
++ Slides  
+    + <http://go-talks.appspot.com/github.com/Starfine/02.-Go-Present/GTG22.slide#1>  
 + 用 Go 開發手機 App  
     + `gomobile`  
         + `gomobile install golang.org/x/mobile/example/flappy`  
@@ -78,3 +80,13 @@ Link: <http://golang.kktix.cc/events/gtg22>
     + Cutsomized environment image  
     + Adjustable execution time  
     + Cheaper than FaaS under heavy usage  
+  
+---  
+  
+## Lighting Talks  
+  
++ 陳小熊 - Go 新手村冒險筆記  
+    + Slides: <https://drive.google.com/file/d/0B158iGrlsSveNFVoUUF4ZTlsbVE/view>  
+    + 生動活潑得介紹了 Golang 有哪些學習資源，包括線上課程、推薦書籍、Gopher Con 等等，為入門者提供了一個方向。  
+    + 還 Live Demo 了一個用 Golang 實作出來的線上讀書會平台  
+        + > 想想我也是上次 GTG 才決定開始學 Golang 的，結果過了一個月了根本沒啥進展，感到慚愧 QQ  
