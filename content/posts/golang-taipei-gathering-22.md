@@ -35,6 +35,9 @@ Link: <http://golang.kktix.cc/events/gtg22>
   
 ## 20:20~21:00: VMFive - TA-CHING CHEN - Introduction to Fission  
   
++ Slides  
+    + <https://tachingchen.com/tw/blog/Fission-Introduction/>  
+    + <https://www.slideshare.net/TaChingChen/fission-introduction>  
 + [Fission: Fast Serverless Functions for Kubernetes](https://github.com/fission/fission)  
 + Function as a Service (FaaS)  
     + Exmaple  
@@ -63,7 +66,7 @@ Link: <http://golang.kktix.cc/events/gtg22>
             + `fission fn logs --name GTG22 -f -d` # 看更詳細的 log (Debug mode)  
     + Architecture  
         + <https://github.com/fission/fission/blob/master/Documentation/Architecture.md>  
-        + 會先開好一堆 generic pods listen，當接到佈署 fuction 的需求時，可以在幾毫秒內就佈署完成，並轉換成 Specific Funciton Pod.  
+        + 會先開好一堆 generic pods listen，當接到佈署 fuction 的需求時，可以在幾毫秒內就佈署完成，並轉換成 Specific Function Pod.  
 + How to contribute  
     + <https://github.com/fission/fission/blob/master/CONTRIBUTING.md>  
     + 是個去年才開始的專案，所以有很多地方可以貢獻。文件寫的不錯，懂 Go 的話基本上可以很快做出一些貢獻。  
