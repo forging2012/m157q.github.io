@@ -7,7 +7,9 @@ Tags: Golang
 Summary: Note for Golang Taipei Gathering #22  
   
   
-Link: <http://golang.kktix.cc/events/gtg22>  
++ Links  
+    + <http://golang.kktix.cc/events/gtg22>  
+    + <https://www.facebook.com/groups/269001993248363/permalink/817469818401575/>  
   
 ---  
   
