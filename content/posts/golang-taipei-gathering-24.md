@@ -8,12 +8,15 @@ Summary: Note for Golang Taipei Gathering #24
   
   
 + Links  
-    + <https://golang.kktix.cc/events/gtg24>  
+    + KKTIX: <https://golang.kktix.cc/events/gtg24>  
+    + GitHub: <https://github.com/golangtw/GolangTaiwanGathering/tree/master/meetup/gtg24>  
   
 ---  
   
 ### 鮑承佑: go-swagger 踩雷分享  
   
++ Slides  
+    + <https://github.com/golangtw/GolangTaiwanGathering/blob/master/meetup/gtg24/gogland_and_go-swagger.pdf>  
 + <https://github.com/go-swagger/go-swagger>  
 + [Gogland](https://www.jetbrains.com/go/)  
   
@@ -23,6 +26,8 @@ Summary: Note for Golang Taipei Gathering #24
   
 ### Genji Lu: Golang GC 演算法  
   
++ Slides  
+    + <https://www.slideshare.net/GenchiLu/gc-in-golang-76250675>  
 + [Tri-color GC](https://en.wikipedia.org/wiki/Tracing_garbage_collection#Tri-color_marking)  
     + mark phase & sweep phase  
 + Write Barrier  
@@ -53,6 +58,8 @@ Summary: Note for Golang Taipei Gathering #24
   
 ### Linzy: 介紹 Testify 的 mock 功能  
   
++ Slides  
+    + <https://github.com/golangtw/GolangTaiwanGathering/blob/master/meetup/gtg24/testify_gtg24.zip>  
 + <https://github.com/stretchr/testify>  
     + A sacred extension to the standard go testing package  
 + <https://github.com/stretchr/testify#mock-package>  
@@ -67,6 +74,8 @@ Summary: Note for Golang Taipei Gathering #24
   
 是這篇[寫自己的程式語言（For Rubyist） – Stan Lo – Medium](https://medium.com/@st0012/%E5%AF%AB%E8%87%AA%E5%B7%B1%E7%9A%84%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80-for-rubyist-3f055c4573da) 的作者本人耶  
   
++ Slides  
+    + <https://www.slideshare.net/LoStan/goby-76176699>  
 + [GitHub - goby-lang/goby: Goby (Rooby) is a new object oriented language written in Go aim at developing microservice efficiently.](https://github.com/goby-lang/goby)  
     + 從 Rooby 改名叫 Goby 了，因為被罵翻了，一堆人寫信或開 issue 建議改名 XDDD  
 + <https://goby-lang.github.io/goby/>  
