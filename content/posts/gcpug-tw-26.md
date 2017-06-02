@@ -194,7 +194,6 @@ Event link: <https://gcpugtw.kktix.cc/events/meetup201706>
 + Resources  
     + <https://cloud.google.com/genomics/>  
     + <https://github.com/googlegenomics>  
-    +  
   
 #### 相關知識介紹  
   
@@ -258,7 +257,6 @@ Event link: <https://gcpugtw.kktix.cc/events/meetup201706>
         + Create Dataset (To get  
             + `gcloud alpha genomics datasets create --name my-dataset`  
         + Create Variantsets  
-            + `gcloud a`  
         + Import Variants  
             + `gcloud alpha genomics variants import --variantest-id variantset-id`  
         + Check Operation Details  
