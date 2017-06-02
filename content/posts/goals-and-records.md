@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-05-07 22:47  
+Modified: 2017-06-03 01:19  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -205,6 +205,10 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 台灣譯為《為了與你相遇》  
         - 算是一部哭點跟笑點兼具的電影吧，而且還離的很近。在電影院看時，座位兩旁的女生都有哭呀  
         - 真的很好奇到底是怎麼讓真的狗做出這麼到位的演技的  
+    - [o] [Logan (2017) - IMDb](http://www.imdb.com/title/tt3315342/) (2017/05/28)  
+        - 金鋼狼的完結系列啊，覺得這部挺中規中矩的，只是不知道會不會有 X-men 後續就是，感覺應該就是 X-men 系列的結尾了吧，挺感傷的。  
+    - [o] [Guardians of the Galaxy Vol. 2 (2017) - IMDb](http://www.imdb.com/title/tt3896198/) (2017/05/29)  
+        - 一部又搞笑又感人的電影，劇情也很緊湊，裡頭充滿各種 1980 年代的哏。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
