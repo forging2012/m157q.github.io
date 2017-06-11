@@ -192,3 +192,248 @@ Soocii 是趨勢科技為了弄手機群聊而獨立出來的子公司
   
 ---  
   
+# Day 2 (2017/06/10)  
+  
+## Stochastic Prediction Model, Case of the Dengue outbreak at Tainan, 2015  
+  
+使用 Jupyter Notebook 利用資料分析與視覺化的方式，  
+來分析 2015 年台南登革熱爆發的狀況，  
+並將這些處理完後的資料拿來建立模型，  
+用於之後的預測。  
+  
+---  
+  
+## Submit your first CPython patch (and don't worry about C)  
+  
++ Speaker: [Louie Lu](https://louie.lu)  
++ Slides: <https://goo.gl/4oC2Dg>  
+  
++ Intro  
+    + Status of CPython Branches  
+    + History of CPython workflow  
+        + ~2006: SourceForge (repo & issue tracker)  
+        + 2006 ~ 2011: svn.python.org & bugs.python.org  
+        + 2011 ~ 2016: hg.python.org  
+        + July 2014: PEP-474 by Nick Coghlan (propose moving to Kallithea)  
+        + Nov 2014: PEP-481  
+        + Sep 2015: PEP-507  
++ Basic  
+    + GitHub  
+    + Git  
+        + `git remote -v`  
+    + CPython Coding Style  
+        + PEP7  
+        + PEP8 - CPython C Coding Style  
+            + 比較特殊一點  
+            + 4 spaces, 79 chars per line  
+    + Sphinx document style  
+        + reStructuredText  
+            + Use 3 spaces, no tabs  
+            + Hyperlinks  
+                + `Link text <http://example.com/>`_  
+            + Blocks  
+                +  `.. note::`  
+    +  Layout  
+        + module, stdlib  
+            + `Lib/<module>.py`  
+        + extension-only module  
+        + builtin types  
+            + `Objects/<builtin>object.c`  
+        + builtin functions  
+            + `Python/bltinmodule.c`  
+        + Exception!  
+            + `int` is at `Objects/longobject.c`  
++ Contribute  
+    + How  
+        + Read, communicate, think  
+            + devguide  
+            + mailing lists  
+                + Python-dev  
+                + Python-ideas  
+            + b.p.o.  
+            + IRC  
+                + freenode #python-dev  
+            + lwn.net  
+                + <https://mail.python.org/pipermail/python-dev/2017-June>  
+    + Where  
+        + to find a bug?  
+            + <http://bugs.python.org>  
+            + source code  
+                + `XXX`  
+                + `TODO`  
+            + mailing list  
+            + stackoverflow  
+            + bpo-mergerate:  
+                + <https://bpo-mergerate.louie.lu>  
+        + what can I do?  
+            + Writing documentation  
+            + Helping test patches  
+                + 因為量很多通常核心貢獻者可能要幾個月後才有空測試，所以可以幫忙測試，然後給意見  
+            + Review PR from others  
+            + Increase test coverage  
+            + Add comment to exists code  
+                + 可以幫忙把程式碼加上註解，讓其他人比較容易瞭解  
+        + Misc.  
+            + IDLE  
+            + devguide issues  
+                + 有很多前人回報的問題，或者自己看到有問題也可以嘗試修改並 submit PR  
+            + easy issues  
+                + <http://bugs.python.org/issue?status=1&@sort=-activity&@columns=id,activity,title,creator,status&@dispname=Easy%20issues&@startwith=0&@group=priority&keywords=6&@action=search&@filter=&@pagesize=50>  
++ Live contribution  
+    + `from ctypes import *`  
+    + Bug 被人搶先修掉了，只好修文件 XD  
+  
+> 講者表示有興趣的人可以參加第三天的 Unconference，會再更詳細的教學怎麼 contribute code 到 CPython  
+  
+  
+## Global Interpreter Lock: Episode III - cat < /dev/zero > GIL;  
+  
+- Slide: https://www.slideshare.net/penvirus/global-interpreter-lock-episode-iii-cat-lt-devzero-gil  
+- Speaker: Tzung-Bi Shih  
+  
++ 前情提要  
+    + 一部曲：<https://www.slideshare.net/penvirus/global-interpreter-lock-episode-i-break-the-seal>  
+    + 想瞭解 GIL 的人可以去看這個講者相關的 talk  
+        + https://www.youtube.com/watch?v=MCs5OvhV9S4  
++ Introduction  
+    + GIL prevents us (innocently) from utilizing full power of multiprocessors  
+        + > 我比較常舉的例子是紅綠燈，一定要綠燈才可以走。如果今天有人不管號誌直接硬走，就有可能發生碰撞，GIL 就像是這樣的一個例子，但討厭的是他是 Global 的，所以很煩人。例如今天這個會場，我現在拿著麥克風在講話，現在後面的朋友想跟他旁邊的人講話，他得大費周章得跑來前面，拿我的麥克風才能講話，這樣大家不會覺得很沒效率嗎？  
+  
+  
+NOTE: [深入 GIL: 如何寫出快速且 thread-safe 的 Python – Grok the GIL: How to write fast and thread-safe Python](https://blog.louie.lu/2017/05/19/深入-gil-如何寫出快速且-thread-safe-的-python-grok-the-gil-how-to-write-fast-and-thread-safe-python/ )  
+  
+一句話說清 GIL: 「當有一個執行緒在執行 Python，其他 N 個執行緒都在睡覺或是等待 I/O」  
+  
+  
++ Motivation  
+    + > 大家是不是覺得我到底是多討厭 GIL 導致我要花三集來婊它？並不是的，是我在前公司和同事遇到的問題。  
+    + High performance data processing platform  
+    + > 大家可能會認為只有寫 Python 的人才要懂 GIL，但其實 Big Lock 是一個 fundamental 的問題。系統發展在初期的時候常常會使用這樣的 lock。所以研究 GIL 並不是只有 Python 特定而已，其實在研究作業系統的時候都會遇到類似的問題，因為最後大多會把這個大 lock 拆分成不同的小 lock  
++ Example  
+    + [1a.c](https://github.com/penvirus/gil3/blob/master/1a.c)  
+        + Get crashed if we don;t acquire the GIL before using the Python runtime.  
+    + [1b.c](https://github.com/penvirus/gil3/blob/master/1b.c)  
+        + Our multithreading program has been serialized into one "effective" thread  
+        + > 在 Python 的 multithreading 基本上都一定要處理 GIL 的問題，不然只會是「你以為自己有用到但實際上並沒有」  
+    + [1c.c](https://github.com/penvirus/gil3/blob/master/1c.c)  
+        + warning: the example won't compile successfully.  
+        + 嘗試修改，但兩個多小時之後沒成功就放棄了，改用其他方法  
+        + Dynamic linker 可能有幫助，朝著讓兩個 task 使用不同的 Python interpreter 的方向去解決  
+    + [2a.c](https://github.com/penvirus/gil3/blob/master/2a.c)  
+    + [2b.c](https://github.com/penvirus/gil3/blob/master/2b.c), [2c.c](https://github.com/penvirus/gil3/blob/master/2c.c)  
+        + 成功了，但結束後得把 .so 檔刪掉。  
+        + > 這方法我給 87 分，因為太北七了，找到了 dlmopen 的文件，三天三夜跪在電腦前不能自我，醒來的時候已經是第四天早上  
+    + [3a.c](https://github.com/penvirus/gil3/blob/master/3a.c), [3b.c](https://github.com/penvirus/gil3/blob/master/3b.c)  
+        + 後續使用 dlmopen 把 global 變數拆成兩份，確實是可以做到。  
+    + [4a.c](https://github.com/penvirus/gil3/blob/master/4a.c)  
+        + 但把 dlmopen 和 Python 放在一起就是會出事，像是這個例子。  
++ More Complicated Example  
+    + 6b.c  
+        + configuration task  
++ Discussion  
+    + some 3rd-party libraries may not work well  
+        + they have been guaranteed to be the only active instance  
+    + 64-bits address space is big enough; is put them altogether a good idea?  
+        + Similar debates on monolithic and microkernel  
+    + > 反正我今天就是來胡說八道的，我可以大膽預測，3~5年內一定會出現相關的第三方應用，可能會完全捨棄安全性而只著重在效能的方面  
+  
+About removing GIL, reference Larry Hastings The Gilectomy: https://www.youtube.com/watch?v=pLqv11ScGsQ  
+  
+  
+## 土炮股票分析系統  
+  
++ Spearker: Victor Gau  
++ Slides: <https://goo.gl/JVLhRh>  
++ GitHub Repo: <https://github.com/victorgau/PyConTW2017>  
+  
+講者使用 Jupyter Notebook 一步步教學，  
+講解如何用 Python 去抓取和分析股票資訊，  
+使用到 Pandas, Quandl, Numpy, ffn 等 modules，  
+並透過 Jupyter Notebook 做簡單的視覺化。  
+還加上了一些基本的投資教學，  
+並在開頭的時候講了一些股票投資的小故事。  
+  
++ 投資是藝術還是科學？  
+    + 與生俱來或可被訓練？  
++ [華爾街傳奇：海龜投資法則](http://www.books.com.tw/products/0010384228)  
+    + William Eckhardt vs Richard Dennis  
+        + William 相信是與生俱來的  
+        + Richard 則相信是可被訓練的  
+            + 用好幾台 DOS 去跑分析  
++ 投資 3M's  
+    + Mind: 投資心理  
+    + Money: 資金管理  
+        + Equal weight  
+        + 停損、停利  
+    + Method: 方法、系統  
+        + 今天會談到的部份  
++ 架構圖  
+  
+```  
+          +-------> 股價資料 -----------------+  
+          |   |                               |  
+抓資料 ---+---+---> 財報資料 ---> 選股策略 ---+---> 進出場策略 ---> 部位規模  
+          |   |                      |        |          |             ^  
+          +---+---> 公司資料         ˇ        |          ˇ             |  
+                                  候選股票 ---+       投資標的 --------+  
+                                     ^  
+                                     |  
+                                   自選股  
+  
+```  
++ 抓資料  
+    + google 一下關鍵字  
+        + e.g. "Nasdaq company list"  
+    + 使用 Pandas  
+    + 使用 [Quandl](https://www.quandl.com/)  
+        + 讀歷史股價  
+            + 用 Quandl 使用 "Yahoo/TW_${股票代號}"  
+            + 要用調整過後的股價去算，不然會有問題。  
++ 選股策略  
+    + 計算每天股價的變化  
+    + 計算波動率  
+        + Standard deviation  
++ 進出場策略  
+    + 自己決定  
+    + Sharpe Ratio  
+        + 不希望大起大落  
+    + Maximum Drawdown  
+        + 不希望賺錢了之後結果兩個月都沒賺  
+        + Maximum Drawdown 短一點就比較不會大起大落  
+        + `f.fn()`  
++ DEMO  
+    + <https://github.com/victorgau/PyConTW2017>  
+  
+---  
+  
+## Deep Learning Based Object Detection (Fast R-CNN) in the Microsoft Cognitive Toolkit  
+  
++ Speaker: Herman Wu  
++ link: https://tw.pycon.org/2017/en-us/events/talk/348099433595928706/  
+  
++ Cognitive 特性  
+    + Python and C++ API  
+        + 大部份用 C++ 實作  
+        + Low level + high level Python API  
+    + Extensibility  
+        + User functions and learners in pure Python  
+    + Readers  
+        + Distributed highly...  
++ Deep Learning Revolutionized Image Recognition  
+    + Largetst image datatset - ImageNET  
++ COCO Segmentation Challenge 2016  
+    + MSRA won 1st place back-to-back  
++ Semantic Segmentation  
+    + Recognizing pixels  
++ First CNTK Example  
+    + CNTK Model  
+    + MNIST Handwritten Digits (OCR)  
+    + Multi-layer perceptron  
+        + <https://github.com/Microsoft/CNTK/tree/master/Tutorials>  
+        + RELU  
+  
+  
+---  
+  
+  
+# Day 3 (2017/06/11)  
