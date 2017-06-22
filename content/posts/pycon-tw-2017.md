@@ -250,7 +250,7 @@ Soocii 是趨勢科技為了弄手機群聊而獨立出來的子公司
             + mailing lists  
                 + Python-dev  
                 + Python-ideas  
-            + b.p.o.  
+            + [bpo](https://bugs.python.org)  
             + IRC  
                 + freenode #python-dev  
             + lwn.net  
@@ -437,3 +437,85 @@ About removing GIL, reference Larry Hastings The Gilectomy: https://www.youtube.
   
   
 # Day 3 (2017/06/11)  
+  
+  
+## [Unconference](https://github.com/pycontw/unconference)  
+  
+### 用Python拯救地球： 如何找出危險的太陽系天體？  
+  
++ JPL Horizon  
+    + 可以看到小行星的軌跡  
++ 日本的「昴」望遠鏡  
+    + 兩公尺高  
+    + CCD 由一百多片 CCD 組成  
++ 真實看到的天文照片不是彩色的  
++ 要找出什麼？  
+    + 近地小行星  
+    + 小行星  
+    + 古柏帶天體  
++ 主要應用工具  
+    + Python  
+    + scipy - KDTree, array  
+    + sklearn - RandomForestClassifier (supervised and unsupervised)  
+    + astropy, pyfits, pyephem, matplotlib, multiprocessing, sqlite3  
+    + C, C++, MPI, mysql  
++ Super Big Data  
+    + 一天將近 0.5 TB 的 raw data  
+    + 包含許多恆星、星系、垃圾  
+        + 一次曝光資料處理完約有數十萬至數百萬筆資料  
++ Machine Learning  
+    + 利用資料庫裡的各種測量參數 (55個） 來判斷每一筆資料是否為真  
+    + ML 的應用，比起傳統上的條件篩選有效的多，也被用來測量星系之間的距離（紅移）  
++ 現況  
+    + 目前有 15,621 個近地小行星被找到 (大小 1 公尺 ~ 32 公里)，目前都沒有危險  
+    + 理論模型推論有將近 100 萬個 > 140 公尺的近地小行星（所以我們才找到約 1%）  
+    + 現在正在執行的計劃：LINEAR, NEAT, CSS, NEOWISE, Pan-STARRS, ALTAS  
+    + 目前許多大型國際合作計劃都以 Python 為主要的程式語言，並結合 Cython 或 call 外部 script 以提升分析速度，例如：  
+        + ALMA - CASA  
+        + LSST  
+        + > 微軟是主要出資者，所以開這個會議的時候不是微軟的電腦都要收起來，但天文分析基本上都是用 Unix-like 的系統，所以開完會又會拿出來 XDDD  
++ Q&A  
+    + 為什麼用 Cython 不用 PyPy，有考慮換成 PyPy 嗎？  
+        + 沒有，因為我只是使用者，這邊不是我負責的。  
+    + 有可能發生像電影那樣，突然發現有個朝地球高速來襲的小行星嗎？  
+        + 有可能，因為距離要到夠近才有辦法偵測到。  
+    + 筆直衝過來的小行星只會有一個點，這有辦法偵測到嗎？  
+        + 目前這個比較難處理  
+    + 真的發現有會造成地球物種大規模毀滅的小行星朝地球衝過來怎麼辦？  
+        + 基本上目前想到的方法都不太可行，例如：核彈爆破、派人上去鑽礦等等  
+  
+  
+## CPython code sprint  
+  
+<https://docs.python.org/devguide/>  
+  
+  
+## 一個軟體工程師在農村的見聞  
+  
++ <http://ocf.tw/p/2017/openhackfarm/>  
++ Slides: https://hackmd.io/p/Hyzjn1FGb#/  
+  
+## 懶得答題？寫個 bot 來幫你刷榜  
++ Slides: https://github.com/aweimeow/PyConTW2017-UnConf-Slide  
++ Code: https://github.com/aweimeow/PyConTW2017-Quiz-Solver  
+  
+## 初めてのプログラミングならパイザで始めよう☆  
+  
++ Online Judge Special Events  
+    + https://paiza.jp/logic_summoner  
+    + https://paiza.jp/cgc  
+    + https://paiza.jp/poh/hatsukoi  
+    + https://paiza.jp/poh/ando  
+    + https://paiza.jp/moshijo  
+  
+預訂現場live解一題看看,破除never live demo迷思(?)  
+  
+hatsukoi 雙馬尾參考答案(Python3)  
+```python=  
+# coding: utf-8  
+# 自分の得意な言語で  
+# Let's チャレンジ！！  
+s = int(input())  
+t = int(input())  
+print(''.join(('-', '+')[i+1==t] for i in range(s)))  
+```  
