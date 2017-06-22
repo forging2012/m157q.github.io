@@ -174,3 +174,4 @@ Speaker: Howard Chang
         + 針對中文有做些斷句斷詞  
     + Dashbot  
         + 全球最大的 Chat Bot 分析工具  
+    + Botmetrics  
