@@ -155,14 +155,14 @@ Slides: <https://www.slideshare.net/wenchen3/from-aws-to-gcp-tableapp-architectu
         + Automatic and configurable cluster scaling  
         + Google Cloud Platform resource integration  
     + Architecture  
-        + GCP  
-        + Inside k8s  
-        + Deployment  
-        + Log Collection  
-        + > 這架構挺棒的，可以學習一下。  
-+ Cost  
+        + [GCP](https://www.slideshare.net/wenchen3/from-aws-to-gcp-tableapp-architecture-story/17)  
+        + [Inside k8s](https://www.slideshare.net/wenchen3/from-aws-to-gcp-tableapp-architecture-story/18)  
+        + [Deployment](https://www.slideshare.net/wenchen3/from-aws-to-gcp-tableapp-architecture-story/19)  
+        + [Log Collection](https://www.slideshare.net/wenchen3/from-aws-to-gcp-tableapp-architecture-story/20)  
+        + > 這架構挺棒的，雖然不大，但把可以用的都用上了，可以學習一下。  
++ Cost and Usage  
     + Hybrid 時期的 cost 有比較高  
-    + 後來做完 migration 到 GCP 之後，cost 比在 AWS 上降一半，然後 handle 的 request 量多一倍。  
+    + 後來做完 migration 到 GCP 之後，cost 比在 AWS 上降一半，然後 handle 的 request 量多 5 倍。  
 + Conclusion  
     + CloudCDN is really fast  
         + very low latency  
