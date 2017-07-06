@@ -12,7 +12,9 @@ Event link: <https://gcpugtw.kktix.cc/events/meetup201707>
 ---  
   
 ## Using Kubernetes to deploy Django in GCP  
+  
 Speaker: Walter Liu  
+Slides: <https://www.slideshare.net/walterliu7/using-kubernetes-to-deploy-django-in-gcp>  
   
 + [Statefulset](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)  
     + Beta feature since k8s 1.7  
@@ -50,7 +52,9 @@ Speaker: Walter Liu
 ---  
   
 ## 深入 Kubernetes Network，Calico Overlet Network 介紹  
+  
 Speaker: 光光  
+Slides: <https://www.slideshare.net/IsaacTseng/20170705-kubernetes-with-calico>  
   
 + k8s cluster network  
     + inside a pod  
@@ -105,7 +109,9 @@ Speaker: 光光
 ---  
   
 ## 從 AWS 轉移到 GCP，一個新創團隊搬家的故事: TABLEAPP Architecture Story  
+  
 Speaker: 陳彥文  
+Slides: <https://www.slideshare.net/wenchen3/from-aws-to-gcp-tableapp-architecture-story>  
   
 幫一家新創公司解決 Server 維護上的問題  
   
