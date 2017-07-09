@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-06-03 01:19  
+Modified: 2017-07-10 03:15  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -15,7 +15,13 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [《巴拿馬文件》(Panama Papers)](/posts/2017/02/09/panama-papers/) (2017/02/09)  
     - [o] [《惡童當街》漫畫 1~3 集（完）](/posts/2017/02/19/tekkonkinkreet/) (2017/02/19)  
     - [o] [《不能不去愛的兩件事》] (2017/02/25)  
+        - 二二八連假跑去弟的租屋處一起打遊戲，他說他女友要他看這本書，出於無聊和好奇，就跟他借來讀完了。怎麼說呢，算是勵志類型吧，我覺得自己偶爾需要閱讀這類的書籍來找尋讓自己活下去的動力。  
     - [o] [The Old Man and the Sea] (2017/05/07)  
+        - 嗯，這本好像是去年五月在信義誠品買的，當時好像覺得想找些英文書來閱讀，剛好看到老人與海，薄薄的，想說應該很快就看完了，但還是拖了一年才看完，而且老實說我真的沒有很明白內容，大概是我英文太差，但真的覺得內容...有點無趣 XDrz  
+    - [o] [《最有生產力的一年》] (2017/06/19)  
+        - 作者親自花了一年的時間去試驗各種促進生產力的方法，並將其紀錄下來後，選出自己覺得最有效的幾種方法紀錄於書中，也有探討到我自己比較在意的拖延症問題。也提到了生產力領域的幾本著作，例如：Get Things Done （中譯《搞定》）、《為什麼我們這樣生活那樣工作》。開始嘗試書中提到的方法，有點效果，但還不盡理想。  
+    - [o] [《瘂弦詩集》] (2017/06/19)  
+        - 瘂弦算是以前上國文課的時候有點印象的詩人，以前偶爾就有讀些詩集的習慣，今年逛國際書展的時候看到這本，翻了一下覺得不錯就買了。（喔，最近買了一台健身車，這本是邊踩健身車邊看完的，算是今年想開始養成的一個好習慣之一吧，邊運動邊閱讀，挺好的。）  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
