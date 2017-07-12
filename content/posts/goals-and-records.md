@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-07-10 03:15  
+Modified: 2017-07-12 12:47  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -22,6 +22,10 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 作者親自花了一年的時間去試驗各種促進生產力的方法，並將其紀錄下來後，選出自己覺得最有效的幾種方法紀錄於書中，也有探討到我自己比較在意的拖延症問題。也提到了生產力領域的幾本著作，例如：Get Things Done （中譯《搞定》）、《為什麼我們這樣生活那樣工作》。開始嘗試書中提到的方法，有點效果，但還不盡理想。  
     - [o] [《瘂弦詩集》] (2017/06/19)  
         - 瘂弦算是以前上國文課的時候有點印象的詩人，以前偶爾就有讀些詩集的習慣，今年逛國際書展的時候看到這本，翻了一下覺得不錯就買了。（喔，最近買了一台健身車，這本是邊踩健身車邊看完的，算是今年想開始養成的一個好習慣之一吧，邊運動邊閱讀，挺好的。）  
+    - [o] [《1984》] (2017/07/11)  
+        - 真的是一本神作，寫於 1948 年，但彷彿預言書般的看到白色恐怖、紅衛兵、文化大革命等等，也許也是因為歷史不斷在重演吧。  
+        - 對於極權主義的諷刺與深刻描寫，對於資本主義的資源分配越趨兩極的描寫，再加上人類根深蒂固的階級，讓人讀起來有股深深的無力感，卻也因為貼近現實而更加無奈。  
+        - 是部需要一定的年紀才讀得懂的，畢竟是部反烏托邦的作品。也是反烏托邦三部曲裡頭我看的第一部，之後應該也會找時間看《美麗新世界》和《動物農莊》。  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
