@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-07-12 12:47  
+Modified: 2017-07-12 12:53  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -219,6 +219,9 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 金鋼狼的完結系列啊，覺得這部挺中規中矩的，只是不知道會不會有 X-men 後續就是，感覺應該就是 X-men 系列的結尾了吧，挺感傷的。  
     - [o] [Guardians of the Galaxy Vol. 2 (2017) - IMDb](http://www.imdb.com/title/tt3896198/) (2017/05/29)  
         - 一部又搞笑又感人的電影，劇情也很緊湊，裡頭充滿各種 1980 年代的哏。  
+    - [o] [[Spider-Man: Homecoming (2017) - IMDb](http://www.imdb.com/title/tt2250912/)] (2017/07/11)  
+        - 同事問說要不要一起去看，但因為有點受不了去年和今年一堆重啟拍攝和一堆已經像連續劇一樣多集的電影，起初有點猶豫。後來看到 IMDB 上的評價 8.2，爛番茄是 93%，就還是一起去看了。  
+        - 劇本很普通，但兩個小時又十五分裡頭基本上沒啥冷場，重點是整部片裡頭沒有血、也沒有髒字、沒有性愛、甚至沒有接吻（被剪掉了），一副就是要大撈特撈暑假闔家觀賞的超級普遍級。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
