@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-07-12 12:53  
+Modified: 2017-07-17 12:51  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -222,6 +222,19 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [[Spider-Man: Homecoming (2017) - IMDb](http://www.imdb.com/title/tt2250912/)] (2017/07/11)  
         - 同事問說要不要一起去看，但因為有點受不了去年和今年一堆重啟拍攝和一堆已經像連續劇一樣多集的電影，起初有點猶豫。後來看到 IMDB 上的評價 8.2，爛番茄是 93%，就還是一起去看了。  
         - 劇本很普通，但兩個小時又十五分裡頭基本上沒啥冷場，重點是整部片裡頭沒有血、也沒有髒字、沒有性愛、甚至沒有接吻（被剪掉了），一副就是要大撈特撈暑假闔家觀賞的超級普遍級。  
+    - [o] 太陽照常升起（[The Sun Also Rises (2007) - IMDb](http://www.imdb.com/title/tt0769507/)）(2017/07/16)  
+        - 姜文於 2007 年的作品，背景為中國的文革時期，帶有神奇的魔幻色彩，基本上第一次看的人大概都會覺得這是在拍什麼鬼。但電影中的一句台詞已經講明：「只能說你沒懂，不能說你沒看見。」  
+        - 總共分成 4 個部份：瘋、戀、槍、夢，改編自[《天鵝絨》](http://baike.baidu.com/item/%E5%A4%A9%E9%B9%85%E7%BB%92/12801619)這本小說，但劇情略有不同。  
+        - 看了以下幾篇有雷的影評才比較知道姜文想表達什麼  
+            - [《太陽照常升起》  —「重覆」的「不明白」 | 月台衛星](https://rrgreen.wordpress.com/2007/09/25/%E3%80%8A%E5%A4%AA%E9%99%BD%E7%85%A7%E5%B8%B8%E5%8D%87%E8%B5%B7%E3%80%8B-%E3%80%8C%E9%87%8D%E8%A6%86%E3%80%8D%E7%9A%84%E3%80%8C%E4%B8%8D%E6%98%8E%E7%99%BD%E3%80%8D/)  
+            - [[影評] 太陽照常升起：文革的魔幻童話 - 看板 movie - 批踢踢實業坊](https://www.ptt.cc/bbs/movie/M.1195401691.A.9B7.html)  
+            - [电影《太阳照常升起》究竟要表达什么意思？ - 知乎](https://www.zhihu.com/question/20656609)  
+            - [破解姜文《太阳照常升起》的密码_王江月_新浪博客](http://blog.sina.com.cn/s/blog_48392ee301000aee.html)  
+        - 對於中國文化大革命那個時期的事物不瞭解的人大概都看不懂這電影裡頭的一些細節。  
+    - [o] 明天，我要和昨天的妳約會 （[Tomorrow I Will Date with Yesterday's You (2016) - IMDb](http://www.imdb.com/title/tt5338222/)）(2017/07/16)  
+        - 是部由小說改編，典型的加入一些特殊時空跳躍元素的日式愛情電影。  
+        - 日本的愛情總是很能設定一些特殊的時空現象，不至於讓你覺得太過頭，卻能夠善加利用並找到一個連結點去做發揮，再加上日本電影嫻熟於都會情愛的細膩呈現，以及一如以往的悲中帶喜的劇情設定。  
+        - 如果是理組的人建議不要太過深究電影裡頭對於時間的設定，不然會喪失一定的觀影樂趣 XD  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
