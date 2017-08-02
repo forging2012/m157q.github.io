@@ -36,9 +36,9 @@ Slides: <https://www.slideshare.net/walterliu7/using-kubernetes-to-deploy-django
 + k8s + GCP Load Balancer  
 + Cluster creation steps  
     + `kubectl create -f web_secretes.yaml`  
-    + `kubectl aply -f cache_stateful_set.yaml`  
-    + `./titan_control deply prod`  
-        + Like => `kubectl apply -f prod_web_deply.yaml`  
+    + `kubectl apply -f cache_stateful_set.yaml`  
+    + `./titan_control deploy prod`  
+        + Like => `kubectl apply -f prod_web_deploy.yaml`  
     + `kubectl apply -f service.yaml`  
     + `kubectl apply -f ingress.yaml`  
     + `gsutil mb -l asia gs://static.example.com`  
@@ -79,7 +79,7 @@ Slides: <https://www.slideshare.net/IsaacTseng/20170705-kubernetes-with-calico>
 + User story  
     + IPsec Tunneling  
         + 在內部網路仍然使用 IPsec Tunneling 導致 throughput Performance 下降了約 80%  
-        + 為了想要解決這個問題，所以遇上了 Calico  
+        + 為了想要解決這個問題，所以用上了 Calico  
     + [RancherOS](http://rancher.com/rancher-os/)  
         + <https://github.com/rancher/os>  
 + [Calico](https://github.com/projectcalico/calico)  
