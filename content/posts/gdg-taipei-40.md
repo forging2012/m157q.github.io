@@ -76,7 +76,7 @@ Summary: Note for GDG Taipei #40 - Women Techmakers #3 Janet Kuo 郭家禎
         + 告知團隊整個 Project 的 Roadmap 和 Schedule  
         + 團隊裡負責做技術決定的，不管人，如果你今天心情不好，去跟老闆說 XD  
     + 你在 Kubernetes 裏面負責什麼部份？  
-        + API 和 Storage 相關的 Support  
+        + API 和 Storage 相關 Workload 的 Support  
     + 你在 IBM Taiwan 和 Google 裏面感受到的差異  
         + 在台灣聽到 IBM，大家覺得好厲害，外商耶。在美國，聽到的人會說，「哈，你老人嗎」 XD  
         + IBM 算是間歷史比較悠久一點的公司，近期以來比較沒有什麼創新的部份。  
