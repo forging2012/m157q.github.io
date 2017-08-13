@@ -11,7 +11,7 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
     + <http://foundation.datasci.tw/dive-deep-learning-170812/>  
     + <https://dsc.kktix.cc/events/series-events-081213>  
 + Slides  
-    + [DiveDL_0326_v1.pdf](/files/dive-into-deep-learning/DiveDL_0326_v1.pdf)  
+    + [DiveDL_0326_v1.pdf](/files/dive-into-deep-learning-datasci-tw/DiveDL_0326_v1.pdf)  
   
 ---  
   
