@@ -127,13 +127,13 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
         + Gradient descent never guarantee global minima  
             + Use different & random initial point to reach different minima  
     + Even AlphaGo using this approach  
-        + 其實 AI 並沒有那麼厲害，他們也是像探索戰爭迷霧那樣，一步一步去嘗試的。  
+        + 其實 AI 並沒有那麼厲害，他們也是像探索戰爭迷霧那樣，一步一步去探索和嘗試的。  
   
   
 ## Deep Learning Toolkit  
   
 + Backpropagation  
-    + An efficient way to compute ``  
+    + An efficient way to compute `∂L/∂w` in neural network  
 + Frameworks  
     + TensorFlow  
         + 比較多人在用且資料比較多  
@@ -208,7 +208,8 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
   
 ### The Whole CNN  
   
-+ Image => {Convolution => Max Pooling}*N => Flatten => Fully Connected Feedforward Network+ 特性  
++ Image => `{Convolution => Max Pooling}*N` => Flatten => Fully Connected Feedforward Network  
++ 特性  
     + 和 Convolution 有關  
         + Some patterns are much smaller than the whole image.  
         + The same patterns appear in different regions.  
@@ -249,7 +250,7 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
 + What CNN Learned  
     + [AlexNet]  
 + DNN are easily fooled  
-    + 可以捏造一些奇怪的 input，看起來只是一些 noise，因為 DNN 會特別著重某些 patter，所以會將這些圖誤判為目標物。  
+    + 可以捏造一些奇怪的 input，看起來只是一些 noise，因為 DNN 會特別著重某些 pattern，所以會將這些圖誤判為目標物。  
     + 滿多資安的論文現在在探討攻擊 DNN 的手法。  
     + Visualizing CNN  
         + 調整 noise 的 input，使其 filter response 更接近目標物的 filter response，有點像是反過來的 training  
@@ -269,7 +270,7 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
         + Some patterns are much smaller than the whole image  
             + 棋譜會有一些固定的 pattern  
         + The same patterns appear in different regions  
-            + 同樣的 patter 有可能出現在棋盤上不同的地方  
+            + 同樣的 pattern 有可能出現在棋盤上不同的地方  
         + Subsampling the pixels will not change the object  
             + 把棋譜作 subsampling 會讓整個棋譜的結果失真  
             + 因為 Subsampling 只和 Max Pooling Layer 有關，所以在 AlphaGo 的論文中有提到只有使用 Convolutional Layer，把 Max Pooling Layer 拿掉了。  
@@ -353,8 +354,8 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
         + 被稱做 Attention  
         + 只會拿有用的資訊出來回答  
     + Attention on Sensory Info  
-        + Info from the sensors => Sensory Memory === Attention ===> Working Memeory === Encode ===> Long-term Memory  
-        + Logn-term Memory === Retrieval ===> Working Memory  
+        + Info from the sensors => Sensory Memory == Attention ==> Working Memeory == Encode ==> Long-term Memory  
+        + Logn-term Memory == Retrieval ==> Working Memory  
     + Machine Translation with Attention  
         + Keyword: "Attentional sequence to sequence model"  
         + 先用 match 判斷跟哪一塊的相似程度最高  
@@ -366,7 +367,7 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
     + Video Captioning with Attention  
     + Reading Comprehension  
         + Document => 被切分成不同的詞被當作 feature  
-        + Question === RNN ===> q vector  
+        + Question == RNN ==> q vector  
         + 根據 q vector 去決定哪一個句子最相關，再放入 DNN 裡頭去回答  
         + Hopping  
             + Memory Network  
@@ -517,7 +518,6 @@ Summary: 《資料科學年會系列活動：深入淺出深度學習》筆記
     + Value Function Approximation  
     + Q-Networks  
         + Q-networks represent value functions with weights  
-        +  
     + Q-Learning  
         + Goal: estimate optimal Q-values  
             + Optimal Q-values obey a Bellman equation  
