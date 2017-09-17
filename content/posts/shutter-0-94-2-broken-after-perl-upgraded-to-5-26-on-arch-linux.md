@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: shutter, Perl  
 Summary: Note for the solution to fix this problem  
+Modified: 2017-09-17 14:17:00  
   
   
 ### Error Message  
@@ -38,3 +39,4 @@ $ pacman -Qqo '/usr/lib/perl5/vendor_perl' | xargs yaourt -S --noconfirm
 ### Reference  
   
 + [AUR install packages with Perl broken again - Updating - Manjaro](https://forum.manjaro.org/t/aur-install-packages-with-perl-broken-again/30913/9)  
++ [Arch Linux - News: Perl library path change](https://www.archlinux.org/news/perl-library-path-change/)  
