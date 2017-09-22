@@ -5,7 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: interview, resume, job  
 Summary: 紀錄我人生第一次找工作的面試過程  
-Modified: 2016-11-26 01:32  
+Modified: 2017-09-22 15:36  
   
   
 ## 前言  
@@ -21,6 +21,7 @@ Modified: 2016-11-26 01:32
 再加上花了不少時間寫 LinkedIn profile，懶的重寫一份 resume。  
 於是異想天開的寫了一個把 LinkedIn profile 轉成 markdown format 的工具:  
 [linkedin2md](https://github.com/M157q/linkedin2md)  
+（2017/09/22: 這個 project 因為[一些原因](https://github.com/M157q/linkedin2md/commit/297f1c3ca0c2d40add957fd735b8bf825268a38b)所以我不再維護了，程式已經不會動了。）  
 這樣我就可以偷懶直接用 LinkedIn 生一份 resume 出來。  
   
 ---  
@@ -309,3 +310,17 @@ Sudo\_ 於 2016/11/20 吹熄燈號了。
 畢竟 LinkedIn 上遇到的 Head Hunter 感覺都普普，  
 有種亂槍打鳥的感覺。  
 然後我也不會想用傳統人力銀行的服務。  
+  
+---  
+  
+## 後記 (2017/09/22)  
+  
+因為以下幾個原因，  
+所以我停止維護 [linkedin2md](https://github.com/M157q/linkedin2md) 這個小程式了。  
+  
+1. LinkedIn 開始阻擋未登入的連線拿到公開的個人頁面資料  
+2. [LinkedIn 聲稱未經許可蒐集該網站上個人資料視為違法行為](https://news.ycombinator.com/item?id=14891301)  
+3. LinkedIn 的網頁格式已經改版許多  
+4. 上面有提到這個小程式其實效用不是那麼大，因為產生出來的 CV 其實也不能直接拿來當作履歷投遞，所以我覺得不值得花時間繼續維護它。  
+  
+就拿這個 [commit](https://github.com/M157q/linkedin2md/commit/297f1c3ca0c2d40add957fd735b8bf825268a38b) 幫這個小程式畫下句點吧。  
