@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-10-11 20:16  
+Modified: 2017-10-11 20:36  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -248,6 +248,10 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 算是很基本的把原著的劇情呈現出來而已，沒有著墨太多草薙素子內心的掙扎以及留給觀眾多一點想像的空間。  
     - [o] [異形：聖約 (Alien: Covenant)](http://www.imdb.com/title/tt2316204/) (2017/08/06)  
         - 以故事的時間點來說的話，算是接續上一部《異形：普羅米修斯》。劇情上算滿普通的，主要的重點應該還是在 David 這個機器人身上。  
+    - [o] [銀翼殺手 (Blade Runner)](http://www.imdb.com/title/tt0083658/) (2017/10/09)  
+        - 以前就有聽過這部作品，但最近因為《銀翼殺手：2049》來看這部 1982 年的電影，才發現又是 Ridley Scott 的作品，算是我覺得很厲害的其中一位導演。  
+        - 也是看了這部才知道原來 Ghost in the Shell 濃濃的 Cyber Punk 風格都是受到這部電影啟發的，也啟發了後來的 Matrix。  
+        - 我很喜歡[這部影評](https://www.youtube.com/watch?v=qR8eAvjASUc)的介紹，算是又讓我更瞭解了這整部電影，也才知道 Google 的 Android 系統和其型號 Nexus 都是在向這部電影致敬，有時間可能會把原著小說《機器人會夢見電子羊嗎》補完。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
