@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-08-07 00:32  
+Modified: 2017-10-11 20:16  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -28,6 +28,9 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 是部需要一定的年紀才讀得懂的，畢竟是部反烏托邦的作品。也是反烏托邦三部曲裡頭我看的第一部，之後應該也會找時間看《美麗新世界》和《動物農莊》。  
     - [o] 《銀河便車指南》 (2017/08/06)  
         + 只看了三部五本裡頭的第一本，但大部份有名的哏例如：42 好像都在這本就出現了。  
+    - [o] [《搞定！：工作效率大師教你: 事情再多照樣做好的搞定 5 步驟》(Getting Things Done: The Art of Stress-Free Productivity)](http://www.books.com.tw/products/0010731198) (2017/10/11)  
+        + 鼎鼎大名的時間管理聖經 GTD，但看完之後其實挺失望的，覺得有太多的老生常談，不知道是不是因為之前看的時間管理書籍都是受到這本的影響還是怎樣。  
+        + 只有最後幾章讓我覺得比較有學到一些新的東西，而不是只有一直在談方法和觀念，個人覺得《最有生產力的一年》比這本好看多了。  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
