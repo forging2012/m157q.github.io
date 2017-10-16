@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-10-17 06:33  
+Modified: 2017-10-17 06:37  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -34,6 +34,10 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [《易讀程式之美學》(The Art of Readable Code)](https://www.tenlong.com.tw/products/9789862767191) (2017/10/12)  
         - 排版很舒服，而且內容幾乎都是條列式的，很適合重點式掃讀，第一次先讀個大概，第二次再更深一層，第三次再比第二次更深一層，畢竟書也沒有很厚。  
         - 幾乎都有舉出程式碼的實際例子要如何修改，而且會重點列出修改前和修改後的比較，讓人一目了然。  
+    - [o] [《腦力密集產業的人才管理之道》(Peopleware)](http://www.books.com.tw/products/0010659524)  
+        - 這本真的是跟《人月神話》相輔相成，就像封底上說的「《人月神話》著重在軟體開發，《Peopleware》則著重在人。」  
+        - 拿很多實際的例子和數字來分析結論，然後作者挺幽默的。  
+        - 許多關於工作環境營造的部分真的是心有戚戚焉，要是軟體產業的管理職都有看過這兩本書的話就好了。  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
