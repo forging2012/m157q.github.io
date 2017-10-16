@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-10-17 06:27  
+Modified: 2017-10-17 06:33  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -31,6 +31,9 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [《搞定！：工作效率大師教你: 事情再多照樣做好的搞定 5 步驟》(Getting Things Done: The Art of Stress-Free Productivity)](http://www.books.com.tw/products/0010731198) (2017/10/11)  
         + 鼎鼎大名的時間管理聖經 GTD，但看完之後其實挺失望的，覺得有太多的老生常談，不知道是不是因為之前看的時間管理書籍都是受到這本的影響還是怎樣。  
         + 只有最後幾章讓我覺得比較有學到一些新的東西，而不是只有一直在談方法和觀念，個人覺得《最有生產力的一年》比這本好看多了。  
+    - [o] [《易讀程式之美學》(The Art of Readable Code)](https://www.tenlong.com.tw/products/9789862767191) (2017/10/12)  
+        - 排版很舒服，而且內容幾乎都是條列式的，很適合重點式掃讀，第一次先讀個大概，第二次再更深一層，第三次再比第二次更深一層，畢竟書也沒有很厚。  
+        - 幾乎都有舉出程式碼的實際例子要如何修改，而且會重點列出修改前和修改後的比較，讓人一目了然。  
     - [ ] C Programming: A Modern Approach  
     - [ ] UNIX and Linux System Administration Handbook  
     - [ ] Python Essential Reference  
