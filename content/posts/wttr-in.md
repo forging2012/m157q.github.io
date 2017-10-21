@@ -1,4 +1,4 @@
-Title: wttr.in - 一個讓你用網頁或終端機看天氣或月亮圓缺的有趣小程式  
+Title: wttr.in - 一個讓你用網頁或終端機看天氣或月亮圓缺的有趣網站  
 Slug: wttr-in  
 Date: 2017-10-20 21:09:15  
 Authors: m157q  
