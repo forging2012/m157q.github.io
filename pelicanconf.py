@@ -90,6 +90,11 @@ LOAD_CONTENT_CACHE = True
 GZIP_CACHE = True
 RELATIVE_URLS = True
 
+# Donation section for article.html of my forked plumage theme
+DONATION = {
+    'bitcoin': "1L7on2dvpbgAXcdWx7ScT5QaHdjQaSTEaU",
+}
+
 # Plugins
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
