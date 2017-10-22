@@ -282,7 +282,7 @@ Ref:
 - FreeBSD TCP/IP stack  
 - [2015] [A Repository with 44 Years of Unix Evolution](http://www.dmst.aueb.gr/dds/pubs/conf/2015-MSR-Unix-History/html/Spi15c.html)  
   - [GitHub] [dspinellis/unix-history-repo](https://github.com/dspinellis/unix-history-repo)  
-![](http://www.dmst.aueb.gr/dds/pubs/conf/2015-MSR-Unix-History/html/branches.png)  
+![UNIX branches](http://www.dmst.aueb.gr/dds/pubs/conf/2015-MSR-Unix-History/html/branches.png)  
   
 - [2012] [Why Caldera Released Unix: A Brief History](http://www.linuxdevcenter.com/pub/a/linux/2002/02/28/caldera.html)  
 - [Wikipedia] [Ancient UNIX](http://en.wikipedia.org/wiki/Ancient_UNIX)  
