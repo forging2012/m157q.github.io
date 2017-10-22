@@ -8,7 +8,6 @@ SITENAME = u'Just for noting'
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_LANG = u'zh'
 DEFAULT_PAGINATION = 10
-TWITTER_USERNAME = u'M157q'
 THEME = 'themes/plumage'
 USE_FOLDER_AS_CATEGORY = False
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -79,9 +78,12 @@ LINKS = (
 )
 
 # Social widget
+GITHUB_USERNAME = 'M157q'
+TWITTER_USERNAME = 'M157q'
+
 SOCIAL = (
-    ('GitHub', 'https://github.com/M157q'),
-    ('LinkedIn', 'https://www.linkedin.com/in/shunyi'),
+    ('GitHub', 'https://github.com/{}'.format(GITHUB_USERNAME)),
+    ('Twitter', 'https://www.twitter.com/{}'.format(TWITTER_USERNAME)),
 )
 
 # Debug
