@@ -101,8 +101,11 @@ PLUGINS = [
     'share_post',
     'tipue_search',
 ]
-TIPUE_SEARCH = True
 
+# related_posts
+RELATED_POSTS_MAX = 5
+
+# sitemap
 SITEMAP = {
     'format': 'xml',
     'priorities': {
@@ -117,10 +120,13 @@ SITEMAP = {
     }
 }
 
-RELATED_POSTS_MAX = 5
+# render_math
 MATH_JAX = {
     'color': 'blue',
     'linebreak_automatic': True,
     'responsive': True,
     'tex_extensions': ['color.js']
 }
+
+# tipue_search
+TIPUE_SEARCH = True
