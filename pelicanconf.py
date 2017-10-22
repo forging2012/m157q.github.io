@@ -96,7 +96,9 @@ DONATION = {
     'bitcoin': "1L7on2dvpbgAXcdWx7ScT5QaHdjQaSTEaU",
 }
 
-# Plugins
+
+# Plugins settings BEGIN
+
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
     'neighbors',
@@ -136,3 +138,5 @@ MATH_JAX = {
 
 # tipue_search
 TIPUE_SEARCH = True
+
+# Plugins settings END
