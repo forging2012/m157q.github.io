@@ -113,7 +113,7 @@ FEED_ALL_RSS = 'feeds/all.feed.rss.xml'
 
 # Donation section for article.html of my forked plumage theme
 DONATION = {
-    'bitcoin': "1L7on2dvpbgAXcdWx7ScT5QaHdjQaSTEaU",
+    'bitcoin': "1HWMzBGTQ8VUJGXgvSDzAFacfeY2sLiZda",
 }
 
 # =============================================================================
