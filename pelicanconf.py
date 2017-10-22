@@ -69,13 +69,6 @@ DIRECT_TEMPLATES = (
     # 'about',
 )
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
 # Blogroll
 LINKS = (
     ('Pelican', 'http://getpelican.com/'),
@@ -105,6 +98,7 @@ RELATIVE_URLS = True
 FEED_ATOM = 'feeds/atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/category.%s.atom.xml'
 AUTHOR_FEED_ATOM = 'feeds/author.%s.atom.xml'
+TRANSLATION_FEED_ATOM = 'feeds/translation.%s.atom.xml'
 TAG_FEED_ATOM = 'feeds/tag.%s.atom.xml'
 FEED_ALL_ATOM = 'feeds/all.feed.atom.xml'
 
@@ -112,6 +106,7 @@ FEED_ALL_ATOM = 'feeds/all.feed.atom.xml'
 FEED_RSS = 'feeds/rss.xml'
 CATEGORY_FEED_RSS = 'feeds/category.%s.rss.xml'
 AUTHOR_FEED_RSS = 'feeds/author.%s.rss.xml'
+TRANSLATION_FEED_RSS = 'feeds/translation.%s.rss.xml'
 TAG_FEED_RSS = 'feeds/tag.%s.rss.xml'
 FEED_ALL_RSS = 'feeds/all.feed.rss.xml'
 
