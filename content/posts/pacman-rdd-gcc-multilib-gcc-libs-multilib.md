@@ -4,7 +4,7 @@ Date: 2017-09-17 17:50:32
 Authors: m157q  
 Category: Note  
 Tags: Arch Linux, pacman, gcc, gcc-libs  
-Summary: A solution to save your ass if you broke pacman after force removed gcc-multilib gcc-libs-multilib on your Arch Linux  
+Summary: A solution to save your ass if you broke pacman after force removed `gcc-multilib` and `gcc-libs-multilib` on your Arch Linux  
   
   
 ### Preface  
