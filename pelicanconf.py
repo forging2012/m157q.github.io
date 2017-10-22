@@ -91,11 +91,30 @@ LOAD_CONTENT_CACHE = True
 GZIP_CACHE = True
 RELATIVE_URLS = True
 
+# Feed
+
+# atom feed
+FEED_ATOM = 'feeds/atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/category.%s.atom.xml'
+AUTHOR_FEED_ATOM = 'feeds/author.%s.atom.xml'
+TAG_FEED_ATOM = 'feeds/tag.%s.atom.xml'
+FEED_ALL_ATOM = 'feeds/all.feed.atom.xml'
+
+# rss feed
+FEED_RSS = 'feeds/rss.xml'
+CATEGORY_FEED_RSS = 'feeds/category.%s.rss.xml'
+AUTHOR_FEED_RSS = 'feeds/author.%s.rss.xml'
+TAG_FEED_RSS = 'feeds/tag.%s.rss.xml'
+FEED_ALL_RSS = 'feeds/all.feed.rss.xml'
+
+# =============================================================================
+
 # Donation section for article.html of my forked plumage theme
 DONATION = {
     'bitcoin': "1L7on2dvpbgAXcdWx7ScT5QaHdjQaSTEaU",
 }
 
+# =============================================================================
 
 # Plugins settings BEGIN
 
