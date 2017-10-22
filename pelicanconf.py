@@ -112,8 +112,11 @@ FEED_ALL_RSS = 'feeds/all.feed.rss.xml'
 # =============================================================================
 
 # Donation section for article.html of my forked plumage theme
-DONATION = {
-    'bitcoin': "1HWMzBGTQ8VUJGXgvSDzAFacfeY2sLiZda",
+DONATIONS = {
+    'btc': '1HWMzBGTQ8VUJGXgvSDzAFacfeY2sLiZda',
+    'eth': '0x0380433c5cdda13c8cd6cff5ddbcc1d7701bcb83',
+    'ltc': 'LUFkjq32kEAiYqnMG25isqGNdgkehj9rJT',
+    'paypalme': 'm157q',
 }
 
 # =============================================================================
