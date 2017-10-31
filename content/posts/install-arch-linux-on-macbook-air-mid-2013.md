@@ -165,7 +165,7 @@ $ lspci -vnn |grep 0280
 `4360` 這張則是不被支援的，所以可能需要另外購買無線網卡  
 (我沒有親自測試過，如果有勇者或是有經驗的人歡迎回覆告知)  
   
-`43a0` 的話照著底下的指令做應該就可以使用無線網路連網了 (kerel 為 Linux 4.1.5-1)  
+`43a0` 的話照著底下的指令做應該就可以使用無線網路連網了 (kernel 為 Linux 4.1.5-1)  
   
 + `yaourt -S broadcom-wl-dkms`  
     + after installation, follow the postinstall instructions.  
