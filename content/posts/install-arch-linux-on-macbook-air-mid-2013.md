@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2016-12-16 08:52  
+Modified: 2017-10-31 16:50  
   
 ---  
   
@@ -179,9 +179,54 @@ $ lspci -vnn |grep 0280
 ==> utility and add 'wicd' to your systemd configuration.  
 ```  
   
-> 記得 disable dhcpcd 然後 enable wicd，  
-> dhcpcd 跟 wicd 會衝突，開著 dhcpcd 的時候使用 wicd 的話  
-> 會無法使用無線網路連線，錯誤訊息也看不出啥端倪，我就是卡在這很久Orz  
+記得 `systemctl stop dhcpcd`, `sytemctl disable dhcpcd`,  
+`systemcl stop NetworkManager`, `systemctl disable NetworkManager`，  
+然後 `systemctl enable wicd`，  
+`dhcpcd` 或 `NetworkManager` 都會跟 `wicd` 衝突，  
+開著 `dhcpcd` 或 `NetworkManager` 的時候使用 `wicd` 的話，  
+會無法使用無線網路連線，  
+錯誤訊息也看不出啥端倪，  
+我就是卡在這很久 Orz  
+  
+#### 2017.10.31 更新  
+  
+```  
+Warning: Running multiple network managers will cause problems, so it is important to disable all other network management daemons.  
+  
+First, stop all previously running network daemons (like netctl, netcfg, dhcpcd, NetworkManager).  
+  
+Disable any existing network management services, including netctl, netcfg, dhcpcd, and networkmanager. Refer to Systemd#Using units.  
+Note: You might need to stop and disable the network daemon instead of netctl, which is a current replacement for network service. If unsure, try disabling both.  
+```  
+quote from [Wicd - ArchWiki](https://wiki.archlinux.org/index.php/wicd#Initial_setup)  
+  
+我猜不只 `wicd`，  
+其他的 Network Daemon 應該也是同理，  
+不要讓他們彼此起衝突。  
+  
+主要是因為我在這裡是使用 `wicd`  
+所以如果沒有把 `dhcpcd` 或 `NetworkManager` 都關掉的話，  
+在 `dmesg` 會看到以下相關的錯誤訊息：  
+  
+```  
+[ 6677.574915] ERROR @wl_notify_scan_status :  
+[ 6677.574919] wlp3s0 Scan_results error (-22)  
+```  
+  
+```  
+[ 6560.346608] ERROR @wl_cfg80211_scan :  
+[ 6560.346611] WLC_SCAN error (-22)  
+```  
+  
+```  
+[ 6467.860408] ERROR @wl_notify_scan_status :  
+[ 6467.860413] wlp3s0 Scan_results error (-22)  
+```  
+  
+詳細請參考為這個問題而寫的新文章  
+[用 broadcom-wl-dkms 讓 BCM4360 [14e4:43a0] (rev 03) 能順利在 Arch Linux 中使用](/posts/2017/10/31/make-bcm4360-14e4-43a0-rev-03-work-on-arch-linux-with-broadcom-wl-dkms/)  
+  
+---  
   
 #### Improve DHCP connect init speed  
 + Add below into `/etc/dhcpcd.conf`  
