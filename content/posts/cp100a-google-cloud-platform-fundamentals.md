@@ -14,7 +14,7 @@ Modified: 2016-05-25 22:47
     + OXZnOGVkCg==  
     + <https://sites.google.com/a/google.com/cloud-platform-training/cloud-platform-training/>  
     + <https://sites.google.com/a/google.com/cloud-platform-training/cloud-platform-training/cp100-v2>  
-    + [slides.tar.gz](/files/cp100a-google-cloud-platform-fundamentals/slides.tar.gz)  
+    + [slides.tar.gz](https://drive.google.com/file/d/0B9cCeTKOkfWIaXNqWnNDT0VmaG8/view?usp=sharing)  
   
 ---  
   

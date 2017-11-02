@@ -8,7 +8,7 @@ Summary: 《台灣資料科學年會之系列活動：手把手的深度學習�
   
   
 + <http://foundation.datasci.tw/step-by-step-dl-170813/>  
-+ [Slides](/files/deep-learning-hands-on-step-by-step-datasci-tw/slide_DL_final_0813.pdf)  
++ [Slides](https://drive.google.com/file/d/0B9cCeTKOkfWIbWtjdWJaRl9YRmM/view?usp=sharing)  
   
 ---  
   

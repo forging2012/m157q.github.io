@@ -126,10 +126,6 @@ github: publish
 	git push $(GITHUB_REMOTE_NAME) $(GITHUB_SOURCE_CODES_BRANCH)
 
 travis: publish
-	# Use git-lfs for *.pdf, so remove *.pdf for output dir.
-	# Should specify https://github.com/M157q/m157q.github.io/raw/source/content/files/
-	# in the posts.
-	find $(OUTPUTDIR)/files -name "*.pdf" -type f -delete
 	git config --global user.name "M157q - Travis"
 	git config --global user.email M157q.tw@gmail.com
 	ghp-import -n -m "$(GITHUB_COMMIT_MSG)" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)

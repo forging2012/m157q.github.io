@@ -11,7 +11,7 @@ Modified: 2016-04-24 14:43
 + <http://dsc.kktix.cc/events/video-signal>  
 + <http://datasci.tw/event/vision_and_learning/>  
 + Slides: <http://www.slideshare.net/tw_dsconf/ss-61255961>  
-    + [備份](https://github.com/M157q/m157q.github.io/raw/source/content/files/video-signal-processing-and-the-application-of-deep-learning/video-signal-processing-and-the-application-of-deep-learning.pdf)  
+    + [備份](https://drive.google.com/file/d/0B9cCeTKOkfWITllMazh2a0ctZVk/view?usp=sharing)  
   
 ---  
   
