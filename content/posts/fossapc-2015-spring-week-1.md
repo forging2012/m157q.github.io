@@ -1,5 +1,5 @@
 Title: FOSSAPC 2015 Spring Week #1  
-Slug: foss-week1  
+Slug: fossapc-2015-spring-week-1  
 Date: 2015-03-02 12:57:15  
 Authors: m157q  
 Category: Course  
