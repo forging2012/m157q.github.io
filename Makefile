@@ -29,7 +29,7 @@ GITHUB_REPO_SLUG=M157q/m157q.github.io
 GITHUB_REMOTE_NAME=origin
 GITHUB_SOURCE_CODES_BRANCH=source
 GITHUB_PAGES_BRANCH=master
-GITHUB_COMMIT_MSG=$(shell git --no-pager log --format=%s -n 1 | sed -E 's/"/\\"/g')
+GITHUB_COMMIT_MSG=$(shell git --no-pager log --format=%s -n 1 | sed 's/[\$"]/\\&/g')
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
