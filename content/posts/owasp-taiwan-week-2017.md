@@ -284,6 +284,8 @@ Summary: Note for OWASP Taiwan Week Day 1
         + 網路上都有很多現成的後門可以取得了，像是 [GitHub - tennc/webshell: This is a webshell open source project](https://github.com/tennc/webshell)  
 + 物聯網裝置的資安模擬環境會是未來重要的一環  
     + 電腦跟手機可能不是 24x7 連網，但物聯網裝置基本上都是 24x7 連網而且有的還要求網路的 latency 要很低，一被入侵很有可能成為非常大型的 Bot Net。（沒提到前陣子鬧很大的 Mira 病毒）  
++ 然後講者講了一句很有趣的話  
+    + > 「社交工程一直都可以成功的原因是什麼？因為人腦的愚蠢是不能進行安全性更新的。」  
   
 ---  
   
