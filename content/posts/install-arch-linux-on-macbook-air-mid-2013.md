@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, MacBook Air, Linux, COSCUP  
 Summary: 參加完 COSCUP 2015，聽完 jserv 的封麥演說以及一句「Linux 使用者有錢以後就會投入 Mac 的懷抱」覺得自己深深中槍，備感慚愧。於是決定來做一件很久以前其實就想做的事：跟 Linus Torvalds 一樣，把 MacBook Air 上的 OS X 砍了，直接灌 Linux 來用。當然，Arch Linux 是首選。以下紀錄一下過程，給有需要的人參考。  
-Modified: 2017-10-31 16:50  
+Modified: 2017-12-08 12:47  
   
 ---  
   
@@ -613,17 +613,18 @@ $ fusermount -u ~/mnt   // unmount
   
   
 ### Webcam  
-+ <https://wiki.archlinux.org/index.php/MacBook#Webcam>  
-+ (2016/12/02 update)  
-    + [bcwc-pcie-dkms](https://aur.archlinux.org/packages/bcwc-pcie-dkms/) on AUR works.  
-        + `bcwc-pcie-dkms 0r213.bb3c229-1`  
-        + `linux-4.8.11-1-ARCH`  
-        + Use `yaourt -S bcwc-pcie-dkms` to install it.  
   
+> [UPDATED] see the info below  
+>  
 > The Facetime HD webcam (included on 2013 MBAs onwards) is no longer UVC device, and therefore, does not work out of the box.  
 > It is actually a PCIE device.  
 > While [a bcwc_pcie driver is being developed](https://github.com/patjak/bcwc_pcie), it will probably take some time before it is ready.  
 > See also [Linux bug #71131](https://bugzilla.kernel.org/show_bug.cgi?id=71131) and [Ubuntu bug #1276711](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1276811).  
+  
++ <https://wiki.archlinux.org/index.php/MacBook#Webcam>  
++ (2017/12/08 update)  
+    + [bcwc-pcie-git](https://aur.archlinux.org/packages/bcwc-pcie-git/) on AUR works.  
+        + Use `yaourt -S bcwc-pcie-git` or download the tarball and use `makepkg -s` to install it.  
   
   
 ### Disable MacBook Firmware Boot Sound  
