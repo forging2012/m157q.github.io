@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-12-08 06:37  
+Modified: 2017-12-17 14:07  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -290,6 +290,16 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 不同世代的人對於愛的表現也不同，於此產生的價值觀的代溝與衝突在這部電影也都有被闡述出來。  
         - 可以見到每個角色的不完美，但正因為不完美，所以真正的愛需要包容  
         - 很喜歡裡面的一句台詞：「一輩子都睡在一起也不代表就彼此相愛啊。」  
+    - [o] [Star Wars Episode IV: A New Hope (1977)](http://www.imdb.com/title/tt0076759) (2017/12/15)  
+    - [o] [Star Wars: Episode V - The Empire Strikes Back (1980)](http://www.imdb.com/title/tt0080684/) (2017/12/16)  
+    - [o] [Star Wars: Episode VI - Return of the Jedi (1983)](http://www.imdb.com/title/tt0086190/) (2017/12/16)  
+        - 終於看了大受好評的星際大戰經典三部曲，學到了不少英文啊。  
+        - rendezvous, pulverize, disintegration  
+        - 特效個人覺得比同期的 Alien 遜色不少  
+        - 剪接技巧也有些粗糙  
+        - 會紅的原因我想是因為題材跳脫了當時電影的框架及加入鮮明易懂的元素吧  
+        - 就算沒看過電影也聽聞過光劍、原力和配樂  
+        - 劇情上則是黑武士的轉折  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
