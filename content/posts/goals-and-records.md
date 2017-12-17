@@ -283,7 +283,7 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [可可夜總會 (Coco)](http://www.imdb.com/title/tt2380307/) (2017/12/05)  
         - 真的是很棒的一部動畫電影，劇本的層次有，把墨西哥的民俗文化的獨特性呈現出來，而亡靈節也很能跟台灣的清明節產生共鳴。  
         - 還有個一定會讓大家產生共鳴的角色就是主角的祖母，每個人的家中一定都有這樣守舊不太願意改變的長輩，可能是父母，也可能是祖父母，觀眾自己多少都有像主角一樣違抗這些長輩的時候，所以很有代入感。  
-        - 也是一部今年我覺得很棒的電影之一。  
+        - 也是一部今年我覺得很棒的電影之一，看完會讓人想練吉他啊。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
