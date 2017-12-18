@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-12-18 13:07  
+Modified: 2017-12-18 16:34  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -306,6 +306,8 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 先看完經典三部曲真的會讓人比較有興趣看前傳三部曲，還記得大概 5 年前某天晚上想一次把前六部曲看完，結果看到第二部就覺得太無聊而睡著了。  
         - 前傳三部曲的評價普遍不高，主要應該是因為劇情沒有什麼太大的起伏轉折吧，我覺得一方面也是因為大多數人都看過經典三部曲了，所以知道未來的走向會怎麼發展，誰最後有活下來之類的，所以即便看到再驚險的打鬥場面都會覺得「啊，這個角色在經典三部曲有出現過，所以他在這裡不會死。」  
         - 我想導演應該也有想到這樣的事，所以前傳三部曲就加強了其他的部份，像我自己就覺得特效、剪接與光劍打鬥場面在前傳三部曲都有極大水準的提升。當然也有人會說畢竟一部曲和六部曲中間隔了 16 年，這樣的提升應該是基本。但我還是覺得前傳三部曲算是 George Lucas 站在經典三部曲的穩固基礎上，再把星際大戰系列推向更完整的商業化電影的一個手段，更浩大的場景、更磅礡的畫面、更順暢的武打、更像樣的光劍（？）  
+    - [o] [Rogue One (2016) - IMDb](http://www.imdb.com/title/tt3748528/) (2017/12/18)  
+        - 真的好看，讓人感動到哭的點有好多個，劇情方面也不拖泥帶水，而且也有穿插一些幽默的笑點。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
