@@ -1,15 +1,16 @@
-Title: [2018 iThome 鐵人賽] Day 1: 關於 4G 行動網路的一些筆記  
+Title: 關於 4G 行動網路的一些筆記  
 Slug: 4g-mobile-network-tw  
 Date: 2017-12-20 23:59:50  
 Authors: m157q  
 Category: Note  
 Tags: 4G, LTE, 2018 iThome 鐵人賽, Mobile Network  
 Summary: 最近因為要買 4G 行動網路分享器，花了些時間爬文，想說用這篇筆記一下。  
-Modified: 2017-12-21 10:39:50  
+Modified: 2017-12-21 14:34:50  
   
   
-本文同步發表於 [\[2018 iThome 鐵人賽\] Day 1: 關於 4G 行動網路的一些筆記 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10192595)  
+本文利用工人智慧技術同步發表於 [\[2018 iThome 鐵人賽\] Day 1: 關於 4G 行動網路的一些筆記 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10192595)  
   
+---  
   
 ## 前言  
   
@@ -55,7 +56,7 @@ Modified: 2017-12-21 10:39:50
     + 最早出現「號稱 4G」的兩個通訊標準：  
         + 一個是我們現在在台灣最常看到的 [LTE](https://zh.wikipedia.org/zh-tw/%E9%95%B7%E6%9C%9F%E6%BC%94%E9%80%B2%E6%8A%80%E8%A1%93)  
         + 另外一個則是[在台灣做不起來的 WiMAX](https://zh.wikipedia.org/zh-tw/WiMAX#WiMAX%E5%85%A8%E9%9D%A2%E6%92%A4%E5%8F%B0)  
-            + 至於為什麼做不起來，詳情可以參考這篇文章：[你有聽過台灣納稅人的血淚WiMax嗎？中離王Intel與榮景不再的高通—4G 篇 – 寫點科普，請給指教。](https://hellolynn.hpd.io/2017/05/19/%E4%BD%A0%E6%9C%89%E8%81%BD%E9%81%8E%E5%8F%B0%E7%81%A3%E7%B4%8D%E7%A8%85%E4%BA%BA%E7%9A%84%E8%A1%80%E6%B7%9Awimax%E5%97%8E-4g%E7%AF%87/)  
+            + 至於為什麼做不起來，詳情可以參考這篇文章：[你有聽過台灣納稅人的血淚WiMax嗎？中離王Intel與榮景不再的高通—4G 篇 – 寫點科普，請給指教。](https://hellolynn.hpd.io/2017/05/19/%E4%BD%A0%E6%9C%89%E8%81%BD%E9%81%8E%E5%8F%B0%E7%81%A3%E7%B4%8D%E7%A8%85%E4%BA%BA%E7%9A%84%E8%A1%80%E6%B7%9Awimax%E5%97%8E-4g%E7%AF%87/) （私心推薦一下這個 Blog，內容大部份都滿完整且簡單易懂的，而且作者不是資通訊本科生還是一個人因為興趣而寫這些文章，真的覺得很厲害。）  
         + 但其實這兩種通訊標準根本達不到 4G 的門檻  
             + > 2010 年 12 月 6 日，ITU-R 的承認，這兩種技術，以及其他 3.9 技術，不符合 IMT-Advanced 的要求，仍可以被認為是「4G」，但前提是它們是先行者，以 IMT-Advanced 的標準版本和改善的效能和功能來看它只是相當於現在部署的 3G 網路的程度。  
     + 真正符合 IMT-Advanced 的 4G 規範的其實是 [LTE-Advanced (LTE-A) 和 WirelessMAN-Advanced (又稱 WiMAX-Advanced 或 WiMAX 2)](https://zh.wikipedia.org/zh-tw/4G#IMT-Advanced%E7%9A%844G%E6%A8%99%E6%BA%96)  
