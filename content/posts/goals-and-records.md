@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-12-20 16:34  
+Modified: 2017-12-21 13:55  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -312,6 +312,8 @@ Summary: Records for what I want to do and when I've done since 2015.
         - James McAvoy 一人分飾好幾角，真的厲害，不知道演這種劇本會不會也演到人格分裂？  
         - Anya Taylor-Joy 好...好可愛。  
         - 片尾的部份看不太懂，去搜尋了一下才發現是導演 Night Shyamalan 的用心良苦啊。  
+    - [o] [Unbreakable (2000)](http://www.imdb.com/title/tt0217869/) (2017/12/21)  
+        - 因為 Split 才去看這部電影，因為 Split 跟這部電影是處於同個世界，看完大概可以理解為什麼這部不紅的原因。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
