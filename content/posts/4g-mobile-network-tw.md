@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: 4G, LTE, 2018 iThome 鐵人賽, Mobile Network  
 Summary: 最近因為要買 4G 行動網路分享器，花了些時間爬文，想說用這篇筆記一下。  
-Modified: 2017-12-21 14:34:50  
+Modified: 2017-12-21 14:47:50  
   
   
 本文利用工人智慧技術同步發表於 [\[2018 iThome 鐵人賽\] Day 1: 關於 4G 行動網路的一些筆記 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10192595)  
@@ -100,7 +100,7 @@ Modified: 2017-12-21 14:34:50
   
 詳細可以參考以下幾篇文章：  
   
-+ + [4G該怎麼選？4G+和CA又是什麼？告訴你七個辦4G前必看的問題！ | 阿祥的網路筆記本](https://axiang.cc/archives/22019)  
++ [4G該怎麼選？4G+和CA又是什麼？告訴你七個辦4G前必看的問題！ | 阿祥的網路筆記本](https://axiang.cc/archives/22019)  
 + [【3C】簡單易懂 - 什麼是"載波聚合Carrier Aggregation", 到底有哪些手機支援!? @ 火星豬 :: 痞客邦 PIXNET ::](http://pigapril.pixnet.net/blog/post/319935925-%E3%80%903c%E3%80%91%E7%B0%A1%E5%96%AE%E6%98%93%E6%87%82---%E4%BB%80%E9%BA%BC%E6%98%AF%22%E8%BC%89%E6%B3%A2%E8%81%9A%E5%90%88carrier-aggrega)  
 + [為何明明買了支援CA手機卻飆不了速呢? 2CA/3CA/4CA支援頻段揭密 - 小丰子3C俱樂部](https://tel3c.tw/blog/post/222391175)  
   
