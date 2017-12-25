@@ -72,7 +72,7 @@ Twitter 也很容易跟一些很有名的人直接交流，
 這邊就以抓出比較嚴肅一點的 tweet 作為範例，  
 幾行就可以寫完了。  
   
-```  
+```python  
 #!/usr/bin/env python3  
   
 import urllib  
