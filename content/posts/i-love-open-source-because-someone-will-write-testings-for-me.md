@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Open Source  
 Summary: 無聊寫個小程式，結果被不認識的路人發了幫忙寫測試的 PR，而且 commit messages 還超級詳細，讓我學到了不少，這就是 Open Source 的魅力啊。  
+Modified: 2017-12-26 12:05:12  
   
   
 ## 先講結論  
@@ -43,7 +44,7 @@ Summary: 無聊寫個小程式，結果被不認識的路人發了幫忙寫測�
 於是就[開了一個 issue 提醒我自己要寫測試](https://github.com/M157q/hor2vec/issues/5)  
   
 沒！想！到！  
-今天竟然收到一個路人的 pull request 幫我加上了測試  
+竟然收到一個路人的 pull request 幫我加上了測試  
 <https://github.com/M157q/hor2vec/pull/6>  
 花了 27 個 commits  
 更動了 400 多行程式碼  
