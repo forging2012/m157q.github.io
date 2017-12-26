@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-12-21 13:55  
+Modified: 2017-12-26 18:42  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -314,6 +314,14 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 片尾的部份看不太懂，去搜尋了一下才發現是導演 Night Shyamalan 的用心良苦啊。  
     - [o] [Unbreakable (2000)](http://www.imdb.com/title/tt0217869/) (2017/12/21)  
         - 因為 Split 才去看這部電影，因為 Split 跟這部電影是處於同個世界，看完大概可以理解為什麼這部不紅的原因。  
+    - [o] [Back to the Future (1985) - IMDb](http://www.imdb.com/title/tt0088763/) (2017/12/24)  
+    - [o] [Back to the Future Part II (1989) - IMDb](http://www.imdb.com/title/tt0096874/) (2017/12/24)  
+    - [o] [Back to the Future Part III (1990) - IMDb](http://www.imdb.com/title/tt0099088/) (2017/12/24)  
+        - 一次就把這個在我出生前就拍完的系列看完了，原來是 Steven Spielberg 的作品。挺厲害的，透過時空穿越的題材造就了一部老少咸宜的電影。  
+    - [o] [John Wick (2014) - IMDb](http://www.imdb.com/title/tt2911666/) (2017/12/25)  
+        - 竟然有點久沒看到的 Keanu Reeves，不知道為啥看這部的時候一直想到 Tom Cruise 演的落日殺神。  
+    - [o] [Miss Sloane (2016) - IMDb](http://www.imdb.com/title/tt4540710/) (2017/12/26)  
+        - 挺不錯的劇情片，有點像在看 House of Cards 的感覺。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
