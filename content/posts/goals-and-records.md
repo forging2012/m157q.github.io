@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-12-26 18:42  
+Modified: 2017-12-27 23:22  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -322,6 +322,9 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 竟然有點久沒看到的 Keanu Reeves，不知道為啥看這部的時候一直想到 Tom Cruise 演的落日殺神。  
     - [o] [Miss Sloane (2016) - IMDb](http://www.imdb.com/title/tt4540710/) (2017/12/26)  
         - 挺不錯的劇情片，有點像在看 House of Cards 的感覺。  
+    - [o] [American Gangster (2007) - IMDb](http://www.imdb.com/title/tt0765429/)  (2017/12/27)  
+        - 看丹佐華盛頓跟羅素克洛飆戲，看這部多少就會想到《教父》裡頭的情節。  
+        - 看英文有些地方有點吃力，主要是因為不熟紐約的地理位置，出現了很多行政區的名字。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
