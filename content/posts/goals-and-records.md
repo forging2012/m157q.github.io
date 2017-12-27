@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-12-27 23:22  
+Modified: 2017-12-28 01:30  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -325,6 +325,8 @@ Summary: Records for what I want to do and when I've done since 2015.
     - [o] [American Gangster (2007) - IMDb](http://www.imdb.com/title/tt0765429/)  (2017/12/27)  
         - 看丹佐華盛頓跟羅素克洛飆戲，看這部多少就會想到《教父》裡頭的情節。  
         - 看英文有些地方有點吃力，主要是因為不熟紐約的地理位置，出現了很多行政區的名字。  
+    - [o] [The Sixth Sense (1999) - IMDb](http://www.imdb.com/title/tt0167404/) (2017/12/28)  
+        - 最後的伏筆真的完全騙到我了，要恐怖有恐怖，要溫馨有溫馨，要劇情有劇情，Night Shyamalan 真的很強。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
