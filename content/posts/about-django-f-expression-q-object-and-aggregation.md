@@ -58,4 +58,4 @@ Summary: 以前維護離職同事留下來的程式碼時做的一些筆記，�
   
 ## 後記  
   
-讓我有點不勝唏噓的是，筆記內容的連結依然是 Django 1.10，一年半前是最新的版本，但現在點進去已經顯示 **This document is for an insecure version of Django that is no longer supported. Please upgrade to a newer release! ** 了。  
+讓我有點不勝唏噓的是，筆記內容的連結依然是 Django 1.10，一年半前是最新的版本，但現在點進去已經顯示 **"This document is for an insecure version of Django that is no longer supported. Please upgrade to a newer release!"** 了。  
