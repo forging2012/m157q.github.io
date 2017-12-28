@@ -5,7 +5,7 @@ Category: Life
 Tags: Life  
 Slug: goals-and-records  
 Pin: true  
-Modified: 2017-12-28 01:30  
+Modified: 2017-12-28 23:21  
 Summary: Records for what I want to do and when I've done since 2015.  
   
   
@@ -327,6 +327,8 @@ Summary: Records for what I want to do and when I've done since 2015.
         - 看英文有些地方有點吃力，主要是因為不熟紐約的地理位置，出現了很多行政區的名字。  
     - [o] [The Sixth Sense (1999) - IMDb](http://www.imdb.com/title/tt0167404/) (2017/12/28)  
         - 最後的伏筆真的完全騙到我了，要恐怖有恐怖，要溫馨有溫馨，要劇情有劇情，Night Shyamalan 真的很強。  
+    - [o] [Training Day (2001) - IMDb](http://www.imdb.com/title/tt0139654/) (2017/12/28)  
+        - 又是丹佐華盛頓，我覺得他在這部裡的演技超好，這部完全就是在看他秀獨角戲，劇情方面沒什麼精彩的，主要就 Denzel Washington 把角色的草根性展現的很自然。  
 - 2016  
     - [o] [Winter on Fire: Ukraine's Fight for Freedom](/posts/2016/01/10/winter-on-fire/) (2016/01/10)  
     - [o] [Fight Club (1999)](/posts/2016/01/23/fight-club/) (2016/01/23)  
