@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Linux, Keymap, xmodmap, setxkbmap, X Window  
 Summary: 之前都是用 `xmodmap` 來改鍵位，但在遇到不同鍵盤的時候就得使用不同的設定檔，覺得很麻煩，於是就花了點時間查詢有沒有其他更簡單的方法，利用這篇文章紀錄。  
-Modified: 2018-01-02 22:07:41  
+Modified: 2018-01-02 22:17:41  
   
   
 ## TL;DR  
@@ -53,17 +53,7 @@ Modified: 2018-01-02 22:07:41
   
 但每次要從已經更改後的鍵位，換到另外一個更改鍵位的時候，不能直接使用指令切換，而是得先用 `setxkbmap -option` 來重置鍵位，然後才能再下另外一個指令來切換到另外一種鍵位，因為 `setxkbmap` 預設是會繼續新增 `-option` 到目前的設定，這也是為什麼我上面自己整理的兩個 script 的第一行都要先用 `setxkbmap -option` 的原因。如果不這樣做的話，可能會出現很奇怪的狀況，這點是要注意的。在 `man setxkbmap` 裡頭關於 `-option` 的說明部份也有提到這點：  
   
-```  
--option name  
-               Specifies the name of an option to  determine  the  compo‐  
-               nents  which  make  up the keyboard description;  multiple  
-               options may be specified, one per -option flag. Note  that  
-               setxkbmap  adds  options  specified in the command line to  
-               the options that were set before (as saved in root  window  
-               properties).  If you want to replace all previously speci‐  
-               fied options, use the -option flag with an empty  argument  
-               first.  
-```  
+![setxkbmap-option](/files/change-keymap-on-linux/setxkbmap-option.jpg)  
   
 ---  
   
