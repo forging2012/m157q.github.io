@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Facebook  
 Summary: 其實 Facebook 的網址列針對單一使用者時，已經可以算是 API 了，所以可以透過在網址列加上一些東西，拿到某個使用者滿多進一步的訊息的，這篇文章會稍微介紹一下。  
-Modified: 2018-01-03 18:52:27  
+Modified: 2018-01-03 19:01:27  
   
   
 ## TL;DR  
@@ -78,6 +78,21 @@ Modified: 2018-01-03 18:52:27
   
 其他參數依此類推，以下就列出有哪些參數可以使用，因為這些參數其實都已經和使用英文版 Facebook 搜尋時會顯示的一般英文一樣了，所以就不多做說明，有興趣的人可以試一試。  
   
+### 和發文有關的  
+  
++ `/stories-by/`  
++ `/stories-liked/`  
++ `/stories-commented/`  
++ `/stories-publishers/`  
++ `/stories-tagged/`  
++ `/stories-media-tagged/`  
++ `/stories-in/`  
++ `/stories-topic/`  
++ `/stories-news/`  
++ `/stories-recent/`  
++ `/reshare-stories-by/`  
++ `/reviews-at/`  
++ `/hashtag/`  
   
 ### 和照片有關的  
   
@@ -94,13 +109,15 @@ Modified: 2018-01-03 18:52:27
 + `/photos-recommended-for/`  
 + `/recent-photos/`  
   
+### 和按讚有關的  
   
-### 和按讚、留言有關的  
-  
-+ `/photos-liked/`  
-+ `/photos-commented/`  
 + `/stories-liked/`  
++ `/photos-liked/`  
+  
+### 和留言有關的  
+  
 + `/stories-commented/`  
++ `/photos-commented/`  
   
 ### 和打卡、地點、評論有關的  
   
@@ -113,7 +130,6 @@ Modified: 2018-01-03 18:52:27
 + `/places-near/`  
 + `/places-reviewed/`  
 + `/pages-in/`  
-+ `/photos-in/`  
 + `/stories-at/`  
 + `/reviews-at/`  
 + `/events-at/`  
@@ -143,7 +159,6 @@ Modified: 2018-01-03 18:52:27
 + 和關鍵字有關的  
     + `/stories-keyword/`  
     + `/photos-keyword/`  
-    + `/hashtag/`  
 + 和名字有關的  
     + `/users-named/`  
     + `/pages-named/`  
