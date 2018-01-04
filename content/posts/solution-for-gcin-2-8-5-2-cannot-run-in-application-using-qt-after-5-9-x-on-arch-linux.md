@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Arch Linux, Qt5, qutebrowser, gcin  
 Summary: 用了 qutebrowser 以後， 發現 gcin 沒辦法在其中使用，查了一下解法後順利解決了，寫這篇文章紀錄一下。  
-Modified: 2018-01-05 01:04:00  
+Modified: 2018-01-05 01:14:00  
   
   
 ## TL;DR  
@@ -64,11 +64,12 @@ index ca08fcb57f3..7048c13411d 100644
   
 + 在該資料夾內下 `makepkg -s` 這個指令，就會開始 build gcin  
 + build 好之後應該會出現 `gcin-2.8.5-2-x86_64.pkg.tar.xz`  
-+ 使用 `sudo pacman -U gcin-2.8.5-2-x86_64.pkg.tar.xz` 來安裝  
-+ 安裝完後可以使用這個指令來檢查：`qtplugininfo /usr/lib/qt/plugins/platforminputcontexts/libgcinplatforminputcontextplugin.so`  
++ 使用 `sudo pacman -U gcin-2.8.5-2-x86_64.pkg.tar.xz` 來安裝 patch 過後的 gcin  
++ 使用 `qtplugininfo /usr/lib/qt/plugins/platforminputcontexts/libgcinplatforminputcontextplugin.so` 來檢查  
     + 如果沒問題的話應該會得到下面這樣的輸出：  
   
 ```  
+$ qtplugininfo /usr/lib/qt/plugins/platforminputcontexts/libgcinplatforminputcontextplugin.so  
 IID "org.qt-project.Qt.QPlatformInputContextFactoryInterface.5.1" Qt 5.10.0 (debug)  
 User Data: {  
     "Keys": [  
