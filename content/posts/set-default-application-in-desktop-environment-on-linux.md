@@ -52,3 +52,4 @@ XDG 的設定檔有下面三種路徑：
 ## 參考來源  
   
 + [Default applications - ArchWiki](https://wiki.archlinux.org/index.php/Default_applications#xdg-utils)  
++ [freedesktop.org - Wikipedia](https://en.wikipedia.org/wiki/Freedesktop.org)  
