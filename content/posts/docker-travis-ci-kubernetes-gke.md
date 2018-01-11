@@ -22,7 +22,7 @@ Modified: 2018-01-11 17:01:19
   
 至於透過 Travis CI 自動 build image  的部份，照著這篇文章做的確有成功：[Docker Workflow](https://chengl.com/docker-workflow/)（其實看這篇文章的 `.travis.yml` 就可以瞭解整個梗概了），但發現效果不盡理想，儘管已經拆分成 base image 和 production image，在每次 build image 的時候節省掉 build base image 的時間了，但花的時間還是太久。  
   
-當時因為被抓去做其他事，這部份就只弄到這裡，我覺得滿可惜到，後來大家都還是在 local build image 然後再透過 Makefile 把指令包裝起來，在 local 這邊透過 kubectl 把 image push 到 GCP。  
+當時因為被抓去做其他事，這部份就只弄到這裡，我覺得滿可惜的，後來大家都還是在 local build image 然後再透過 Makefile 把指令包裝起來，在 local 這邊透過 kubectl 把 image push 到 GCP。  
   
 ---  
   
