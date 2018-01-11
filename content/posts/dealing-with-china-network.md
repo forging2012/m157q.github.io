@@ -1,6 +1,6 @@
 Title: 中國網路相關筆記  
 Slug: dealing-with-china-network  
-Date: 2018-01-11 15:48:26  
+Date: 2018-01-11 16:00:26  
 Authors: m157q  
 Category: Note  
 Tags: China, Network  
@@ -73,7 +73,7 @@ Summary: 紀錄一下 2016 年 10 月左右處理跟中國網路相關問題時�
     + 有找到 StackOverflow 上的這篇： [browser - Load a Javascript file, but cancel if it takes too long? - Stack Overflow](https://stackoverflow.com/questions/5642270/load-a-javascript-file-but-cancel-if-it-takes-too-long)  
     + 試了一下發現無法成功。  
 + 最後自己想出了一個折衷的辦法，但非常的土炮。  
-    + 我在阿里雲上開了台虛擬雞，用 Django 架了個伺服器。  
+    + 我在阿里雲上開了台虛擬機，用 Django 架了個伺服器。  
     + 寫了個 crawler 每小時固定去爬上面提到的 <https://www.17ce.com/> 和 <http://ping.chinaz.com/> ，把他們有沒有辦法載入 gtm.js 的結果紀錄起來。  
         +  其結果會包含省分、電信商及其能不能載入。  
     + 另外一個 crawler 則是去爬 <http://ipcn.chacuo.net/>，把所有 IP 對應到的省分和電信商紀錄下來，每天會更新一次。  
