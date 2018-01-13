@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: GitHub, Python, Python 3  
 Summary: 如果你想計算你在某個 GitHub organization 的總 commits 數的話，可以參考一下這篇文章。  
+Modified: 2018-01-13 20:45:13  
   
   
 ## 前言  
@@ -22,7 +23,7 @@ Summary: 如果你想計算你在某個 GitHub organization 的總 commits 數�
     + 請使用 `pip install --pre github3.py` 來安裝  
     + 使用的版本為 `github3.py (1.0.0a4)`  
 + 雖然可以直接用帳號密碼登入，但因為我有用 2FA，所以直接產生一組 Access Token 比較方便，也比較安全。  
-    + 可以到 https://github.com/settings/tokens 產生一組，只需要勾選最基本的 repo 權限就行了，詳細可以參考 [GitHub 的官方教學](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)  
+    + 可以到 <https://github.com/settings/tokens> 產生一組，只需要勾選最基本的 repo 權限就行了，詳細可以參考 [GitHub 的官方教學](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)  
 + 這個 script 可以拿來算你在某個 organization 的總 commits 數，總共 35 行就搞定了。  
   
 ```python  
