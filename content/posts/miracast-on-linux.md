@@ -16,7 +16,7 @@ Modified: 2018-01-15 15:49:47
     + [GitHub - derekdai/miraclecast: Connect external monitors to your system via Wifi-Display specification also known as Miracast](https://github.com/derekdai/miraclecast) 這個 fork 出去修改的版本解決了比較多的問題，但最後嘗試了一番還是沒辦法順利使用。  
 + [GitHub - intel/wds: Wireless Display Software For Linux OS (WDS)](https://github.com/intel/wds)  
     + 嗯，沒錯，是那個 Intel。  
-    + 這個算是試到後來可以動的，但結果不盡理想，畫面非常卡，聲音也沒有出來，猜測是還得去調整其他 `gstreamer` 的參數，但這篇會以紀錄 `wds` 為主。  
+    + 這個算是試到後來可以動的，但結果不盡理想，畫面非常卡，聲音也沒有出來，猜測是還得去調整其他 `gstreamer` 的參數，這篇會以紀錄 `wds` 為主。  
   
 ---  
   
