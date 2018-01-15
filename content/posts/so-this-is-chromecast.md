@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Chrome, Chromium, Chromecast, VLC, SMPlayer  
 Summary: Something about Chromecast  
+Modified: 2018-01-15 16:07:26  
   
   
   
@@ -29,3 +30,13 @@ ref: <https://www.howtogeek.com/269272/how-to-stream-from-vlc-to-your-chromecast
 並到 `chrome://flags` enable `Load Media Router Component Extension`  
   
 ref: <http://blog.smplayer.info/support-for-chromecast-in-smplayer-17-1/>  
+  
+---  
+  
+## 其他抱怨  
+  
++ Chromecast 一代外型設計很北七，太胖，會擋到其他 HDMI port，所以二代才拉了一條線出來。  
++ 看 Youtube 的時候畫質不能調整。  
++ 看 Youtube 過一陣子之後手機就沒辦法控制了，調音量和選時間都不會有反應。  
++ Guest mode 沒試成功過。  
++ 還遇過用一用強制更新重開，而且還超級久。  
