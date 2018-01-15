@@ -42,7 +42,7 @@ Summary: 這篇文章用來收集我看過覺得不錯的面試文
     + 這個主要是夠多家（18 間），而且有不少算有一點名氣的新創公司的資訊。  
 + [The Codist: Phone Interviews Can Be So Painful To Do](http://thecodist.com/article/phone-interviews-can-be-so-painful-to-do)  
     + 這篇是在講作者透過 Phone interview 面試人的經驗。  
-    + 怨念超深，作者目前是迪士尼公司的 Lead iOS engineer<抱怨一堆來面試的人連一些很基本的問題都答不出來。  
+    + 怨念超深，作者目前是迪士尼公司的 Lead iOS engineer，抱怨一堆來面試的人連一些很基本的問題都答不出來。  
     + 可以拿來引以為戒。  
 + [\[面試\] 研替心得分享及請益-下 (晨星) - 看板 Tech_Job - 批踢踢實業坊](https://www.ptt.cc/bbs/Tech_Job/M.1473663935.A.177.html)  
     + 算是竹科的公司普遍的面試流程。  

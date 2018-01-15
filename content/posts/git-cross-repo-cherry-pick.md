@@ -60,7 +60,7 @@ Modified: 2017-12-31 01:52:05
   
 這個是 3 個方法裏面最推薦的，最後會講一下 GitHub 有一個小方法可以直接拿到 patch，可以直接給 `git am` 使用。  
   
-基本上這方法應該是最正統得如何把別人的 commit 拿來給自己用的方式了，GitHub 也只是把這個包裝起來而已。如果是已經習慣透過 email 或者論壇收發 patch 的 Open Source contributer 兼 git 使用者，應該對這個方法習以為常。  
+基本上這方法應該是最正統的如何把別人的 commit 拿來給自己用的方式了，GitHub 也只是把這個包裝起來而已。如果是已經習慣透過 email 或者論壇收發 patch 的 Open Source contributer 兼 git 使用者，應該對這個方法習以為常。  
   
 一般的 GitHub user 應該都對這兩個指令不熟，因為 GitHub 已經把這塊都處理好了，所以使用者基本上不太需要自己操作。`man git-format-patch` 和 `man git-am` 就可以看到，這兩個指令基本上都是設計成在 email 的環境下使用：  
   
