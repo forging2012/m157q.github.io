@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Tools, M157q  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
-Modified: 2018-01-15 13:13:55  
+Modified: 2018-01-15 13:25:55  
   
   
 ## 前言  
@@ -70,6 +70,7 @@ Modified: 2018-01-15 13:13:55
 ## Terminal  
   
 + [urxvt-unicode](https://www.gnu.org/software/bash/)  
+    + 一款 terminal emulator，類似 macOS 上的 iTerm 或 iTerm2。  
     + 搭配這份設定檔：<https://github.com/M157q/dotfiles/blob/master/Xresources>  
 + [Zsh](https://www.zsh.org/)  
     + 以前是使用 bash，後來預設的 shell 改成 zsh，主要是補完功能以及支援非 ASCII 比較完整。  
@@ -202,13 +203,13 @@ Modified: 2018-01-15 13:13:55
 + [Discord](https://discordapp.com)  
     + 最近才開始使用的服務，主要是針對 Gamer 設計的即時語音通訊平台。  
     + 我個人是覺得像是 Slack + RaidCall，可以即時多人語音通訊（無上限），在 2017 年 11 月也開放了和好友視訊通話與螢幕畫面分享的功能（最多 10 人）。  
-+ Social Network Service  
-    + Facebook, Twitter, Line, Telegram, LinkedIn, Google+ (?)  
-    + 這邊用來紀錄時代的眼淚（？）  
 + [Medium](https://medium.com)  
     + 一個算新的部落格平台，乾淨簡潔無廣告，採用付費訂閱制，國外已經滿多人使用了，最近台灣也愈來愈多人使用。  
     + 我自己其實沒在使用，因為已經厭倦使用部落格平台了，一旦平台一倒的話要搬文章又是件痛苦的事。追蹤文章也是用 Feedly 去追。  
     + 至於為什麼有辦 Medium 的帳號，主要是有時候想要留言回覆，加上可以使用其他服務登入不用註冊帳號也還算方便，附加功能應該是可以幫別人的文章拍拍手（？）  
++ Social Network Service  
+    + Facebook, Twitter, Line, Telegram, LinkedIn, Google+ (?)  
+    + 這邊用來紀錄時代的眼淚（？）  
   
 ---  
   
