@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Tools, M157q  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
-Modified: 2018-01-16 18:45:55  
+Modified: 2018-01-17 05:43:55  
   
   
 ## 前言  
@@ -38,6 +38,7 @@ Modified: 2018-01-16 18:45:55
 + [Digital Ocean](https://www.digitalocean.com/)  
     + 大概 2015 年開始使用的，但真正開始使用是在工作後，因為在學校沒主機了，所以就租個 VPS 來用，每個月 10 美金，算滿夠用的。  
     + 雖然貌似比 Linode, Vultr 還貴，但使用上也沒啥太大的問題，所以也懶得換了就是。  
+        + 結果才過沒幾天，2018/01/17 Digital Ocean 就推出了新方案，一個月 10 美金變成有 2 GB RAM, 1 vCPU, 50 GB SSD, 2TB Bandwidth，直接變得比 Linode 和 Vultr 還便宜了：[Kicking Off the New Year with New Droplet Plans](https://blog.digitalocean.com/new-droplet-plans/)  
     + 這間公司的文件都寫得滿用心的，因為有專門聘請寫手來寫，滿推薦的。  
     + 拿來放些自動化的程式，例如：  
         + [批踢踢每天定時登入](https://gist.github.com/M157q/ad375e227ec0f1ba450915df65433473)  
