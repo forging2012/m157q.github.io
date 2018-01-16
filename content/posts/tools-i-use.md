@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Tools, M157q  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
-Modified: 2018-01-15 13:25:55  
+Modified: 2018-01-16 16:39:55  
   
   
 ## 前言  
@@ -107,6 +107,9 @@ Modified: 2018-01-15 13:25:55
     + 可以用來調整 ALSA 裝置的音量，操控挺容易的，也有基於文字的圖形化介面。  
 + [bluetoothctl](https://wiki.archlinux.org/index.php/Bluetooth)  
     + 可以用指令來管理藍牙裝置  
++ [youtube-dl](https://github.com/rg3/youtube-dl/)  
+    + <http://rg3.github.io/youtube-dl/>  
+    + 下載影片跟音樂的神器  
   
 ---  
   
