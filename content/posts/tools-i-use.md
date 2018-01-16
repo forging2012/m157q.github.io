@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Tools, M157q  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
-Modified: 2018-01-16 16:39:55  
+Modified: 2018-01-16 18:45:55  
   
   
 ## 前言  
@@ -110,6 +110,13 @@ Modified: 2018-01-16 16:39:55
 + [youtube-dl](https://github.com/rg3/youtube-dl/)  
     + <http://rg3.github.io/youtube-dl/>  
     + 下載影片跟音樂的神器  
++ [pidof](https://blog.longwin.com.tw/2016/12/linux-pidof-get-sub-process-id-2016/)  
+    + 因為這篇文章才知道的：[使用 pidof 找出此程式的所有 process id - Tsung's Blog](https://blog.longwin.com.tw/2016/12/linux-pidof-get-sub-process-id-2016/)  
+    + 以前找 process 都要用 `ps aux | grep xxx` 來找，用這個指令的話只要用 `pidof xxx` 就行了  
+    + Arch Linux User 的話可以用 `sudo pacman -S procps-ng` 來安裝。  
+        + 但我發現 `pidof` 之前是被放在不同的 package 裡頭，所以之後有變的話，可以用 `pkgfile pidof` 來找 `pidof` 被包含在哪個 package 裡頭。  
+        + 如果沒有 `pkgfile` 這個指令的話，可以透過 `sudo pacman -S pkgfile` 來安裝  
+  
   
 ---  
   
