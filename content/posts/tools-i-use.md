@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Tools, M157q  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
-Modified: 2018-01-17 05:43:55  
+Modified: 2018-01-17 19:37:55  
   
   
 ## 前言  
@@ -117,7 +117,8 @@ Modified: 2018-01-17 05:43:55
     + Arch Linux User 的話可以用 `sudo pacman -S procps-ng` 來安裝。  
         + 但我發現 `pidof` 之前是被放在不同的 package 裡頭，所以之後有變的話，可以用 `pkgfile pidof` 來找 `pidof` 被包含在哪個 package 裡頭。  
         + 如果沒有 `pkgfile` 這個指令的話，可以透過 `sudo pacman -S pkgfile` 來安裝  
-  
++ [ffmpeg](https://ffmpeg.org/)  
+    + 影音轉檔神器，也可以做到裁切、截圖等等的後續處理。  
   
 ---  
   
@@ -128,6 +129,8 @@ Modified: 2018-01-17 05:43:55
 + [PulseAudio Volume Control](https://freedesktop.org/software/pulseaudio/pavucontrol/)  
     + 指令為 `pavucontrol`  
     + `alsamixer` 的功能在普通使用下算夠用，但比較複雜的操作就會顯得麻煩了點，這時候 `pavucontrol` 就派上用場了。  
+    + 可以把輸出和輸入合併為一個音源，大概就像 macOS 上的 SoundFlower 那樣。  
+        + [Linux通过Pulse混合麦克风和音频输出 — Life in a Nutshell](https://wugh.github.io/posts/2015/01/linux-pulse-mix-mic-and-computer-audio/)  
 + [PCManFM](https://wiki.lxde.org/en/PCManFM)  
     + 由台灣人 PCMan 撰寫的開源檔案瀏覽器，嗯，就是那位撰寫瀏覽 BBS 程式 PCMan 的 PCMan （真繞口）  
 + [Chromium](https://www.chromium.org/)  
