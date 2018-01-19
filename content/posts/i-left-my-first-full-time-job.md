@@ -5,7 +5,7 @@ Authors: m157q
 Category: Life  
 Tags: Job  
 Summary: 離開了人生第 1 份全職工作，2016/01/21 ~ 2017/11/30 將近兩年的時間，想藉這篇文章紀錄一下，一方面也是給自己日後檢視用。  
-Modified: 2018-01-18 18:27:30  
+Modified: 2018-01-19 14:44:30  
   
   
 ## 前言  
@@ -102,7 +102,7 @@ Modified: 2018-01-18 18:27:30
 + 開始開發 Facebook Messenger Bot  
     + 用 Google App Engine 搭配 `webapp2` 開發，因為 Facebook 官方沒有 SDK，所以啥都得自己接。  
     + 也踩到了不少雷，例如：  
-        + Facebook 的開發文件很雷這應該就不用說了，有程式碼的話直接去看程式碼比較快，程式碼寫的比文建好。  
+        + Facebook 的開發文件很雷這應該就不用說了，有程式碼的話直接去看程式碼比較快，程式碼寫的比文件好。  
         + Generic Template 10 個 element 都放圖片的話，即便已經用了 cache 快速回應給 Facebook 的伺服器，訊息仍舊非常慢才在 client 端被 render 出來，主要都是卡在圖片。  
         + 沒有完善的測試環境，基本上大家都是開一個 production bot、一個 testing bot 分開維護。  
         + API 常常沒在管 backward compability，major version 都還在 1 的時候常常 API 行為突然就改了。  
