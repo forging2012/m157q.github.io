@@ -3,7 +3,7 @@ Slug: fetch-my-github-commits-in-one-organization-with-python-script
 Date: 2017-12-27 21:29:13  
 Authors: m157q  
 Category: Note  
-Tags: GitHub, Python, Python 3  
+Tags: GitHub, Python, Python 3, 2018 iT 邦幫忙鐵人賽  
 Summary: 如果你想計算你在某個 GitHub organization 的總 commits 數的話，可以參考一下這篇文章。  
 Modified: 2018-01-13 20:45:13  
   

@@ -3,7 +3,7 @@ Slug: ngrok-https-proxy-to-write-chatbot-in-localhost
 Date: 2017-12-29 23:58:20  
 Authors: m157q  
 Category: Note  
-Tags: ngrok, chatbot  
+Tags: ngrok, chatbot, 2018 iT 邦幫忙鐵人賽  
 Summary: 利用 ngrok 拿到一個免費的 https proxy，將這個網址綁到 chatbot 的 webhook 網址，便可以很輕鬆得在本機開發 chatbot。  
 Modified: 2017-12-31 15:54:20  
   

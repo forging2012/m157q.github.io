@@ -3,7 +3,7 @@ Slug: docker-travis-ci-kubernetes-gke
 Date: 2018-01-10 22:15:19  
 Authors: m157q  
 Category: Note  
-Tags: Docker, Kubernetes, Travis CI  
+Tags: Docker, Kubernetes, Travis CI, 2018 iT 邦幫忙鐵人賽  
 Summary: 紀錄一下透過 Travis CI  build Docker image 之後，再 Deploy 到 GKE 上的方法。  
 Modified: 2018-01-11 17:01:19  
   

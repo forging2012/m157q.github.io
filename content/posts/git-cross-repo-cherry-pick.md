@@ -3,7 +3,7 @@ Slug: git-cross-repo-cherry-pick
 Date: 2017-12-30 23:59:05  
 Authors: m157q  
 Category: Note  
-Tags: git  
+Tags: git, 2018 iT 邦幫忙鐵人賽  
 Summary: 這篇文章簡單紀錄 3 個可以讓你把某個 git repo 的 commits 直接搬到另外一個 repo 的方法。  
 Modified: 2017-12-31 01:52:05  
   

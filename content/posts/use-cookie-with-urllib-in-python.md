@@ -3,7 +3,7 @@ Slug: use-cookie-with-urllib-in-python
 Date: 2018-01-06 23:57:00  
 Authors: m157q  
 Category: Note  
-Tags: Python, Python 2, Python 3, urllib, cookie, requests  
+Tags: Python, Python 2, Python 3, urllib, cookie, requests, 2018 iT 邦幫忙鐵人賽  
 Summary: 紀錄一下在 urllib 使用 cookie 的方法。  
 Modified: 2018-01-07 01:42:00  
   

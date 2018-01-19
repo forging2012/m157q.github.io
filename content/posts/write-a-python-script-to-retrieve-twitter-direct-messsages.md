@@ -3,7 +3,7 @@ Slug: write-a-python-script-to-retrieve-twitter-direct-messsages
 Date: 2017-12-22 23:57:08  
 Authors: m157q  
 Category: Note  
-Tags: Python, Twitter  
+Tags: Python, Twitter, 2018 iT 邦幫忙鐵人賽  
 Summary: 用 Python 簡單寫個小程式，抓出我存在 Twitter 私訊裡的 tweet。  
 Modified: 2017-12-24 22:58:08  
   

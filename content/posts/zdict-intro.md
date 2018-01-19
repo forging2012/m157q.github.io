@@ -3,7 +3,7 @@ Slug: zdict-intro
 Date: 2018-01-18 22:30:24  
 Authors: m157q  
 Category: Note  
-Tags: zdict, online dictionary, cli  
+Tags: zdict, online dictionary, cli, 2018 iT 邦幫忙鐵人賽  
 Summary: 介紹一下自己和幾個朋友寫的 zdict 這套工具  
   
   

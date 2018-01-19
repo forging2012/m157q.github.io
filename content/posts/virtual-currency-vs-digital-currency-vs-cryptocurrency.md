@@ -3,7 +3,7 @@ Slug: virtual-currency-vs-digital-currency-vs-cryptocurrency
 Date: 2018-01-17 05:30:34  
 Authors: m157q  
 Category: Note  
-Tags: virtual currency, digital currency, cryptocurrency  
+Tags: virtual currency, digital currency, cryptocurrency, 2018 iT 邦幫忙鐵人賽  
 Summary: 因為看到有人問，所以花了點時間查了一下，並整理出這篇文章。  
   
   

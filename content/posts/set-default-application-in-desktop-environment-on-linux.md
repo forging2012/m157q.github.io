@@ -3,7 +3,7 @@ Slug: set-default-application-in-desktop-environment-on-linux
 Date: 2018-01-05 23:56:26  
 Authors: m157q  
 Category: Note  
-Tags: Linux, Desktop, XDG  
+Tags: Linux, Desktop, XDG, 2018 iT 邦幫忙鐵人賽  
 Summary: 可以利用 `xdg-settings` 這個指令來設定桌面環境中特定應用檔案預設的開啟程式。  
 Modified: 2018-01-06 00:52:26  
   

@@ -3,7 +3,7 @@ Slug: tools-i-use
 Date: 2018-01-09 22:09:55  
 Authors: m157q  
 Category: Note  
-Tags: Tools, M157q  
+Tags: Tools, M157q, 2018 iT 邦幫忙鐵人賽  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
 Modified: 2018-01-17 19:37:55  
   

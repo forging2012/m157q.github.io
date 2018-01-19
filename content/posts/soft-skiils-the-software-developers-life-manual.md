@@ -3,7 +3,7 @@ Slug: soft-skiils-the-software-developers-life-manual
 Date: 2018-01-14 23:55:34  
 Authors: m157q  
 Category: Reading  
-Tags: soft skills  
+Tags: soft skills, 2018 iT 邦幫忙鐵人賽  
 Summary: 紀錄一下讀完《軟技能：代碼之外的生存指南》這本書的想法與筆記。  
 Modified: 2018-01-18 21:10:34  
   

@@ -3,7 +3,7 @@ Slug: differences-between-encryption-compression-and-encoding
 Date: 2017-12-23 23:47:55  
 Authors: m157q  
 Category: Note  
-Tags: Encryption, Compression, Encoding  
+Tags: Encryption, Compression, Encoding, 2018 iT 邦幫忙鐵人賽  
 Summary: 主要是想簡單講一下這三者的差別，因為實在看過太多網站把這三者混淆了。  
 Modified: 2017-12-25 17:49:55  
   

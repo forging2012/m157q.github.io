@@ -3,7 +3,7 @@ Slug: i-left-my-first-full-time-job
 Date: 2017-12-26 21:54:30  
 Authors: m157q  
 Category: Life  
-Tags: Job  
+Tags: Job, 2018 iT 邦幫忙鐵人賽  
 Summary: 離開了人生第 1 份全職工作，2016/01/21 ~ 2017/11/30 將近兩年的時間，想藉這篇文章紀錄一下，一方面也是給自己日後檢視用。  
 Modified: 2018-01-19 14:44:30  
   

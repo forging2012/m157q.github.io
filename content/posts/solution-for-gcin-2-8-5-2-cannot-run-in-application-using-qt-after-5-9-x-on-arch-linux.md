@@ -3,7 +3,7 @@ Slug: solution-for-gcin-2-8-5-2-cannot-run-in-application-using-qt-after-5-9-x-o
 Date: 2018-01-04 23:10:00  
 Authors: m157q  
 Category: Note  
-Tags: Arch Linux, Qt5, qutebrowser, gcin  
+Tags: Arch Linux, Qt5, qutebrowser, gcin, 2018 iT 邦幫忙鐵人賽  
 Summary: 用了 qutebrowser 以後， 發現 gcin 沒辦法在其中使用，查了一下解法後順利解決了，寫這篇文章紀錄一下。  
 Modified: 2018-01-05 01:21:00  
   

@@ -3,7 +3,7 @@ Slug: differences-between-encryption-and-hashing
 Date: 2017-12-25 23:57:23  
 Authors: m157q  
 Category: Note  
-Tags: Encryption, Hashing  
+Tags: Encryption, Hashing, 2018 iT 邦幫忙鐵人賽  
 Summary: 很多人很容易把加密和雜湊搞混，利用這篇文章說明一下兩者的區別。  
 Modified: 2017-12-26 12:29:40  
   

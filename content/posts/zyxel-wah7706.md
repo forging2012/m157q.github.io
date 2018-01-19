@@ -3,7 +3,7 @@ Slug: zyxel-wah7706
 Date: 2018-01-13 21:52:00  
 Authors: m157q  
 Category: Note  
-Tags: ZyXEL  
+Tags: ZyXEL, 2018 iT 邦幫忙鐵人賽  
 Summary: 2017/12/14 購入 ZyXEL WAH7706 攜帶型 4G 網路分享器後遇到的一些問題紀錄  
   
   
