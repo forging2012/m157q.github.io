@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Tools, M157q, 2018 iT 邦幫忙鐵人賽  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
-Modified: 2018-01-17 19:37:55  
+Modified: 2018-01-20 17:36:55  
   
   
 ## 前言  
@@ -119,6 +119,8 @@ Modified: 2018-01-17 19:37:55
         + 如果沒有 `pkgfile` 這個指令的話，可以透過 `sudo pacman -S pkgfile` 來安裝  
 + [ffmpeg](https://ffmpeg.org/)  
     + 影音轉檔神器，也可以做到裁切、截圖等等的後續處理。  
++ [mtr](https://github.com/traviscross/mtr)  
+    + 用來查路由的神器，方便易用，比 `traceroute` 好用。  
   
 ---  
   
