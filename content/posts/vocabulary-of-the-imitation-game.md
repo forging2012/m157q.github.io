@@ -2,7 +2,7 @@ Title: Vocabulary of The Imitation Game
 Slug: vocabulary-of-the-imitation-game  
 Date: 2015-03-18 04:37:06  
 Authors: m157q  
-Category: Note  
+Category: Vocabulary  
 Tags: Vocabulary, Movie, The Imitation Game, Alan Turing, English  
 Summary: "Sometimes it's the very people who no one imagines anything of who do the things that no one can imagine."  
 Modified: 2015-10-27 12:39  
