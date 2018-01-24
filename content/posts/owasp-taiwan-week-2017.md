@@ -2,7 +2,7 @@ Title: OWASP Taiwan Week 2017
 Slug: owasp-taiwan-week-2017  
 Date: 2017-11-20 18:01:33  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: OWASP, Security  
 Summary: Note for OWASP Taiwan Week Day 1  
   

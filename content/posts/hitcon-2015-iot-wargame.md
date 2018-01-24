@@ -2,7 +2,7 @@ Title: HITCON 2015 IOT Wargame
 Slug: hitcon-2015-iot-wargame  
 Date: 2015-08-29 21:11:33  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: CTF, HITCON, Arduino, Python, Raspberry Pi, Write-up, Conf  
 Summary: Write-up about HITCON 2015 CMT IOT Wargame (Python Wargame?)  
 Modified: 2015-09-03 21:32:19  

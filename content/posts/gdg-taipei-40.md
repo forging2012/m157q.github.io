@@ -2,7 +2,7 @@ Title: GDG Taipei #40
 Slug: gdg-taipei-40  
 Date: 2017-08-02 19:40:45  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Tech  
 Summary: Note for GDG Taipei #40 - Women Techmakers #3 Janet Kuo 郭家禎  
   

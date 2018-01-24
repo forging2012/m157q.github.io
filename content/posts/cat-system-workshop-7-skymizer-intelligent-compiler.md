@@ -2,7 +2,7 @@ Title: Cat System Workshop #7 Skymizer intelligent compiler
 Slug: cat-system-workshop-7-skymizer-intelligent-compiler  
 Date: 2016-06-21 20:44:23  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Compiler  
 Summary: Note for Cat System Workshop #7  
 Modified: 2016-07-05 21:36  

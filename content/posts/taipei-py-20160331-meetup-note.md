@@ -2,7 +2,7 @@ Title: Taipei.py 20160331 Meetup Note
 Slug: taipei-py-20160331-meetup-note  
 Date: 2016-04-01 09:54:54  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Python, Taipei.py, skyfield, astronomy, concurrency, Meetup  
 Summary: "Skyfield" & "Uncomplicated Concurrency in Python"  
   

@@ -2,7 +2,7 @@ Title: PyCon TW 2017
 Slug: pycon-tw-2017  
 Date: 2017-06-09 17:51:37  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Python, PyCon, PyCon TW  
 Summary: Note for PyCon TW 2017 (2017/06/09 ~ 2017/06/11)  
   

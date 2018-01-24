@@ -2,7 +2,7 @@ Title: iThome #Chatbot Day
 Slug: ithome-chatbot-day  
 Date: 2017-04-27 21:06:00  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: ChatBot  
 Summary: Note for iThome #Chatbot Day  
   

@@ -2,7 +2,7 @@ Title: 2015 12 月份 SA@Tainan 淺談 Ansible 自動化組態管理工具之筆
 Slug: study-area-ansible-tutorial-note  
 Date: 2015-12-26 21:54:18  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Python, Ansible, DevOps, automation, Meetup  
 Summary: 簡單講解 Ansible  
 Modified: 2016-07-16 15:17  

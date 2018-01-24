@@ -2,7 +2,7 @@ Title: Taiwan Customer Sharing Session - with Google Big Data Engineering team
 Slug: taiwan-customer-sharing-session-with-google-big-data-engineering-team  
 Date: 2016-06-03 10:15:32  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Google Cloud Platform  
 Summary: Just a note for this sharing session.  
   

@@ -1,7 +1,7 @@
 Title: COSCUP 2014 Notes and Thoughts  
 Date: 2014-07-20 06:22  
 Author: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Conf, Taiwan, COSCUP, Open Source, Note, Thought  
 Slug: coscup-2014-notes-and-thoughts  
 Modified: 2015-10-28 12:55  

@@ -2,7 +2,7 @@ Title: CPB200: BigQuery for Data Analysts
 Slug: cpb200-bigquery-for-data-analysts  
 Date: 2016-12-15 09:45:43  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: Google Cloud Platform  
 Summary:  [CPB200](http://gcp.kktix.cc/events/05409197) 筆記  
 Modified: 2016-12-16 17:07:43  

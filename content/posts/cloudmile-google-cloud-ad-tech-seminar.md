@@ -2,12 +2,12 @@ Title: CloudMile Google Cloud Ad Tech Seminar
 Slug: cloudmile-google-cloud-ad-tech-seminar  
 Date: 2017-09-22 15:27:22  
 Authors: m157q  
-Category: Note  
+Category: Conf/Meetup  
 Tags: GCP, Ad Tech  
 Summary: Note for <https://www.mile.cloud/Google-Cloud-AD-Tech-Seminar/>  
   
   
-## GCP簡介及AD Tech應用趨勢  
+## GCP 簡介及 AD Tech 應用趨勢  
   
 Speaker: Harry Lin, Google Cloud Customer Engineer Lead  
   
