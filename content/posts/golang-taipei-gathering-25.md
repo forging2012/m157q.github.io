@@ -2,7 +2,7 @@ Title: Golang Taipei Gathering #25
 Slug: golang-taipei-gathering-25  
 Date: 2017-07-18 23:28:36  
 Authors: m157q  
-Category: Note  
+Category: Talk  
 Tags: Golang  
 Summary: Note for Golang Taipei Gathering #25  
   
