@@ -5,7 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: Tools, M157q, 2018 iT 邦幫忙鐵人賽  
 Summary: 紀錄一下自己平常使用了哪些工具，給自己之後檢視用。  
-Modified: 2018-01-20 17:36:55  
+Modified: 2018-01-26 03:26:55  
   
   
 ## 前言  
@@ -101,9 +101,11 @@ Modified: 2018-01-20 17:36:55
     + 搭配 virtualenvwrapper 可以用更簡單的指令一次處理數個 virtualenv 的指令，挺方便的。  
     + 例如要新增一個新的 virtualenv 的話，只要 `mkvirtualenv py2 --python=python2` 這樣就行了。  
     + 我自己基本上都是切成 `py2`, `py3` 來使用，然後各個用 Python 的專案也都會有各自的 virutalenv。  
-+ [wicd-curses](http://wicd.sourceforge.net/)  
++ [wicd & wicd-curses](http://wicd.sourceforge.net/)  
     + wicd 的 CLI 介面，我都用這個來選擇無線網路。  
     + 如果是圖形化介面的話則有 wicd-gtk 可以使用。  
++ [NetworkManager](https://developer.gnome.org/NetworkManager/) & [nmcli](https://developer.gnome.org/NetworkManager/stable/nmcli.html) & [nmtui](https://developer.gnome.org/NetworkManager/stable/nmtui.html)  
+    + wicd 遇到會重導向到 Login 頁面的 Public Wi-Fi 常常會連 IP 都拿不到，但 NetworkManager 往往對付這種 Public Wi-Fi 都可以順利拿到 IP，所以我會在這時候使用 `nmcli` 或 `nmtui` 去操控 NetworkManager。  
 + [alsamixer](http://www.alsa-project.org/main/index.php/Main_Page)  
     + 可以用來調整 ALSA 裝置的音量，操控挺容易的，也有基於文字的圖形化介面。  
 + [bluetoothctl](https://wiki.archlinux.org/index.php/Bluetooth)  
