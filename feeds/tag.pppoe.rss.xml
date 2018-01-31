@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Tue, 27 Oct 2015 22:03:00 +0800</lastBuildDate><item><title>Setup PPPoE Wired Network in Arch Linux</title><link>https://blog.m157q.tw/posts/2013/02/20/setup-pppoe-wired-network-in-arch-linux/</link><description>&lt;p&gt;照著 &lt;a href="https://wiki.archlinux.org/index.php/Direct_modem_connection"&gt;Direct modem connection - ArchWiki&lt;/a&gt; 這部份設定  &lt;/p&gt;
+&lt;p&gt;下 &lt;code&gt;# pppoe-setup&lt;/code&gt; 的時候 跟我說 &lt;code&gt;command not found&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;查了一下才知道要先裝上 &lt;code&gt;rp-pppoe&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;所以要設定之前記得先下  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ sudo pacman -S rp-pppoe&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;安裝完後再照著上面 ArchWiki 的步驟設定應該就行了  &lt;/p&gt;
+&lt;p&gt;之前不知道要安裝 &lt;code&gt;rp-pppoe&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;結果跑去 ArchWiki 搜尋 &lt;code&gt;pppoe&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;跑出 &lt;a href="https://wiki.archlinux.org/index.php/pppd"&gt;pppd - ArchWiki&lt;/a&gt; 給我  &lt;/p&gt;
+&lt;p&gt;照著做還是弄不起來 後來才知道要安裝 &lt;code&gt;rp-pppoe&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;所以就是先 &lt;code&gt;$ sudo pacman -S rp-pppoe&lt;/code&gt; 後  &lt;/p&gt;
+&lt;p&gt;再 &lt;code&gt;$ sudo pppoe-setup&lt;/code&gt; 就行了  &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Tue, 27 Oct 2015 22:03:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2013-02-20:posts/2013/02/20/setup-pppoe-wired-network-in-arch-linux/</guid><category>Linux</category><category>Arch Linux</category><category>Network</category><category>rp-pppoe</category><category>PPPoE</category></item></channel></rss>

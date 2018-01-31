@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Sun, 27 Aug 2017 18:12:22 +0800</lastBuildDate><item><title>setuptools 36.2.0 upgrading/downgrading uninstall rollback error with Python 3.6.2 on Travis CI</title><link>https://blog.m157q.tw/posts/2017/08/27/setuptools-36-2-0-upgrading-downgrading-uninstall-rollback-error-with-python-3-6-2-on-travis-ci/</link><description>&lt;blockquote&gt;
+&lt;p&gt;TL;DR: Just &lt;code&gt;pip install -U setuptools&lt;/code&gt; before the package which depends on &lt;code&gt;setuptools&lt;/code&gt; upgrade it.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Preface&lt;/h2&gt;
+&lt;p&gt;A build on Travis CI of one of my side projects got error &lt;code&gt;AttributeError: 'Distribution' object has no attribute 'install_requires'&lt;/code&gt; while upgrading setuptools from 36.2.0 to 36.7.0 with Python 3.6.2 build job. This build also has Python 3.4 and Python 3.5 build jobs which have no erorr because they didn't need to upgrade &lt;code&gt;setuptools&lt;/code&gt;.  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;What's the problem&lt;/h2&gt;
+&lt;p&gt;Travis CI image with &lt;code&gt;os: linux&lt;/code&gt; and &lt;code&gt;python: 3.6&lt;/code&gt; labels default installed &lt;code&gt;Python 3.6.2&lt;/code&gt;, &lt;code&gt;pip 9.0.1&lt;/code&gt; and &lt;code&gt;setuptools 36.2.0&lt;/code&gt; in this time. The problem occured while &lt;code&gt;pip install -U pytest&lt;/code&gt; was running because the default &lt;code&gt;--upgrade-strategy&lt;/code&gt; of &lt;code&gt;-U / --upgrade&lt;/code&gt; option of &lt;code&gt;pip&lt;/code&gt; is &lt;code&gt;"eager"&lt;/code&gt; which will upgrade all dependent packages to newest version.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See part of &lt;code&gt;pip install -h&lt;/code&gt; for detail:&lt;br /&gt;
+&lt;code&gt;-U, --upgrade               Upgrade all specified packages to the newest available version.  
+                              The handling of dependencies depends on the upgrade-strategy  
+                              used.  
+  --upgrade-strategy &amp;lt;upgrade_strategy&amp;gt;  
+                              Determines how dependency upgrading should be handled. "eager"  
+                              - dependencies are upgraded regardless of whether the currently  
+                              installed version satisfies the requirements of the upgraded  
+                              package(s). "only-if-needed" -  are upgraded only when they do  
+                              not satisfy the requirements of the upgraded package(s).&lt;/code&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This made &lt;code&gt;pip install -U pytest&lt;/code&gt; upgrade &lt;code&gt;setuptools&lt;/code&gt; from 36.2.0 to 36.7.0 while installing &lt;code&gt;pytest-3.2.1&lt;/code&gt; and got the error below:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Found existing installation: setuptools 36.2.0  
+    Uninstalling setuptools-36.2.0:  
+      Successfully uninstalled setuptools-36.2.0  
+  Rolling back uninstall of setuptools  
+Exception:  
+Traceback (most recent call last):  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/basecommand.py&amp;quot;, line 215, in main  
+    status = self.run(options, args)  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/commands/install.py&amp;quot;, line 342, in run  
+    prefix=options.prefix_path,  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/req/req_set.py&amp;quot;, line 784, in install  
+    **kwargs  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/req/req_install.py&amp;quot;, line 851, in install  
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/req/req_install.py&amp;quot;, line 1064, in move_wheel_files  
+    isolated=self.isolated,  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/wheel.py&amp;quot;, line 247, in move_wheel_files  
+    prefix=prefix,  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/locations.py&amp;quot;, line 140, in distutils_scheme  
+    d = Distribution(dist_args)  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/setuptools/dist.py&amp;quot;, line 365, in __init__  
+    self._finalize_requires()  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/setuptools/dist.py&amp;quot;, line 372, in _finalize_requires  
+    if not self.install_requires:  
+AttributeError: &amp;#39;Distribution&amp;#39; object has no attribute &amp;#39;install_requires&amp;#39;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h2&gt;How to fix it&lt;/h2&gt;
+&lt;p&gt;Although there are many comments on &lt;a href="https://github.com/pypa/setuptools/issues/1086"&gt;pypa/setuptools #1086&lt;/a&gt; and &lt;a href="https://github.com/pypa/setuptools/issues/1101"&gt;pypa/setuptools #1101&lt;/a&gt;, I didn't know the exact reason after I read them. But after a little digging on the GitHub, I finally got some clues.  &lt;/p&gt;
+&lt;p&gt;This problem had already been fixed in &lt;a href="https://github.com/pypa/setuptools/pull/1089"&gt;pypa/setuptools #1089&lt;/a&gt;, but why I still got this problem? Because this fix is &lt;a href="https://github.com/pypa/setuptools/blob/ac7a33c84d74afd3b7453bd880943be9cb4c5787/setuptools/dist.py"&gt;in setuptools-36.2.1&lt;/a&gt; not in &lt;a href="https://github.com/pypa/setuptools/blob/1eec02038d28506a42bc45d14ef2d54b136cc8bc/setuptools/dist.py"&gt;setuptools-36.2.0&lt;/a&gt;, if you use &lt;code&gt;setuptools-36.2.0&lt;/code&gt; you will still encounter this problem.  &lt;/p&gt;
+&lt;p&gt;Here's &lt;a href="https://github.com/labgrid-project/labgrid/pull/119/files"&gt;a workarond for this problem&lt;/a&gt; which is same as the TL;DR, just &lt;code&gt;pip install --upgrade setuptools&lt;/code&gt; to upgrade it.  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Further Discussion&lt;/h2&gt;
+&lt;p&gt;But why? why &lt;code&gt;pip install --upgrade setuptools&lt;/code&gt; works? why &lt;code&gt;pip install -U pytest&lt;/code&gt; doesn't? Aren't these two methods just remove &lt;code&gt;setuptools-36.2.0&lt;/code&gt; and install a newer &lt;code&gt;setuptools&lt;/code&gt;? According to the result, it's not.  &lt;/p&gt;
+&lt;p&gt;I guess I might have to spend some time on figuring the workflow of &lt;code&gt;pip&lt;/code&gt;?  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/45307110/pip-is-rolling-back-uninstall-of-setuptools"&gt;https://stackoverflow.com/questions/45307110/pip-is-rolling-back-uninstall-of-setuptools&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/setuptools/issues/1086"&gt;https://github.com/pypa/setuptools/issues/1086&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/setuptools/issues/1101"&gt;https://github.com/pypa/setuptools/issues/1101&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/setuptools/pull/1089"&gt;https://github.com/pypa/setuptools/pull/1089&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Sun, 27 Aug 2017 18:12:22 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2017-08-27:posts/2017/08/27/setuptools-36-2-0-upgrading-downgrading-uninstall-rollback-error-with-python-3-6-2-on-travis-ci/</guid><category>Travis CI</category><category>Python</category><category>setuptools</category></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Mon, 01 Dec 2014 05:04:00 +0800</lastBuildDate><item><title>sqlmap Cheat Sheet</title><link>https://blog.m157q.tw/posts/2014/12/01/sqlmap-cheat-sheet/</link><description>&lt;h1&gt;Usage&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$ sqlmap -u ${url}&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ sqlmap -u ${url} --dbs&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ sqlmap -u ${url} -D ${database} --tables&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ sqlmap -u ${url} -D ${database} -T ${table} --columns&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$ sqlmap -u ${url} -D ${database} -T ${table} -C ${col1},${col2} --dump&lt;/code&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Options&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--tor --tor-type=SOCKS5&lt;/code&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.nigesb.com/sqlmap-common-usage-and-examples.html"&gt;sqlmap注入常见用法一条龙&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage"&gt;sqlmap - Usage&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://oldmanlab.blogspot.tw/2012/03/sqlmap-tutorial-you-are-just.html"&gt;An Old man lab0ratory: Sqlmap tutorial - you are just unavoidable&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage"&gt;Usage · sqlmapproject/sqlmap Wiki · GitHub&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Mon, 01 Dec 2014 05:04:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2014-12-01:posts/2014/12/01/sqlmap-cheat-sheet/</guid><category>SQL Injection</category><category>sqlmap</category><category>Security</category></item></channel></rss>

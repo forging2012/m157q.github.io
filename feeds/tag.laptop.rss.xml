@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Tue, 27 Oct 2015 21:24:00 +0800</lastBuildDate><item><title>Disable auto suspend while the laptop lid close in Arch Linux</title><link>https://blog.m157q.tw/posts/2013/10/15/disable-auto-suspend-while-the-laptop-lid-close-in-arch-linux/</link><description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use editor to modify the configuration file of the systemd-logind&lt;br /&gt;
+&lt;code&gt;# vim /etc/systemd/logind.conf&lt;/code&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find&lt;br /&gt;
+&lt;code&gt;#HandleLidSwitch=suspend&lt;/code&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Uncommnet it and then change it to&lt;br /&gt;
+&lt;code&gt;HandleLidSwitch=ignore&lt;/code&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After saving the modification, we need to restart the systemd-logind&lt;br /&gt;
+&lt;code&gt;# systemctl restart systemd-logind&lt;/code&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now the change should be effective now.  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://unix.stackexchange.com/questions/52643/how-to-disable-auto-suspend-when-i-close-laptop-lid"&gt;How to disable auto suspend when I close laptop lid?&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Tue, 27 Oct 2015 21:24:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2013-10-15:posts/2013/10/15/disable-auto-suspend-while-the-laptop-lid-close-in-arch-linux/</guid><category>Linux</category><category>Arch Linux</category><category>Laptop</category><category>systemd</category></item></channel></rss>

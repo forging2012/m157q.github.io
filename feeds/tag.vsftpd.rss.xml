@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Tue, 27 Oct 2015 13:14:00 +0800</lastBuildDate><item><title>vsftpd virtual user broken after upgrade pam from 1.1.8-2 to 1.1.8-3 in Arch Linux</title><link>https://blog.m157q.tw/posts/2014/02/21/vsftpd-virtual-user-broken-after-upgrade-pam-from-1-1-8-2-to-1-1-8-3-in-arch-linux/</link><description>&lt;p&gt;pam 升到 1.1.8-3 後，vsftpd 的 virtual user 功能就爛掉了  &lt;/p&gt;
+&lt;p&gt;檢查了 &lt;code&gt;auth.log&lt;/code&gt; 以後，發現噴了  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Feb 20 00:35:49 localhost vsftpd:  
+PAM unable to dlopen(/usr/lib/security/pam_userdb.so):  
+/usr/lib/security/pam_userdb.so: cannot open shared object file:  
+No such file or directory  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;進 &lt;code&gt;/usr/lib/security&lt;/code&gt; 裡查看，發現 &lt;code&gt;pam_userdb.so&lt;/code&gt; 消失了  &lt;/p&gt;
+&lt;p&gt;推測問題出在這，到 Google 丟了 &lt;code&gt;/usr/lib/security/pam_userdb.so&lt;/code&gt; 進行搜尋  &lt;/p&gt;
+&lt;p&gt;查到這兩篇文章  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bbs.archlinux.org/viewtopic.php?pid=1382541"&gt;pam_userdb.so gone after upgrading pam-1.1.8-2 -&amp;gt; pam-1.1.8-3&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bugs.archlinux.org/task/38848"&gt;FS#38848 - [pam] /usr/lib/security/pam_userdb.so missing&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;原來是被移除掉了  &lt;/p&gt;
+&lt;p&gt;從底下的回應看起來好像只看到 vsftpd 的 virtual user 功能受到影響  &lt;/p&gt;
+&lt;p&gt;兩篇的回應都有人提到 &lt;code&gt;pam_pwdfile&lt;/code&gt; 這個套件，&lt;br /&gt;
+不過是在 AUR 上而非官方套件，而且用的人好像有點少，所以不考慮。  &lt;/p&gt;
+&lt;p&gt;目前的解法還是用  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo pacman -U /var/cache/pacman/pkg/pam-1.1.8-2-x86_64.pkg.tar.xz  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;將 pam 先降級回 &lt;code&gt;pam 1.1.8-2&lt;/code&gt;  &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Tue, 27 Oct 2015 13:14:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2014-02-21:posts/2014/02/21/vsftpd-virtual-user-broken-after-upgrade-pam-from-1-1-8-2-to-1-1-8-3-in-arch-linux/</guid><category>Linux</category><category>Arch Linux</category><category>vsftpd</category><category>pam</category><category>sysadmin</category></item></channel></rss>

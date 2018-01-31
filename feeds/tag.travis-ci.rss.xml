@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Thu, 11 Jan 2018 17:01:19 +0800</lastBuildDate><item><title>Docker + Travis CI + Kubernetes + GKE</title><link>https://blog.m157q.tw/posts/2018/01/10/docker-travis-ci-kubernetes-gke/</link><description>&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;這篇是 2016 年 6 月時的紀錄，當時剛接觸 Docker 和 Kubernetes 4 個月左右，在把舊的服務根據性質拆分成 3 個不同的 mircro serverices，想要做到讓 Travis CI 在跑完測試後，自動 build Docker image，再把 image 丟到 Google Cloud Platform 上，讓 GKE 使用。  &lt;/p&gt;
+&lt;p&gt;當時還沒有 Google Cloud Builder 可以使用，所以在找尋解法的時候看到果然有人已經這麼做了。以下就來紀錄一下方法。  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;概要&lt;/h2&gt;
+&lt;p&gt;學 Kubernetes 的時候找到了這簡短的文章：&lt;a href="https://chengl.com/orchestrating-docker-with-kubernetes/"&gt;Orchestrating Docker with Kubernetes&lt;/a&gt;，覺得可以讓剛上手的人快速瞭解。  &lt;/p&gt;
+&lt;p&gt;至於透過 Travis CI 自動 build image  的部份，照著這篇文章做的確有成功：&lt;a href="https://chengl.com/docker-workflow/"&gt;Docker Workflow&lt;/a&gt;（其實看這篇文章的 &lt;code&gt;.travis.yml&lt;/code&gt; 就可以瞭解整個梗概了），但發現效果不盡理想，儘管已經拆分成 base image 和 production image，在每次 build image 的時候節省掉 build base image 的時間了，但花的時間還是太久。  &lt;/p&gt;
+&lt;p&gt;當時因為被抓去做其他事，這部份就只弄到這裡，我覺得滿可惜的，後來大家都還是在 local build image 然後再透過 Makefile 把指令包裝起來，在 local 這邊透過 kubectl 把 image push 到 GCP。  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;後續&lt;/h2&gt;
+&lt;p&gt;當時過了幾個月後，在 2016 年 9 月看到這篇文章：&lt;a href="https://blog.wu-boy.com/2016/09/docker-cache-on-travis/"&gt;在 Travis 實現 Docker Cache | 小惡魔 - 電腦技術 - 工作筆記 - AppleBOY&lt;/a&gt;，才發現原來有這樣的解法可以用。  &lt;/p&gt;
+&lt;p&gt;後來發現也有很多人遇到一樣的問題，後來也大多是用 &lt;code&gt;docker save&lt;/code&gt;, &lt;code&gt;docker load&lt;/code&gt; 解決:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://giorgos.sealabs.net/docker-cache-on-travis-and-docker-112.html"&gt;Docker cache on Travis and Docker 1.12 // Read at G's // A personal blog from Giorgos Logiotatidis.&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/travis-ci/travis-ci/issues/5358"&gt;Caching Docker Images on Build · Issue #5358 · travis-ci/travis-ci · GitHub&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://atodorov.org/blog/2017/08/07/faster-travis-ci-tests-with-docker-cache/"&gt;Faster Travis CI tests with Docker cache&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/35305492/cache-docker-images-on-travis-ci"&gt;performance - Cache docker images on Travis CI - Stack Overflow&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;參考來源&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://chengl.com/orchestrating-docker-with-kubernetes/"&gt;Orchestrating Docker with Kubernetes&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chengl.com/docker-workflow/"&gt;Docker Workflow&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.wu-boy.com/2016/09/docker-cache-on-travis/"&gt;在 Travis 實現 Docker Cache | 小惡魔 - 電腦技術 - 工作筆記 - AppleBOY&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Thu, 11 Jan 2018 17:01:19 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2018-01-10:posts/2018/01/10/docker-travis-ci-kubernetes-gke/</guid><category>Docker</category><category>Kubernetes</category><category>Travis CI</category><category>2018 iT 邦幫忙鐵人賽</category></item><item><title>setuptools 36.2.0 upgrading/downgrading uninstall rollback error with Python 3.6.2 on Travis CI</title><link>https://blog.m157q.tw/posts/2017/08/27/setuptools-36-2-0-upgrading-downgrading-uninstall-rollback-error-with-python-3-6-2-on-travis-ci/</link><description>&lt;blockquote&gt;
+&lt;p&gt;TL;DR: Just &lt;code&gt;pip install -U setuptools&lt;/code&gt; before the package which depends on &lt;code&gt;setuptools&lt;/code&gt; upgrade it.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Preface&lt;/h2&gt;
+&lt;p&gt;A build on Travis CI of one of my side projects got error &lt;code&gt;AttributeError: 'Distribution' object has no attribute 'install_requires'&lt;/code&gt; while upgrading setuptools from 36.2.0 to 36.7.0 with Python 3.6.2 build job. This build also has Python 3.4 and Python 3.5 build jobs which have no erorr because they didn't need to upgrade &lt;code&gt;setuptools&lt;/code&gt;.  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;What's the problem&lt;/h2&gt;
+&lt;p&gt;Travis CI image with &lt;code&gt;os: linux&lt;/code&gt; and &lt;code&gt;python: 3.6&lt;/code&gt; labels default installed &lt;code&gt;Python 3.6.2&lt;/code&gt;, &lt;code&gt;pip 9.0.1&lt;/code&gt; and &lt;code&gt;setuptools 36.2.0&lt;/code&gt; in this time. The problem occured while &lt;code&gt;pip install -U pytest&lt;/code&gt; was running because the default &lt;code&gt;--upgrade-strategy&lt;/code&gt; of &lt;code&gt;-U / --upgrade&lt;/code&gt; option of &lt;code&gt;pip&lt;/code&gt; is &lt;code&gt;"eager"&lt;/code&gt; which will upgrade all dependent packages to newest version.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See part of &lt;code&gt;pip install -h&lt;/code&gt; for detail:&lt;br /&gt;
+&lt;code&gt;-U, --upgrade               Upgrade all specified packages to the newest available version.  
+                              The handling of dependencies depends on the upgrade-strategy  
+                              used.  
+  --upgrade-strategy &amp;lt;upgrade_strategy&amp;gt;  
+                              Determines how dependency upgrading should be handled. "eager"  
+                              - dependencies are upgraded regardless of whether the currently  
+                              installed version satisfies the requirements of the upgraded  
+                              package(s). "only-if-needed" -  are upgraded only when they do  
+                              not satisfy the requirements of the upgraded package(s).&lt;/code&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This made &lt;code&gt;pip install -U pytest&lt;/code&gt; upgrade &lt;code&gt;setuptools&lt;/code&gt; from 36.2.0 to 36.7.0 while installing &lt;code&gt;pytest-3.2.1&lt;/code&gt; and got the error below:  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Found existing installation: setuptools 36.2.0  
+    Uninstalling setuptools-36.2.0:  
+      Successfully uninstalled setuptools-36.2.0  
+  Rolling back uninstall of setuptools  
+Exception:  
+Traceback (most recent call last):  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/basecommand.py&amp;quot;, line 215, in main  
+    status = self.run(options, args)  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/commands/install.py&amp;quot;, line 342, in run  
+    prefix=options.prefix_path,  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/req/req_set.py&amp;quot;, line 784, in install  
+    **kwargs  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/req/req_install.py&amp;quot;, line 851, in install  
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/req/req_install.py&amp;quot;, line 1064, in move_wheel_files  
+    isolated=self.isolated,  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/wheel.py&amp;quot;, line 247, in move_wheel_files  
+    prefix=prefix,  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/pip/locations.py&amp;quot;, line 140, in distutils_scheme  
+    d = Distribution(dist_args)  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/setuptools/dist.py&amp;quot;, line 365, in __init__  
+    self._finalize_requires()  
+  File &amp;quot;/home/travis/virtualenv/python3.6.2/lib/python3.6/site-packages/setuptools/dist.py&amp;quot;, line 372, in _finalize_requires  
+    if not self.install_requires:  
+AttributeError: &amp;#39;Distribution&amp;#39; object has no attribute &amp;#39;install_requires&amp;#39;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h2&gt;How to fix it&lt;/h2&gt;
+&lt;p&gt;Although there are many comments on &lt;a href="https://github.com/pypa/setuptools/issues/1086"&gt;pypa/setuptools #1086&lt;/a&gt; and &lt;a href="https://github.com/pypa/setuptools/issues/1101"&gt;pypa/setuptools #1101&lt;/a&gt;, I didn't know the exact reason after I read them. But after a little digging on the GitHub, I finally got some clues.  &lt;/p&gt;
+&lt;p&gt;This problem had already been fixed in &lt;a href="https://github.com/pypa/setuptools/pull/1089"&gt;pypa/setuptools #1089&lt;/a&gt;, but why I still got this problem? Because this fix is &lt;a href="https://github.com/pypa/setuptools/blob/ac7a33c84d74afd3b7453bd880943be9cb4c5787/setuptools/dist.py"&gt;in setuptools-36.2.1&lt;/a&gt; not in &lt;a href="https://github.com/pypa/setuptools/blob/1eec02038d28506a42bc45d14ef2d54b136cc8bc/setuptools/dist.py"&gt;setuptools-36.2.0&lt;/a&gt;, if you use &lt;code&gt;setuptools-36.2.0&lt;/code&gt; you will still encounter this problem.  &lt;/p&gt;
+&lt;p&gt;Here's &lt;a href="https://github.com/labgrid-project/labgrid/pull/119/files"&gt;a workarond for this problem&lt;/a&gt; which is same as the TL;DR, just &lt;code&gt;pip install --upgrade setuptools&lt;/code&gt; to upgrade it.  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Further Discussion&lt;/h2&gt;
+&lt;p&gt;But why? why &lt;code&gt;pip install --upgrade setuptools&lt;/code&gt; works? why &lt;code&gt;pip install -U pytest&lt;/code&gt; doesn't? Aren't these two methods just remove &lt;code&gt;setuptools-36.2.0&lt;/code&gt; and install a newer &lt;code&gt;setuptools&lt;/code&gt;? According to the result, it's not.  &lt;/p&gt;
+&lt;p&gt;I guess I might have to spend some time on figuring the workflow of &lt;code&gt;pip&lt;/code&gt;?  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/45307110/pip-is-rolling-back-uninstall-of-setuptools"&gt;https://stackoverflow.com/questions/45307110/pip-is-rolling-back-uninstall-of-setuptools&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/setuptools/issues/1086"&gt;https://github.com/pypa/setuptools/issues/1086&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/setuptools/issues/1101"&gt;https://github.com/pypa/setuptools/issues/1101&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/setuptools/pull/1089"&gt;https://github.com/pypa/setuptools/pull/1089&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Sun, 27 Aug 2017 18:12:22 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2017-08-27:posts/2017/08/27/setuptools-36-2-0-upgrading-downgrading-uninstall-rollback-error-with-python-3-6-2-on-travis-ci/</guid><category>Travis CI</category><category>Python</category><category>setuptools</category></item><item><title>Y2016W26</title><link>https://blog.m157q.tw/posts/2016/07/03/y2016w26/</link><description>&lt;h3&gt;Algorithm&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://bigocheatsheet.com/"&gt;Big-O Algorithm Complexity Cheat Sheet&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;CLI&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/6273608/how-to-pass-argument-to-makefile-from-command-line"&gt;parameters - How to pass argument to Makefile from command line? - Stack Overflow&lt;/a&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$(filter-out $@,$(MAKECMDGOALS))&lt;/code&gt; 這 trick 有點神奇  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;GAE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.manejandodatos.es/2014/12/work-front-end-back-end-google-app-engine/"&gt;How to work with Front-end and back-end in Google App Engine - Manejando datos&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/17555269/access-control-allow-origin-header-on-google-app-engine"&gt;python - Access-Control-Allow-Origin header on Google App Engine - Stack Overflow&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;GitHub&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://theinitium.com/article/20160628-mainland-githubcensor/"&gt;開源「趙家人」名單，GitHub激怒中國網安協會首出拳 | 端傳媒 Initium Media&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Joke&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://home.gamer.com.tw/creationDetail.php?sn=3238960"&gt;【刺客翻譯】單調邊緣住宅改造化 - fired00002的創作 - 巴哈姆特&lt;/a&gt;  &lt;ul&gt;
+&lt;li&gt;這次的 ARuFa 也好猛 XDDD  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Misc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://rocket.cafe/talks/77459"&gt;持續寫作、迅速決策的竅門：三份草稿 | Rocket Café 火箭科技評論&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Programming&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://bigocheatsheet.com/#chart"&gt;Big-O Algorithm Complexity Cheat Sheet&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/14399534/how-can-i-reference-requirements-txt-for-the-install-requires-kwarg-in-setuptool"&gt;python - How can I reference requirements.txt for the install_requires kwarg in setuptools' setup.py file? - Stack Overflow&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hynek.me/articles/hasattr/"&gt;hasattr() – A Dangerous Misnomer · Homepage of Hynek Schlawack&lt;/a&gt;  &lt;ul&gt;
+&lt;li&gt;hasattr() 很恐怖，不要用。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/3845423/remove-empty-strings-from-a-list-of-strings"&gt;python - Remove empty strings from a list of strings - Stack Overflow&lt;/a&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;filter(None, seq)&lt;/code&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;StackOverFlow&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://stackoverflow.com/questions/21938028/how-can-i-get-a-favicon-to-show-up-in-my-django-app"&gt;How can I get a favicon to show up in my django app? - Stack Overflow&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Travis CI&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://cloud.google.com/solutions/continuous-delivery-with-travis-ci"&gt;Continuous Delivery with Travis CI  |  Solutions  |  Google Cloud Platform&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Trivia&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%A7%91%E5%A8%81%E7%89%B9%E7%AC%AC%E7%B4%8D%E7%88%BE"&gt;科威特第納爾 - 维基百科，自由的百科全书&lt;/a&gt;  &lt;ul&gt;
+&lt;li&gt;最高幣值的貨幣：1 KWD == 3.31 USD  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">M157q</dc:creator><pubDate>Sun, 03 Jul 2016 23:59:59 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2016-07-03:posts/2016/07/03/y2016w26/</guid><category>Algorithm</category><category>GAE</category><category>StackOverFlow</category><category>CLI</category><category>Trivia</category><category>Joke</category><category>Programming</category><category>Misc</category><category>Python</category><category>GitHub</category><category>Travis CI</category></item><item><title>用 Travis CI 自動化發佈 Pelican blog 到 GitHub Pages 上</title><link>https://blog.m157q.tw/posts/2016/05/08/use-travis-ci-to-publish-pelican-blog-on-github-pages-automatically/</link><description>&lt;h1&gt;前言&lt;/h1&gt;
+&lt;p&gt;主要的設定都是參考這篇：&lt;a href="http://blog.mathieu-leplatre.info/publish-your-pelican-blog-on-github-pages-via-travis-ci.html"&gt;Publish your Pelican blog on Github pages via Travis-CI&lt;/a&gt;&lt;br /&gt;
+不過因為這篇寫於 2014 年的 1 月，&lt;br /&gt;
+有些內容已經有點過時了，跟我實際操作起來上有些差異，&lt;br /&gt;
+我有在底下留言給作者了，我自己這邊也順便紀錄一下作法。  &lt;/p&gt;
+&lt;p&gt;先把最終的設定檔放上來好了  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/M157q/m157q.github.io/blob/source/.travis.yml"&gt;.travis.yml&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/M157q/m157q.github.io/blob/source/requirements.txt"&gt;requirements.txt&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/M157q/m157q.github.io/blob/source/Makefile"&gt;Makefile&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h1&gt;作法&lt;/h1&gt;
+&lt;p&gt;先到 &lt;code&gt;https://travis-ci.org/profile/${your_github_username}&lt;/code&gt; switch on 該 repo  &lt;/p&gt;
+&lt;h2&gt;設定 &lt;code&gt;.travis.yml&lt;/code&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;language&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;python&lt;/span&gt;  
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;python&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;  
+&lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;2.7&amp;#39;&lt;/span&gt;  &lt;span class="c1"&gt;# Pelican 已支援 Python 3，只是我用到一些 Plugins 仍然只能用 Python 2  &lt;/span&gt;
+
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;branches&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;  
+  &lt;span class="l l-Scalar l-Scalar-Plain"&gt;only&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;  
+  &lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;source&lt;/span&gt;  &lt;span class="c1"&gt;# 我是把 Pelican 的原始文字檔放在 source 這個 branch  &lt;/span&gt;
+            &lt;span class="c1"&gt;# 如果是一般的 project 應該就是用 master branch  &lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;install&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;  
+&lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;pip install -r requirements.txt&lt;/span&gt;  &lt;span class="c1"&gt;# 這邊其實可以直接寫死 pip install ${package}  &lt;/span&gt;
+                                   &lt;span class="c1"&gt;# 使用 requirements.txt 純粹是我個人喜好  &lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;script&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;  
+&lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;make travis&lt;/span&gt;  &lt;span class="c1"&gt;# 需要在 Makefile 新增 travis 的 label  &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;扣掉空行也不過就 10 行  &lt;/p&gt;
+&lt;h2&gt;設定 &lt;code&gt;requirements.txt&lt;/code&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pelican==3.6.3  
+markdown==2.6.6       # 因為我用 Markdown 而不是 reStructuredText 寫 blog  
+ghp-import==0.4.1     # 讓你 git add 某個資料夾的內容並將其 commit 到另外一個 branch  
+beautifulsoup4==4.4.1 # 我用到的 plugin 需要  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;設定 &lt;code&gt;Makefile&lt;/code&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;OUTPUTDIR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;BASEDIR&lt;span class="k"&gt;)&lt;/span&gt;/output  
+&lt;span class="nv"&gt;GITHUB_REPO_SLUG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;M157q/m157q.github.io  
+&lt;span class="nv"&gt;GITHUB_REMOTE_NAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;origin  
+&lt;span class="nv"&gt;GITHUB_PAGES_BRANCH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;master  
+&lt;span class="c"&gt;# 以上參數請根據需求自行替換  &lt;/span&gt;
+&lt;span class="nv"&gt;GITHUB_COMMIT_MSG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;shell git --no-pager log --format&lt;span class="o"&gt;=&lt;/span&gt;%s -n &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;  
+
+&lt;span class="nf"&gt;travis&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;publish&lt;/span&gt;  
+&lt;span class="c"&gt;    # 為 Travis CI 設定 git 的 user.name 和 user.email  &lt;/span&gt;
+&lt;span class="c"&gt;    # 沒設定 email 的話，GitHub 上面看到的 Author 會是 Unknown  &lt;/span&gt;
+    git config --global user.name &lt;span class="s2"&gt;&amp;quot;M157q - Travis&amp;quot;&lt;/span&gt;  
+    git config --global user.email M157q.tw@gmail.com  
+
+&lt;span class="c"&gt;    # 將 Pelican output dir 的內容 commit 到 GitHub Pages 用的 branch，準備 push 上去  &lt;/span&gt;
+&lt;span class="c"&gt;    # 因為我用的是 user site，所以 branch 是 master。如果是 project site 的話，branch 會是 gh-pages  &lt;/span&gt;
+    ghp-import -n -r &lt;span class="k"&gt;$(&lt;/span&gt;GITHUB_REMOTE_NAME&lt;span class="k"&gt;)&lt;/span&gt; -b &lt;span class="k"&gt;$(&lt;/span&gt;GITHUB_PAGES_BRANCH&lt;span class="k"&gt;)&lt;/span&gt; -m &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;GITHUB_COMMIT_MSG&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;OUTPUTDIR&lt;span class="k"&gt;)&lt;/span&gt;  
+
+&lt;span class="c"&gt;    # 將剛剛的 commit force push 到 GitHub 上相同的 branch  &lt;/span&gt;
+&lt;span class="c"&gt;    # 不用 -f (force push) 的話一定會因為 conflict 而失敗  &lt;/span&gt;
+&lt;span class="c"&gt;    # 因為每次 Travis CI build 只會有一個 commit  &lt;/span&gt;
+&lt;span class="c"&gt;    # 而且該 branch 只會存一堆靜態檔案，每次變動都很大，沒有啥需要保存 commit log 的必要性。  &lt;/span&gt;
+    @git push -fq https://&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;GH_TOKEN&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;@github.com/&lt;span class="k"&gt;$(&lt;/span&gt;GITHUB_REPO_SLUG&lt;span class="k"&gt;)&lt;/span&gt;.git &lt;span class="k"&gt;$(&lt;/span&gt;GITHUB_PAGES_BRANCH&lt;span class="k"&gt;)&lt;/span&gt;:&lt;span class="k"&gt;$(&lt;/span&gt;GITHUB_PAGES_BRANCH&lt;span class="k"&gt;)&lt;/span&gt; &amp;gt; /dev/null  
+&lt;span class="c"&gt;    # 用 @ 可以讓 Travis CI 不要顯示這行在 log 上，這樣別人就不會看到你的 GitHub Personal Access Token 了，也就是這裡用的 ${GH_TOKEN}  &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;設定 &lt;code&gt;GH_TOKEN&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;先到 &lt;a href="https://github.com/settings/tokens"&gt;https://github.com/settings/tokens&lt;/a&gt; 點選右上方的 &lt;code&gt;Generate new token&lt;/code&gt;&lt;br /&gt;
+GitHub 可能會要求輸入密碼，確定現在是本人使用，然後進入 sudo mode。&lt;br /&gt;
+填寫 Token description 描述一下這是 Travis CI 要拿來 build Pelican blog 用的，&lt;br /&gt;
+主要是給自己看的，怕之後忘記。&lt;br /&gt;
+然後 select scopes 就點選 repo 就夠了&lt;br /&gt;
+直接移到底下點選 Generate token&lt;br /&gt;
+之後就會有一組 GitHub Personal Access Token 可以複製了&lt;br /&gt;
+然後我們要將這個 Token 的權限綁到 Travis CI 上，&lt;br /&gt;
+讓 Travis CI 有權限將 commit push 到 repo&lt;br /&gt;
+這邊有兩種作法，&lt;br /&gt;
+一種是直接在 Travis CI 的 Web 介面上設定環境變數（比較簡單），&lt;br /&gt;
+另一種是寫在 &lt;code&gt;.travis.yml&lt;/code&gt; 裡頭，但有先透過 travis 將 token 進行加密，&lt;br /&gt;
+所以不會在 &lt;code&gt;.travis.yml&lt;/code&gt; 就洩漏 GitHub Personal Access Token（但要輸入一些指令，比較麻煩一點）&lt;br /&gt;
+兩種擇一即可，我原本是用 CLI 設定，後來改用 Web Interface 設定。  &lt;/p&gt;
+&lt;h3&gt;透過 Travis CI Web Interface 設定&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;到 &lt;code&gt;https://travis-ci.org/${user_name}/${repo_name}&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;移到右手邊的 more options 並點選 settings  &lt;/li&gt;
+&lt;li&gt;底下有個 Environment Variables，有 Name 和 Value 兩個欄位  &lt;ul&gt;
+&lt;li&gt;在 Name 欄位填上 &lt;code&gt;GH_TOKEN&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;在 Value 欄位貼上剛剛複製的 Token  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;然後點選 Add 即可  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;透過 Travis CI CLI 設定&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先必須確認有安裝 &lt;code&gt;travis&lt;/code&gt; 的 CLI tool  &lt;/li&gt;
+&lt;li&gt;之後在 terminal 輸入 &lt;code&gt;travis encrypt GH_TOKEN=${your_token} --add&lt;/code&gt;  &lt;/li&gt;
+&lt;li&gt;就會看到 &lt;code&gt;.travis.yml&lt;/code&gt; 裡頭多了一個 block 顯示類似下面的內容  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;env&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;  
+  &lt;span class="n"&gt;global&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;  
+    &lt;span class="n"&gt;secure&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;xxxxxxxxxx&lt;/span&gt;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;這樣就行了，之後每次 Travis CI 在跑的時候都會把這串值拿去 decode 並解密成原本的 token。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;讓 Travis CI 不要在有 PR 的時候重新產生 blog&lt;/h2&gt;
+&lt;p&gt;到 &lt;code&gt;https://travis-ci.org/${user_name}/${repo_name}/settings&lt;/code&gt;，&lt;br /&gt;
+把 &lt;code&gt;Build pull requests&lt;/code&gt; 那個 switch 切換成 off  &lt;/p&gt;
+&lt;h2&gt;測試有沒有成功&lt;/h2&gt;
+&lt;p&gt;都設定完的話，&lt;br /&gt;
+之後只要把新的 commit push 到 GitHub 上，&lt;br /&gt;
+Travis CI 就會自動 build blog 啦~  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.mathieu-leplatre.info/publish-your-pelican-blog-on-github-pages-via-travis-ci.html"&gt;Publish your Pelican blog on Github pages via Travis-CI&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Sun, 08 May 2016 13:00:07 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2016-05-08:posts/2016/05/08/use-travis-ci-to-publish-pelican-blog-on-github-pages-automatically/</guid><category>Python</category><category>Pelican</category><category>Travis CI</category><category>GitHub Pages</category><category>Blog</category></item></channel></rss>

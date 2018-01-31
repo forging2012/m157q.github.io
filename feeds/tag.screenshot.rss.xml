@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Thu, 27 Feb 2014 14:08:00 +0800</lastBuildDate><item><title>修改 Mac 的截圖儲存位置及格式</title><link>https://blog.m157q.tw/posts/2014/02/27/change-the-default-screenshot-saving-folder-and-format-on-mac/</link><description>&lt;ul&gt;
+&lt;li&gt;修改內建截圖的儲存位置  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;$ defaults write com.apple.screencapture location ${directory}&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ killall SystemUIServer&lt;/code&gt;  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;修改內建截圖的儲存格式  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;$ defaults write com.apple.screencapture type $type&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;type 有 4 種可選:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;png  &lt;/li&gt;
+&lt;li&gt;jpg  &lt;/li&gt;
+&lt;li&gt;gif  &lt;/li&gt;
+&lt;li&gt;pdf  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h4&gt;Reference&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://my.eoe.cn/sisuer/archive/4711.html"&gt;【Mac技巧】修改Mac系统电脑快捷键截图默认保存路径及修改图片类型&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Thu, 27 Feb 2014 14:08:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2014-02-27:posts/2014/02/27/change-the-default-screenshot-saving-folder-and-format-on-mac/</guid><category>Mac</category><category>Screenshot</category></item></channel></rss>

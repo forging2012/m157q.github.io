@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Wed, 28 Oct 2015 13:41:00 +0800</lastBuildDate><item><title>Converting tabs to spaces in Vim</title><link>https://blog.m157q.tw/posts/2014/12/09/converting-tabs-to-spaces-in-vim/</link><description>&lt;h2&gt;Convert tabs to spaces&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="k"&gt;retab&lt;/span&gt;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h2&gt;Set the 1 tab to be expanded to 4 spaces&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;tabstop&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="nb"&gt;shiftwidth&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="nb"&gt;expandtab&lt;/span&gt;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h2&gt;Comments below have some useful tips for some specail cases (like Makefile)&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Comment 1" src="/files/converting-tabs-to-spaces-in-vim/comments_1.png" /&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Comment 2" src="/files/converting-tabs-to-spaces-in-vim/comments_2.png" /&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Comment 3" src="/files/converting-tabs-to-spaces-in-vim/comments_3.png" /&gt;  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://vim.wikia.com/wiki/Converting_tabs_to_spaces"&gt;Converting tabs to spaces - Vim Tips Wiki&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Wed, 28 Oct 2015 13:41:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2014-12-09:posts/2014/12/09/converting-tabs-to-spaces-in-vim/</guid><category>CLI</category><category>Vim</category><category>Makefile</category></item></channel></rss>

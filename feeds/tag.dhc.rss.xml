@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Wed, 11 Feb 2015 18:27:00 +0800</lastBuildDate><item><title>DHC - REST/HTTP API Client</title><link>https://blog.m157q.tw/posts/2015/01/21/dhc-rest-http-api-client/</link><description>&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm?hl=en"&gt;DHC - REST/HTTP API Client - Chrome Web Store&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;可以選 http/https 和不同的 method&lt;br /&gt;
+然後自訂要送出的 request&lt;br /&gt;
+send 之後會顯示 server 回傳內容的 source code&lt;br /&gt;
+也會把該次 request 做記錄&lt;br /&gt;
+方便之後修改&lt;br /&gt;
+手動踹網站的時候蠻方便的  &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Wed, 11 Feb 2015 18:27:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2015-01-21:posts/2015/01/21/dhc-rest-http-api-client/</guid><category>Chrome</category><category>CTF</category><category>DHC</category><category>Security</category></item></channel></rss>

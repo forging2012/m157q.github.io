@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Mon, 15 Jan 2018 16:07:26 +0800</lastBuildDate><item><title>原來 Chromecast</title><link>https://blog.m157q.tw/posts/2017/08/15/so-this-is-chromecast/</link><description>&lt;p&gt;原來 Chromecast 不支援 mkv&lt;br /&gt;
+可播但沒聲音  &lt;/p&gt;
+&lt;p&gt;ref: &lt;a href="https://developers.google.com/cast/docs/media#media-container-formats"&gt;https://developers.google.com/cast/docs/media#media-container-formats&lt;/a&gt;  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;原來 vlc 3.0.0 支援 Chromecast&lt;br /&gt;
+不過目前是 nightly&lt;br /&gt;
+得自己編&lt;br /&gt;
+還沒試用過  &lt;/p&gt;
+&lt;p&gt;ref: &lt;a href="https://www.howtogeek.com/269272/how-to-stream-from-vlc-to-your-chromecast/"&gt;https://www.howtogeek.com/269272/how-to-stream-from-vlc-to-your-chromecast/&lt;/a&gt;  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;原來 smplayer 17.1.0 開始支援 Chromecast&lt;br /&gt;
+但你得有個 Chrome 或 Chromium&lt;br /&gt;
+並到 &lt;code&gt;chrome://flags&lt;/code&gt; enable &lt;code&gt;Load Media Router Component Extension&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;ref: &lt;a href="http://blog.smplayer.info/support-for-chromecast-in-smplayer-17-1/"&gt;http://blog.smplayer.info/support-for-chromecast-in-smplayer-17-1/&lt;/a&gt;  &lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;其他抱怨&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chromecast 一代外型設計很北七，太胖，會擋到其他 HDMI port，所以二代才拉了一條線出來。  &lt;/li&gt;
+&lt;li&gt;看 Youtube 的時候畫質不能調整。  &lt;/li&gt;
+&lt;li&gt;看 Youtube 過一陣子之後手機就沒辦法控制了，調音量和選時間都不會有反應。  &lt;/li&gt;
+&lt;li&gt;Guest mode 沒試成功過。  &lt;/li&gt;
+&lt;li&gt;還遇過用一用強制更新重開，而且還超級久。  &lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Mon, 15 Jan 2018 16:07:26 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2017-08-15:posts/2017/08/15/so-this-is-chromecast/</guid><category>Chrome</category><category>Chromium</category><category>Chromecast</category><category>VLC</category><category>SMPlayer</category></item></channel></rss>

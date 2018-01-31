@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Just for noting</title><link>https://blog.m157q.tw/</link><description></description><lastBuildDate>Mon, 26 Oct 2015 14:16:00 +0800</lastBuildDate><item><title>static/extern/inline function/variable in C</title><link>https://blog.m157q.tw/posts/2015/06/02/static-extern-inline-function-variable-in-c/</link><description>&lt;p&gt;&lt;a href="http://sitcon.kktix.cc/events/sitcon-ccca-meetup-12"&gt;SITCON x CCCA 新竹定期聚 #12 - extern/static/inline function/variable in C by susu&lt;/a&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;教材：&lt;a href="https://github.com/u1240976/mess_note/blob/master/talk/internal_and_external_linkage_in_C.rst"&gt;mess_note/internal_and_external_linkage_in_C.rst at master · u1240976/mess_note · GitHub&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;錄影：&lt;a href="https://www.youtube.com/watch?v=wBXAzhO2HaA"&gt;https://www.youtube.com/watch?v=wBXAzhO2HaA&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;錄音：&lt;a href="https://plus.google.com/events/cb13m4vrrf9tjckgkic599pditc"&gt;https://plus.google.com/events/cb13m4vrrf9tjckgkic599pditc&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;感謝 &lt;a href="https://github.com/u1240976"&gt;susu&lt;/a&gt; 的介紹，&lt;br /&gt;
+覺得 github 上那個 note 整理的很棒，&lt;br /&gt;
+之前一直不太懂這部分，&lt;br /&gt;
+現在總算比較清楚了，&lt;br /&gt;
+之後有時間應該來好好再確認自己真的弄懂了。  &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">m157q</dc:creator><pubDate>Mon, 26 Oct 2015 14:16:00 +0800</pubDate><guid isPermaLink="false">tag:blog.m157q.tw,2015-06-02:posts/2015/06/02/static-extern-inline-function-variable-in-c/</guid><category>C</category><category>static</category><category>extern</category><category>inline</category><category>SITCON</category><category>Meetup</category></item></channel></rss>
