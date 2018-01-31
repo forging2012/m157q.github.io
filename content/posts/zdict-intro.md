@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: zdict, online dictionary, cli, 2018 iT 邦幫忙鐵人賽  
 Summary: 介紹一下自己和幾個朋友寫的 zdict 這套工具  
+Modified: 2018-02-01 00:38:24  
   
   
 ## TL;DR  
@@ -79,7 +80,9 @@ Summary: 介紹一下自己和幾個朋友寫的 zdict 這套工具
 例如：  
   
 + 透過 Travis CI 自動發佈新版本到 PyPI  
-+ 透過 Travis CI push image 到 Docker Hub  
++ 透過 Docker Cloud 綁定 GitHub 的權限，在有新的 tag 的時候自動 build image，放到 Docker Hub，完成 Docker Image 的 CI。  
+    + 這部份的功能原本是用 Docker Hub 做，但用到一半發現 Docker Hub 在這部份很難用，又剛好看到 Docker Cloud，試了一下發現做的比較好，所以就改用 Docker Cloud 了。  
+    + 唯一一個被雷到的部份是，如果原先使用 Docker Hub，改用 Docker Cloud 的話，得把原本的 Docker Hub Repo 砍掉，用 Docker Cloud 來建一個新的 Automated build 的 Repo，這部份可能會多花一點時間。  
 + 支援 Docker Image  
 + pytest, coverage 相關的參數設定  
 + 使用 Pipfile  
