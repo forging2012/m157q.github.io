@@ -5,6 +5,7 @@ Authors: m157q
 Category: Note  
 Tags: China, Network, 2018 iT 邦幫忙鐵人賽  
 Summary: 紀錄一下 2016 年 10 月左右處理跟中國網路相關問題時的一些筆記。  
+Date: 2018-02-01 00:22:26  
   
   
 ## 前言  
@@ -67,7 +68,7 @@ Summary: 紀錄一下 2016 年 10 月左右處理跟中國網路相關問題時�
     + 有找到這個：[Ajax Cross Origin - jQuery plugin](http://www.ajax-cross-origin.com/)，實際也有架起來。  
     + 但後來才想到這樣根本行不通，因為 gtm.js 會紀錄使用者的行為，架了一個 proxy 的話就會被擋住。  
   
-到此已經放棄讓所有使用者都載入 gtm.js 了，轉而變成「讓可以載入的使用者載入，無法載入的就不要載入，而且不能顯示有錯誤。」因為客戶要求不能在網站上的 console 看到任何錯誤。  
+到此已經放棄讓所有使用者都載入 gtm.js 了，轉而變成「讓可以載入的使用者載入，無法載入的就不要載入，而且不能顯示有錯誤。」因為客戶要求不能在連到他們的網站時在瀏覽器的 console 中看到任何錯誤。  
   
 + 於是轉而想說能不能做到「如果嘗試載入 JavaScript 一段時間後不成功的話就停止載入。」  
     + 有找到 StackOverflow 上的這篇： [browser - Load a Javascript file, but cancel if it takes too long? - Stack Overflow](https://stackoverflow.com/questions/5642270/load-a-javascript-file-but-cancel-if-it-takes-too-long)  
@@ -78,9 +79,9 @@ Summary: 紀錄一下 2016 年 10 月左右處理跟中國網路相關問題時�
         +  其結果會包含省分、電信商及其能不能載入。  
     + 另外一個 crawler 則是去爬 <http://ipcn.chacuo.net/>，把所有 IP 對應到的省分和電信商紀錄下來，每天會更新一次。  
     + 最後在使用者瀏覽客戶的網站要嘗試載入 gtm.js 之前，會先去問我用 Django 架起來的伺服器，會把使用者的 IP 當參數送過來。  
-    + 伺服器收到使用者的 IP 後，先去拿到其所屬的省分和電信商，再去檢查最近一個小時的結果是否能夠載入，如果可以載入的話，API 就會回傳 true 回去，不行的話就回傳 false，當然都是包成 json回傳回去。  
+    + 伺服器收到使用者的 IP 後，先去拿到其所屬的省分和電信商，再去檢查最近一個小時的結果是否能夠載入，如果可以載入的話，API 就會回傳 true 回去，不行的話就回傳 false，當然都是包成 JSON 回傳回去。  
     + 伺服器同時也會把來詢問的結果紀錄到資料庫裡頭，以供日後查詢統計用。最後發現平均能夠載入載入的比例大概是四成左右而已，雖然少的可憐，但至少是可以接受的結果。  
-    + 是說這個  Django  專案也算是我第一個完全自己獨力完成的，也學到了不少東西。  
+    + 是說這個 Django 專案也算是我第一個完全自己獨力完成的，也學到了不少東西。  
   
 ---  
   
