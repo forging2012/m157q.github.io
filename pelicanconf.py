@@ -118,6 +118,7 @@ DONATIONS = {
     'eth': '0x0380433c5cdda13c8cd6cff5ddbcc1d7701bcb83',
     'ltc': 'LUFkjq32kEAiYqnMG25isqGNdgkehj9rJT',
     'paypalme': 'm157q',
+    'opay-broadcaster-donate': '4E163AAE10E448A30DB244CF85527271',
 }
 
 # =============================================================================
